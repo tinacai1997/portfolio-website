@@ -1,10 +1,31 @@
 body {
   font-family: 'Karla', sans-serif;
-  
+  font-family: 'Spectral', serif;
 }
-
-
 
 img {
   width: 100%
+}
+
+/* visited link */
+a:visited {
+  color: #ff7f50;
+}
+
+/* selected link */
+a:active {
+  color: #994c30;
+}
+
+/* No underlining */
+a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+/* Underlining when hovering over a link */
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
 }
