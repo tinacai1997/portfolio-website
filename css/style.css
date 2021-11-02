@@ -1,12 +1,16 @@
 body {
   background-color: #ffffff;
-  color: #4e4950;
+  color: #1C1D25;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
 }
 
+header, footer, .dark-background {
+  background-color: #1C1D25;
+  color: #ffffff;
+}
 
 /* Main Heading */
 h1 {
@@ -36,25 +40,44 @@ img {
 }
 
 
-/* visited link */
+/* Visited link */
 a:visited {
-  color: #ff7f50;
+  color: #ffffff;
 }
 
-/* selected link */
+/* Selected link */
 a:active {
-  color: #994c30;
+  color: #ffffff;
 }
 
 /* No underlining */
 a {
-  color: #ff7f50;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* Underlining when hovering over a link */
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #ffffff;
   text-decoration: underline;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #e7aa59;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 16px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8s
+  text-decoration: none;
+}
+
+.button.contact {
+
 }
