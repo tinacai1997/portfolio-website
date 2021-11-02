@@ -74,10 +74,6 @@ a:focus {
 }
 
 .button:hover {
-  opacity: 0.8s
+  opacity: 0.8;
   text-decoration: none;
-}
-
-.button.contact {
-
 }
