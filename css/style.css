@@ -36,11 +36,11 @@ h3 {
 
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 
-/* Visited link */
+/* Previously visited link */
 a:visited {
   color: #ffffff;
 }
@@ -50,13 +50,13 @@ a:active {
   color: #ffffff;
 }
 
-/* No underlining */
+/* Default links (no underline) */
 a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* Underlining when hovering over a link */
+/* Hovering links (underline) */
 a:hover,
 a:focus {
   color: #ffffff;
@@ -64,6 +64,8 @@ a:focus {
 }
 
 
+
+/* Button is unchanged for active and previously visited*/
 .button {
   display: inline-block;
   background-color: #e7aa59;
