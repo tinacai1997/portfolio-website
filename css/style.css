@@ -50,6 +50,12 @@ img {
   width: 100%;
 }
 
+/* Main Navigation Text */
+.main-nav {
+  font-color: #D1E2EC;
+  font-size: 1.25em;
+  font-weight: 700;
+}
 
 /* Previously visited link */
 a:visited {
