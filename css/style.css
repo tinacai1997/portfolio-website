@@ -50,22 +50,17 @@ img {
   width: 100%;
 }
 
-/* Main Navigation Text */
-.main-nav {
-  font-color: #D1E2EC;
-  font-size: 1.25em;
-  font-weight: 700;
-}
-
-/* Previously visited link */
+/*
+Previously visited link
 a:visited {
-  color: #ffffff;
+  color: #D1E2EC;
 }
 
-/* Selected link */
+Selected link
 a:active {
-  color: #ffffff;
+  color: #D1E2EC;
 }
+*/
 
 /* Default links (no underline) */
 a {
@@ -77,10 +72,17 @@ a {
 a:hover,
 a:focus {
   color: #ffffff;
+  opacity: 1;
   text-decoration: underline;
 }
 
-
+/* Main Navigation */
+.main-nav {
+  color: #D1E2EC;
+  opacity: 0.8;
+  font-size: 1.25em;
+  font-weight: 700;
+}
 
 /* Button is unchanged for active and previously visited*/
 .button {
