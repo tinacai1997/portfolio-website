@@ -16,6 +16,10 @@ header, footer, .dark-background {
   color: #ffffff;
 }
 
+.light-background {
+   background-color: #fafafa
+}
+
 /* Main Heading */
 h1 {
   font-size: 3.5em;
@@ -62,6 +66,7 @@ a {
 }
 
 .role {
+  margin: 0 10px 20px 0;
   display: inline-block;
   background-color: #D1E2EC;
   color: #4e4950;
@@ -92,8 +97,11 @@ a {
   padding: 0 15px;
 }
 
-.project-row {
-  margin: 25px 0;
+.project-box {
+  margin: 25px auto;
+  background-color: #ffffff;
+  padding: 0 110px;
+  width: 76%;
 }
 
 .logo {
