@@ -98,11 +98,22 @@ a {
 }
 
 .project-box {
-  margin: 25px auto;
+  margin: 200px auto;
   background-color: #ffffff;
-  padding: 0 110px;
   width: 76%;
+  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.15);
 }
+
+.project-link {
+  display: block;
+}
+
+/*
+.project-link:hover,
+.project-link:focus, {
+  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.8);
+}
+*/
 
 .logo {
   max-width: 250px;
