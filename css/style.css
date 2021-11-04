@@ -56,31 +56,17 @@ img {
 
 /* Default links (no underline) */
 a {
+  display: inline-block;
   color: #ffffff;
   text-decoration: none;
 }
 
-/* Main Navigation Active */
-.nav-item:active {
-  color: #ffffff;
-  opacity: 1;
-}
-
-/* Main Navigation */
-.nav-item {
-  color: #D1E2EC;
-  opacity: 0.8;
-  font-size: 1.25em;
-  font-weight: 700;
-  transition: 0.2s opacity;
-}
-
-/* Main Navigation Hover/Focus */
-.nav-item:hover,
-.nav-item:focus {
-  color: #ffffff;
-  opacity: 1;
-  text-decoration: underline;
+.role {
+  display: inline-block;
+  background-color: #D1E2EC;
+  color: #4e4950;
+  border-radius: 32px;
+  padding: 0.5em 1em;
 }
 
 /* Button is unchanged for active and previously visited*/
@@ -108,4 +94,58 @@ a {
 
 .project-row {
   margin: 25px 0;
+}
+
+.logo {
+  max-width: 250px;
+  opacity: 0.8;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 1;
+}
+
+header, footer {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  color: #D1E2EC;
+  opacity: 0.8;
+  font-size: 1.25em;
+  font-weight: 700;
+  transition: 0.2s opacity;
+}
+
+/* Main Navigation Hover/Focus */
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #ffffff;
+  opacity: 1;
+}
+
+#hero,
+#about,
+#payd-intro {
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
 }
