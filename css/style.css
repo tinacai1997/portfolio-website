@@ -61,7 +61,7 @@ img {
 /* Default links (no underline) */
 a {
   display: inline-block;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -167,4 +167,10 @@ nav > ul > li > a:focus {
   padding: 20px;
   display: inline-block;
   width: 100%;
+}
+
+.pointer {
+ text-align: center;
+ position: relative;
+ padding: 58px 0;
 }
