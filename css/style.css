@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #ffffff;
-  color: #1C1D25;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
 footer, .dark-background {
   background-color: #2c3048;
   color: #ffffff;
@@ -18,6 +9,21 @@ footer, .dark-background {
 
 .light-background {
    background-color: #ffffff
+}
+
+.center {
+  text-align: center;
+}
+
+/* Text Styling */
+
+body {
+  background-color: #ffffff;
+  color: #1C1D25;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Main Heading */
@@ -40,7 +46,7 @@ h2 {
 h3 {
   font-size: 2em;
   font-weight: 500;
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 /* Sub-Section Heading */
@@ -67,24 +73,33 @@ p {
   margin: 0;
 }
 
+
+
+
+
 img {
   width: 100%;
 }
 
+.role {
+  display: inline-block;
+  font-weight: 300;
+  background-color: #f1f1f1;
+  color: #4e4950;
+  border-radius: 32px;
+  padding: 0.5em 1em;
+  margin: 1em 0.5em 1em 0;
+}
+
+
+
+
+/* Links and Buttons */
 /* Default links (no underline) */
 a {
   display: inline-block;
   color: #000000;
   text-decoration: none;
-}
-
-.role {
-  margin: 0 10px 20px 0;
-  display: inline-block;
-  background-color: #D1E2EC;
-  color: #4e4950;
-  border-radius: 32px;
-  padding: 0.5em 1em;
 }
 
 /* Button is unchanged for active and previously visited*/
@@ -103,27 +118,6 @@ a {
   text-decoration: none;
 }
 
-
-/* Layout Styling */
-
-.project-box {
-  margin: 200px auto;
-  background-color: #ffffff;
-  width: 76%;
-  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.15);
-}
-
-.project-link {
-  display: block;
-}
-
-/*
-.project-link:hover,
-.project-link:focus, {
-  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.8);
-}
-*/
-
 .logo {
   max-width: 250px;
   opacity: 1;
@@ -134,6 +128,33 @@ a {
   opacity: 0.8;
 }
 
+.footer-links {
+  padding: 0 6px;
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: 700;
+  transition: 0.2s opacity;
+}
+
+/* Main Navigation Hover/Focus */
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  opacity: 0.8;
+}
+
+
+
+
+
+/* Layout Styling */
+
+.project-box {
+  margin: 5em auto;
+  background-color: #ffffff;
+  width: 77.5%;
+}
+
+
 header {
   text-align: left;
   box-shadow: 0px 3px 6px 0px rgba(0, 6, 39, 0.16);
@@ -143,7 +164,7 @@ header {
 
 footer {
   text-align: center;
-    box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
+  box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
   padding: 30px;
   position: relative;
 }
@@ -162,19 +183,7 @@ nav > ul > li {
   display: inline-block;
 }
 
-.footer-links {
-  padding: 0 6px;
-  color: #ffffff;
-  font-size: 1.25em;
-  font-weight: 700;
-  transition: 0.2s opacity;
-}
 
-/* Main Navigation Hover/Focus */
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  opacity: 0.8;
-}
 
 #hero {
   margin: auto 0;
