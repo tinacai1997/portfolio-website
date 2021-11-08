@@ -24,12 +24,16 @@ footer, .dark-background {
 h1 {
   font-size: 3.5em;
   font-weight: 600;
+  margin-top: 0;
 }
 
 /* Sub-Main Heading (Bordered Text) */
 h2 {
+  -webkit-text-stroke: 0.75px #000000;
+  color: #ffffff;
   font-size: 2em;
   font-weight: 700;
+  margin: 0.25em 0;
 }
 
 /* Section Heading */
@@ -42,6 +46,7 @@ h3 {
 /* Sub-Section Heading */
 h4 {
   font-weight: 600;
+  margin: 1em 0;
 }
 
 /* Captions */
@@ -55,6 +60,10 @@ h5 {
 h6 {
   font-size: 1.5em;
   font-weight: 600;
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -97,10 +106,6 @@ a {
 
 /* Layout Styling */
 
-.container {
-  margin: 0 15px;
-}
-
 .project-box {
   margin: 200px auto;
   background-color: #ffffff;
@@ -132,7 +137,7 @@ a {
 header {
   text-align: left;
   box-shadow: 0px 3px 6px 0px rgba(0, 6, 39, 0.16);
-  padding: 30px;
+  padding: 36px;
   position: relative;
 }
 
@@ -171,10 +176,15 @@ nav > ul > li > a:focus {
   opacity: 0.8;
 }
 
-#hero,
+#hero {
+  margin: auto 0;
+  padding: 0 36px;
+  display: inline-block;
+}
+
 #about,
 #payd-intro {
-  padding: 20px;
+  padding: 36px;
   display: inline-block;
   width: 100%;
 }
