@@ -152,7 +152,6 @@ nav > ul > li > a:focus {
 .project-box {
   margin: 5em auto;
   background-color: #ffffff;
-  width: 77.5%;
 }
 
 
@@ -175,15 +174,21 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav > ul,
+#tools {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+ul > li {
   display: inline-block;
 }
 
+main {
+  padding: 36px;
+}
+
+/*
 #hero,
 #about {
   margin: auto 0;
@@ -196,8 +201,8 @@ nav > ul > li {
   display: inline-block;
   width: 100%;
 }
+*/
 
 #skills-tools {
-  padding: 0 36px;
   margin: 5em 0;
 }
