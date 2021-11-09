@@ -175,7 +175,8 @@ nav {
 }
 
 nav > ul,
-#tools {
+#tools,
+#takeaways {
   list-style-type: none;
   padding: 0;
 }
