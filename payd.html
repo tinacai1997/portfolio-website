@@ -17,7 +17,7 @@
 <body>
 
   <!-- Header -->
-  <header class="light-background">
+  <header class="light-background" id="top">
     <div>
       <a href="index.html" class="logo">
         <h6>tcai</h6>
@@ -698,11 +698,19 @@
   </main>
 
   <!-- Footer -->
-  <footer id="contact">
+  <footer class="dark-background" id="contact">
     <div>
 
-      <div class="pointer">
-
+      <!-- Top Pointer | Position should be relative from bottom of screen. Pressing should bring user to top of page -->
+      <div class="center">
+        <a href="#top" id="top-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19.208" height="10.535" viewBox="0 0 19.208 10.535">
+            <g id="Chevron_Down_" data-name="Chevron (Down)" transform="translate(1.414 9.12) rotate(-90)">
+              <path id="Path_4" data-name="Path 4" d="M0,16.38l8.12-8.2L0,0" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </svg>
+          <h5>top</h5>
+        </a>
       </div>
 
       <h3>Reach Out &#x1F91D;</h3>
