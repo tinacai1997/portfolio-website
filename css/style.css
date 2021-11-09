@@ -130,7 +130,6 @@ a {
 }
 
 .footer-links {
-  padding: 0 6px;
   color: #ffffff;
   font-size: 1.25em;
   font-weight: 700;
@@ -183,6 +182,7 @@ nav > ul,
 
 ul > li {
   display: inline-block;
+  padding-right: 1em;
 }
 
 main {
