@@ -163,10 +163,12 @@ footer {
 
 nav {
   display: inline-block;
-  width: 100%;
+  width: auto;
+  float: right;
 }
 
 nav > ul,
+#footer-links,
 #tools,
 #takeaways {
   list-style-type: none;
@@ -215,7 +217,9 @@ section {
 ================================================= */
 
 @media only screen and (min-width: 640px) {
-
+  body {
+    font-size: 14px;
+  }
 }
 
 /* =================================================
@@ -223,7 +227,9 @@ section {
 ================================================= */
 
 @media only screen and (min-width: 640px) {
-
+  body {
+    font-size: 16px;
+  }
 }
 
 /* =================================================
@@ -231,5 +237,7 @@ section {
 ================================================= */
 
 @media only screen and (min-width: 640px) {
-
+  body {
+    font-size: 18px;
+  }
 }
