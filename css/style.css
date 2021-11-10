@@ -15,7 +15,10 @@
   text-align: center;
 }
 
-/* Text Styling */
+
+/* =================================================
+                    Text Styling
+================================================= */
 
 body {
   background-color: #ffffff;
@@ -73,10 +76,6 @@ p {
   margin: 1em 0;
 }
 
-
-
-
-
 img {
   width: 100%;
 }
@@ -92,9 +91,10 @@ img {
 }
 
 
+/* =================================================
+                 Links and Buttons
+================================================= */
 
-
-/* Links and Buttons */
 /* Default links (no underline) */
 a {
   display: inline-block;
@@ -143,16 +143,9 @@ nav > ul > li > a:focus {
 }
 
 
-
-
-
-/* Layout Styling */
-
-.project-box {
-  margin: 5em auto;
-  background-color: #ffffff;
-}
-
+/* =================================================
+                   Layout Styling
+================================================= */
 
 header {
   text-align: left;
@@ -194,24 +187,13 @@ section {
   padding-bottom: 5em;
 }
 
+.project-box {
+  margin: 5em auto;
+  background-color: #ffffff;
+}
 .sub-section {
   padding-top: 5em;
 }
-
-/*s
-#hero,
-#about {
-  margin: auto 0;
-  padding: 0 36px;
-  display: inline-block;
-}
-
-#payd-intro {
-  padding: 36px;
-  display: inline-block;
-  width: 100%;
-}
-*/
 
 #skills-tools {
   margin: 5em 0;
@@ -226,4 +208,28 @@ section {
   background-color: #E6E6F3;
   padding: 2.5em;
   margin-top: 5em;
+}
+
+/* =================================================
+          Medium Devices (640px and larger)
+================================================= */
+
+@media only screen and (min-width: 640px) {
+
+}
+
+/* =================================================
+          Large Devices (1024px and larger)
+================================================= */
+
+@media only screen and (min-width: 640px) {
+
+}
+
+/* =================================================
+        \X-Large Devices (1440px and larger)
+================================================= */
+
+@media only screen and (min-width: 640px) {
+
 }
