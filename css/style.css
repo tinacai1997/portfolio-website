@@ -150,14 +150,14 @@ nav > ul > li > a:focus {
 header {
   text-align: left;
   box-shadow: 0px 3px 6px 0px rgba(0, 6, 39, 0.16);
-  padding: 36px;
+  padding: 3em;
   position: relative;
 }
 
 footer {
   text-align: center;
   box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
-  padding: 30px;
+  padding: 3em;
   position: relative;
 }
 
@@ -179,7 +179,7 @@ ul > li {
 }
 
 main {
-  padding: 36px;
+  padding: 3em;
 }
 
 section {
