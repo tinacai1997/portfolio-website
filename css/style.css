@@ -226,7 +226,7 @@ section {
           Large Devices (1024px and larger)
 ================================================= */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1024px) {
   body {
     font-size: 16px;
   }
@@ -236,7 +236,7 @@ section {
         \X-Large Devices (1440px and larger)
 ================================================= */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1440px) {
   body {
     font-size: 18px;
   }
