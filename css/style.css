@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-size: 2em;
   font-weight: 500;
-  margin: 0.5em 0;
+  margin: 0 0 1.5em 0;
 }
 
 /* Sub-Section Heading */
@@ -189,7 +189,6 @@ ul > li {
 
 section {
   margin: 0 0 10em 0;
-  padding-bottom: 5em;
 }
 
 .project-box {
@@ -200,12 +199,18 @@ section {
   padding-top: 5em;
 }
 
+
 #header-container {
   height: 3.5em;
 }
 
 #hero-container {
   height: 100vh;
+}
+
+#project-hero-container {
+  height: 75vh;
+  max-height: 950px;
 }
 
 #skills-tools {
@@ -222,7 +227,7 @@ section {
   margin-top: 5em;
 }
 
-#hero {
+.hero {
   position: absolute;
   top: 35%;
 }
@@ -244,6 +249,9 @@ section {
   transform: translateY(-50%);
 }
 
+#takeaways > li {
+  display: block;
+}
 
 /* =================================================
           Medium Devices (640px and larger)
@@ -255,8 +263,8 @@ body {
   font-size: 14px;
 }
 
-#hero {
-  padding: 0 15%;
+.hero {
+  padding: 0 20%;
 }
 
 /* =================================================
