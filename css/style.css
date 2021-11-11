@@ -186,7 +186,7 @@ ul > li {
 }
 
 section {
-  margin: 5em 0;
+  margin: 0 0 10em 0;
   padding-bottom: 5em;
 }
 
@@ -196,6 +196,10 @@ section {
 }
 .sub-section {
   padding-top: 5em;
+}
+
+#header-container {
+  height: 3.5em;
 }
 
 #hero-container {
@@ -224,10 +228,14 @@ section {
 #work-pointer {
   position: absolute;
   bottom: 3em;
-  left: 50%;
   transform: translateX(-50%);
 }
 
+#main-logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 /* =================================================
