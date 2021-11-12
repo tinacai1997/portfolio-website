@@ -126,7 +126,7 @@ a {
 .logo {
   max-width: 250px;
   padding-left: 1em;
-  opacity: 1;
+  transition: 0.2s opacity;
 }
 
 .logo:hover,
@@ -139,6 +139,11 @@ a {
   font-size: 1.25em;
   font-weight: 700;
   transition: 0.2s opacity;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+  opacity: 0.8;
 }
 
 /* Main Navigation Hover/Focus */
