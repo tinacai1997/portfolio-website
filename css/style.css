@@ -226,20 +226,6 @@ section {
   max-height: 950px;
 }
 
-#about-container:after {
-  content: "";
-  clear: both;
-  display: table;
-  margin-bottom: 5em;
-}
-
-#skills-tools:after {
-  content: "";
-  clear: both;
-  display: table;
-  margin-bottom: 5em;
-}
-
 #top-pointer {
   margin-bottom: 2.5em;
 }
@@ -253,10 +239,6 @@ section {
 .hero {
   position: absolute;
   top: 35%;
-}
-
-#my-story {
-  padding-top: 5em;
 }
 
 #work-pointer {
@@ -273,6 +255,18 @@ section {
 
 #takeaways > li {
   display: block;
+}
+
+#about,
+#skills-tools {
+  width: 80%;
+  margin: 8em auto;
+  max-width: 1440px;
+}
+
+#about-me,
+#skills {
+  margin-bottom: 3em;
 }
 
 /* =================================================
@@ -295,8 +289,10 @@ section {
   }
 
   .right-padding {
-    padding: 0 3em 0 0;
+    padding-right: 3em;
   }
+
+
 
 }
 /* =================================================
