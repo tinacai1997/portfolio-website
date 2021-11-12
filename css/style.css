@@ -292,7 +292,10 @@ section {
     padding-right: 3em;
   }
 
-
+  #about,
+  #skills-tools {
+    width: 50%
+  }
 
 }
 /* =================================================
