@@ -247,6 +247,18 @@ ul > li {
 
 /* --- About --- */
 
+.about-content {
+  margin: 6.5em 0;
+  padding: 3em 3em 0 3em;
+}
+
+#about-me,
+#skills {
+  margin-bottom: 3em;
+
+
+
+
 
 .sub-section {
   padding-top: 5em;
@@ -280,16 +292,7 @@ section {
   display: block;
 }
 
-#about,
-#skills-tools {
-  width: 80%;
-  margin: 8em auto;
-  max-width: 1440px;
-}
 
-#about-me,
-#skills {
-  margin-bottom: 3em;
 }
 
 /* =================================================
@@ -298,13 +301,13 @@ section {
 
 @media only screen and (min-width: 640px) {
 
+  body {
+    font-size: 14px;
+  }
+
   .two-columns {
     float: right;
     width: 50%;
-  }
-
-  body {
-    font-size: 14px;
   }
 
   /* Why does the right padding ignore the right side general-padding form the container? */
@@ -316,9 +319,9 @@ section {
     padding-right: 3em;
   }
 
-  #about,
-  #skills-tools {
-    width: 50%
+    #about-me,
+    #skills {
+      margin-bottom: 3em;
   }
 
 }
@@ -330,6 +333,11 @@ section {
 
   body {
     font-size: 16px;
+  }
+
+  .about-columns {
+    float: right;
+    width: 50%;
   }
 
   /* .project-description {
