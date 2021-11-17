@@ -37,6 +37,10 @@ img {
   justify-content: center;
 }
 
+.section-margin {
+  width: 100%;
+  margin: 0 3em;
+}
 
 /* =================================================
                     Text Styling
@@ -125,7 +129,6 @@ a {
 
 #logo {
   max-width: 250px;
-  padding-left: 1em;
   transition: 0.2s opacity;
 }
 
@@ -202,7 +205,7 @@ ul {
 
 ul > li {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0 0.5em;
 }
 
 
@@ -247,15 +250,21 @@ ul > li {
 
 /* --- About --- */
 
-.about-content {
-  margin: 6.5em 0;
+.about-container {
+  margin: 6.5em auto;
   padding: 3em 3em 0 3em;
 }
 
-#about-me,
+.about-picture {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 #skills {
   margin-bottom: 3em;
-
+}
 
 
 
@@ -292,9 +301,6 @@ section {
   display: block;
 }
 
-
-}
-
 /* =================================================
           Medium Devices (640px and larger)
 ================================================= */
@@ -311,20 +317,21 @@ section {
   }
 
   /* Why does the right padding ignore the right side general-padding form the container? */
-  #hero-content {
+  /* #hero-content {
     padding: 0 20%;
-  }
+  } */
 
   .right-padding {
     padding-right: 3em;
   }
 
-    #about-me,
-    #skills {
-      margin-bottom: 3em;
+  #about-me,
+  #skills {
+    margin-bottom: 3em;
   }
 
 }
+
 /* =================================================
           Large Devices (1024px and larger)
 ================================================= */
@@ -335,15 +342,36 @@ section {
     font-size: 16px;
   }
 
-  .about-columns {
-    float: right;
-    width: 50%;
+  .about-container {
+    max-width: 2000px;
+  }
+
+  .about-pic-column {
+    float: left;
+    width: 45%;
+  }
+
+  .about-blurb-column {
+    float: left;
+    width: 55%;
+    padding-right: 2em;
+  }
+
+  .about-container:after {
+    display: table;
+    clear: both;
+    content: "";
   }
 
   /* .project-description {
     width: 75%;
     margin: 0 auto;
   } */
+
+  .section-margin {
+    width: 50%;
+    margin: 0 auto;
+  }
 
 }
 
