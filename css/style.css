@@ -185,7 +185,9 @@ footer {
   box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
 }
 
-#reach-out {
+#reach-out,
+#skills,
+#tools {
   margin-bottom: 0.75em;
 }
 
@@ -256,22 +258,21 @@ ul > li {
 /* --- About --- */
 
 .about-container {
-  margin: 6.5em auto;
-  padding: 3em 3em 0 3em;
+  margin-top: 5.5em;
+  padding-top: 3em;
 }
 
-.about-picture {
-  display: block;
-  width: 95%;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-#skills {
+#about-description {
   margin-bottom: 3em;
 }
 
+#skills-container {
+  margin: 3em 0;
+}
 
+#tools-container {
+  margin-bottom: 6em;
+}
 
 
 .sub-section {
@@ -325,11 +326,6 @@ section {
     padding-right: 3em;
   }
 
-  #about-me,
-  #skills {
-    margin-bottom: 3em;
-  }
-
 }
 
 /* =================================================
@@ -369,24 +365,6 @@ section {
 /* About */
 
   .about-container {
-    max-width: 2000px;
-  }
-
-  .about-pic-column {
-    float: left;
-    width: 45%;
-  }
-
-  .about-blurb-column {
-    float: left;
-    width: 55%;
-    padding-right: 2em;
-  }
-
-  .about-container:after {
-    display: table;
-    clear: both;
-    content: "";
   }
 
   /* .project-description {
