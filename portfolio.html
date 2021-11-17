@@ -17,9 +17,11 @@
 <body>
 
   <!-- Header -->
-  <header class="light-background" id="top">
-    <div id="header-container">
-      <a href="index.html" class="logo" id="main-logo">
+  <header class="light-background" id="header">
+
+    <!-- Header Container -->
+    <div>
+      <a href="index.html" id="logo">
         <h6>tcai</h6>
       </a>
 
@@ -33,6 +35,7 @@
         </ul>
       </nav>
     </div>
+
   </header>
 
 
@@ -482,9 +485,9 @@
   <footer class="dark-background" id="contact">
     <div>
 
-      <!-- Top Pointer | Position should be relative from bottom of screen. Pressing should bring user to top of page -->
-      <div class="center">
-        <a href="#top" id="top-pointer">
+      <!-- Top Pointer -->
+      <div>
+        <a href="#header" id="top-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="19.208" height="10.535" viewBox="0 0 19.208 10.535">
             <g id="Chevron_Down_" data-name="Chevron (Down)" transform="translate(1.414 9.12) rotate(-90)">
               <path id="Path_4" data-name="Path 4" d="M0,16.38l8.12-8.2L0,0" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -494,12 +497,14 @@
         </a>
       </div>
 
+      <br>
       <h3>Reach Out &#x1F91D;</h3>
 
       <!-- Professional Socials -->
       <ul id="footer-links">
         <li>
-          <a href="#" class="footer-links"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 56.93 56.93">
+          <a href="#" class="footer-links">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 56.93 56.93">
               <path id="Subtraction_1" data-name="Subtraction 1"
                 d="M-1961.535,56.93a28.287,28.287,0,0,1-11.08-2.237,28.372,28.372,0,0,1-9.048-6.1,28.37,28.37,0,0,1-6.1-9.048A28.287,28.287,0,0,1-1990,28.465a28.288,28.288,0,0,1,2.237-11.08,28.37,28.37,0,0,1,6.1-9.048,28.37,28.37,0,0,1,9.048-6.1A28.288,28.288,0,0,1-1961.535,0a28.287,28.287,0,0,1,11.08,2.237,28.371,28.371,0,0,1,9.048,6.1,28.373,28.373,0,0,1,6.1,9.048,28.288,28.288,0,0,1,2.237,11.08,28.287,28.287,0,0,1-2.237,11.08,28.374,28.374,0,0,1-6.1,9.048,28.373,28.373,0,0,1-9.048,6.1A28.286,28.286,0,0,1-1961.535,56.93Zm-18.511-38.286a.177.177,0,0,0-.177.181v19.7a2.878,2.878,0,0,0,2.875,2.875h31.625a2.878,2.878,0,0,0,2.875-2.875v-19.7a.178.178,0,0,0-.181-.177.175.175,0,0,0-.125.051l-9.667,9.847a.177.177,0,0,0-.054.126.177.177,0,0,0,.054.126l6.765,7.205a1.171,1.171,0,0,1,0,1.653,1.177,1.177,0,0,1-.826.342,1.178,1.178,0,0,1-.827-.342l-6.738-7.178a.183.183,0,0,0-.13-.054.183.183,0,0,0-.13.054l-1.644,1.671a7.247,7.247,0,0,1-5.157,2.174h-.032a7.427,7.427,0,0,1-5.233-2.237l-1.581-1.608a.183.183,0,0,0-.13-.054.181.181,0,0,0-.13.054l-6.738,7.178a1.178,1.178,0,0,1-.827.342,1.173,1.173,0,0,1-.826-.342,1.171,1.171,0,0,1,0-1.653l6.765-7.205a.191.191,0,0,0,0-.251l-9.677-9.847A.178.178,0,0,0-1980.045,18.644Zm2.689-3.116a2.823,2.823,0,0,0-1.778.629l14.1,14.348a4.872,4.872,0,0,0,3.5,1.473,4.884,4.884,0,0,0,3.513-1.473l14.1-14.348a2.824,2.824,0,0,0-1.779-.629Z"
                 transform="translate(1990)" fill="#fff" />
@@ -539,7 +544,7 @@
       </ul>
 
       <!-- Copyright -->
-      <h5>copyright Tina Cai 2021</h5>
+      <h5 id="copyright">copyright Tina Cai 2021</h5>
     </div>
   </footer>
 
