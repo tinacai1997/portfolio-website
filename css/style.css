@@ -31,6 +31,7 @@ img {
   margin: 0 3em;
 }
 
+
 /* =================================================
                     Text Styling
 ================================================= */
@@ -339,7 +340,7 @@ section {
 }
 
 
-/* Research */
+/* Content */
 
 .project-section {
   margin: 5em 0;
@@ -353,10 +354,25 @@ section {
   padding: 2.5em;
 }
 
+.wireframe-layout {
+  display: flex;
+  flex-direction: row;
+}
 
+.wireframe-left {
+  width: 50%;
+  padding-right: 3em;
+}
 
+.wireframe-right {
+  width: 50%;
+  padding-left: 3em;
+}
 
-
+.wireframe-description {
+  height: 20em;
+  padding: 0.75em 0;
+}
 
 
 
