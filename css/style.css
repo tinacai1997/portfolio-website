@@ -71,22 +71,23 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
+  font-size: 1.25em;
   font-weight: 600;
   margin: 1em 0;
 }
 
-/* Captions */
+/* Project Descriptions */
 h5 {
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+/* Captions */
+h6 {
   font-size: 1em;
   font-weight: 300;
   margin: 1em;
-}
-
-/* Logo */
-h6 {
-  font-size: 1.5em;
-  font-weight: 600;
-  margin: 0;
 }
 
 p {
@@ -117,6 +118,7 @@ a {
 }
 
 #logo {
+  font-weight: 600;
   max-width: 250px;
   transition: 0.2s opacity;
 }
@@ -282,7 +284,42 @@ ul > li {
 
 /* Intro  */
 
+#project-overview-section {
+  height: 100vh;
+}
 
+.project-section {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.sub-section-heading {
+  letter-spacing: 0.1em;
+  padding-bottom: 1em;
+}
+
+.sub-section-heading:before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #555555;
+  vertical-align: top;
+  margin-top: 0.65em;
+  margin-right: 10px;
+}
+
+.logistics {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5em 0;
+  border: 0.1em solid #DDDDDD;
+  border-radius: 0.5em;
+}
 
 
 #insights {
