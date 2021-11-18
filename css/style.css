@@ -23,18 +23,8 @@ img {
    background-color: #ffffff
 }
 
-.general-padding {
-  padding: 3em;
-}
-
 .center {
   text-align: center;
-}
-
-.align-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-margin {
@@ -211,7 +201,7 @@ ul > li {
 }
 
 
-/* --- Index --- */
+/* ---------- Index ---------- */
 
 /* Hero */
 
@@ -255,7 +245,7 @@ ul > li {
 }
 
 
-/* --- About --- */
+/* ---------- About ---------- */
 
 .about-container {
   margin-top: 5.5em;
@@ -275,15 +265,23 @@ ul > li {
 }
 
 
-.sub-section {
-  padding-top: 5em;
-}
+/* ---------- Payd ---------- */
 
+/* Hero */
 
-#project-hero-container {
+.project-hero-container {
   height: 75vh;
+  margin-top: 5.5em;
   max-height: 950px;
 }
+
+.project-hero-content {
+  position: absolute;
+  top: 30%;
+}
+
+/* Intro  */
+
 
 
 
