@@ -277,6 +277,10 @@ section {
   margin-bottom: 3em;
 }
 
+#about-picture {
+  border-radius: 10px;
+}
+
 #skills-container {
   margin: 3em 0;
 }
