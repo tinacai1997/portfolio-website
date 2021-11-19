@@ -360,24 +360,16 @@ section {
 
 .wireframe-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
 }
 
-.wireframe-left {
+.wireframe-column {
   width: 50%;
-  padding-right: 3em;
+  padding: 0 1em;
 }
-
-.wireframe-right {
-  width: 50%;
-  padding-left: 3em;
-}
-
-.wireframe-description {
-  height: 27.5em;
-  padding: 3.75em 0;
-}
-
 
 
 #takeaways > li {
@@ -395,7 +387,8 @@ section {
   }
 
   .logistics,
-  #insights {
+  #insights,
+  .wireframe-layout {
     flex-direction: row;
   }
 
