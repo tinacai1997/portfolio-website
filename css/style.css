@@ -371,9 +371,9 @@ section {
   padding: 0 1em;
 }
 
-
 #takeaways > li {
   display: block;
+  margin-bottom: 3em;
 }
 
 /* =================================================
