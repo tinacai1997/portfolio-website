@@ -134,7 +134,7 @@ a {
 /* Link Hover and Focus */
 a:hover,
 a:focus {
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: none;
 }
 
