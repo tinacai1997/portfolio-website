@@ -127,6 +127,10 @@ a {
   margin: 0;
 }
 
+#work-arrow {
+  stroke: #000000;
+}
+
 .footer-links {
   transition: 0.2s opacity;
 }
@@ -138,6 +142,46 @@ a:focus {
   text-decoration: none;
 }
 
+#work-pointer:hover,
+#top-pointer:hover {
+  opacity: 1;
+}
+
+#work-pointer:hover > svg {
+  animation: downarrow 2.5s infinite;
+}
+
+@keyframes downarrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(0.5em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#top-pointer:hover > svg {
+  animation: uparrow 2.5s infinite;
+}
+
+@keyframes uparrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-0.5em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* Role Tag */
 .role {
