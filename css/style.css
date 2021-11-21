@@ -143,13 +143,15 @@ a:focus {
   text-decoration: none;
 }
 
+/* ---------- Index Page Hand ---------- */
+
 .hand-wave {
   display: inline-block;
   transform-origin: bottom right;
 }
 
 .hand-wave:hover {
-  animation: wave 1.5s infinite;
+  animation: wave 1s infinite;
 }
 
 #hand {
@@ -170,12 +172,17 @@ a:focus {
   }
 }
 
+/* ---------- Work and Top Pointer Interaction ---------- */
+
 #work-pointer:hover,
 #top-pointer:hover {
   opacity: 1;
 }
 
-#work-pointer:hover > svg {
+
+
+
+/* #work-pointer:hover > svg {
   animation: downarrow 2.5s infinite;
 }
 
@@ -209,7 +216,7 @@ a:focus {
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 /* Role Tag */
 .role {
