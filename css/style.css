@@ -179,44 +179,35 @@ a:focus {
   opacity: 1;
 }
 
-
-
-
-/* #work-pointer:hover > svg {
-  animation: downarrow 2.5s infinite;
+#work-pointer:hover > h5 {
+  opacity: 0.8;
 }
 
-@keyframes downarrow {
-  0% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(0.5em);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+.down-stem {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  width: 0.15em;
+  height: 1.5em;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: bottom;
+  border-radius: 32px;
+  background: #000000;
+  transition: 0.25s;
 }
 
-#top-pointer:hover > svg {
-  animation: uparrow 2.5s infinite;
+#work-pointer:hover > .down-arrow > .down-stem {
+    transform: translateX(-50%) scaleY(1);
 }
 
-@keyframes uparrow {
-  0% {
-    transform: translateY(0);
-  }
+.down-arrow {
+  transition: 0.25s;
+}
 
-  40% {
-    transform: translateY(-0.5em);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-} */
+#work-pointer:hover > .down-arrow {
+  transform: translateY(5px);
+}
 
 /* Role Tag */
 .role {
