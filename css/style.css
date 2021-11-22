@@ -179,7 +179,8 @@ a:focus {
   opacity: 1;
 }
 
-#work-pointer:hover > h5 {
+#work-pointer:hover > h5,
+#top-pointer:hover > h5 {
   opacity: 0.8;
 }
 
@@ -187,9 +188,9 @@ a:focus {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 40%;
-  width: 0.15em;
-  height: 1.5em;
+  bottom: 35%;
+  width: 2px;
+  height: 27px;
   transform: translateX(-50%) scaleY(0);
   transform-origin: bottom;
   border-radius: 32px;
@@ -207,6 +208,32 @@ a:focus {
 
 #work-pointer:hover > .down-arrow {
   transform: translateY(5px);
+}
+
+.up-stem {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  width: 2px;
+  height: 27px;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  border-radius: 32px;
+  background: #ffffff;
+  transition: 0.25s;
+}
+
+#top-pointer:hover > .up-arrow > .up-stem {
+    transform: translateX(-50%) scaleY(1);
+}
+
+.up-arrow {
+  transition: 0.25s;
+}
+
+#top-pointer:hover > .up-arrow {
+  transform: translateY(-5px);
 }
 
 /* Role Tag */
