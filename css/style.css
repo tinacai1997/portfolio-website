@@ -180,9 +180,11 @@ a:focus {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 50px;
+  width: 550px; /* This needs to be as wide as the margin + the width of the menu icon + about 20px*/
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  visibility: hidden;
 }
 
 /* .nav-toggle li {
@@ -334,12 +336,6 @@ footer {
 
 /* Lists */
 
-nav {
-  display: inline-block;
-  float: right;
-  width: auto;
-}
-
 ul {
   padding: 0;
   list-style-type: none;
@@ -350,6 +346,25 @@ ul > li {
   padding: 0 0.5em;
 }
 
+nav {
+  display: block;
+  margin-top: 50vh;
+  margin-left: 30%;
+  transform: translateY(-50%);
+}
+
+nav > ul {
+  overflow: hidden;
+}
+
+nav > ul > li {
+  display: block;
+  padding: 0;
+  margin: 1em 0;
+  font-size: 3em;
+  font-weight: 500;
+  white-space: nowrap;
+}
 
 /* Project Pages */
 
