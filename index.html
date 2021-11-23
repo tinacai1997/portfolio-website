@@ -18,33 +18,33 @@
 <body>
 
   <!-- Header -->
-  <header class="light-background" id="header">
+  <header id="header">
 
-    <!-- Header Container -->
-    <div class="section-margin">
+    <!-- Logo -->
+    <a href="index.html" class="section-margin" id="logo-link">
+      <h4 id="logo">tcai</h4>
+    </a>
 
-      <a href="index.html" id="logo-link">
-        <h4 id="logo">tcai</h4>
+    <!-- Menu Button -->
+    <div id="menu-button">
+
+      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+        <span id="menu-icon">
+          <span id="menu-top-bar"></span>
+          <span id="menu-bot-bar"></span>
+        </span>
       </a>
-
-      <!-- Menu Button -->
-      <div id="menu-button">
-
-        <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-          <span id="menu-icon">
-            <span id="menu-top-bar"></span>
-            <span id="menu-bot-bar"></span>
-          </span>
-        </a>
-      </div>
-
     </div>
 
-    <!-- Menu Sidebar -->
+    <!-- Screen Mask (when side menu is open) -->
+
+    <span class="menu-mask"></span>
+
+    <!-- Side Menu -->
 
     <aside class="side-menu">
 
-      <!-- Menu Sidebar Container -->
+      <!-- Side Menu Container -->
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>

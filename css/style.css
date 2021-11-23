@@ -120,7 +120,11 @@ a {
 }
 
 #logo-link {
+  position: fixed;
+  left: 0%;
+  margin: 3em 0 0 3.5em;
   max-width: 250px;
+  z-index: 5000;
   transition: 0.2s opacity;
 }
 
@@ -147,9 +151,10 @@ a:focus {
 
 #menu-button {
   display: inline-block;
-  float: right;
-  margin-top: 1em;
-  z-index: 1000;
+  position: fixed;
+  right: 0%;
+  margin: 3em 3.5em 0 0;
+  z-index: 3000;
 }
 
 #menu-top-bar {
@@ -183,18 +188,28 @@ a:focus {
   bottom: 0;
   width: 0; /* This needs to be as wide as the margin + the width of the menu icon + about 20px*/
   height: 100vh;
-  background-color: #F1f1f1;
-  z-index: 500;
+  background-color: #ffffff;
+  z-index: 2000;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
 .side-menu > nav {
   opacity: 0;
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-
+.menu-mask {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
 
 /* ---------- Index Page Hand ---------- */
 
@@ -309,18 +324,8 @@ a:focus {
 header {
   position: absolute;
   width: 100%;
-  padding: 0.25em 0;
   box-shadow: 0px 3px 6px 0px rgba(0, 6, 39, 0.16);
 }
-
-#logo {
-  display: inline-block;
-  float: left;
-  width: auto;
-  margin-top: 0.7em;
-  margin-bottom: 0.6em;
-}
-
 
 /* Footer */
 
