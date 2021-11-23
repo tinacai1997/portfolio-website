@@ -148,9 +148,9 @@ a:focus {
 #menu-top-bar {
   content: "";
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   width: 30px;
-  height: 3px;
+  height: 2px;
   /* transform: translateX(-50%) scaleY(0);
   transform-origin: bottom; */
   border-radius: 32px;
@@ -162,12 +162,16 @@ a:focus {
   content: "";
   display: block;
   width: 30px;
-  height: 3px;
+  height: 2px;
   /* transform: translateX(-50%) scaleY(0);
   transform-origin: bottom; */
   border-radius: 32px;
   background: #000000;
   /* transition: 0.25s; */
+}
+
+.nav-toggle li:not(:last-child) {
+  display: none;
 }
 
 /* ---------- Index Page Hand ---------- */
