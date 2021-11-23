@@ -136,10 +136,6 @@ a {
   stroke: #000000;
 }
 
-.footer-links {
-  transition: 0.2s opacity;
-}
-
 /* Link Hover and Focus */
 a:hover,
 a:focus {
@@ -194,8 +190,10 @@ a:focus {
   transition: all 0.3s ease-in-out;
 }
 
-.side-menu > nav {
+.side-menu > nav,
+.side-menu > .side-contact {
   opacity: 0;
+  visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
@@ -358,6 +356,17 @@ ul > li {
   padding: 0 0.5em;
 }
 
+ul > li:first-child {
+  padding-left: 0;
+}
+
+ul > li:last-child {
+  padding-right: 0;
+}
+
+
+/* Side Menu */
+
 nav {
   display: block;
   margin-top: 50vh;
@@ -376,6 +385,12 @@ nav > ul > li {
   font-size: 3em;
   font-weight: 500;
   white-space: nowrap;
+}
+
+.side-contact {
+  display: block;
+  bottom: 35%;
+  margin-left: 30%;
 }
 
 /* Project Pages */
