@@ -143,6 +143,33 @@ a:focus {
   text-decoration: none;
 }
 
+/* ---------- Header Navigation ---------- */
+
+#menu-top-bar {
+  content: "";
+  display: block;
+  margin-bottom: 6px;
+  width: 30px;
+  height: 3px;
+  /* transform: translateX(-50%) scaleY(0);
+  transform-origin: bottom; */
+  border-radius: 32px;
+  background: #000000;
+  /* transition: 0.25s; */
+}
+
+#menu-bot-bar {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  /* transform: translateX(-50%) scaleY(0);
+  transform-origin: bottom; */
+  border-radius: 32px;
+  background: #000000;
+  /* transition: 0.25s; */
+}
+
 /* ---------- Index Page Hand ---------- */
 
 .hand-wave {
