@@ -403,22 +403,11 @@ section {
 }
 
 
-/* Case Studies */
+/* Work */
 
 .project-container {
   height: 100vh;
   margin: 0 3em;
-  padding: 3em 0;
-}
-
-.project-container:after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-#case-studies {
-  margin-bottom: 1em;
 }
 
 .project-description {
@@ -588,7 +577,7 @@ section {
   }
 
 
-/* Case Studies */
+/* Work */
 
   .project-container {
     width: 60%;
@@ -598,6 +587,7 @@ section {
   .project-grid {
     display: grid;
     height: 75vh;
+    padding-top: 15em;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     align-items: center;
