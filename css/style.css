@@ -137,8 +137,10 @@ a {
 }
 
 /* Link Hover and Focus */
-a:hover,
-a:focus {
+#logo-link:hover,
+#logo-link:focus,
+.social-links:hover,
+.social-links:focus {
   opacity: 0.6;
   text-decoration: none;
 }
@@ -286,7 +288,7 @@ a:focus {
 
 #work-pointer:hover > h5,
 #top-pointer:hover > h5 {
-  opacity: 0.8;
+  font-weight: 575;
 }
 
 .down-stem {
@@ -425,6 +427,12 @@ nav > ul > li {
   font-size: 3em;
   font-weight: 500;
   white-space: nowrap;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  opacity: 0.6;
+  text-decoration: none;
 }
 
 .side-contact {
