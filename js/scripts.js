@@ -10,6 +10,7 @@ function menuToggle() {
 
   if (menuOpen === false) {
     getSideMenu.style.visibility = "visible";
+    getSideMenu.style.transform = "scaleX(1)"
 
     getSideMenuNav.style.visibility = "visible";
     getSideMenuNav.style.opacity = "1";
@@ -20,17 +21,11 @@ function menuToggle() {
     getMenuMask.style.visibility = "visible";
     getMenuMask.style.opacity = "0.5";
 
-    if (screen.width <= 640px) {
-      getSideMenu.style.width = "50vw";
-    } else {
-      getSideMenu.style.width = "35vw";
-    }
-
     menuOpen = true;
 
   } else {
     getSideMenu.style.visibility = "hidden";
-    getSideMenu.style.width = "0%";
+    getSideMenu.style.transform = "scaleX(0)";
 
     getSideMenuNav.style.visibility = "hidden";
     getSideMenuNav.style.opacity = "0";

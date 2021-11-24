@@ -182,8 +182,10 @@ a:focus {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 0%;
+  width: 100vw;
   height: 100vh;
+  transform: scaleX(0);
+  transform-origin: right;
   background-color: #ffffff;
   z-index: 2000;
   visibility: hidden;
@@ -368,9 +370,10 @@ ul > li:last-child {
 /* Side Menu */
 
 nav {
+  position: absolute;
   display: block;
-  margin-top: 50vh;
-  margin-left: 30%;
+  top: 50%;
+  margin-left: 3em;
   transform: translateY(-50%);
 }
 
@@ -388,9 +391,10 @@ nav > ul > li {
 }
 
 .side-contact {
+  position: absolute;
   display: block;
-  bottom: 35%;
-  margin-left: 30%;
+  bottom: 8%;
+  margin-left: 3em;
 }
 
 /* Project Pages */
@@ -581,6 +585,15 @@ section {
     padding-right: 3em;
   }
 
+  .side-menu {
+    width: 50vw;
+  }
+
+  nav,
+  .side-contact {
+    margin-left: 30%;
+  }
+
 }
 
 /* =================================================
@@ -633,6 +646,10 @@ section {
     margin: 0 auto;
   }
 
+  .side-menu {
+    width: 30vw;
+  }
+
 }
 
 /* =================================================
@@ -649,4 +666,5 @@ section {
     width: 50%;
     margin: 0 auto;
   } */
+
 }
