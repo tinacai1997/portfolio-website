@@ -120,9 +120,9 @@ a {
 }
 
 #logo-link {
-  position: fixed;
+  position: absolute;
   left: 0%;
-  margin: 3em 0 0 3.5em;
+  margin: 2.75em 0 0 3.5em;
   max-width: 250px;
   z-index: 5000;
   transition: 0.2s opacity;
@@ -149,11 +149,11 @@ a {
 
 #menu-button {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   right: 0%;
-  width: 54px;
-  height: 54px;
-  margin: 1.75em 3.5em 0 0;
+  width: 3em;
+  height: 3em;
+  margin: 2.125em 3.5em 0 0;
   z-index: 3000;
 }
 
@@ -173,14 +173,14 @@ a {
 
 #menu-icon {
   position: absolute;
-  transform: translateY(21px);
+  transform: translateY(1.1666em);
   z-index: 3500;
 }
 
 #menu-circle {
   position: absolute;
-  height: 54px;
-  width: 54px;
+  height: 3em;
+  width: 3em;
   background: black;
   border-radius: 50%;
   z-index: 3250;
@@ -191,10 +191,10 @@ a {
 #menu-top-bar {
   content: "";
   display: block;
-  margin-bottom: 8px;
-  margin-left: 12px;
-  width: 30px;
-  height: 2px;
+  margin-bottom: 0.4444em;
+  margin-left: 0.6666em;
+  width: 1.6666em;
+  height: 0.1111em;
   /* transform: translateX(-50%) scaleY(0);
   transform-origin: bottom; */
   border-radius: 32px;
@@ -206,9 +206,9 @@ a {
 #menu-bot-bar {
   content: "";
   display: block;
-  margin-left: 12px;
-  width: 30px;
-  height: 2px;
+  margin-left: 0.6666em;
+  width: 1.6666em;
+  height: 0.1111em;
   /* transform: translateX(-50%) scaleY(0);
   transform-origin: bottom; */
   border-radius: 32px;
@@ -288,7 +288,7 @@ a {
 
 #work-pointer:hover > h5,
 #top-pointer:hover > h5 {
-  font-weight: 575;
+  font-weight: 500;
 }
 
 .down-stem {
@@ -694,6 +694,12 @@ section {
   .side-menu {
     width: 30vw;
   }
+
+  #logo-link,
+  #menu-button {
+    position: fixed;
+  }
+
 
 }
 
