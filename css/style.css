@@ -182,7 +182,7 @@ a:focus {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 0; /* This needs to be as wide as the margin + the width of the menu icon + about 20px*/
+  width: 0%;
   height: 100vh;
   background-color: #ffffff;
   z-index: 2000;
