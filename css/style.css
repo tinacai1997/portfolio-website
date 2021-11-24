@@ -591,7 +591,7 @@ section {
 
   nav,
   .side-contact {
-    margin-left: 30%;
+    margin-left: 20%;
   }
 
 }
@@ -666,5 +666,11 @@ section {
     width: 50%;
     margin: 0 auto;
   } */
+
+  nav,
+  .side-contact {
+    margin-left: 30%;
+  }
+
 
 }
