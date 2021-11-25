@@ -166,8 +166,7 @@ a {
   opacity: 1;
 }
 
-#menu-button:hover > a > .menu-icon:before,
-#menu-button:hover > a > .menu-icon:after {
+#menu-button:hover > a > .menu-icon > span {
   background: white;
 }
 
@@ -188,40 +187,68 @@ a {
   transition: opacity 0.1s ease-in-out;
 }
 
-.menu-icon:before {
+.menu-icon > span {
   content: "";
   display: block;
-  margin-bottom: 0.4444em;
   margin-left: 0.6666em;
   width: 1.6666em;
-  height: 0.15em;
+  height: 2px;
   border-radius: 100px;
   background: black;
   z-index: 3750;
 }
 
-.menu-icon:after {
-  content: "";
-  display: block;
-  margin-left: 0.6666em;
-  width: 1.6666em;
-  height: 0.15em;
-  border-radius: 100px;
-  background: black;
-  z-index: 3750;
+.menu-icon > span + span {
+  margin-top: 0.44444444em;
 }
 
-.menu-icon.close:before {
-  animation: top-menu-bar 1s forwards;
+.close span:nth-child(1) {
+  animation: ease top-menu-bar-close 0.5s forwards;
 }
 
-.menu-icon.close:after {
-  animation: bot-menu-bar 1s forwards;
+.close span:nth-child(2) {
+  animation: ease bot-menu-bar-close 0.5s forwards;
 }
 
-@keyframes top-menu-bar {
+@keyframes top-menu-bar-close {
   0% {
     transform: translateY(0) rotate(0);
+  }
+
+  60% {
+    transform: translateY(0.27777777em) rotate(0);
+  }
+
+  100% {
+    transform: translateY(0.27777777em) rotate(45deg);
+  }
+}
+
+@keyframes bot-menu-bar-close {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  60% {
+    transform: translateY(-0.27777777em) rotate(0);
+  }
+
+  100% {
+    transform: translateY(-0.27777777em) rotate(-45deg);
+  }
+}
+
+.open span:nth-child(1) {
+  animation: ease top-menu-bar-open 0.5s forwards;
+}
+
+.open span:nth-child(2) {
+  animation: ease bot-menu-bar-open 0.5s forwards;
+}
+
+@keyframes top-menu-bar-open {
+  0% {
+    transform: translateY(0.25em) rotate(45deg);
   }
 
   60% {
@@ -229,21 +256,21 @@ a {
   }
 
   100% {
-    transform: translateY(0.25em) rotate(44.5deg);
+    transform: translateY(0) rotate(0);
   }
 }
 
-@keyframes bot-menu-bar {
+@keyframes bot-menu-bar-open {
   0% {
-    transform: translateY(0) rotate(0);
+    transform: translateY(-0.3em) rotate(-45deg);
   }
 
   60% {
-    transform: translateY(-0.3em) rotate(-0);
+    transform: translateY(-0.3em) rotate(0);
   }
 
   100% {
-    transform: translateY(-0.3em) rotate(-45deg);
+    transform: translateY(0) rotate(0);
   }
 }
 

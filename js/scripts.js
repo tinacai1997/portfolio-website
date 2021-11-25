@@ -11,13 +11,13 @@ function menuToggle() {
   let getSideContact = document.querySelector(".side-contact");
   let getMenuMask = document.querySelector(".menu-mask");
   let getMenuIcon = document.querySelector(".menu-icon");
-  let getClosedMenuIcon = document.querySelector(".menu-icon.close");
 
   getMenuIcon.classList.toggle('close');
+  getMenuIcon.classList.toggle('open');
 
   if (menuOpen === false) {
     getSideMenu.style.visibility = "visible";
-    getSideMenu.style.transform = "scaleX(1)"
+    getSideMenu.style.transform = "scaleX(1)";
 
     getSideMenuNav.style.visibility = "visible";
     getSideMenuNav.style.opacity = "1";
@@ -45,4 +45,5 @@ function menuToggle() {
 
     menuOpen = false;
   }
+
 }
