@@ -1,5 +1,8 @@
 console.log("this is a secret message");
 
+
+// Toggle Side Menu
+
 let menuOpen = false;
 
 function menuToggle() {
@@ -7,6 +10,10 @@ function menuToggle() {
   let getSideMenuNav = document.querySelector(".side-menu nav");
   let getSideContact = document.querySelector(".side-contact");
   let getMenuMask = document.querySelector(".menu-mask");
+  let getMenuIcon = document.querySelector(".menu-icon");
+  let getClosedMenuIcon = document.querySelector(".menu-icon.close");
+
+  getMenuIcon.classList.toggle('close');
 
   if (menuOpen === false) {
     getSideMenu.style.visibility = "visible";
