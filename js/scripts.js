@@ -47,3 +47,12 @@ function menuToggle() {
   }
 
 }
+
+// // Toggle Dark Mode
+//
+// let darkMode = false;
+//
+// function darkModeToggle() {
+//
+//
+// }
