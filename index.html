@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-mode="light">
 
 <!-- Head -->
 
@@ -18,17 +18,31 @@
 <body>
 
   <!-- Header -->
-  <header id="header">
+  <header class="" id="header">
 
     <!-- Logo -->
     <a href="index.html" id="logo-link">
       <h4 id="logo">tcai</h4>
     </a>
 
+
+    <!-- Dark Mode Button -->
+    <div class="dark-mode-button">
+
+      <a href="javascript:void(0);" onclick="darkModeToggle()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+          <circle id="Ellipse_5" data-name="Ellipse 5" cx="13" cy="13" r="13" fill="#000000"/>
+          <path id="Path_29" data-name="Path 29" d="M8,0A10.692,10.692,0,0,1,8,21.384Z" transform="translate(5 2.308)" fill="#fff"/>
+        </svg>
+      </a>
+
+    </div>
+
+
     <!-- Menu Button -->
     <div id="menu-button">
 
-      <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+      <a href="javascript:void(0);" onclick="menuToggle()">
         <div class="menu-icon open">
           <span></span>
           <span></span>
@@ -106,13 +120,13 @@
   </header>
 
   <!-- Main Content -->
-  <main class="light-background">
+  <main>
 
     <!-- Hero Section -->
-    <div class="section-margin">
+    <div class="" id="hero">
 
       <!-- Hero Container -->
-      <div id="hero-container">
+      <div class="section-margin" id="hero-container">
 
         <div id="hero-content">
           <h2>Hi, I'm</h2>
@@ -128,7 +142,7 @@
         <div class="center">
 
           <a href="#work" id="work-pointer">
-            <h5>work</h5>
+            <h5 id="work-pointer-text">work</h5>
 
             <div class="down-arrow">
               <div class="down-stem"> </div>

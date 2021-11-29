@@ -14,15 +14,6 @@ img {
   width: 100%;
 }
 
-.dark-background {
-  background-color: #2c3048;
-  color: #ffffff;
-}
-
-.light-background {
-   background-color: #ffffff
-}
-
 .center {
   text-align: center;
 }
@@ -30,7 +21,6 @@ img {
 .section-margin {
   margin: 0 3em;
 }
-
 
 /* =================================================
                     Text Styling
@@ -57,8 +47,8 @@ h1 {
 
 /* Sub-Main Heading (Bordered Text) */
 h2 {
-  -webkit-text-stroke: 0.75px #000000;
-  color: #ffffff;
+  -webkit-text-stroke: 0.75px var(--text-color);
+  color: var(--accent-color);
   font-size: 2em;
   font-weight: 700;
   margin: 0.25em 0;
@@ -129,11 +119,8 @@ a {
 }
 
 #logo {
+  color: var(--text-color);
   margin: 0;
-}
-
-#work-arrow {
-  stroke: #000000;
 }
 
 /* Link Hover and Focus */
@@ -307,6 +294,22 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+/* Dark Mode */
+
+.dark-mode-button {
+  position: absolute;
+  right: 0%;
+  margin: 2.85em 7.5em 0 0;
+  transform: scale(1);
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-button:hover,
+.dark-mode-button:focus {
+  transform: scale(1.1);
+}
+
 /* ---------- Index Page Hand ---------- */
 
 .hand-wave {
@@ -346,6 +349,10 @@ a {
 #work-pointer:hover > h5,
 #top-pointer:hover > h5 {
   font-weight: 500;
+}
+
+#work-pointer-text {
+  color: var(--text-color);
 }
 
 .down-stem {
@@ -420,7 +427,6 @@ a {
 header {
   position: absolute;
   width: 100%;
-  box-shadow: 0px 3px 6px 0px rgba(0, 6, 39, 0.16);
 }
 
 /* Footer */
@@ -508,7 +514,12 @@ section {
 
 /* ---------- Index ---------- */
 
-/* Hero */
+/*
+ */
+#hero {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
 
 #hero-container {
   height: 100vh;
