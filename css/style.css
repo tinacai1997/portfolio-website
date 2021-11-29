@@ -31,32 +31,6 @@ img {
   margin: 0 3em;
 }
 
-/* =================================================
-            Hero Screen Dark/Light Mode
-================================================= */
-
-:root {
-  --text-color: #000000;
-  --background-color: #ffffff;
-  --element-color: #000000;
-  --accent-color: #ffffff;
-}
-
-[data-mode="light"] {
-  --text-color: #000000;
-  --background-color: #ffffff;
-  --element-color: #000000;
-  --accent-color: #ffffff;
-}
-
-[data-mode="dark"] {
-  --text-color: #ffffff;
-  --background-color: #2c3048;
-  --element-color: #ffffff;
-  --accent-color: #000000;
-}
-
-
 
 /* =================================================
                     Text Styling
@@ -155,8 +129,11 @@ a {
 }
 
 #logo {
-  /* color: ; */
   margin: 0;
+}
+
+#work-arrow {
+  stroke: #000000;
 }
 
 /* Link Hover and Focus */
