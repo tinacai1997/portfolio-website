@@ -1,6 +1,7 @@
-/* =================================================
-              Global / General Styling
-================================================= */
+/* ==============================================================
+                     Global / General Styling
+============================================================== */
+
 
 * {
   box-sizing: border-box;
@@ -23,9 +24,10 @@ img {
 }
 
 
-/* =================================================
-                    Text Styling
-================================================= */
+/* ==============================================================
+                          Text Styling
+============================================================== */
+
 
 body {
   display: inline-block;
@@ -88,9 +90,10 @@ p {
 }
 
 
-/* =================================================
-                    UI Elements
-================================================= */
+/* ==============================================================
+                              Links
+============================================================== */
+
 
 /* Links, Active Links, Visited Links */
 a {
@@ -132,7 +135,13 @@ a {
   text-decoration: none;
 }
 
-/* ---------- Navigation ---------- */
+
+/* ==============================================================
+                            Navigation
+============================================================== */
+
+
+/*------------------------ Menu Button ------------------------*/
 
 #menu-button {
   display: inline-block;
@@ -189,6 +198,10 @@ a {
   margin-top: 0.44444444em;
 }
 
+
+/*------------------ Menu Button Animations -------------------*/
+
+
 .close span:nth-child(1) {
   animation: ease top-menu-bar-close 0.5s forwards;
 }
@@ -200,13 +213,9 @@ a {
 @keyframes top-menu-bar-close {
   0% {
     transform: translateY(0) rotate(0);
-  }
-
-  60% {
+  } 60% {
     transform: translateY(0.27777777em) rotate(0);
-  }
-
-  100% {
+  } 100% {
     transform: translateY(0.27777777em) rotate(45deg);
   }
 }
@@ -214,13 +223,9 @@ a {
 @keyframes bot-menu-bar-close {
   0% {
     transform: translateY(0) rotate(0);
-  }
-
-  60% {
+  } 60% {
     transform: translateY(-0.27777777em) rotate(0);
-  }
-
-  100% {
+  } 100% {
     transform: translateY(-0.27777777em) rotate(-45deg);
   }
 }
@@ -236,13 +241,9 @@ a {
 @keyframes top-menu-bar-open {
   0% {
     transform: translateY(0.25em) rotate(45deg);
-  }
-
-  60% {
+  } 60% {
     transform: translateY(0.25em) rotate(0);
-  }
-
-  100% {
+  } 100% {
     transform: translateY(0) rotate(0);
   }
 }
@@ -250,16 +251,16 @@ a {
 @keyframes bot-menu-bar-open {
   0% {
     transform: translateY(-0.3em) rotate(-45deg);
-  }
-
-  60% {
+  } 60% {
     transform: translateY(-0.3em) rotate(0);
-  }
-
-  100% {
+  } 100% {
     transform: translateY(0) rotate(0);
   }
 }
+
+
+/*--------------------- Side Menu and Mask --------------------*/
+
 
 .side-menu {
   position: fixed;
@@ -294,7 +295,45 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* ---------- Index Page Hand ---------- */
+
+/*--------------------- Side Menu Content ---------------------*/
+
+
+nav {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-left: 3em;
+  transform: translateY(-50%);
+}
+
+nav > ul > li {
+  display: block;
+  font-size: 3em;
+  font-weight: 500;
+  padding: 0;
+  margin: 1em 0;
+  white-space: nowrap;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.side-contact {
+  display: block;
+  position: absolute;
+  bottom: 8%;
+  margin-left: 3em;
+}
+
+
+/* ==============================================================
+                     Waving Hand (Index Page)
+============================================================== */
+
 
 .hand-wave {
   display: inline-block;
@@ -312,18 +351,20 @@ a {
 @keyframes wave {
   0% {
     transform: rotate(0);
-  }
-
-  50% {
+  } 50% {
     transform: rotate(30deg);
-  }
-
-  100% {
+  } 100% {
     transform: rotate(0);
   }
 }
 
-/* ---------- Work and Top Pointer Interaction ---------- */
+
+/* ==============================================================
+                       Work & Top Pointers
+============================================================== */
+
+
+/*----------------------- Work Pointer ------------------------*/
 
 #work-pointer:hover,
 #top-pointer:hover {
@@ -361,6 +402,9 @@ a {
   transform: translateY(5px);
 }
 
+
+/*------------------------ Top Pointer ------------------------*/
+
 .up-stem {
   content: "";
   position: absolute;
@@ -387,29 +431,17 @@ a {
   transform: translateY(-5px);
 }
 
-/* Role Tag */
-.role {
-  display: inline-block;
-  background-color: #f1f1f1;
-  color: #4e4950;
-  border-radius: 32px;
-  font-weight: 300;
-  padding: 0.5em 1em;
-  margin: 1em 0.5em 0 0;
-}
 
-/* =================================================
-                   Layout Styling
-================================================= */
+/* ==============================================================
+                          General Layout
+============================================================== */
 
-/* Header */
 
 header {
   position: absolute;
   width: 100%;
 }
 
-/* Footer */
 
 footer {
   position: relative;
@@ -420,14 +452,9 @@ footer {
   box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
 }
 
-#reach-out,
-#skills,
-#tools {
-  margin-bottom: 0.75em;
-}
 
+/*--------------------------- Lists ---------------------------*/
 
-/* Lists */
 
 ul {
   list-style-type: none;
@@ -448,52 +475,13 @@ ul > li:last-child {
 }
 
 
-/* Side Menu */
-
-nav {
-  display: block;
-  position: absolute;
-  top: 50%;
-  margin-left: 3em;
-  transform: translateY(-50%);
-}
-
-nav > ul {
-  overflow: hidden;
-}
-
-nav > ul > li {
-  display: block;
-  font-size: 3em;
-  font-weight: 500;
-  padding: 0;
-  margin: 1em 0;
-  white-space: nowrap;
-}
-
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  opacity: 0.6;
-  text-decoration: none;
-}
-
-.side-contact {
-  display: block;
-  position: absolute;
-  bottom: 8%;
-  margin-left: 3em;
-}
-
-/* Project Pages */
-
-section {
-  margin: 0 0 10em 0;
-}
+/* ==============================================================
+                          Index Layout
+============================================================== */
 
 
-/* ---------- Index ---------- */
+/*---------------------------- Hero ----------------------------*/
 
-/* Hero */
 
 #hero-container {
   height: 100vh;
@@ -511,7 +499,8 @@ section {
 }
 
 
-/* Work */
+/*---------------------------- Work ----------------------------*/
+
 
 .project-container {
   height: 100vh;
@@ -528,7 +517,10 @@ section {
 }
 
 
-/* ---------- About ---------- */
+/* ==============================================================
+                          About Layout
+============================================================== */
+
 
 .about-container {
   padding-top: 3em;
@@ -556,9 +548,13 @@ section {
 }
 
 
-/* ---------- Payd ---------- */
+/* ==============================================================
+                       Project Page Layout
+============================================================== */
 
-/* Hero */
+
+/*----------------------- Project Hero ------------------------*/
+
 
 .project-hero-container {
   max-height: 950px;
@@ -572,7 +568,8 @@ section {
 }
 
 
-/* Intro */
+/*--------------------------- Intro ---------------------------*/
+
 
 .project-overview-section {
   height: 100vh;
@@ -590,6 +587,7 @@ section {
   text-transform: uppercase;
 }
 
+/* Sub section line decoration */
 .sub-section-heading:before {
   content: "";
   display: inline-block;
@@ -601,6 +599,7 @@ section {
   margin-right: 10px;
 }
 
+/* Project logistics box */
 .logistics {
   display: flex;
   flex-direction: column;
@@ -614,7 +613,11 @@ section {
 }
 
 
-/* Content */
+/*---------------------- Project Content ----------------------*/
+
+section {
+  margin: 0 0 10em 0;
+}
 
 .project-section {
   margin: 5em 0;
@@ -646,9 +649,33 @@ section {
   margin-bottom: 3em;
 }
 
-/* =================================================
-          Medium Devices (640px and larger)
-================================================= */
+
+/* ==============================================================
+                         Misc UI Elements
+============================================================== */
+
+
+.role {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #4e4950;
+  border-radius: 32px;
+  font-weight: 300;
+  padding: 0.5em 1em;
+  margin: 1em 0.5em 0 0;
+}
+
+#reach-out,
+#skills,
+#tools {
+  margin-bottom: 0.75em;
+}
+
+
+/* ==============================================================
+               Medium Devices (640px and larger)
+============================================================== */
+
 
 @media only screen and (min-width: 640px) {
 
@@ -656,11 +683,8 @@ section {
     font-size: 14px;
   }
 
-  .logistics,
-  #insights,
-  .wireframe-layout {
-    flex-direction: row;
-  }
+
+/*-------------------------- Navigation -----------------------*/
 
   .side-menu {
     width: 50vw;
@@ -671,11 +695,23 @@ section {
     margin-left: 20%;
   }
 
+
+/*-------------------- Column -> Row Content ------------------*/
+
+
+  .logistics,
+  #insights,
+  .wireframe-layout {
+    flex-direction: row;
+  }
+
 }
 
-/* =================================================
-          Large Devices (1024px and larger)
-================================================= */
+
+/* ==============================================================
+               Large Devices (1024px and larger)
+============================================================== */
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -683,8 +719,14 @@ section {
     font-size: 16px;
   }
 
+  .section-margin {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-/* Work */
+
+/*----------------------- Index -> Work -----------------------*/
+
 
   .project-container {
     width: 60%;
@@ -708,33 +750,30 @@ section {
   }
 
 
-/* About */
+/*-------------------------- Navigation -----------------------*/
 
-  .section-margin {
-    width: 50%;
-    margin: 0 auto;
-  }
 
   .side-menu {
     width: 30vw;
   }
 
-  #logo-link,
-  #menu-button {
-    position: fixed;
-  }
 
 }
 
-/* =================================================
-        \X-Large Devices (1440px and larger)
-================================================= */
+
+/* ==============================================================
+               X-Large Devices (1440px and larger)
+============================================================== */
+
 
 @media only screen and (min-width: 1440px) {
 
   body {
     font-size: 18px;
   }
+
+  
+/*-------------------------- Navigation -----------------------*/
 
   nav,
   .side-contact {
