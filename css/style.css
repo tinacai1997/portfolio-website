@@ -344,7 +344,7 @@ nav > ul > li > a:focus {
   animation: wave 1s infinite;
 }
 
-#hand {
+.hand-wave > h1 {
   margin: 0;
 }
 
