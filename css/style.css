@@ -514,7 +514,28 @@ ul > li:last-child {
 .project-picture {
   max-width: 600px;
   max-height: 600px;
+
 }
+
+.project-picture > a > picture > img {
+  border-radius: 10px;
+}
+
+.project-box {
+  scroll-snap-align: start;
+}
+
+/* #project-1 {
+  background-color: #faf5ff;
+}
+
+#project-2 {
+  background-color: #f0f4ff;
+}
+
+#project-3 {
+  background-color: #f0fff4;
+} */
 
 
 /* ==============================================================

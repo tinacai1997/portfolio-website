@@ -78,15 +78,3 @@ window.addEventListener("focus", function(){
   clearTimeout(timeoutTimer);
   document.title = title; 
 });
-
-
-// Projects Scroll (Index Page)
-
-// let getWork = document.querySelector("#work");
-
-// function fullPageProject(){
-//   (getWork).fullpage({
-//     navigation: true,
-//     navigationPosition: 'right'
-//   });
-// }
