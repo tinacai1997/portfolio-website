@@ -283,6 +283,10 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+.menu-mask-link {
+  position: absolute;
+}
+
 .menu-mask {
   content: "";
   position: fixed;
@@ -290,6 +294,7 @@ a {
   height: 100vh;
   z-index: 1000;
   background: #f1f1f1;
+  cursor: initial;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
@@ -743,6 +748,11 @@ section {
   .section-margin {
     width: 50%;
     margin: 0 auto;
+  }
+  
+  #logo-link,
+  #menu-button {
+    position: fixed;
   }
 
 
