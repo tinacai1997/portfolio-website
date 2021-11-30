@@ -341,6 +341,7 @@ nav > ul > li > a:focus {
 
 
 .hand-wave {
+  font-size: 3.5em;
   display: inline-block;
   transform-origin: bottom right;
 }
