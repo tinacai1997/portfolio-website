@@ -508,7 +508,7 @@ ul > li:last-child {
 }
 
 .project-description {
-  margin: 2em 0;
+  margin-bottom: 2em;
 }
 
 .project-picture {
