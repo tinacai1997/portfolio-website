@@ -47,3 +47,34 @@ function menuToggle() {
   }
 
 }
+
+
+// Tab Message
+
+var title = document.title;
+var tabMessage = [
+  "Click Me 😁",
+  "Please Click Me 🥺",
+  "🕷 Oh no, a spider!"
+];
+
+var intervalTimer = null;
+var timeoutTimer = null;
+
+window.addEventListener("blur", function () { 
+   intervalTimer = setInterval(function() {
+     var rand = Math.floor((Math.random() * tabMessage.length));
+
+     document.title = tabMessage[rand];
+
+     timeoutTimer = setTimeout(function() {
+       document.title = title;
+     },5000);
+   },10000);
+});
+
+window.addEventListener("focus", function(){ 
+  clearInterval(intervalTimer);
+  clearTimeout(timeoutTimer);
+  document.title = title; 
+});
