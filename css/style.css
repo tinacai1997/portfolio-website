@@ -130,7 +130,9 @@ a {
 #logo-link:hover,
 #logo-link:focus,
 .social-links:hover,
-.social-links:focus {
+.social-links:focus,
+.button:hover,
+.button:focus {
   opacity: 0.6;
   text-decoration: none;
 }
@@ -648,6 +650,15 @@ section {
 
 .project-section {
   margin: 5em 0;
+}
+
+.project-link {
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+.project-link:hover {
+  transform: scale(1.025);
 }
 
 #insights {
