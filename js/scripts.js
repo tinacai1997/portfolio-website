@@ -99,10 +99,15 @@ window.addEventListener("focus", function(){
 
 // Slider
 
-new slider({
-  el : document.querySelector('#sliders'),
-  slideClass : 'slider',
-  currentSlider : (slider) => {},
-  auto : 3000
-})
+const slider = new NSlider({
+  elem: document.querySelector('.slider-container'),
+  animation: {
+    duration: 1000,
+    timingFunction: 'ease-in-out'
+  },
+  dots: true,
+  keyboardControl: true,
+  prevButtonInner: '<',
+  nextButtonInner: '>',
+});
 
