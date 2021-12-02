@@ -37,12 +37,13 @@
     top: 50%;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(36, 36, 36, 0.15);
+    transform: translateY(-50%) scale(1);
     transform-origin: center;
-    transition: all 0.2s;
+    transition: 0.2s;
 }
 
 .nslider .nslider-button:hover {
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .nslider .nslider-button > * {
