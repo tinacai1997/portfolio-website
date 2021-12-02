@@ -798,6 +798,12 @@ iframe {
     max-height: 1200px;
     grid-column-start: 2;
     grid-column-end: 3;
+    transform-origin: center;
+    transition: 0.2s;
+  }
+
+  .project-picture:hover {
+    transform: scale(1.015);
   }
 
 
