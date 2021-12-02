@@ -108,6 +108,5 @@ const slider = new NSlider({
   dots: true,
   keyboardControl: true,
   prevButtonInner: '<',
-  nextButtonInner: '>',
+  nextButtonInner: '>'
 });
-

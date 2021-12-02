@@ -35,22 +35,14 @@
     padding: 15px;
     border-radius: 100ch;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
     cursor: pointer;
-    box-shadow: 0 0 25px rgba(36, 36, 36, 0.15);
-    -webkit-transition: box-shadow 0.2s;
-    -moz-transition: box-shadow 0.2s;
-    -ms-transition: box-shadow 0.2s;
-    -o-transition: box-shadow 0.2s;
-    transition: box-shadow 0.2s;
+    box-shadow: 0 0 10px rgba(36, 36, 36, 0.15);
+    transform-origin: center;
+    transition: all 0.2s;
 }
 
 .nslider .nslider-button:hover {
-    box-shadow: 0 0 7px rgba(36, 36, 36, 0.15);
+    transform: scale(1.1);
 }
 
 .nslider .nslider-button > * {
@@ -82,13 +74,10 @@
     border-radius: 100%;
     background: #ffffff;
     margin-right: 0.5em;
-    opacity: 0.6;
+    opacity: 0.75;
     cursor: pointer;
-    -webkit-transition: opacity 0.2s linear;
-    -moz-transition: opacity 0.2s linear;
-    -ms-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    transform-origin: center;
+    transition: all 0.2s linear;
 }
 
 .nslider .nslider-dots .nslider-dot:last-child {
@@ -97,4 +86,10 @@
 
 .nslider .nslider-dots .nslider-dot.active {
     opacity: 1;
+    transform: scale(1.25);
+}
+
+.nslider .nslider-dots .nslider-dot:hover,
+.nslider .nslider-dots .nslider-dot:focus {
+    transform: scale(1.25);
 }
