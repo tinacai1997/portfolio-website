@@ -672,19 +672,6 @@ section {
   padding: 2.5em;
 }
 
-.wireframe-layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5em 0;
-}
-
-.wireframe-column {
-  width: 50%;
-  padding: 0 1em;
-}
-
 .refinement-img {
   width: 75%;
 }
@@ -823,6 +810,23 @@ iframe {
     width: 30vw;
   }
 
+
+
+/*---------------------------- Project-- -----------------------*/
+
+
+  .wireframe-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+  }
+
+  .wireframe-column {
+    width: 50%;
+    padding: 0 1em;
+  }
 
 }
 
