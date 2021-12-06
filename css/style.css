@@ -741,8 +741,7 @@ iframe {
 
 
   .logistics,
-  #insights,
-  .wireframe-layout {
+  #insights {
     flex-direction: row;
   }
 
@@ -830,6 +829,10 @@ iframe {
   .wireframe-column {
     width: 50%;
     padding: 0 1em;
+  }
+
+  .wireframe-layout {
+    flex-direction: row;
   }
 
 }
