@@ -89,22 +89,10 @@ window.addEventListener('focus', function () {
   document.title = title;
 });
 
-// Slider
+// Slick
 
-// const slider = document.getElementsByClassName("slider-container");
-// console.log(slider);
-// console.log(slider.length);
-
-// for (var i = 0; i < slider.length; i++) {
-const slider = new NSlider({
-  elem: document.querySelector('.slider-container'),
-  animation: {
-    duration: 1000,
-    timingFunction: 'ease-in-out',
-  },
-  dots: true,
-  keyboardControl: true,
-  prevButtonInner: '<',
-  nextButtonInner: '>',
+$(document).ready(function () {
+  if ($('.test-class').length) {
+    $('.test-class').slick();
+  }
 });
-// }
