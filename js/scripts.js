@@ -92,7 +92,9 @@ window.addEventListener('focus', function () {
 // Slick
 
 $(document).ready(function () {
-  if ($('.test-class').length) {
-    $('.test-class').slick();
+  if ($('.slider-container').length) {
+    $('.slider-container').slick({
+      dots: true,
+    });
   }
 });
