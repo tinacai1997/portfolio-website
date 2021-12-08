@@ -407,7 +407,7 @@ nav > ul > li > a:focus {
 }
 
 #work-pointer:hover > .down-arrow > .down-stem {
-    transform: translateX(-50%) scaleY(1);
+  transform: translateX(-50%) scaleY(1);
 }
 
 .down-arrow {
@@ -921,3 +921,4 @@ iframe {
   /*------------------------- Projects --------------------------*/
 
 }
+
