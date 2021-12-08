@@ -547,7 +547,8 @@ ul > li:last-child {
 
 }
 
-.project-picture > a > picture > img {
+.project-picture img,
+.wireframe-column img {
   border-radius: 10px;
 }
 
@@ -624,6 +625,7 @@ ul > li:last-child {
 .sub-section-heading {
   display: inline-block;
   position: relative;
+  text-transform: lowercase;
   opacity: 0.75;
 }
 
@@ -631,7 +633,7 @@ ul > li:last-child {
   content: '';
   display: block;
   width: 100%;
-  height: 0.1em;
+  height: 2px;
   background: black;
   position: absolute;
   bottom: -4px;
@@ -799,9 +801,9 @@ iframe {
 }
   
 
-  .project-picture:hover {
-    transform: scale(1.015);
-  }
+.project-picture:hover {
+  transform: scale(1.015);
+}
 
 
 /*-------------------------- Navigation -----------------------*/
