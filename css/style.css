@@ -195,7 +195,7 @@ a {
   content: "";
   display: block;
   width: 1.6666em;
-  height: 2px;
+  height: 2.25px;
   z-index: 3750;
   background: #000;
   border-radius: 100px;
@@ -279,6 +279,7 @@ a {
   z-index: 2000;
   background-color: #ffffff;
   visibility: hidden;
+  box-shadow: -8px 0px 32px 0px rgba(50, 50, 50, 0.1);
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.3s ease-in-out;

@@ -22,7 +22,7 @@ function openMenu() {
   getSideContact.style.opacity = '1';
 
   getMenuMask.style.visibility = 'visible';
-  getMenuMask.style.opacity = '0.5';
+  getMenuMask.style.opacity = '0.4';
 
   menuOpen = true;
 
