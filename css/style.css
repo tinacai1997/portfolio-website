@@ -55,7 +55,7 @@ h1 {
 h2 {
   -webkit-text-stroke: 1px #000;
   color: #ffffff;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 700;
   margin: 0.25em 0;
 }
@@ -69,15 +69,15 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
-  font-size: 1.25em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 400;
   margin: 1em 0;
 }
 
 /* Project Descriptions */
 h5 {
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 500;
   margin: 1em 0;
 }
 
@@ -126,6 +126,7 @@ a {
 }
 
 #logo {
+  font-weight: 600;
   margin: 0;
 }
 
@@ -382,8 +383,8 @@ nav > ul > li > a:focus {
   opacity: 1;
 }
 
-#work-pointer:hover > h5,
-#top-pointer:hover > h5 {
+#work-pointer:hover > h4,
+#top-pointer:hover > h4 {
   font-weight: 500;
 }
 
