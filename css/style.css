@@ -54,7 +54,7 @@ h1 {
 /* Sub-Main Heading (Bordered Text) */
 h2 {
   -webkit-text-stroke: 0.75px #000;
-  color: #ffffff;
+  color: transparent;
   font-size: 2em;
   font-weight: 700;
   margin: 0.25em 0;
@@ -70,9 +70,8 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
-  font-size: 1.25em;
-  font-weight: 600;
-  margin: 1em 0;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 /* Project Descriptions */
@@ -531,7 +530,7 @@ ul > li:last-child {
 }
 
 .project-blurb {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .project-picture {
@@ -549,7 +548,7 @@ ul > li:last-child {
 }
 
 .color-payd {
-  background-color: #faf5ff;
+  background-color: #f6ecff;
 }
 
 .color-portfolio {
@@ -717,6 +716,15 @@ iframe {
   margin: 1em 0.5em 0 0;
 }
 
+.project-role {
+  display: inline-block;;
+  color: #000;
+  opacity: 40%;
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
 #reach-out,
 #skills,
 #tools {
@@ -803,14 +811,14 @@ iframe {
   }
 
   .project-description {
-    padding-right: 2em;
+    padding: 0 2em;
   }
 
   .project-picture {
     max-width: 1200px;
     max-height: 1200px;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: auto;
+    grid-column-end: auto;
     transform-origin: center;
     transition: 0.2s;
   }
@@ -875,13 +883,6 @@ iframe {
   /* Section Heading */
   h3 {
     font-size: 2em;
-  }
-
-  /* Sub-Section Heading */
-  h4 {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin: 1em 0;
   }
 
   /* Project Descriptions */
