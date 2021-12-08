@@ -600,14 +600,15 @@ ul > li:last-child {
 
 
 .project-hero-container {
-  max-height: 950px;
-  height: 75vh;
-  margin-top: 5.5em;
+  position: relative;
+  height: 80vh;
 }
 
 .project-hero-content {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 3em;
 }
 
 
@@ -840,6 +841,9 @@ iframe {
 
 /*---------------------------- Project-- -----------------------*/
 
+  .project-hero-content {
+    padding: 0 8em;
+  }
 
   .wireframe-layout {
     display: flex;
@@ -908,5 +912,8 @@ iframe {
   #hero-content {
     padding: 0 20em;
   }
-
+  
+  .project-hero-content {
+    padding: 0 20em;
+  }
 }
