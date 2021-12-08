@@ -36,7 +36,7 @@ body {
   background-color: #fff;
   color: #000000;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   overflow-x: hidden;
@@ -725,7 +725,7 @@ iframe {
 @media only screen and (min-width: 640px) {
 
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 
 
@@ -760,7 +760,7 @@ iframe {
 @media only screen and (min-width: 1024px) {
 
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .section-margin {
@@ -853,7 +853,7 @@ iframe {
 @media only screen and (min-width: 1440px) {
 
   body {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   
