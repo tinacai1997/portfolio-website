@@ -523,7 +523,7 @@ ul > li:last-child {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  padding: 3em;
 }
 
 .project-description {
@@ -549,15 +549,15 @@ ul > li:last-child {
 }
 
 .color-payd {
-  background-color: #f6ecff;
+  background-color: #f8f1ff;
 }
 
 .color-portfolio {
-  background-color: #e7eeff;
+  background-color: #ebf1ff;
 }
 
 .color-chall {
-  background-color: #f0fff4;
+  background-color: #f4fff7;
 }
 
 /* ==============================================================
@@ -718,15 +718,6 @@ iframe {
   margin: 1em 0.5em 0 0;
 }
 
-.project-role {
-  display: inline-block;;
-  color: #000;
-  opacity: 40%;
-  font-size: 1.25em;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-
 #reach-out,
 #skills,
 #tools {
@@ -798,33 +789,6 @@ iframe {
 }
   
 
-/*----------------------- Index -> Work -----------------------*/
-
-
-  .project-container {
-    width: 65%;
-  }
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    align-items: center;
-  }
-
-  .project-description {
-    padding: 0 2em;
-  }
-
-  .project-picture {
-    max-width: 1200px;
-    max-height: 1200px;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    transform-origin: center;
-    transition: 0.2s;
-  }
-
   .project-picture:hover {
     transform: scale(1.015);
   }
@@ -877,17 +841,17 @@ iframe {
   }
 
   #tina-cai {
-    font-size: 5em;
+    font-size: 4.5em;
   }
 
   /* Sub-Main Heading (Bordered Text) */
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   /* Section Heading */
   h3 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   /* Project Descriptions */
@@ -913,6 +877,54 @@ iframe {
     padding: 0 20em;
   }
   
+  /*----------------------- Index -> Work -----------------------*/
+
+  .project-box {
+    height: 100vh;
+  }
+
+  .project-container {
+    width: 65%;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+  }
+
+  .project-description {
+    font-size: 1.2em;
+    padding: 0 2em;
+  }
+
+  .project-picture {
+    max-width: 720px;
+    max-height: 720px;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    transform-origin: center;
+    transition: 0.2s;
+    margin: 0 auto;
+  }
+
+  .project-picture:hover img{
+    box-shadow: 0px 0px 32px 0px rgba(50, 50, 50, 0.1);
+  }
+
+  .project-role {
+    display: inline-block;;
+    color: #000;
+    opacity: 40%;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+
+  /*------------------------- Projects --------------------------*/
+
   .project-hero-content {
     padding: 0 20em;
   }
