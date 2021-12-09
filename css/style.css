@@ -19,7 +19,8 @@ img {
   text-align: center;
 }
 
-.section-margin {
+.section-margin,
+.large-section-margin {
   margin: 0 3em;
 }
 
@@ -693,8 +694,8 @@ section {
   padding: 2.5em;
 }
 
-.refinement-img {
-  width: 75%;
+.column-img {
+  width: 90%;
 }
 
 iframe {
