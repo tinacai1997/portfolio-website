@@ -133,3 +133,7 @@ $(window).scroll(function() {
 }).scroll();
 
 
+const image = document.getElementsByClassName('parallax-img');
+new simpleParallax(image, {
+  scale: 1.4
+});

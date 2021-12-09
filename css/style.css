@@ -681,11 +681,6 @@ section {
   transform: scale(1.05);
 }
 
-#payd-style {
-  margin-top: 6em;
-  transform: translateY(0.5em);
-}
-
 .project-link:hover {
   transform: scale(1.05);
 }
@@ -716,10 +711,9 @@ iframe {
   margin-bottom: 10em;
 }
 
-.payd-style-background {
-  margin-top: 8em;
-  background-image: linear-gradient(to right, #ccc1e7, #aaafdd);
-  width: 100vw;
+.payd-style-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 
