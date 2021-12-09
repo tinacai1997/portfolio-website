@@ -89,14 +89,24 @@ window.addEventListener('focus', function () {
   document.title = title;
 });
 
-// Slick
+// Execute only if script exists on page
 
 $(document).ready(function () {
+  // Slick
   if ($('.slider-container').length) {
     $('.slider-container').slick({
       dots: true,
     });
   }
+
+  // Parallax
+  if ($('.parallax-img').length) {
+    const image = document.getElementsByClassName('parallax-img');
+    new simpleParallax(image, {
+      scale: 1.4
+    });
+  }
+
 });
 
 
@@ -133,7 +143,3 @@ $(window).scroll(function() {
 }).scroll();
 
 
-const image = document.getElementsByClassName('parallax-img');
-new simpleParallax(image, {
-  scale: 1.4
-});

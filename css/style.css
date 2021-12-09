@@ -107,24 +107,13 @@ a {
   text-decoration: none;
 }
 
-/* Button, Active Button, Visited Button */
-.button {
-  display: inline-block;
-  background-color: #000;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 32px;
-  padding: 0.75em 1.5em;
-  transition: 0.2s opacity;
-}
-
 #logo-link {
   position: absolute;
   max-width: 250px;
   left: 0%;
   z-index: 5000;
   margin: 2.75em 0 0 3.5em;
-  transition: 0.2s opacity;
+  transition: 0.2s;
 }
 
 #logo {
@@ -138,9 +127,9 @@ a {
 #logo-link:focus,
 .social-links:hover,
 .social-links:focus,
-.button:hover,
-.button:focus {
-  transform: scale(1.1);
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  transform: scale(1.2);
   transition: all 0.2s;
   text-decoration: none;
 }
@@ -318,30 +307,41 @@ a {
 nav {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 45%;
   margin-left: 3em;
   transform: translateY(-50%);
 }
 
 nav > ul > li {
   display: block;
-  font-size: 3em;
-  font-weight: 500;
+  font-size: 3.25em;
+  font-weight: 400;
   padding: 0;
-  margin: 1em 0;
+  margin-bottom: 1em;
   white-space: nowrap;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  opacity: 0.6;
-  text-decoration: none;
+nav > ul > li > a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: black;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+nav > ul > li > a:hover:after {
+  transform: scaleX(1);
 }
 
 .side-contact {
   display: block;
   position: absolute;
-  bottom: 8%;
+  bottom: 10%;
   margin-left: 3em;
 }
 
@@ -398,8 +398,8 @@ nav > ul > li > a:focus {
   position: absolute;
   bottom: 35%;
   left: 50%;
-  width: 3px;
-  height: 32px;
+  width: 2px;
+  height: 28px;
   background: #000;
   border-radius: 32px;
   transform: translateX(-50%) scaleY(0);
@@ -427,8 +427,8 @@ nav > ul > li > a:focus {
   position: absolute;
   top: 38%;
   left: 50%;
-  width: 3px;
-  height: 32px;
+  width: 2px;
+  height: 28px;
   background: #ffffff;
   border-radius: 32px;
   transform: translateX(-50%) scaleY(0);
