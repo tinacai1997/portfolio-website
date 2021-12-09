@@ -177,13 +177,12 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    /* opacity: 0.5; */
-    transform: scale(1.125);
+    transform: scale(2);
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 4px;
+    font-size: 6px;
     line-height: 20px;
 
     position: absolute;
@@ -205,6 +204,6 @@
 }
 .slick-dots li.slick-active button:before
 {
-    transform: scale(4);
+    transform: scale(3);
     color: black;
 }
