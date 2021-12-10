@@ -119,7 +119,7 @@ $(window).scroll(function() {
       $body = $('body'),
       $panel = $('.panel');
   
-  // Change 33% earlier than scroll position so colour is there when you arrive.
+  // Change 50% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop() + ($window.height() / 2);
  
   $panel.each(function () {
