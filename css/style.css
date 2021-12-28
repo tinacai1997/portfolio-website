@@ -106,11 +106,6 @@ p {
   font-weight: 300;
 }
 
-.lingually-highlight {
-  /* font-style: italic; */
-  color: #D6685C;
-}
-
 
 /* ==============================================================
                               Links
@@ -599,6 +594,10 @@ ol > li {
   background-color: #d5e4ff;
 }
 
+.color-lingually {
+  background-color: #f9e7e5;
+}
+
 .color-chall {
   background-color: #f4fff7;
 }
@@ -745,6 +744,11 @@ iframe {
 
 #reach-out {
   margin-bottom: 0.75em;
+}
+
+.story-symbols {
+  font-size: 4em;
+  margin: 1em 0 1em 0;
 }
 
 
