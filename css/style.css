@@ -59,7 +59,7 @@ body {
 
 /* Main Headings */
 h1 {
-  font-size: 3.5em;
+  font-size: 32px;
   font-weight: 500;
   margin: 0;
 }
@@ -83,7 +83,7 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
-  font-size: 1em;
+  font-size: 22px;
   font-weight: 400;
   margin: 1.25em 0;
 }
@@ -103,6 +103,7 @@ h6 {
 }
 
 p {
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -129,22 +130,25 @@ a {
 }
 
 #logo {
-  font-size: 1.25em;
+  font-size: 28px;
   font-weight: 600;
-  margin: 0;
 }
 
-/* Link Hover and Focus */
+.social-links img {
+  height: 3vw;
+  min-height: 30px;
+  max-height: 40px;
+}
+
 #logo-link:hover,
 #logo-link:focus,
-.social-links:hover,
-.social-links:focus,
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-  transform: scale(1.2);
-  transition: all 0.2s;
-  text-decoration: none;
+.social-links a:hover,
+.social-links a:focus {
+  transform: scale(1.05);
+  opacity: 0.6;
+  transition: 0.2s;
 }
+
 
 
 /* ==============================================================
@@ -191,7 +195,7 @@ nav > ul > li > a:focus {
   background: #000;
   border-radius: 50%;
   opacity: 0;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .menu-icon > span {
@@ -272,8 +276,7 @@ nav > ul > li > a:focus {
 
 /*--------------------- Side Menu and Mask --------------------*/
 
-
-.side-menu {
+.menu {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -282,26 +285,15 @@ nav > ul > li > a:focus {
   z-index: 2000;
   background-color: #ffffff;
   visibility: hidden;
-  box-shadow: -8px 0px 32px 0px rgba(50, 50, 50, 0.1);
   transform: scaleX(0);
   transform-origin: right;
-  transition: all 0.3s ease-in-out;
-}
-
-.side-menu > nav,
-.side-menu > .side-contact {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-mask-link {
-  position: absolute;
+  transition: all 0.3s;
 }
 
 .menu-mask {
   content: "";
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   z-index: 1000;
@@ -309,7 +301,7 @@ nav > ul > li > a:focus {
   cursor: initial;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 
@@ -320,16 +312,16 @@ nav {
   display: block;
   position: absolute;
   top: 45%;
-  margin-left: 3em;
+  margin-left: 3.5em;
   transform: translateY(-50%);
 }
 
 nav > ul > li {
   display: block;
-  font-size: 3.25em;
+  font-size: 18px;
   font-weight: 400;
   padding: 0;
-  margin-bottom: 1em;
+  margin-bottom: 3.5vh;
   white-space: nowrap;
 }
 
@@ -337,12 +329,12 @@ nav > ul > li > a:after {
   content: '';
   display: block;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: black;
   position: absolute;
   left: 0;
   transform: scaleX(0);
-  transform-origin: center;
+  transform-origin: left;
   transition: 0.2s;
 }
 
@@ -350,11 +342,11 @@ nav > ul > li > a:hover:after {
   transform: scaleX(1);
 }
 
-.side-contact {
+.menu-contact {
   display: block;
   position: absolute;
   bottom: 10%;
-  margin-left: 3em;
+  margin-left: 3.5em;
 }
 
 
@@ -364,13 +356,12 @@ nav > ul > li > a:hover:after {
 
 
 .hand-wave {
-  font-size: 3.5em;
   display: inline-block;
   transform-origin: bottom right;
 }
 
 .hand-wave:hover {
-  animation: wave 1s infinite;
+  animation: wave 0.8s infinite;
 }
 
 .hand-wave > h1 {
@@ -381,7 +372,7 @@ nav > ul > li > a:hover:after {
   0% {
     transform: rotate(0);
   } 50% {
-    transform: rotate(30deg);
+    transform: rotate(18deg);
   } 100% {
     transform: rotate(0);
   }
@@ -395,40 +386,20 @@ nav > ul > li > a:hover:after {
 
 /*----------------------- Work Pointer ------------------------*/
 
-#work-pointer:hover,
-#top-pointer:hover {
+#work-pointer > h4,
+#top-pointer > h4 {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+#work-pointer:hover > h4,
+#top-pointer:hover > h4 {
   opacity: 1;
-}
-
-#work-pointer:hover > p,
-#top-pointer:hover > p {
-  font-weight: 400;
-}
-
-.down-stem {
-  content: "";
-  position: absolute;
-  bottom: 35%;
-  left: 50%;
-  width: 2px;
-  height: 28px;
-  background: #000;
-  border-radius: 32px;
-  transform: translateX(-50%) scaleY(0);
-  transform-origin: bottom;
-  transition: 0.25s;
-}
-
-#work-pointer:hover > .down-arrow > .down-stem {
-  transform: translateX(-50%) scaleY(1);
-}
-
-.down-arrow {
-  transition: 0.25s;
 }
 
 #work-pointer:hover > .down-arrow {
   transform: translateY(16px);
+  transition: 0.2s;
 }
 
 
@@ -485,21 +456,21 @@ footer {
 /*--------------------------- Lists ---------------------------*/
 
 
-ul {
+.social-links {
   list-style-type: none;
   padding: 0;
 }
 
-ul > li {
+.social-links li {
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0 6px;
 }
 
-ul > li:first-child {
+.social-links li:first-child {
   padding-left: 0;
 }
 
-ul > li:last-child {
+.social-links li:last-child {
   padding-right: 0;
 }
 
@@ -518,18 +489,13 @@ ol > li {
 #hero-container {
   width: 100%;
   height: 100vh;
-  scroll-snap-align: start;
 }
 
-#hero-content {
-  position: absolute;
+.hero-content {
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0 3em;
-}
-
-#hero-blurb {
-  font-weight: 300;
+  margin: 0 3em;
 }
 
 #work-pointer {
@@ -763,16 +729,28 @@ iframe {
     font-size: 18px;
   }
 
+  .hero-content {
+    width: 55%;
+    margin: 0 auto;
+  }
 
 /*-------------------------- Navigation -----------------------*/
 
-  .side-menu {
-    width: 50vw;
+  .menu {
+    width: 30vw;
   }
 
   nav,
-  .side-contact {
-    margin-left: 20%;
+  .menu-contact {
+    margin-left: 6vw;
+  }
+
+  nav > ul > li {
+    font-size: 2.75vw;
+  }
+
+  nav > ul {
+    padding: 0;
   }
 
 
@@ -803,6 +781,10 @@ iframe {
 
 @media only screen and (min-width: 1024px) {
 
+  h1 {
+    font-size: 3vw;
+  }
+
   body {
     font-size: 20px;
   }
@@ -818,10 +800,6 @@ iframe {
 
 
 /*--------------------- Index -> Hero -----------------------*/
-
-#hero-content {
-  padding: 0 8em;
-}
   
 
 .project-picture:hover {
@@ -891,37 +869,10 @@ iframe {
     margin: 0 auto;
   }
 
-  #tina-cai {
-    font-size: 4.5em;
-  }
-
-  .hand-wave {
-    font-size: 5em;
-  }  
-
   .portfolio-hand-wave {
     font-size: 5em;
-    /* margin: 0; */
   }  
 
-
-  
-/*-------------------------- Navigation -----------------------*/
-
-  .side-menu {
-    width: 30vw;
-  }
-
-  nav,
-  .side-contact {
-    margin-left: 30%;
-  }
-
-  #hero-content {
-    padding: 0 20em;
-  }
-
-  
   /*----------------------- Index -> Work -----------------------*/
 
   .project-box {

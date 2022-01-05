@@ -3,23 +3,21 @@
 // Get variables
 
 let menuOpen = false;
-const getSideMenu = document.querySelector('.side-menu');
-const getSideMenuNav = document.querySelector('.side-menu nav');
-const getSideContact = document.querySelector('.side-contact');
+const getMenu = document.querySelector('.menu');
+const getMenuNav = document.querySelector('.menu nav');
+const getMenuContact = document.querySelector('.menu-contact');
 const getMenuMask = document.querySelector('.menu-mask');
 const getMenuIcon = document.querySelector('.menu-icon');
 
 // Open Menu
 
 function openMenu() {
-  getSideMenu.style.visibility = 'visible';
-  getSideMenu.style.transform = 'scaleX(1)';
+  getMenu.style.visibility = 'visible';
+  getMenu.style.transform = 'scaleX(1)';
 
-  getSideMenuNav.style.visibility = 'visible';
-  getSideMenuNav.style.opacity = '1';
+  getMenuNav.style.visibility = 'visible';
 
-  getSideContact.style.visibility = 'visible';
-  getSideContact.style.opacity = '1';
+  getMenuContact.style.visibility = 'visible';
 
   getMenuMask.style.visibility = 'visible';
   getMenuMask.style.opacity = '0.4';
@@ -33,14 +31,12 @@ function openMenu() {
 // Close Menu
 
 function closeMenu() {
-  getSideMenu.style.visibility = 'hidden';
-  getSideMenu.style.transform = 'scaleX(0)';
+  getMenu.style.visibility = 'hidden';
+  getMenu.style.transform = 'scaleX(0)';
 
-  getSideMenuNav.style.visibility = 'hidden';
-  getSideMenuNav.style.opacity = '0';
+  getMenuNav.style.visibility = 'hidden';
 
-  getSideContact.style.visibility = 'hidden';
-  getSideContact.style.opacity = '0';
+  getMenuContact.style.visibility = 'hidden';
 
   getMenuMask.style.visibility = 'hidden';
   getMenuMask.style.opacity = '0';
