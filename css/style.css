@@ -63,15 +63,6 @@ h1 {
   margin: 0;
 }
 
-/* Bordered Text */
-h2 {
-  -webkit-text-stroke: 0.75px #000;
-  color: transparent;
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 0.25em 0;
-}
-
 /* Section Heading */
 h3 {
   font-size: 1.75em;
@@ -134,13 +125,11 @@ a {
 }
 
 .social-links img {
-  height: 3vw;
-  min-height: 30px;
-  max-height: 40px;
+  height: 40px;
 }
 
-#logo-link:hover,
-#logo-link:focus,
+/* #logo-link:hover,
+#logo-link:focus, */
 .social-links a:hover,
 .social-links a:focus {
   transform: scale(1.05);
@@ -315,6 +304,10 @@ nav {
   transform: translateY(-50%);
 }
 
+nav > ul {
+  padding: 0;
+}
+
 nav > ul > li {
   display: block;
   font-size: 18px;
@@ -379,23 +372,31 @@ nav > ul > li > a:hover:after {
 
 
 /* ==============================================================
-                       Work & Top Pointers
+                          Work Pointers
 ============================================================== */
 
-#work-pointer > h4,
-#top-pointer > h4 {
+#top-pointer {
+  margin-bottom: 1em;
+}
+
+#work-pointer,
+#top-pointer {
   opacity: 0.6;
   transition: 0.2s;
 }
 
-#work-pointer:hover > h4,
-#top-pointer:hover > h4 {
+#work-pointer:hover,
+#top-pointer:hover {
   opacity: 1;
 }
 
 .down-arrow,
 .up-arrow {
+  width: 3vw;
+  min-width: 30px;
+  max-width: 40px;
   transition: 0.25s;
+  margin: 0 auto;
 }
 
 #work-pointer:hover > .down-arrow {
@@ -405,6 +406,7 @@ nav > ul > li > a:hover:after {
 #top-pointer:hover > .up-arrow {
   transform: translateY(-16px);
 }
+
 
 
 /* ==============================================================
@@ -423,8 +425,10 @@ footer {
   width: 100%;
   background-color: #000000;
   color: #ffffff;
-  padding: 3em 0 1.5em 0;
+  padding: 3.5em 0;
   box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
+  text-align: center;
+  margin: 3em auto 0 auto;
 }
 
 
@@ -438,7 +442,7 @@ footer {
 
 .social-links li {
   display: inline-block;
-  padding: 0 6px;
+  padding: 0 5px;
 }
 
 .social-links li:first-child {
@@ -475,7 +479,7 @@ ol > li {
 
 #work-pointer {
   position: absolute;
-  bottom: 3em;
+  bottom: 3.5em;
   transform: translateX(-50%);
 }
 
@@ -719,11 +723,6 @@ iframe {
   nav > ul > li {
     font-size: 2.75vw;
   }
-
-  nav > ul {
-    padding: 0;
-  }
-
 
 /*-------------------- Column -> Row Content ------------------*/
 
