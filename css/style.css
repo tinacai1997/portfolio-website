@@ -53,7 +53,6 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
-  overflow-x: hidden;
   transition: background-color 1s ease-in-out;
 }
 
@@ -83,7 +82,7 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
-  font-size: 22px;
+  font-size: 1em;
   font-weight: 400;
   margin: 1.25em 0;
 }
@@ -383,9 +382,6 @@ nav > ul > li > a:hover:after {
                        Work & Top Pointers
 ============================================================== */
 
-
-/*----------------------- Work Pointer ------------------------*/
-
 #work-pointer > h4,
 #top-pointer > h4 {
   opacity: 0.6;
@@ -397,34 +393,13 @@ nav > ul > li > a:hover:after {
   opacity: 1;
 }
 
-#work-pointer:hover > .down-arrow {
-  transform: translateY(16px);
-  transition: 0.2s;
-}
-
-
-/*------------------------ Top Pointer ------------------------*/
-
-.up-stem {
-  content: "";
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  width: 2px;
-  height: 28px;
-  background: #ffffff;
-  border-radius: 32px;
-  transform: translateX(-50%) scaleY(0);
-  transform-origin: top;
-  transition: 0.25s;
-}
-
-#top-pointer:hover > .up-arrow > .up-stem {
-    transform: translateX(-50%) scaleY(1);
-}
-
+.down-arrow,
 .up-arrow {
   transition: 0.25s;
+}
+
+#work-pointer:hover > .down-arrow {
+  transform: translateY(16px);
 }
 
 #top-pointer:hover > .up-arrow {
@@ -707,10 +682,6 @@ iframe {
 /* ==============================================================
                          Misc UI Elements
 ============================================================== */
-
-#reach-out {
-  margin-bottom: 0.75em;
-}
 
 .story-symbols {
   font-size: 4em;
