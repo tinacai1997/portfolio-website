@@ -44,7 +44,6 @@ ol > li {
 body {
   display: inline-block;
   width: 100vw;
-  height: 100vh;
   background-color: #fff;
   color: #000;
   font-size: 14px;
@@ -142,8 +141,6 @@ footer {
     transform: translateY(0);
   }
 }
-
-
 
 
 /* ==============================================================
@@ -663,7 +660,7 @@ iframe {
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
-    width: 30vw;
+    width: 27.5vw;
   }
 
   nav,
