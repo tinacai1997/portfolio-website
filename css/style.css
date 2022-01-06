@@ -124,6 +124,27 @@ footer {
   padding: 3.5em 0;
 }
 
+.finger-point {
+  display: inline-block;
+  transform-origin: top center;
+}
+
+.finger-point:hover {
+  animation: point 1s infinite;
+}
+
+@keyframes point {
+  0% {
+    transform: translateY(0);
+  } 50% {
+    transform: translateY(-5px);
+  } 100% {
+    transform: translateY(0);
+  }
+}
+
+
+
 
 /* ==============================================================
                               Links
