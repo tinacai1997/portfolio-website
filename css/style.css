@@ -115,12 +115,13 @@ a {
   max-width: 250px;
   left: 0%;
   z-index: 5000;
-  margin: 2.75em 0 0 3.5em;
+  margin: 2.5em 0 0 3.5em;
   transition: 0.2s;
 }
 
 #logo {
   font-size: 28px;
+  line-height: 64px;
   font-weight: 600;
 }
 
@@ -150,10 +151,10 @@ a {
   display: inline-block;
   position: absolute;
   right: 0%;
-  width: 3em;
-  height: 3em;
+  width: 64px;
+  height: 64px;
   z-index: 3000;
-  margin: 2.125em 3.5em 0 0;
+  margin: 2.5em 3.5em 0 0;
 }
 
 #menu-button > a {
@@ -172,13 +173,16 @@ a {
 .menu-icon {
   position: absolute;
   z-index: 3500;
-  transform: translateY(1.1666em);
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: translate(16px, 25px);
 }
 
 #menu-circle {
   position: absolute;
-  width: 3em;
-  height: 3em;
+  width: 64px;
+  height: 64px;
   z-index: 3250;
   background: #000;
   border-radius: 50%;
@@ -189,16 +193,15 @@ a {
 .menu-icon > span {
   content: "";
   display: block;
-  width: 1.6666em;
+  width: 32px;
   height: 2px;
   z-index: 3750;
   background: #000;
   border-radius: 100px;
-  margin-left: 0.6666em;
 }
 
 .menu-icon > span + span {
-  margin-top: 0.44444444em;
+  margin-top: 10px;
 }
 
 
@@ -217,9 +220,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(0.27777777em) rotate(0);
+    transform: translateY(5.5px) rotate(0);
   } 100% {
-    transform: translateY(0.27777777em) rotate(45deg);
+    transform: translateY(5.5px) rotate(45deg);
   }
 }
 
@@ -227,9 +230,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(-0.27777777em) rotate(0);
+    transform: translateY(-5.5px) rotate(0);
   } 100% {
-    transform: translateY(-0.27777777em) rotate(-45deg);
+    transform: translateY(-5.5px) rotate(-45deg);
   }
 }
 
@@ -243,9 +246,9 @@ a {
 
 @keyframes top-menu-bar-open {
   0% {
-    transform: translateY(0.25em) rotate(45deg);
+    transform: translateY(5.5px) rotate(45deg);
   } 60% {
-    transform: translateY(0.25em) rotate(0);
+    transform: translateY(5.5px) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
@@ -253,9 +256,9 @@ a {
 
 @keyframes bot-menu-bar-open {
   0% {
-    transform: translateY(-0.3em) rotate(-45deg);
+    transform: translateY(-5.5px) rotate(-45deg);
   } 60% {
-    transform: translateY(-0.3em) rotate(0);
+    transform: translateY(-5.5px) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
@@ -462,6 +465,16 @@ ol > li {
                           Index Layout
 ============================================================== */
 
+/*-------------------------- Header ----------------------------*/
+
+.thumbnail img{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%);
+  width: 100px;
+  height: 100px;
+}
 
 /*---------------------------- Hero ----------------------------*/
 
@@ -712,7 +725,7 @@ iframe {
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
-    width: 30vw;
+    width: 25vw;
   }
 
   nav,
