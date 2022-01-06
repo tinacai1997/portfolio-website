@@ -18,32 +18,34 @@
 <!-- Body -->
 <body>
 
-  <!-- Header -->
-  <header id="header">
+   <!-- Header -->
+   <header id="header">
 
     <!-- Logo -->
-    <a href="index.html" id="logo-link">
-      <div id="logo">tcai</div>
-    </a>
+    <a href="index.html#hero" class="logo-link">
+      <div class="logo">tcai</div>
+    </a>    
 
     <!-- Menu Button -->
-    <div id="menu-button">
+    <div class="menu-button">
       <a href="javascript:void(0);" onclick="menuToggle()">
         <div class="menu-icon open">
           <span></span>
           <span></span>
         </div>
-        <span id="menu-circle"></span>
+        <span class="menu-circle"></span>
       </a>
     </div>
 
-    <!-- Screen Mask (when side menu is open) -->
+    <!-- Menu Mask -->
     <a href="javascript:void(0);" onclick="closeMenu()">
       <span class="menu-mask"></span>
     </a>
 
-    <!-- Side Menu -->
+    <!-- Menu -->
     <aside class="menu">
+
+      <!-- Menu Links -->
       <nav>
         <ul>
           <li><a href="index.html#work" onclick="closeMenu()">Work</a></li>
@@ -53,11 +55,10 @@
         </ul>
       </nav>
 
-      <!-- Professional Socials -->
+      <!-- Socials Links -->
       <div class="menu-contact">
-        <h4>Reach Out 🤝</h5>
+        <h5>Reach Out 🤝</h5>
 
-        <!-- Social Links -->
         <div>
           <ul class="social-links">
             <li>
@@ -95,98 +96,81 @@
       <!-- About Container -->
       <div class="about-container">
 
-        <!-- About Header -->
-        <h1>My story 💌</h1>
-
-        <section>
           <!-- About Picture -->
-          <div>
-            <picture>
-              <source srcset="img/about/self_portrait@1x.jpg" media="(max-width:767px)">
-              <img src="img/about/self_portrait@2x.jpg" id="about-picture" alt="Photo of Tina Cai">
-            </picture>
+          <div class="thumbnail">
+            <img src="img/about/thumbnail.png" id="about-picture" alt="Photo of Tina Cai">
           </div>
 
           <!-- About Description-->
           <div>
+            <h4 class="sub-section-heading">
+              about me
+            </h4>
+            <h3>Here's a little bit about myself.</h3>
             <h5>
-              My name is <b>Tina Cai</b> - I'm a Seattle based <b>UX designer & developer looking to grow in the design
-                world.</b> 🌎
+              <b>Hi! I'm Tina 😄</b>
             </h5>
             <h5>
-              I'm an ex-electrical engineer who realized my interests lied in engineering user experiences, not electrical
+              <b>I'm a Seattle based UX designer, baker, and hardcore gamer.</b>
+            </h5>
+            <h5>
+              I'm also an ex-electrical engineer who realized my interests lied in engineering user experiences, not electrical
               systems.
             </h5>
             <h5>
-              As a woman having worked in a male-dominant field, I learned we should always be inclusive of anybody and
-              everybody. I design to improve lives and experiences through <b>empathy, perspective, and retrospect.</b>
+              In the past year, I've enrolled in a UX Immersion Program to practice design thinking and UX fundamentals. I've since completed several case studies in and out of this course, as showcased here on my portfolio (hand-coded by yours truly). While working on new projects, I push myself to use different tools for each, like Figma, Adobe CC, and Sketch to hone both my skills and tools at once - two birds, one stone!
             </h5>
             <h5>
-              I enjoy working with a project from conception to development. In my spare time, I dabble in 
-              front-end development. I aim to explore the field further and form a <b>hybrid role of UX designer
-                with developer experience.</b>
-            </h5>
-            <h5>
-              Outside of design and development, I like to spend my free time <b>playing video games and cooking!</b>
-              🎮+🍳
+              When I'm taking a break from designing, I like to <b>cook and bake</b> new recipes (check out my feed section!), <b>play video games</b> with friends, and <b>cuddle with my cat</b>~ 😻 
             </h5>
           </div>
-
-          <!-- Resume Button -->
-          <div class="ripple-button" id="my-resume-button">
-            <a href="files/Cai_Tina_Resume.pdf" target="_blank">
-              <span></span>
-              My Resume
-            </a>
-          </div>
-        </section>
 
       </div>
     </div>
   </main>
 
- <!-- Footer -->
- <footer>
+  <!-- Footer -->
+  <footer class="center">
 
-  <!-- Top Pointer -->
-  <div>
-    <a href="#header" id="top-pointer">
-      <div class="up-arrow">
-        <img src="img/icons/up_arrow.png" alt="Down Arrow">  
-      </div>
-      <h4>back to top</h4>
-    </a>
-  </div>
+    <!-- Top Pointer -->
+    <!-- <div>
+      <a href="#header" class="top-pointer">
+        <div class="up-arrow center">
+          <img src="img/icons/up_arrow.png" alt="Down Arrow">  
+        </div>
+        <h4>back to top</h4>
+      </a>
+    </div> -->
 
-  <!-- Professional Social -->
-  <h5>Let's connect 👇</h5>
+    <!-- Professional Social -->
+    <h5><b>Let's connect 👇</b></h5>
 
-  <!-- Socials Links -->
-  <div>
-    <ul class="social-links">
-      <li>
-        <a href="mailto: tinacai1997@gmail.com" onclick="closeMenu()">
-          <img src="img/icons/white_email_icon.png" alt="Email Icon">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/tinacai97/" target="_blank" onclick="closeMenu()">
-          <img src="img/icons/white_linkedin_icon.png" alt="LinkedIn Icon">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.behance.net/tinacai" target="_blank" onclick="closeMenu()">
-          <img src="img/icons/white_behance_icon.png" alt="Behance Icon">
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/tinacai97" target="_blank" onclick="closeMenu()">
-          <img src="img/icons/white_github_icon.png" alt="GitHub Icon">
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+    <!-- Socials Links -->
+    <div>
+      <ul class="social-links">
+        <li>
+          <a href="mailto: tinacai1997@gmail.com" onclick="closeMenu()">
+            <img src="img/icons/email_icon.png" alt="Email Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank" onclick="closeMenu()">
+            <img src="img/icons/linkedin_icon.png" alt="LinkedIn Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/tinacai" target="_blank" onclick="closeMenu()">
+            <img src="img/icons/behance_icon.png" alt="Behance Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/tinacai97" target="_blank" onclick="closeMenu()">
+            <img src="img/icons/github_icon.png" alt="GitHub Icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- JavaScript Files -->
   <div>

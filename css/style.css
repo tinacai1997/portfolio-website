@@ -61,6 +61,12 @@ h1 {
   margin: 0;
 }
 
+/* Prorject Blurb */
+h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
 /* Section Heading */
 h3 {
   font-size: 1.75em;
@@ -80,6 +86,7 @@ h4 {
 h5 {
   font-size: 1.25em;
   font-weight: 300;
+  line-height: 1.75;
   margin: 1em 0;
 }
 
@@ -87,7 +94,7 @@ h5 {
 h6 {
   color: #000;
   opacity: 40%;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 1.25em 0;
@@ -96,6 +103,8 @@ h6 {
 p {
   font-size: 1em;
   font-weight: 300;
+  line-height: 1.65;
+  margin: 1.25em 0;
 }
 
 
@@ -108,19 +117,10 @@ header {
   width: 100%;
 }
 
-/* .thumbnail img{
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translateX(50%);
-  width: 100px;
-  height: 100px;
-} */
-
 footer {
   width: 100%;
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000;
+  color: #fff; */
   padding: 3.5em 0;
 }
 
@@ -491,18 +491,18 @@ nav > ul > li > a:hover:after {
                               About
 ============================================================== */
 
+.thumbnail img{
+  position: absolute;
+  right: 50%;
+  top: 5%;
+  transform: translateX(50%);
+  width: 100px;
+  height: 100px;
+}
+
 .about-container {
-  margin-top: 5.5em;
+  margin-top: 16em;
 }
-
-#about-picture {
-  border-radius: 1em;
-}
-
-#my-resume-button {
-  margin-bottom: 3.5em;
-}
-
 
 /* ==============================================================
                        Project Page Layout
@@ -657,7 +657,7 @@ iframe {
 /*---------------------- Index -> Hero ------------------------*/
 
 .hero-content {
-  width: 65%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -665,7 +665,7 @@ iframe {
 
 .project-container {
   flex-direction: row;
-  width: 65%;
+  width: 55%;
   height: 100vh;
   margin: 0 auto;
   justify-items: center;
@@ -708,7 +708,7 @@ iframe {
 @media only screen and (min-width: 1024px) {
 
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1 {
@@ -774,7 +774,7 @@ iframe {
 @media only screen and (min-width: 1440px) {
 
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .section-margin {
