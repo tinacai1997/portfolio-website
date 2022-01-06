@@ -2,7 +2,6 @@
                      Global / General Styling
 ============================================================== */
 
-
 * {
   box-sizing: border-box;
 }
@@ -13,6 +12,10 @@ html {
 
 img {
   width: 100%;
+}
+
+ol > li {
+  margin-bottom: 1em;
 }
 
 .med-img {
@@ -33,32 +36,26 @@ img {
   margin: 0 3em;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 
 /* ==============================================================
                           Text Styling
 ============================================================== */
-
 
 body {
   display: inline-block;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  color: #000000;
-  font-family: 'Poppins', sans-serif;
+  color: #000;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   transition: background-color 1s ease-in-out;
 }
 
 /* Main Headings */
 h1 {
-  font-size: 32px;
+  font-size: 3em;
   font-weight: 500;
   margin: 0;
 }
@@ -85,11 +82,14 @@ h5 {
   margin: 1em 0;
 }
 
-/* Captions */
+/* Project Roles */
 h6 {
+  color: #000;
+  opacity: 40%;
   font-size: 1em;
-  font-weight: 300;
-  margin: 1em 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 1.25em 0;
 }
 
 p {
@@ -99,75 +99,104 @@ p {
 
 
 /* ==============================================================
+                        Header / Footer
+============================================================== */
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+/* .thumbnail img{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%);
+  width: 100px;
+  height: 100px;
+} */
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 3.5em 0;
+  margin-top: 3em;
+}
+
+
+/* ==============================================================
                               Links
 ============================================================== */
 
-
-/* Links, Active Links, Visited Links */
 a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
 }
 
-#logo-link {
+.logo-link {
   position: absolute;
-  max-width: 250px;
   left: 0%;
   z-index: 5000;
   margin: 2.5em 0 0 3.5em;
   transition: 0.2s;
 }
 
-#logo {
-  font-size: 28px;
+.logo {
   line-height: 64px;
+  font-size: 28px;
   font-weight: 600;
 }
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links a {
+  transition: 0.2s;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+} 
 
 .social-links img {
   height: 40px;
 }
 
-/* #logo-link:hover,
-#logo-link:focus, */
+.logo-link:hover,
+.logo-link:focus,
 .social-links a:hover,
 .social-links a:focus {
   transform: scale(1.05);
   opacity: 0.6;
-  transition: 0.2s;
 }
-
-
 
 /* ==============================================================
                             Navigation
 ============================================================== */
 
-
 /*------------------------ Menu Button ------------------------*/
 
-#menu-button {
-  display: inline-block;
+.menu-button {
   position: absolute;
-  right: 0%;
+  right: 0;
   width: 64px;
   height: 64px;
   z-index: 3000;
   margin: 2.5em 3.5em 0 0;
 }
 
-#menu-button > a {
+.menu-button > a {
   width: 100%;
   height: 100%;
-}
-
-#menu-button:hover > a > #menu-circle {
-  opacity: 1;
-}
-
-#menu-button:hover > a > .menu-icon > span {
-  background: #fff;
 }
 
 .menu-icon {
@@ -177,17 +206,6 @@ a {
   left: 0;
   transform-origin: top;
   transform: translate(16px, 25px);
-}
-
-#menu-circle {
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  z-index: 3250;
-  background: #000;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
 }
 
 .menu-icon > span {
@@ -204,9 +222,26 @@ a {
   margin-top: 10px;
 }
 
+.menu-circle {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 3250;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menu-button:hover > a > .menu-icon > span {
+  background: #fff;
+}
+
+.menu-button:hover > a > .menu-circle {
+  opacity: 1;
+}
 
 /*------------------ Menu Button Animations -------------------*/
-
 
 .close span:nth-child(1) {
   animation: ease top-menu-bar-close 0.5s forwards;
@@ -264,40 +299,21 @@ a {
   }
 }
 
-
-/*--------------------- Side Menu and Mask --------------------*/
+/*---------------------------- Menu ---------------------------*/
 
 .menu {
   position: fixed;
+  top: 0;
   right: 0;
-  bottom: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2000;
-  background-color: #ffffff;
+  background-color: #fff;
   visibility: hidden;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.3s;
 }
-
-.menu-mask {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
-  background: #f1f1f1;
-  cursor: initial;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-
-
-/*--------------------- Side Menu Content ---------------------*/
-
 
 nav {
   display: block;
@@ -308,6 +324,7 @@ nav {
 }
 
 nav > ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -315,19 +332,16 @@ nav > ul > li {
   display: block;
   font-size: 18px;
   font-weight: 400;
-  padding: 0;
   margin-bottom: 3.5vh;
-  white-space: nowrap;
 }
 
 nav > ul > li > a:after {
   content: '';
   display: block;
+  left: 0;
   width: 100%;
   height: 3px;
-  background: black;
-  position: absolute;
-  left: 0;
+  background: #000;
   transform: scaleX(0);
   transform-origin: left;
   transition: 0.2s;
@@ -344,11 +358,39 @@ nav > ul > li > a:hover:after {
   margin-left: 3.5em;
 }
 
+.menu-mask {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: #f2f2f2;
+  cursor: initial;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
 
 /* ==============================================================
-                     Waving Hand (Index Page)
+                              Index
 ============================================================== */
 
+/*---------------------------- Hero ----------------------------*/
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 3em;
+}
 
 .hand-wave {
   display: inline-block;
@@ -357,10 +399,6 @@ nav > ul > li > a:hover:after {
 
 .hand-wave:hover {
   animation: wave 0.8s infinite;
-}
-
-.hand-wave > h1 {
-  margin: 0;
 }
 
 @keyframes wave {
@@ -373,23 +411,20 @@ nav > ul > li > a:hover:after {
   }
 }
 
-
-/* ==============================================================
-                          Work Pointers
-============================================================== */
-
-#top-pointer {
-  margin-bottom: 1em;
+.work-pointer {
+  position: absolute;
+  bottom: 3.5em;
+  transform: translateX(-50%);
 }
 
-#work-pointer,
-#top-pointer {
+.work-pointer,
+.top-pointer {
   opacity: 0.6;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
-#work-pointer:hover,
-#top-pointer:hover {
+.work-pointer:hover,
+.top-pointer:hover {
   opacity: 1;
 }
 
@@ -399,145 +434,41 @@ nav > ul > li > a:hover:after {
   min-width: 30px;
   max-width: 40px;
   transition: 0.25s;
-  margin: 0 auto;
 }
 
-#work-pointer:hover > .down-arrow {
+.work-pointer:hover > .down-arrow {
   transform: translateY(16px);
 }
 
-#top-pointer:hover > .up-arrow {
+.top-pointer:hover > .up-arrow {
   transform: translateY(-16px);
 }
 
-
-
-/* ==============================================================
-                          General Layout
-============================================================== */
-
-
-header {
-  position: absolute;
-  width: 100%;
-}
-
-
-footer {
-  position: relative;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 3.5em 0;
-  box-shadow: 0px -3px 6px 0px rgba(0, 6, 39, 0.16);
-  text-align: center;
-  margin: 3em auto 0 auto;
-}
-
-
-/*--------------------------- Lists ---------------------------*/
-
-
-.social-links {
-  list-style-type: none;
-  padding: 0;
-}
-
-.social-links li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.social-links li:first-child {
-  padding-left: 0;
-}
-
-.social-links li:last-child {
-  padding-right: 0;
-}
-
-ol > li {
-  margin-bottom: 1em;
-}
-
-
-/* ==============================================================
-                          Index Layout
-============================================================== */
-
-/*-------------------------- Header ----------------------------*/
-
-.thumbnail img{
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translateX(50%);
-  width: 100px;
-  height: 100px;
-}
-
-/*---------------------------- Hero ----------------------------*/
-
-#hero-container {
-  width: 100%;
-  height: 100vh;
-}
-
-.hero-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 3em;
-}
-
-#work-pointer {
-  position: absolute;
-  bottom: 3.5em;
-  transform: translateX(-50%);
-}
-
-
 /*---------------------------- Work ----------------------------*/
 
-.project-box {
+.project-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  padding: 3em;
-}
-
-.project-description {
-  margin-bottom: 2em;
-}
-
-.project-role {
-  display: block;
-  color: #000;
-  opacity: 40%;
-  font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-
-.h3-bold {
-  font-weight: 400;
-  margin-bottom: 2.5em;
+  flex-direction: column;
+  margin: 3em;
 }
 
 .project-picture {
   max-width: 600px;
   max-height: 600px;
-
 }
 
-.project-picture img,
-.two-column img {
+.project-picture img {
   border-radius: 1em;
+  transition: 0.2s;
+}
+
+.project-picture:hover img {
+  transform: scale(1.015);
+  box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 0.1);
 }
 
 .color-white {
-  background-color: white;
+  background-color: #fff;
 }
 
 .color-payd {
@@ -546,10 +477,6 @@ ol > li {
 
 .color-portfolio {
   background-color: #ebf1ff;
-}
-
-.color-portfolio-2 {
-  background-color: #d5e4ff;
 }
 
 .color-lingually {
@@ -561,9 +488,8 @@ ol > li {
 }
 
 /* ==============================================================
-                          About Layout
+                              About
 ============================================================== */
-
 
 .about-container {
   margin-top: 5.5em;
@@ -576,6 +502,7 @@ ol > li {
 #my-resume-button {
   margin-bottom: 3.5em;
 }
+
 
 /* ==============================================================
                        Project Page Layout
@@ -710,18 +637,8 @@ iframe {
                Medium Devices (640px and larger)
 ============================================================== */
 
-
 @media only screen and (min-width: 640px) {
-
-  body {
-    font-size: 18px;
-  }
-
-  .hero-content {
-    width: 55%;
-    margin: 0 auto;
-  }
-
+  
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
@@ -737,8 +654,35 @@ iframe {
     font-size: 2.75vw;
   }
 
-/*-------------------- Column -> Row Content ------------------*/
+/*---------------------- Index -> Hero ------------------------*/
 
+.hero-content {
+  width: 65%;
+  margin: 0 auto;
+}
+
+/*----------------------- Index -> Work -----------------------*/
+
+.project-container {
+  flex-direction: row;
+  width: 65%;
+  height: 100vh;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-description {
+  font-size: 1.2em;
+  margin-right: 3em;
+  flex: 1;
+}
+
+.project-picture {
+  flex: 1;
+}
+
+/*-------------------- Column -> Row Content ------------------*/
 
   .logistics,
   #insights {
@@ -764,30 +708,18 @@ iframe {
 
 @media only screen and (min-width: 1024px) {
 
-  h1 {
-    font-size: 3vw;
-  }
-
   body {
-    font-size: 20px;
+    font-size: 1vw;
   }
-
+  
   .section-margin {
     margin: 0 10em;
   }
   
-  #logo-link,
-  #menu-button {
+  .logo-link,
+  .menu-button {
     position: fixed;
   }
-
-
-/*--------------------- Index -> Hero -----------------------*/
-  
-
-.project-picture:hover {
-  transform: scale(1.015);
-}
 
 
 /*---------------------------- Project-- -----------------------*/
@@ -838,10 +770,6 @@ iframe {
 
 @media only screen and (min-width: 1440px) {
 
-  body {
-    font-size: 22px;
-  }
-
   .section-margin {
     width: 50%;
     margin: 0 auto;
@@ -858,38 +786,7 @@ iframe {
 
   /*----------------------- Index -> Work -----------------------*/
 
-  .project-box {
-    height: 100vh;
-  }
 
-  .project-container {
-    width: 65%;
-  }
 
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    align-items: center;
-  }
-
-  .project-description {
-    font-size: 1.2em;
-    padding: 0 2em;
-  }
-
-  .project-picture {
-    max-width: 720px;
-    max-height: 720px;
-    grid-column-start: auto;
-    grid-column-end: auto;
-    transform-origin: center;
-    transition: 0.2s;
-    margin: 0 auto;
-  }
-
-  .project-picture:hover img {
-    box-shadow: 0px 0px 32px 0px rgba(50, 50, 50, 0.1);
-  }
 
 }

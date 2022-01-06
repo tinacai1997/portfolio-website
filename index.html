@@ -21,28 +21,30 @@
   <header id="header">
 
     <!-- Logo -->
-    <a href="#hero" id="logo-link">
-      <div id="logo">tcai</div>
+    <a href="index.html#hero" class="logo-link">
+      <div class="logo">tcai</div>
     </a>    
 
     <!-- Menu Button -->
-    <div id="menu-button">
+    <div class="menu-button">
       <a href="javascript:void(0);" onclick="menuToggle()">
         <div class="menu-icon open">
           <span></span>
           <span></span>
         </div>
-        <span id="menu-circle"></span>
+        <span class="menu-circle"></span>
       </a>
     </div>
 
-    <!-- Screen Mask (when side menu is open) -->
+    <!-- Menu Mask -->
     <a href="javascript:void(0);" onclick="closeMenu()">
       <span class="menu-mask"></span>
     </a>
 
-    <!-- Side Menu -->
+    <!-- Menu -->
     <aside class="menu">
+
+      <!-- Menu Links -->
       <nav>
         <ul>
           <li><a href="index.html#work" onclick="closeMenu()">Work</a></li>
@@ -52,11 +54,10 @@
         </ul>
       </nav>
 
-      <!-- Professional Socials -->
+      <!-- Socials Links -->
       <div class="menu-contact">
         <h4>Reach Out 🤝</h5>
 
-        <!-- Social Links -->
         <div>
           <ul class="social-links">
             <li>
@@ -92,20 +93,19 @@
     <div class="panel" data-color="white" id="hero">
 
       <!-- Hero Container -->
-      <div id="hero-container">
+      <div class="hero-container">
         <div class="hero-content center">
           <h1>
             <span class="hand-wave">👋</span>
-            <span>Hi, I'm Tina.</span>
-            <span>I design, bake, game, then iterate.</span>
+            <span>Hi there, I'm Tina. I design, bake, game, then iterate.</span>
           </h1>
         </div>
 
         <!-- Work Pointer -->
         <div class="center">
-          <a href="#work" id="work-pointer">
+          <a href="#work" class="work-pointer">
             <h4>see my work</h4>
-            <div class="down-arrow">
+            <div class="down-arrow center">
               <img src="img/icons/down_arrow.png" alt="Down Arrow">               
           </div>
           </a>
@@ -117,138 +117,108 @@
     <div id="work">
 
       <!-- Payd -->
-      <div class="project-box panel" data-color="payd" id="project-1">
+      <div class="project-container panel" data-color="payd">
 
-        <!-- Project Container-->
-        <div class="project-container">
-
-          <!-- Project Grid -->
-          <div class="project-grid">
-
-            <!-- Project Description -->
-            <div class="project-description">
-              <a href="payd.html">
-                <h5>Payd</h5>
-                <h3>Your all inclusive e-wallet application</h3>
-              </a>
-              <div class="project-role">ux research • ux design • ui design</div>
-            </div>
-
-            <!-- Project Image -->
-            <div class="project-picture">
-              <a href="payd.html">
-                <picture>
-                  <source srcset="img/index/@1x/payd_home@1x.png" media="(max-width:767px)">
-                  <img src="img/index/@2x/payd_home@2x.png" alt="Payd Image">
-                </picture>
-              </a>
-            </div>
+          <!-- Project Description -->
+          <div class="project-description">
+            <a href="payd.html">
+              <h5>Payd</h5>
+              <h3>Your all inclusive e-wallet application</h3>
+              <h6>ux research • ux design • ui design</h6>
+            </a>
           </div>
-        </div>
+
+          <!-- Project Image -->
+          <div class="project-picture">
+            <a href="payd.html">
+              <picture>
+                <source srcset="img/index/@1x/payd_home@1x.png" media="(max-width:767px)">
+                <img src="img/index/@2x/payd_home@2x.png" alt="Payd Image">
+              </picture>
+            </a>
+          </div>
       </div>
 
       <!-- Portfolio -->
-      <div class="project-box panel" data-color="portfolio" id="project-2">
+      <div class="project-container panel" data-color="portfolio">
 
-        <!-- Project Container-->
-        <div class="project-container">
+        <!-- Project Description -->
+        <div class="project-description">
+          <a href="portfolio.html">
+            <h5>Design Portfolio</h5>
+            <h3>Creating a home for my project work</h3>
+            <h6>web design • front end dev</h6>
+          </a>
+        </div>
 
-          <!-- Project Grid -->
-          <div class="project-grid">
-
-            <!-- Project Description -->
-            <div class="project-description">
-              <a href="portfolio.html">
-                <h5>Design Portfolio</h5>
-                <h3>Creating a home for my project work</h3>
-              </a>
-              <div class="project-role">web design • front end dev</div>
-            </div>
-
-            <!-- Project Image -->
-            <div class="project-picture">
-              <a href="portfolio.html">
-                <picture>
-                  <source srcset="img/index/@1x/portfolio_home@1x.png" media="(max-width:767px)">
-                  <img src="img/index/@2x/portfolio_home@2x.png" alt="Portfolio Image">
-                </picture>
-              </a>
-            </div>
-          </div>
+        <!-- Project Image -->
+        <div class="project-picture">
+          <a href="portfolio.html">
+            <picture>
+              <source srcset="img/index/@1x/portfolio_home@1x.png" media="(max-width:767px)">
+              <img src="img/index/@2x/portfolio_home@2x.png" alt="Portfolio Image">
+            </picture>
+          </a>
         </div>
       </div>
 
       <!-- Lingually -->
-      <div class="project-box panel" data-color="lingually" id="project-3">
+      <div class="project-container panel" data-color="lingually">
 
-        <!-- Project Container-->
-        <div class="project-container">
+        <!-- Project Description -->
+        <div class="project-description">
+          <a href="portfolio.html">
+            <h5>Lingually</h5>
+            <h3>Your immersive language learning application</h3>
+            <h6>ux reseach • ux design</h6>
+          </a>
+        </div>
 
-          <!-- Project Grid -->
-          <div class="project-grid">
-
-            <!-- Project Description -->
-            <div class="project-description">
-              <a href="portfolio.html">
-                <h5>Lingually</h5>
-                <h3>Your immersive language learning application</h3>
-              </a>
-              <div class="project-role">ux reseach • ux design</div>
-            </div>
-
-            <!-- Project Image -->
-            <div class="project-picture">
-              <a href="lingually.html">
-                <picture>
-                  <source srcset="img/index/@1x/lingually_home@1x.png" media="(max-width:767px)">
-                  <img src="img/index/@2x/lingually_home@2x.png" alt="Lingually Image">
-                </picture>
-              </a>
-            </div>
-          </div>
+        <!-- Project Image -->
+        <div class="project-picture">
+          <a href="lingually.html">
+            <picture>
+              <source srcset="img/index/@1x/lingually_home@1x.png" media="(max-width:767px)">
+              <img src="img/index/@2x/lingually_home@2x.png" alt="Lingually Image">
+            </picture>
+          </a>
         </div>
       </div>
 
       <!-- UX Challenges -->
-      <div class="project-box panel" data-color="chall" id="project-4">
+      <!-- <div class="project-container panel" data-color="chall">
 
-        <!-- Project Container-->
-        <div class="project-container">
+        <div class="project-grid">
 
-          <!-- Project Grid -->
-          <div class="project-grid">
+          <div class="project-description">
+            <a href="#">
+              <h5>UX Challenges</h5>
+              <h3>A collection of problems and <br> potential solutions
+              </h3>
+              <h6>ux design • ui design</h6>
+            </a>
+          </div>
 
-            <!-- Project Description -->
-            <div class="project-description">
-              <a href="#">
-                <h5>UX Challenges</h5>
-                <h3>A collection of problems and <br> potential solutions</h3>
-              </a>
-              <div class="project-role">ux design • ui design </div>
-            </div>
-
-            <!-- Project Image -->
-            <div class="project-picture">
-              <a href="#">
-                <picture>
-                  <source srcset="img/index/@1x/temp_home@1x.png" media="(max-width:767px)">
-                  <img src="img/index/@2x/temp_home@2x.png" alt="UX Challenges Image">
-                </picture>
-              </a>
-            </div>
+          <div class="project-picture">
+            <a href="#">
+              <picture>
+                <source srcset="img/index/@1x/temp_home@1x.png" media="(max-width:767px)">
+                <img src="img/index/@2x/temp_home@2x.png" alt="UX Challenges Image">
+              </picture>
+            </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="center">
 
     <!-- Top Pointer -->
     <div>
-      <a href="#header" id="top-pointer">
-        <div class="up-arrow">
+      <a href="#header" class="top-pointer">
+        <div class="up-arrow center">
           <img src="img/icons/up_arrow.png" alt="Down Arrow">  
         </div>
         <h4>back to top</h4>
