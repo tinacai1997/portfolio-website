@@ -47,7 +47,8 @@ body {
   height: 100vh;
   background-color: #fff;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   transition: background-color 1s ease-in-out;
@@ -55,7 +56,7 @@ body {
 
 /* Main Headings */
 h1 {
-  font-size: 3em;
+  font-size: 32px;
   font-weight: 500;
   margin: 0;
 }
@@ -93,7 +94,7 @@ h6 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -121,7 +122,6 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 3.5em 0;
-  margin-top: 3em;
 }
 
 
@@ -453,8 +453,8 @@ nav > ul > li > a:hover:after {
 }
 
 .project-picture {
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 640px;
+  max-height: 640px;
 }
 
 .project-picture img {
@@ -464,7 +464,7 @@ nav > ul > li > a:hover:after {
 
 .project-picture:hover img {
   transform: scale(1.015);
-  box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.1);
 }
 
 .color-white {
@@ -638,11 +638,11 @@ iframe {
 ============================================================== */
 
 @media only screen and (min-width: 640px) {
-  
+
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
-    width: 25vw;
+    width: 30vw;
   }
 
   nav,
@@ -673,7 +673,6 @@ iframe {
 }
 
 .project-description {
-  font-size: 1.2em;
   margin-right: 3em;
   flex: 1;
 }
@@ -709,21 +708,25 @@ iframe {
 @media only screen and (min-width: 1024px) {
 
   body {
-    font-size: 1vw;
+    font-size: 18px;
   }
-  
+
+  h1 {
+    font-size: 3vw;
+  }
+
   .section-margin {
     margin: 0 10em;
   }
-  
+
+  /*---------------------------- Header --------------------------*/
+
   .logo-link,
   .menu-button {
     position: fixed;
   }
 
-
 /*---------------------------- Project-- -----------------------*/
-
 
   .two-column-layout {
     display: flex;
@@ -770,6 +773,10 @@ iframe {
 
 @media only screen and (min-width: 1440px) {
 
+  body {
+    font-size: 22px;
+  }
+
   .section-margin {
     width: 50%;
     margin: 0 auto;
@@ -783,10 +790,5 @@ iframe {
   .portfolio-hand-wave {
     font-size: 5em;
   }  
-
-  /*----------------------- Index -> Work -----------------------*/
-
-
-
 
 }
