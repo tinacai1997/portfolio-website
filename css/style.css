@@ -124,8 +124,9 @@ header {
 }
 
 footer {
+  position: absolute;
   width: 100%;
-  padding: 3.5em 0;
+  padding: 3em 0;
 }
 
 .finger-point {
@@ -420,54 +421,17 @@ nav > ul > li > a:hover:after {
   }
 }
 
-.work-pointer {
-  position: absolute;
-  bottom: 3.5em;
-  transform: translateX(-50%);
-}
-
-.work-pointer,
-.top-pointer {
-  opacity: 0.6;
-  transition: 0.25s;
-}
-
-.work-pointer:hover,
-.top-pointer:hover {
-  opacity: 1;
-}
-
-.down-arrow,
-.up-arrow {
-  width: 3vw;
-  min-width: 30px;
-  max-width: 40px;
-  transition: 0.25s;
-}
-
-.work-pointer:hover > .down-arrow {
-  transform: translateY(16px);
-}
-
-.top-pointer:hover > .up-arrow {
-  transform: translateY(-16px);
-}
-
 /*---------------------------- Work ----------------------------*/
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  margin: 3em;
+.work-container {
+  margin: 30vh 3em 15vh 3em;
 }
 
-.project-picture {
-  max-width: 640px;
-  max-height: 640px;
+.project-container {
+  margin: 4em 0;
 }
 
 .project-picture img {
-  border-radius: 1em;
   transition: 0.2s;
 }
 
