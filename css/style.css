@@ -46,7 +46,7 @@ body {
   width: 100vw;
   background-color: #fff;
   color: #000;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -60,13 +60,13 @@ h1 {
   margin: 0;
 }
 
-/* Prorject Blurb */
+/* Project Blurb */
 h2 {
   font-size: 2.5em;
   font-weight: 500;
 }
 
-/* Section Heading */
+/* Project Section Blurb */
 h3 {
   font-size: 1.75em;
   font-weight: 500;
@@ -116,14 +116,15 @@ strong {
 ============================================================== */
 
 header {
-  position: absolute;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 36px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
   width: 100%;
-  /* background-color: #000;
-  color: #fff; */
   padding: 3.5em 0;
 }
 
@@ -158,17 +159,17 @@ a {
 }
 
 .logo-link {
-  position: absolute;
-  left: 0%;
+  position: relative;
+  display: block;
   z-index: 5000;
-  margin: 2.5em 0 0 3.5em;
   transition: 0.2s;
 }
 
 .logo {
-  line-height: 64px;
-  font-size: 28px;
+  line-height: 48px;
+  font-size: 18px;
   font-weight: 600;
+  letter-spacing: 20;
 }
 
 .social-links {
@@ -208,12 +209,9 @@ a {
 /*------------------------ Menu Button ------------------------*/
 
 .menu-button {
-  position: absolute;
-  right: 0;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   z-index: 3000;
-  margin: 2.5em 3.5em 0 0;
 }
 
 .menu-button > a {
@@ -224,16 +222,14 @@ a {
 .menu-icon {
   position: absolute;
   z-index: 3500;
-  top: 0;
-  left: 0;
   transform-origin: top;
-  transform: translate(16px, 25px);
+  transform: translate(12px, 17px);
 }
 
 .menu-icon > span {
   content: "";
   display: block;
-  width: 32px;
+  width: 24px;
   height: 2px;
   z-index: 3750;
   background: #000;
@@ -246,8 +242,8 @@ a {
 
 .menu-circle {
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   z-index: 3250;
   background: #000;
   border-radius: 50%;
@@ -277,9 +273,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(5.5px) rotate(0);
+    transform: translateY(0.5em) rotate(0);
   } 100% {
-    transform: translateY(5.5px) rotate(45deg);
+    transform: translateY(0.5em) rotate(45deg);
   }
 }
 
@@ -287,9 +283,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(-5.5px) rotate(0);
+    transform: translateY(-0.5em) rotate(0);
   } 100% {
-    transform: translateY(-5.5px) rotate(-45deg);
+    transform: translateY(-0.5em) rotate(-45deg);
   }
 }
 
@@ -303,9 +299,9 @@ a {
 
 @keyframes top-menu-bar-open {
   0% {
-    transform: translateY(5.5px) rotate(45deg);
+    transform: translateY(0.5em) rotate(45deg);
   } 60% {
-    transform: translateY(5.5px) rotate(0);
+    transform: translateY(0.5em) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
@@ -313,9 +309,9 @@ a {
 
 @keyframes bot-menu-bar-open {
   0% {
-    transform: translateY(-5.5px) rotate(-45deg);
+    transform: translateY(-0.5em) rotate(-45deg);
   } 60% {
-    transform: translateY(-5.5px) rotate(0);
+    transform: translateY(-0.5em) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
@@ -661,6 +657,10 @@ iframe {
 
 @media only screen and (min-width: 640px) {
 
+  h1 {
+    font-size: 5vw;
+  }
+
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
@@ -675,13 +675,6 @@ iframe {
   nav > ul > li {
     font-size: 2.75vw;
   }
-
-/*---------------------- Index -> Hero ------------------------*/
-
-.hero-content {
-  width: 55%;
-  margin: 0 auto;
-}
 
 /*----------------------- Index -> Work -----------------------*/
 
@@ -729,12 +722,12 @@ iframe {
 
 @media only screen and (min-width: 1024px) {
 
-  body {
-    font-size: 16px;
+  h1 {
+    font-size: 51.2px;
   }
 
-  h1 {
-    font-size: 3vw;
+  body {
+    font-size: 16px;
   }
 
   .section-margin {
@@ -743,10 +736,17 @@ iframe {
 
   /*---------------------------- Header --------------------------*/
 
-  .logo-link,
+  /* .logo-link,
   .menu-button {
     position: fixed;
-  }
+  } */
+
+  /*---------------------- Index -> Hero ------------------------*/
+
+.hero-content {
+  width: 55%;
+  margin: 0 auto;
+}
 
 /*---------------------------- Project-- -----------------------*/
 
