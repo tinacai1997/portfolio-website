@@ -208,8 +208,8 @@ a {
 /*------------------------ Menu Button ------------------------*/
 
 .menu-button {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   z-index: 3000;
 }
 
@@ -222,13 +222,13 @@ a {
   position: absolute;
   z-index: 3500;
   transform-origin: top;
-  transform: translate(12px, 17px);
+  transform: translate(12px, 19px);
 }
 
 .menu-icon > span {
   content: "";
   display: block;
-  width: 24px;
+  width: 28px;
   height: 2px;
   z-index: 3750;
   background: #000;
@@ -241,8 +241,8 @@ a {
 
 .menu-circle {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   z-index: 3250;
   background: #000;
   border-radius: 50%;
@@ -272,9 +272,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(0.5em) rotate(0);
+    transform: translateY(6px) rotate(0);
   } 100% {
-    transform: translateY(0.5em) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
 }
 
@@ -282,9 +282,9 @@ a {
   0% {
     transform: translateY(0) rotate(0);
   } 60% {
-    transform: translateY(-0.5em) rotate(0);
+    transform: translateY(-6px) rotate(0);
   } 100% {
-    transform: translateY(-0.5em) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
@@ -298,9 +298,9 @@ a {
 
 @keyframes top-menu-bar-open {
   0% {
-    transform: translateY(0.5em) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   } 60% {
-    transform: translateY(0.5em) rotate(0);
+    transform: translateY(6px) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
@@ -308,9 +308,9 @@ a {
 
 @keyframes bot-menu-bar-open {
   0% {
-    transform: translateY(-0.5em) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   } 60% {
-    transform: translateY(-0.5em) rotate(0);
+    transform: translateY(-6px) rotate(0);
   } 100% {
     transform: translateY(0) rotate(0);
   }
