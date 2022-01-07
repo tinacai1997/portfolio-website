@@ -395,7 +395,8 @@ nav > ul > li > a:hover:after {
 /*---------------------------- Hero ----------------------------*/
 
 .hero-container {
-  margin: 15vh 3em;
+  padding-top: 12vh;
+  margin: 0 3em;
 }
 
 .hand-wave {
@@ -420,7 +421,7 @@ nav > ul > li > a:hover:after {
 /*---------------------------- Work ----------------------------*/
 
 .work-container {
-  margin: 30vh 3em;
+  margin: 15vh 3em;
 }
 
 .project-container {
@@ -628,7 +629,7 @@ iframe {
 /*-------------------------- Navigation -----------------------*/
 
   .menu {
-    width: 27.5vw;
+    width: 30vw;
   }
 
   nav,
@@ -643,13 +644,14 @@ iframe {
 /*--------------------------- Index ---------------------------*/
 
 .hero-container {
-  margin-top: 30vh;
+  padding-top: 30vh;
 }
 
-.intro-container {
-  width: 50%;
+.work-container {
+  margin: 30vh 0;
 }
 
+.intro-container,
 .project-container {
   width: 65%;
 }
