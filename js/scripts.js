@@ -133,6 +133,15 @@ $(window).scroll(function() {
        
       // Add class of currently active div
       $body.addClass('color-' + $(this).data('color'));
+    } else if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight) || (window.scrollY==0)) {
+
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('white'));
     }
   });    
   
