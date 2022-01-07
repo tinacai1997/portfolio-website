@@ -29,6 +29,7 @@ ol > li {
 .center {
   text-align: center;
   margin: 0 auto;
+  align-items: center;
 }
 
 .section-margin,
@@ -55,15 +56,9 @@ body {
 
 /* Main Headings */
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0;
-}
-
-/* Project Blurb */
-h2 {
-  font-size: 2.5em;
-  font-weight: 500;
 }
 
 /* Project Section Blurb */
@@ -118,7 +113,8 @@ strong {
 header {
   display: flex;
   flex-direction: row;
-  margin: 36px;
+  width: 100%;
+  padding: 36px;
   align-items: center;
   justify-content: space-between;
 }
@@ -126,7 +122,7 @@ header {
 footer {
   position: absolute;
   width: 100%;
-  padding: 3em 0;
+  padding: 60px;
 }
 
 .finger-point {
@@ -424,11 +420,11 @@ nav > ul > li > a:hover:after {
 /*---------------------------- Work ----------------------------*/
 
 .work-container {
-  margin: 30vh 3em 15vh 3em;
+  margin: 30vh 3em;
 }
 
 .project-container {
-  margin: 4em 0;
+  margin: 4em auto;
 }
 
 .project-picture img {
@@ -613,11 +609,20 @@ iframe {
 @media only screen and (min-width: 640px) {
 
   h1 {
-    font-size: 5vw;
+    font-size: 5.625vw;
   }
 
   .logo {
     font-size: 2.8vw;
+  }
+
+  header {
+    position: fixed;
+    padding: 5.625vw 7vw;
+  }
+
+  footer {
+    padding:  9.375vw;
   }
 
 /*-------------------------- Navigation -----------------------*/
@@ -635,24 +640,18 @@ iframe {
     font-size: 2.75vw;
   }
 
-/*----------------------- Index -> Work -----------------------*/
+/*--------------------------- Index ---------------------------*/
+
+.hero-container {
+  margin-top: 30vh;
+}
+
+.intro-container {
+  width: 50%;
+}
 
 .project-container {
-  flex-direction: row;
-  width: 55%;
-  height: 100vh;
-  margin: 0 auto;
-  justify-items: center;
-  align-items: center;
-}
-
-.project-description {
-  margin-right: 3em;
-  flex: 1;
-}
-
-.project-picture {
-  flex: 1;
+  width: 65%;
 }
 
 /*-------------------- Column -> Row Content ------------------*/
@@ -682,11 +681,19 @@ iframe {
 @media only screen and (min-width: 1024px) {
 
   h1 {
-    font-size: 51.2px;
+    font-size: 57.6px;
   }
 
   .logo {
     font-size: 28.8px;
+  }
+
+  header {
+    padding: 57.6px 71.68px;
+  }
+
+  footer {
+    padding: 96px;
   }
 
   body {
@@ -696,20 +703,6 @@ iframe {
   .section-margin {
     margin: 0 10em;
   }
-
-  /*---------------------------- Header --------------------------*/
-
-  /* .logo-link,
-  .menu-button {
-    position: fixed;
-  } */
-
-  /*---------------------- Index -> Hero ------------------------*/
-
-.hero-content {
-  width: 55%;
-  margin: 0 auto;
-}
 
 /*---------------------------- Project-- -----------------------*/
 
