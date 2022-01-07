@@ -6,7 +6,7 @@ let menuOpen = false;
 const getMenu = document.querySelector('.menu');
 const getMenuNav = document.querySelector('.menu nav');
 const getMenuContact = document.querySelector('.menu-contact');
-const getMenuMask = document.querySelector('.menu-mask');
+// const getMenuMask = document.querySelector('.menu-mask');
 const getMenuIcon = document.querySelector('.menu-icon');
 
 // Open Menu
@@ -19,8 +19,8 @@ function openMenu() {
 
   getMenuContact.style.visibility = 'visible';
 
-  getMenuMask.style.visibility = 'visible';
-  getMenuMask.style.opacity = '0.4';
+  // getMenuMask.style.visibility = 'visible';
+  // getMenuMask.style.opacity = '0.4';
 
   menuOpen = true;
 
@@ -38,8 +38,8 @@ function closeMenu() {
 
   getMenuContact.style.visibility = 'hidden';
 
-  getMenuMask.style.visibility = 'hidden';
-  getMenuMask.style.opacity = '0';
+  // getMenuMask.style.visibility = 'hidden';
+  // getMenuMask.style.opacity = '0';
 
   menuOpen = false;
 
