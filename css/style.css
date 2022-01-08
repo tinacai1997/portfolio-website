@@ -319,8 +319,8 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 2000;
   background-color: #fff;
   visibility: hidden;
@@ -332,8 +332,9 @@ a {
 nav {
   display: block;
   position: absolute;
-  top: 45%;
-  margin-left: 3.5em;
+  top: 50%;
+  margin-left: 36px;
+  transform-origin: right;
   transform: translateY(-50%);
 }
 
@@ -344,49 +345,29 @@ nav > ul {
 
 nav > ul > li {
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 3.5vh;
+  margin-bottom: 2em;
+}
+
+nav > ul > li:last-child {
+  margin: 0;
 }
 
 nav > ul > li > a:after {
   content: '';
   display: block;
-  left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #000;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: 0.2s;
 }
 
 nav > ul > li > a:hover:after {
   transform: scaleX(1);
 }
-
-.menu-contact {
-  display: block;
-  position: absolute;
-  bottom: 10%;
-  margin-left: 3.5em;
-}
-
-.menu-mask {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
-  background: #f2f2f2;
-  cursor: initial;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-
 
 /* ==============================================================
                               Index
@@ -628,17 +609,37 @@ iframe {
 
 /*-------------------------- Navigation -----------------------*/
 
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 8px 14px;
+    border-radius: 32px;
+  }
+
   .menu {
-    width: 30vw;
+    position: static;
+    background-color: transparent;
   }
-
-  nav,
-  .menu-contact {
-    margin-left: 6vw;
+  
+  nav {
+    position: static;
+    margin: 8px;
+    transform: translateY(0);
   }
-
-  nav > ul > li {
-    font-size: 2.75vw;
+  
+  nav > ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav > ul > li,
+  nav > ul > li:last-child {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 8px;
   }
 
 /*--------------------------- Index ---------------------------*/

@@ -5,7 +5,8 @@
 let menuOpen = false;
 const getMenu = document.querySelector('.menu');
 const getMenuNav = document.querySelector('.menu nav');
-const getMenuContact = document.querySelector('.menu-contact');
+const getMenuContainer = document.querySelector('.menu-container')
+// const getMenuContact = document.querySelector('.menu-contact');
 // const getMenuMask = document.querySelector('.menu-mask');
 const getMenuIcon = document.querySelector('.menu-icon');
 
@@ -17,7 +18,9 @@ function openMenu() {
 
   getMenuNav.style.visibility = 'visible';
 
-  getMenuContact.style.visibility = 'visible';
+  getMenuContainer.style.backgroundColor = '#fff';
+
+  // getMenuContact.style.visibility = 'visible';
 
   // getMenuMask.style.visibility = 'visible';
   // getMenuMask.style.opacity = '0.4';
@@ -36,7 +39,9 @@ function closeMenu() {
 
   getMenuNav.style.visibility = 'hidden';
 
-  getMenuContact.style.visibility = 'hidden';
+  getMenuContainer.style.backgroundColor = 'transparent';
+
+  // getMenuContact.style.visibility = 'hidden';
 
   // getMenuMask.style.visibility = 'hidden';
   // getMenuMask.style.opacity = '0';
