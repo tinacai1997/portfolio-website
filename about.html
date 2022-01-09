@@ -10,6 +10,7 @@
   <link href="img/icons/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Tina Cai • Design Portfolio</title>
@@ -26,65 +27,32 @@
       <div class="logo">tcai</div>
     </a>    
 
-    <!-- Menu Button -->
-    <div class="menu-button">
-      <a href="javascript:void(0);" onclick="menuToggle()">
-        <div class="menu-icon open">
-          <span></span>
-          <span></span>
-        </div>
-        <span class="menu-circle"></span>
-      </a>
-    </div>
+    <!-- Menu Container -->
+    <div class="menu-container" >
 
-    <!-- Menu Mask -->
-    <a href="javascript:void(0);" onclick="closeMenu()">
-      <span class="menu-mask"></span>
-    </a>
-
-    <!-- Menu -->
-    <aside class="menu">
-
-      <!-- Menu Links -->
-      <nav>
-        <ul>
-          <li><a href="index.html#work" onclick="closeMenu()">Work</a></li>
-          <li><a href="about.html" onclick="closeMenu()">About</a></li>
-          <li><a href="about.html" onclick="closeMenu()">Feed</a></li>
-          <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-        </ul>
-      </nav>
-
-      <!-- Socials Links -->
-      <div class="menu-contact">
-        <h5>Reach Out 🤝</h5>
-
-        <div>
-          <ul class="social-links">
-            <li>
-              <a href="mailto: tinacai1997@gmail.com" onclick="closeMenu()">
-                <img src="img/icons/email_icon.png" alt="Email Icon">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/tinacai97/" target="_blank" onclick="closeMenu()">
-                <img src="img/icons/linkedin_icon.png" alt="LinkedIn Icon">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/tinacai" target="_blank" onclick="closeMenu()">
-                <img src="img/icons/behance_icon.png" alt="Behance Icon">
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/tinacai97" target="_blank" onclick="closeMenu()">
-                <img src="img/icons/github_icon.png" alt="GitHub Icon">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <!-- Menu Content -->
+      <div class="menu">
+        <!-- Menu Links -->
+          <nav>
+            <ul>
+              <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
+              <li><a href="about.html" onclick="closeMenu()">About</a></li>
+              <li><a href="about.html" onclick="closeMenu()">Feed</a></li>
+              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
       </div>
-    </aside>
+
+      <!-- Menu Button -->
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+          <div class="menu-icon open">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- Main Content -->
@@ -132,43 +100,33 @@
     <!-- Footer -->
     <footer class="center">
 
-      <!-- Top Pointer -->
-      <!-- <div>
-        <a href="#header" class="top-pointer">
-          <div class="up-arrow center">
-            <img src="img/icons/up_arrow.png" alt="Down Arrow">  
-          </div>
-          <h4>back to top</h4>
-        </a>
-      </div> -->
-  
       <!-- Professional Social -->
       <h5>
-        <span><strong>Let's connect</strong></span>
+        <span><b>Let's connect</b></span>
         <span class="finger-point" >👇</span>
       </h5>
   
       <!-- Socials Links -->
       <div>
-        <ul class="social-links">
-          <li>
-            <a href="mailto: tinacai1997@gmail.com" onclick="closeMenu()">
-              <img src="img/icons/email_icon.png" alt="Email Icon">
+        <ul class="socials">
+          <li class="socials-icon">
+            <a href="mailto: tinacai1997@gmail.com" class="socials-link">
+              <i class="far fa-envelope"></i>
             </a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/in/tinacai97/" target="_blank" onclick="closeMenu()">
-              <img src="img/icons/linkedin_icon.png" alt="LinkedIn Icon">
+          <li class="socials-icon">
+            <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
+              <i class="fab fa-linkedin-in" id="linkedin"></i>
             </a>
           </li>
-          <li>
-            <a href="https://www.behance.net/tinacai" target="_blank" onclick="closeMenu()">
-              <img src="img/icons/behance_icon.png" alt="Behance Icon">
+          <li class="socials-icon">
+            <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
+              <i class="fab fa-behance" id="behance"></i>
             </a>
           </li>
-          <li>
-            <a href="https://github.com/tinacai97" target="_blank" onclick="closeMenu()">
-              <img src="img/icons/github_icon.png" alt="GitHub Icon">
+          <li class="socials-icon">
+            <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
+              <i class="fab fa-github" id="github"></i>
             </a>
           </li>
         </ul>
