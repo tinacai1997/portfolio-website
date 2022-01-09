@@ -162,11 +162,13 @@ a {
   text-decoration: none;
 }
 
+/*---------------------------- Logo ---------------------------*/
+
 .logo-link {
   position: relative;
   display: block;
-  z-index: 5000;
-  transition: 0.2s;
+  z-index: 1;
+  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
 }
 
 .logo {
@@ -174,6 +176,12 @@ a {
   font-weight: 600;
   letter-spacing: 20;
 }
+
+.logo-link:hover {
+  transform: scale(1.15);
+}
+
+/*-------------------------- Socials -------------------------*/
 
 .socials {
   display: flex;
@@ -199,21 +207,6 @@ a {
   position: relative;
   z-index: 1;
   margin: auto
-}
-
-#linkedin {
-  font-size: 28px;
-  margin-top: -1px;
-  margin-left: 3px;
-  padding-right: 2px;
-}
-
-#behance {
-  margin-left: -1px;
-}
-
-#github {
-  margin-left: 1px;
 }
 
 .socials-link:hover,
@@ -254,6 +247,21 @@ a {
   background: var(--github-icon);
 }
 
+#linkedin {
+  font-size: 28px;
+  margin-top: -1px;
+  margin-left: 3px;
+  padding-right: 2px;
+}
+
+#behance {
+  margin-left: -1px;
+}
+
+#github {
+  margin-left: 1px;
+}
+
 /* ==============================================================
                             Navigation
 ============================================================== */
@@ -263,17 +271,18 @@ a {
 .menu-button {
   width: 52px;
   height: 52px;
-  z-index: 3000;
+  z-index: 1;
 }
 
-.menu-button > a {
-  width: 100%;
-  height: 100%;
+.menu-link {
+  width: 52px;
+  height: 52px;
 }
 
 .menu-icon {
   position: absolute;
-  z-index: 3500;
+  z-index: 2;
+  transition: .3s linear;
   transform-origin: top;
   transform: translate(12px, 19px);
 }
@@ -283,7 +292,7 @@ a {
   display: block;
   width: 28px;
   height: 2px;
-  z-index: 3750;
+  z-index: 3;
   background: #000;
   border-radius: 100px;
 }
@@ -292,23 +301,24 @@ a {
   margin-top: 10px;
 }
 
-.menu-circle {
+.menu-link:after {
+  content: '';
   position: absolute;
   width: 52px;
   height: 52px;
-  z-index: 3250;
-  background: #000;
   border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
 }
 
-.menu-button:hover > a > .menu-icon > span {
+.menu-link:hover > .menu-icon > span {
   background: #fff;
 }
 
-.menu-button:hover > a > .menu-circle {
-  opacity: 1;
+.menu-link:hover:after {
+  background: black;
+  transform: scale(1);
 }
 
 /*------------------ Menu Button Animations -------------------*/
@@ -418,7 +428,7 @@ nav > ul > li > a:after {
   background: #000;
   transform: scaleX(0);
   transform-origin: center;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 nav > ul > li > a:hover:after {
