@@ -212,6 +212,10 @@ a {
   margin-left: -1px;
 }
 
+#github {
+  margin-left: 1px;
+}
+
 .socials-link:hover,
 .socials-link:focus {
   color: #fff;
