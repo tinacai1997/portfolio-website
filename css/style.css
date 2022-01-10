@@ -53,6 +53,10 @@ button {
   --behance-icon: #1769ff;
   --github-icon: #333;
   --brand-color: #4174FF;
+  --payd-bg-color: #f8f1ff;
+  --portfolio-bg-color: #ebf1ff;
+  --lingually-bg-color: #f9e7e5;
+  --ux-challenge-bg-color: #f4fff7;
 }
 
 
@@ -496,27 +500,24 @@ nav > ul > li > a:hover:after {
 
 .project-picture:hover img {
   transform: scale(1.015);
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
-}
-
-.color-white {
-  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
+  z-index: -1;
 }
 
 .color-payd {
-  background-color: #f8f1ff;
+  background-color: var(--payd-bg-color);
 }
 
 .color-portfolio {
-  background-color: #ebf1ff;
+  background-color: var(--portfolio-bg-color);
 }
 
 .color-lingually {
-  background-color: #f9e7e5;
+  background-color: var(--lingually-bg-color);
 }
 
 .color-chall {
-  background-color: #f4fff7;
+  background-color: var(--ux-challenge-bg-color);
 }
 
 /* ==============================================================
