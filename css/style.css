@@ -42,6 +42,7 @@ ol > li {
   --linkedin-icon: #0077b5;
   --behance-icon: #1769ff;
   --github-icon: #333;
+  --brand-color: #4174FF;
 }
 
 
@@ -68,7 +69,7 @@ h1 {
   margin: 0;
 }
 
-/* Project Section Blurb */
+/* Section Heading */
 h3 {
   font-size: 1.75em;
   font-weight: 500;
@@ -78,12 +79,12 @@ h3 {
 
 /* Sub-Section Heading */
 h4 {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 1.25em 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 0 1.25em 0;
 }
 
-/* Body */
+/* Project Body */
 h5 {
   font-size: 1.25em;
   font-weight: 300;
@@ -101,17 +102,21 @@ h6 {
   margin: 1.25em 0;
 }
 
+/* General Body */
 p {
   font-size: 1em;
-  font-weight: 300;
-  line-height: 1.65;
-  margin: 1.25em 0;
+  font-weight: 400;
+  margin: 1.5em 0;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
+.sub-section-heading {
+  border-left: 4px solid var(--brand-color);
+  padding-left: 14px;
+}
 
 /* ==============================================================
                         Header / Footer
@@ -167,12 +172,12 @@ a {
 .logo-link {
   position: relative;
   display: block;
-  z-index: 1;
+  z-index: 10;
   transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
 }
 
 .logo {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   letter-spacing: 20;
 }
@@ -271,7 +276,7 @@ a {
 .menu-button {
   width: 52px;
   height: 52px;
-  z-index: 1;
+  z-index: 7;
 }
 
 .menu-link {
@@ -281,7 +286,7 @@ a {
 
 .menu-icon {
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   transition: .3s linear;
   transform-origin: top;
   transform: translate(12px, 19px);
@@ -292,7 +297,7 @@ a {
   display: block;
   width: 28px;
   height: 2px;
-  z-index: 3;
+  z-index: 10;
   background: #000;
   border-radius: 100px;
 }
@@ -307,7 +312,7 @@ a {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 8;
   transform: scale(0);
   transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
 }
@@ -387,7 +392,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 2000;
+  z-index: 6;
   background-color: #fff;
   visibility: hidden;
   transform: scaleX(0);
@@ -508,17 +513,48 @@ nav > ul > li > a:hover:after {
                               About
 ============================================================== */
 
-.thumbnail img{
-  position: absolute;
-  right: 50%;
-  top: 5%;
-  transform: translateX(50%);
-  width: 100px;
-  height: 100px;
+.self-portrait{
+  width: 72px;
+  height: 72px;
+  margin-top: -98px;
 }
 
 .about-container {
-  margin-top: 16em;
+  margin: 15vh 3em;
+}
+
+.contact-form-section p {
+  margin-bottom: 0.5em;
+}
+
+.contact-field {
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #808080 ;
+  border-radius: 4px;
+  background: #fcfcfc;
+  padding: 10px 18px 10px 10px;
+}
+
+#message-field textarea {
+  min-height: 128px;
+  max-height: 256px;
+  resize: vertical;
+}
+
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  max-width: 488px;
 }
 
 /* ==============================================================
@@ -543,24 +579,6 @@ nav > ul > li > a:hover:after {
 
 
 /*--------------------------- Intro ---------------------------*/
-
-.sub-section-heading {
-  display: inline-block;
-  position: relative;
-  text-transform: lowercase;
-  opacity: 0.75;
-}
-
-.sub-section-heading:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: black;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-} 
  
 /* Project logistics box */
 .logistics {
@@ -577,7 +595,7 @@ nav > ul > li > a:hover:after {
 /*---------------------- Project Content ----------------------*/
 
 section {
-  margin: 6em 0 16em 0;
+  margin: 10vh 0 15vh 0;
 }
 
 .light-img img {
@@ -660,10 +678,6 @@ iframe {
     font-size: 5.625vw;
   }
 
-  .logo {
-    font-size: 2.8vw;
-  }
-
   header {
     position: fixed;
     padding: 5.625vw 7vw;
@@ -673,17 +687,26 @@ iframe {
     padding:  9.375vw;
   }
 
+  section {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
 /*-------------------------- Navigation -----------------------*/
 
   .menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     background-color: transparent;
     padding: 8px 14px 8px 8px;
-    /* border: 2px solid #ccc; */
     border-radius: 64px;
-    /* box-shadow: 0px 0px 8px #ddd, inset 0px 2px 3px #f1f1f1; */
   }
 
   .menu {
@@ -725,6 +748,14 @@ iframe {
   width: 65%;
 }
 
+/*--------------------------- About ---------------------------*/
+
+.self-portrait{
+  width: 100px;
+  height: 100px;
+  margin-top: calc(5.625vw - 15px);
+}
+
 /*-------------------- Column -> Row Content ------------------*/
 
   .logistics,
@@ -755,10 +786,6 @@ iframe {
     font-size: 57.6px;
   }
 
-  .logo {
-    font-size: 28.8px;
-  }
-
   header {
     padding: 57.6px 71.68px;
   }
@@ -775,7 +802,23 @@ iframe {
     margin: 0 10em;
   }
 
-/*---------------------------- Project-- -----------------------*/
+/*----------------------------- About --------------------------*/
+
+  .self-portrait{
+    margin-top: calc(57.6px - 15px);
+  }
+
+  .contact-content-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }  
+
+  .contact-image{
+    padding-left: 3em;
+    margin: 0 0 0 auto;
+  }
+
+/*---------------------------- Project -------------------------*/
 
   .two-column-layout {
     display: flex;

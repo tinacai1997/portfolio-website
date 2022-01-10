@@ -3,7 +3,8 @@
     margin: 2.5em;
 }
 
-.ripple-button > a {
+.ripple-button > a,
+.ripple-button > button {
     border: 2px solid black;
     border-radius: 32px;
     color: black;
@@ -19,11 +20,13 @@
     transition: 0.3s linear;
 }
   
-.ripple-button > a:hover {
+.ripple-button > a:hover,
+.ripple-button > button:hover {
 color: #ffffff;
 }
 
-.ripple-button > a > span {
+.ripple-button > a > span,
+.ripple-button > button > span {
   background-color: black;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -48,7 +51,8 @@ color: #ffffff;
   z-index: -1;
 }
 
-.ripple-button > a:hover > span {
+.ripple-button > a:hover > span,
+.ripple-button > button:hover > span {
   height: 800px;
   width: 800px;
 }

@@ -25,7 +25,7 @@
     <!-- Logo -->
     <a href="index.html#hero" class="logo-link">
       <div class="logo">tcai</div>
-    </a>    
+    </a>   
 
     <!-- Menu Container -->
     <div class="menu-container" >
@@ -58,42 +58,93 @@
   <!-- Main Content -->
   <main>
 
-    <!-- About Section -->
-    <div class="section-margin">
+    <!-- About Picture -->
+    <div class="self-portrait center">
+      <img src="img/about/self-portrait.png" id="about-picture" alt="My Self Portrait">
+    </div>
 
-      <!-- About Container -->
-      <div class="about-container">
+    <!-- About Container -->
+    <div class="about-container">
 
-          <!-- About Picture -->
-          <div class="thumbnail">
-            <img src="img/about/thumbnail.png" id="about-picture" alt="Photo of Tina Cai">
-          </div>
+      <!-- About Me-->
+      <section>
+        <h4 class="sub-section-heading">
+          About me
+        </h4>
+        <p>
+          <strong>Hi! I'm Tina, a Seattle based UX designer, baker, and hardcore gamer. </strong>
+        </p>
+        <p>
+          I'm also an ex-electrical engineer who realized my interests lied in engineering user experiences, not electrical
+          systems 😊
+        </p>
+        <p>
+          In the past year, I've honed my user-centric philosophy by studying UX methodologies and practicing design thinking. I've since completed several case studies, as showcased here in my portfolio (hand-coded by yours truly 🤗). In a constant pursuit of growth, I push myself to learn different design tools for all my projects, like Figma, Adobe CC, and Sketch to create usable interfaces that solve real problems. 
+        </p>
+        <p>
+          When I'm taking a break from designing, I like to <strong>cook and bake</strong> new recipes (check out my Feed!), <strong>play video games</strong> with friends, and <strong>cuddle my kitty! </strong> 😸
+        </p>
+      </section>
 
-          <!-- About Description-->
-          <div>
+      <!-- Contact Me-->
+      <section>
+        <div class="contact-content-container">
+          <form action="https://formsubmit.co/tinacai1997@gmail.com" method="POST">
             <h4 class="sub-section-heading">
-              about me
+              Contact me
             </h4>
-            <h3>Here's a little bit about myself.</h3>
-            <h5>
-              <strong>Hi! I'm Tina 😄</strong>
-            </h5>
-            <h5>
-              <strong>I'm a Seattle based UX designer, baker, and hardcore gamer.</strong>
-            </h5>
-            <h5>
-              I'm also an ex-electrical engineer who realized my interests lied in engineering user experiences, not electrical
-              systems.
-            </h5>
-            <h5>
-              In the past year, I've enrolled in a UX Immersion Program to practice design thinking and UX fundamentals. I've since completed several case studies in and out of this course, as showcased here on my portfolio (hand-coded by yours truly). While working on new projects, I push myself to use different tools for each, like Figma, Adobe CC, and Sketch to hone both my skills and tools at once - two birds, one stone!
-            </h5>
-            <h5>
-              When I'm taking a break from designing, I like to <strong>cook and bake</strong> new recipes (check out my feed section!), <strong>play video games</strong> with friends, and <strong>cuddle with my cat</strong>~ 😻 
-            </h5>
-          </div>
 
-      </div>
+            <p>
+              <strong>Reach out for opportunities or just a virtual coffee</strong> ☕
+            </p>
+
+            <div class="contact-form-section">
+              <p>Your Name *</p>
+
+              <fieldset class="contact-field">
+                <input type="text" name="name" required>
+              </fieldset>
+            </div>
+
+            <div class="contact-form-section">
+              <p>Your Email *</p>
+
+              <fieldset class="contact-field">
+                <input type="email" name="email" required>
+              </fieldset>
+            </div>
+            
+            <div class="contact-form-section">
+              <p>Subject *</p>
+
+              <fieldset class="contact-field">
+                <input type="text" name="subject" required>
+              </fieldset>
+            </div>
+
+            <div class="contact-form-section">
+              <p>Message *</p>
+
+              <fieldset class="contact-field" id="message-field">
+                <textarea type="text" name="message" required></textarea>
+              </fieldset>
+            </div>
+
+            <!-- Submit Email Button -->
+            <div class="ripple-button">
+              <button type="submit">
+                <span></span>
+                SUBMIT
+              </button>
+            </div>
+          </form>
+
+          <div class="contact-image">
+            <img src="img/about/temp_contact_pic.jpg" alt="A picture of a sweet swiss roll I baked :)">
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
