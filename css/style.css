@@ -516,7 +516,7 @@ nav > ul > li > a:hover:after {
   background-color: var(--lingually-bg-color);
 }
 
-.color-chall {
+.color-ux-challenge {
   background-color: var(--ux-challenge-bg-color);
 }
 
@@ -536,10 +536,6 @@ nav > ul > li > a:hover:after {
 
 .contact-form-section p {
   margin-bottom: 0.5em;
-}
-
-#feed-link {
-  text-decoration: underline;
 }
 
 .contact-field {
