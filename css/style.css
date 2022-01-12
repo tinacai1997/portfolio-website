@@ -32,12 +32,8 @@ section {
   margin: 8vh 0;
 }
 
-.med-img {
-  width: 75%;
-}
-
 .large-img {
-  width: 50%;
+  max-width: 70vh;
 }
 
 .center {
@@ -55,6 +51,7 @@ section {
   --payd-bg-color: #f8f1ff;
   --portfolio-bg-color: #ebf1ff;
   --lingually-bg-color: #f9e7e5;
+  --lingually-brand-color: #e1371e;
   --ux-challenge-bg-color: #f4fff7;
 }
 
@@ -125,6 +122,11 @@ strong {
 
 .sub-section-heading {
   border-left: 4px solid var(--brand-color);
+  padding-left: 14px;
+}
+
+.warm-sub-section-heading {
+  border-left: 4px solid var(--lingually-brand-color);
   padding-left: 14px;
 }
 
