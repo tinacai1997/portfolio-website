@@ -60,836 +60,492 @@
   <!-- Main Content -->
   <main>
 
-    <!-- 0. Project Hero Section -->
-    <div class="section-margin">
-
-      <!-- Project Hero Container  -->
-      <div class="project-hero-container">
-        <div class="project-hero-content">
-          <h3>Design Portfolio</h3>
-          <h1>Creating a home for project work</h1>
-        </div>
+    <!-- 0. Project Hero -->
+    <div class="project-hero-container">
+      <div class="project-intro-container">
+        <h3>Design Portfolio</h3>
+        <h1>Creating a home for project work</h1>
       </div>
+
+      <picture>
+        <source srcset="img/portfolio/@1x/portfolio_intro@1x.png" media="(max-width:767px)">
+        <img class="parallax-img" src="img/portfolio/@2x/portfolio_intro@2x.png" alt="Portfolio Image 1">
+      </picture>
     </div>
 
-    <!-- 1. Intro Section -->
-    <div>
+    <!-- 1. Overview -->
+    <div class="project-section-container">
+      <section>
+        <div class="column-container">
+          <div>
+            <h4 class="sub-section-heading">Overview</h4>
+            <h5>
+              My design portfolio is an online platform that displays my <strong>work, design skills, personality,</strong> and <strong>coding aptitude</strong> to other <strong>designers, potential recruiters,</strong> and <strong>hiring managers</strong>.
+            </h5>
+            <h5>
+              This project also serves as a medium for me to practice and demonstrate my understanding of front-end development and web design.
+            </h5>
+            <h5>
+              <strong>Role:</strong> Front-End Dev, Web/UX/UI Designer (solo)
+              <br>
+              <strong>Tools:</strong> Adobe XD, VS Code, Atom, GitHub
+              <br>
+              <strong>Timeframe:</strong> Nov 2021 - Present
+            </h5>
+          </div>
 
-      <!-- Intro Container-->
-      <div>
+          <div>
+            <a href="https://www.vecteezy.com/free-vector/finance">
+              <picture>
+                <source srcset="img/payd/@1x/payd_front@1x.png" media="(max-width:767px)">
+                <img src="img/portfolio/@2x/portfolio_overview@2x.jpg" class="test" alt="Payd Overview Image">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-        <!-- Intro Picture -->
-        <div>
+    <!-- 2. Web Structure  -->
+    <div class="project-section-container">
+
+      <!-- HTML Header -->
+      <div class="project-section-title">
+        <h2>Structuring my website 🧰</h2>
+      </div>
+      
+      <!-- HTML -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">HTML</h4>
+
+          <h5>
+            I began creating my website by writing its HTML documentation using the IDE, Atom. To ensure accessibility, I coded my portfolio using a mobile-first approach. In order to focus on content over style during this stage, I based my web structure on sample wireframes. 
+          </h5>
+        </div>
+
+        <!-- Sample Wireframe Layout Picture -->
+        <div class="light-img">
           <picture>
-            <source srcset="img/portfolio/@1x/portfolio_intro@1x.png" media="(max-width:767px)">
-            <img class="parallax-img" src="img/portfolio/@2x/portfolio_intro@2x.png" alt="Portfolio Image 1">
+            <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_layout@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/@2x/portfolio_sample_wireframe_layout@2x.png" alt="Portfolio Sample Wireframe Layout">
           </picture>
         </div>
+      </section>
 
-        <!-- Project Overview -->
-        <div class="section-margin">
-        
-          <section>
-
-            <!-- The Problem -->
-            <div>
-              <h4 class="sub-section-heading">problem</h4>
-              <h3>
-                How can I display my design skills, style, and aptitude to other designers and potential recruiters?
-              </h3>
-              <h5>
-                The goal of this online design portfolio is to provide a platform to showcase my work and introduce myself into the design world.
-              </h5>
-              <h5>
-                This project also serves as a medium for me to practice and demonstrate my understanding of front-end development and web design.
-              </h5>
-            </div>
-
-            <!-- Logistics  -->
-            <div class="logistics">
-              <div>
-                <h4 class="sub-section-heading">responsibilities</h4>
-                <p>UX / UI Designer</p>
-                <p>Front-End Dev</p>
-              </div>
-
-              <div>
-                <h4 class="sub-section-heading">design tools</h4>
-                <ul id="tools">
-                  <li>
-                    <img src="img/icons/vscode_icon.png" alt="VS Code Icon" width="30px" height="30px">
-                  </li>
-                  <li>
-                    <img src="img/icons/atom_icon.png" alt="Atom Icon" width="30px" height="30px">
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                      <path id="Subtraction_4" data-name="Subtraction 4"
-                        d="M10.034,24.156c0,.124-.139.223-.315.223-.2.019-.339-.081-.339-.223,0-.124.139-.223.314-.223C9.877,23.914,10.034,24.013,10.034,24.156Zm-1.881-.279c-.042.124.079.267.26.3a.28.28,0,0,0,.375-.124c.036-.124-.079-.267-.26-.323A.307.307,0,0,0,8.153,23.877Zm2.673-.105c-.175.043-.3.161-.278.3.018.124.175.2.357.161s.3-.161.278-.285S11,23.753,10.827,23.771ZM14.806,0C6.417,0,0,6.532,0,15.136A15.53,15.53,0,0,0,10.252,29.975c.774.143,1.046-.347,1.046-.751,0-.385-.018-2.506-.018-3.809,0,0-4.234.931-5.123-1.849,0,0-.69-1.805-1.682-2.27,0,0-1.385-.974.1-.955a3.18,3.18,0,0,1,2.335,1.6,3.153,3.153,0,0,0,4.409,1.3,3.482,3.482,0,0,1,.968-2.091c-3.381-.385-6.792-.887-6.792-6.855a4.763,4.763,0,0,1,1.427-3.654,6,6,0,0,1,.157-4.212C8.341,6.024,11.25,8.1,11.25,8.1a13.945,13.945,0,0,1,7.6,0s2.909-2.084,4.173-1.675a6,6,0,0,1,.157,4.212,4.878,4.878,0,0,1,1.56,3.654c0,5.986-3.562,6.464-6.943,6.855a3.719,3.719,0,0,1,1.028,2.878c0,2.091-.018,4.677-.018,5.186,0,.4.278.893,1.046.751A15.39,15.39,0,0,0,30,15.136,15.012,15.012,0,0,0,14.806,0ZM5.879,21.4c-.079.062-.061.2.042.323.1.1.236.143.315.062.079-.062.061-.2-.042-.323C6.1,21.358,5.958,21.315,5.879,21.4Zm-.653-.5c-.042.081.018.18.139.242a.177.177,0,0,0,.26-.043c.042-.081-.018-.18-.139-.242C5.365,20.812,5.268,20.831,5.226,20.893ZM7.185,23.1c-.1.081-.06.267.079.385.139.143.314.161.393.062.079-.081.042-.267-.079-.385C7.446,23.021,7.264,23,7.185,23.1ZM6.5,22.19c-.1.062-.1.223,0,.366s.26.2.339.143a.288.288,0,0,0,0-.385C6.75,22.171,6.593,22.109,6.5,22.19Z"
-                        transform="translate(0 0)" />
-                    </svg>
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30.041" height="30.041" viewBox="0 0 30.041 30.041">
-                      <g id="Group_1142" data-name="Group 1142" transform="translate(-1.207 -0.712)">
-                        <rect id="Rectangle_2170" data-name="Rectangle 2170" width="30.041" height="30.041" transform="translate(1.207 0.712)" fill="#ff26be" />
-                        <rect id="Rectangle_2171" data-name="Rectangle 2171" width="27.397" height="27.397" transform="translate(2.529 2.034)" fill="#2e001f" />
-                        <g id="Group_1143" data-name="Group 1143" transform="translate(6.844 8.754)">
-                          <g id="Group_1142-2" data-name="Group 1142" transform="translate(0)">
-                            <path id="Path_38" data-name="Path 38"
-                              d="M106.974,137.4h-2.347l-2.519,5.269L99.555,137.4H97.138l3.421,6.841-3.543,7H99.4l2.564-5.368,2.594,5.368h2.586l-3.652-7.087Zm6.487,0v3.521h-.676a4.952,4.952,0,0,0-5.1,5.289c0,2.938,1.489,5.147,4.66,5.147a6.113,6.113,0,0,0,3.435-.808V137.4Zm0,11.934a2.47,2.47,0,0,1-.9.118c-.631,0-2.565-.278-2.565-3.346s2.223-3.314,2.758-3.314a1.138,1.138,0,0,1,.706.15v6.392Z"
-                              transform="translate(-97.016 -137.396)" fill="#ffd9f2" />
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 class="sub-section-heading">timeframe</h4>
-                <p>Nov-Dec 2021</p>
-                <p>(1 month)</p>
-              </div>
-            </div>
-          </section>
+      <!-- GitHub -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Github repository</h4>
+          <h5>
+            I used GitHub Desktop to create a repository for my website. This was incredibly useful because it allowed me to <strong>back-up, commit,</strong> and <strong>track</strong> my changes as I worked on my portfolio.
+          </h5>
+          <h5>
+            I anticipate when I strong work on team projects, GitHub will even more useful for reviewing and working on shared files, so learning to use it for this project felt like good practice.
+          </h5>
         </div>
-      </div>
+
+        <!-- GitHub Button -->
+        <div class="ripple-button">
+          <a href="https://github.com/tinacai1997/portfolio-website" target="_blank">
+            <span></span>
+            Visit Project GitHub
+          </a>
+        </div>
+      </section>
     </div>
 
-    <!-- 2. HTML Section -->
-    <div class="section-margin">
+    <!-- 3. Web Style  -->
+    <div class="project-section-container">
 
-      <!-- HTML Container -->
-      <div>
-
-        <!-- HTML Header-->
-        <h1>The structure 🧱</h1>
-
-        <!-- HTML Content -->
-        <div>
-
-          <!-- HTML -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">HTML</h4>
-              <h5>
-                As I was re-learning HTML, I based my web structure on sample wireframes.
-              </h5>
-              <h5>
-                Following the samples, I used the IDE, Atom, to write the initial structure system in HTML.
-              </h5>
-            </div>
-
-            <!-- Sample Wireframe Layout Picture -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_layout@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_sample_wireframe_layout@2x.png" alt="Portfolio Sample Wireframe Layout">
-              </picture>
-            </div>
-
-            <!-- Sample Wireframe Layouts Button -->
-            <div class="ripple-button">
-              <a href="https://drive.google.com/drive/folders/16igcfKt06GTb-H9al1Ctyc2fZZB2Dn2O?usp=sharing" target="_blank">
-                <span></span>
-                More Sample Layouts
-              </a>
-            </div>
-          </section>
-        </div>
+      <!-- HTML Header -->
+      <div class="project-section-title">
+        <h2>Designing the web style 👒</h2>
       </div>
+      
+      <!-- HTML -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">CSS</h4>
+
+          <h5>
+            With the structure finished, I began writing the CSS to emulate the sample wireframes' style. <strong>But the more I wrote, the more I felt my website wasn't mine.</strong>  I was constantly tweaking the CSS to match my style until I realized the sample wireframes were delaying my work, not streamlining it. Therefore, I decided I needed something to guide my design.
+          </h5>
+        </div>
+
+        <!-- Sample Wireframe Style Picture -->
+        <div class="light-img">
+          <picture>
+            <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_style@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/@2x/portfolio_sample_wireframe_style@2x.png" alt="Portfolio Sample Wireframe Style">
+          </picture>
+        </div>
+      </section>
+
+      <!-- Lofi Wireframes -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Lo-fi wireframes</h4>
+          <h5>
+            To create a guideline for my web design, I sketched lo-fi wireframes in pencil and paper. As I sketched, I annotated my wireframes with ideas for micro-animations and interations to make my portfolio feel more unique and personal.
+          </h5>
+        </div>
+
+        <!-- Lofi Sketch -->
+        <div class="light-img large-img center">
+          <picture>
+            <source srcset="img/portfolio/@1x/portfolio_lofi_wireframe@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/@2x/portfolio_lofi_wireframe@2x.png" alt="Lofi Wireframe Sketch">
+          </picture>
+        </div>
+      </section>
+
+      <!-- Hifi Wireframes -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Hi-fi wireframes</h4>
+          <h5>
+            I used Adobe XD to refine my lo-fi sketches and create hi-fi wireframes. I'm glad I changed paths and took this step because I was able to depict exactly what I wanted my portfolio to look like, which provided guidelines to stick to and ease of mind from not having to design as I go.
+          </h5>
+          <h5>
+            Additionally, mocking up my site using a design tool was great practice for future projects. With XD, I was able to create components and save colors and character styles. <strong>Seeing my design from the development perspective</strong> shown a light on how important it is to <strong>create clear and consistent assets as a designer</strong>. 
+        </div>
+
+        <!-- Mockups and Site Comparison Pictures -->
+        <div class="center column-container portfolio-column-container">
+          <div class="center light-img">
+            <img src="img/portfolio/portfolio_css_again-1.png" class="" alt="Mobile Hifi 1">
+            <h3>mockup</h3>
+
+            <img src="img/portfolio/portfolio_css_again-3.png" alt="Mobile Hifi 3">
+          </div>
+
+          <div class="center light-img">
+            <img src="img/portfolio/portfolio_css_again-2.png" class=" column-margin" alt="Mobile Hifi 2">
+
+            <img src="img/portfolio/portfolio_css_again-4.png" class=" column-margin" alt="Mobile Hifi 4">
+            <h3>site</h3>
+          </div>
+      </section>
     </div>
 
-    <!-- 3. GitHub Section -->
-    <div class="section-margin">
+    <!-- 4. Advanced Web Style -->
+    <div class="project-section-container">
 
-      <!-- GitHub Container -->
-      <div>
-
-        <!-- GitHub Header -->
-        <h1>The repository 💼</h1>
-
-        <!-- GitHub Content -->
-        <div>
-
-          <!-- GitHub -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">github</h4>
-              <h3>I needed a way to store, track, and share my work. You know, in case life happens.</h3>
-              <h5>
-                I used GitHub Desktop to create a repository for my work. This was useful because it allowed me to back-up, commit, and track my changes as I worked on my portfolio.
-              </h5>
-              <h5>
-                I anticipate when I work on team projects, GitHub will be more useful for reviewing and working on shared files. Although my design portfolio is a solo project, sharing and updating it on GitHub felt like good practice.
-              </h5>
-            </div>
-
-            <!-- GitHub Button -->
-            <div class="ripple-button">
-              <a href="https://github.com/tinacai1997/portfolio-website" target="_blank">
-                <span></span>
-                Visit Project GitHub
-              </a>
-            </div>
-          </section>
-        </div>
+      <!-- Advanced Style Header -->
+      <div class="project-section-title">
+        <h2>Advancing the web style 👗</h2>
       </div>
-    </div>
-
-    <!-- 4. CSS Section -->
-    <div class="section-margin">
-
-      <!-- CSS Container -->
-      <div>
-
-        <!-- CSS Header -->
-        <h1>The style 🎨</h1>
-
-        <!-- CSS Content -->
-        <div>
-
-          <!-- CSS -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">css</h4>
-              <h3>Sometimes, it's ok to stray away from the norm.</h3>
-              <h5>
-                I began writing CSS rules to emulate the sample wireframes' style and element positioning. But the more I wrote and watched my website come together, the more I felt like it wasn't my style.
-              </h5>
-              <h5>
-                Although I appreciated the sample wireframes being lo-fi to allow room for creativity, I felt like I was constantly making design decisions as I went and second guessing minor details.
-              </h5>
-            </div>
-
-            <!-- Sample Wireframe Style Picture -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_style@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_sample_wireframe_style@2x.png" alt="Portfolio Sample Wireframe Style">
-              </picture>
-            </div>
-            
-            <!-- Sample Wireframe Style Button -->
-            <div class="ripple-button">
-              <a href="https://drive.google.com/drive/folders/1DxMFC42fkQ2sjf5glm6vJCSswn10NkMa?usp=sharing" target="_blank">
-                <span></span>
-                More Sample Style
-              </a>
-            </div>
-          </section>
-
-          <!-- Lofi Wireframes -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">low fidelity wireframes</h4>
-              <h5>
-                Unsatisfied with the sample wireframes, I began sketching my own lo-fi wireframes in pencil and paper. 
-              </h5>
-              <h5>
-                As I sketched in lo-fi, I annotated my wireframes with ideas for micro animations and interations to make my portfolio feel more unique and personal.
-              </h5>
-            </div>
-
-            <!-- Lofi Sketch -->
-            <div class="light-img large-img center">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_lofi_wireframe@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_lofi_wireframe@2x.png" alt="Lofi Wireframe Sketch">
-              </picture>
-            </div>
-          </section>
-
-          <!-- Hifi Wireframes -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">high fidelity wireframes</h4>
-              <h5>
-                I needed refined wireframes to guide my portfolio's development.
-                After all, I wouldn't pass lo-fi wireframes straight to development and call it a day, as lo-fi sketches wouldn't provide enough information to develop a finished site.
-              </h5>
-              <h5>
-                I used Adobe XD to bring what I sketched to life through hi-fi wireframes. With XD, I was able to depict what I wanted my portfolio to look like. This provided me both a guideline to stick to and ease of mind from not having to design as I go.
-              </h5>
-            </div>
-
-            <!-- Hifi Snip -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_hifi_wireframe@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_hifi_wireframe@2x.png" alt="Hifi Wireframe Snip">
-              </picture>
-            </div>
-
-            <!-- Hifi Wireframe Button -->
-            <div class="ripple-button">
-              <a href="https://drive.google.com/drive/folders/1ni1KTYQILa3gO3F9pVQAPrbevU4ESmlN?usp=sharing" target="_blank">
-                <span></span>
-                More Hifi Wireframes
-              </a>
-            </div>
-          </section>
+      
+      <!-- Responsive Design -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Responsive design</h4>
+          <h5>
+            It was important that my web site was usable for screens large and small to adapt to a variety of users and devices. I added adjustments to the CSS for medium, large, and x-large scren sizes. Adding responsive design to this project was also good practice because the concept itself is something I must consider when designing digital experiences.
+          </h5>
         </div>
-      </div>
-    </div>
 
-    <!-- 5. HTML (again) Section -->
-    <div class="section-margin">
-
-      <!-- HTML (Again) Container -->
-      <div>
-
-        <!-- HTML (Again) Header -->
-        <h1>The structure (again) 🧱</h1>
-
-        <!-- HTML (Again) Content -->
-        <div>
-
-          <!-- Mobile First -->
-          <section>
-              <div class="project-section">
-                <h4 class="sub-section-heading">mobile-first</h4>
-                <h3> I focused on coding my portfolio using a mobile-first approach. </h3>
-                <h5>
-                My aim was to both <strong>keep my focus on content</strong> rather than visual flair (button hovers, animations, etc.) and <strong>ensure accessibility</strong> for the smallest
-                  available screen (iPhone 5SE).
-                </h5>
-              </div>
-
-            <!-- Mobile Wirerames -->
-            <div class="center two-column-layout" id="portfolio-mobile">
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_mobile-1.png" class="column-img" alt="Mobile Hifi 1">
-
-                <img src="img/portfolio/portfolio_mobile-3.png" class="column-img column-margin" alt="Mobile Hifi 3">
-              </div>
-
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_mobile-2.png" class="column-img column-margin" alt="Mobile Hifi 2">
-
-                <img src="img/portfolio/portfolio_mobile-4.png" class="column-img column-margin" alt="Mobile Hifi 4">
-              </div>
-            </div>
-          </section>
-
-          <!-- HTML (again) -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">html (again)</h4>
-              <h5>
-                Armed with an understanding of the new structure of my website, I modified the HTML to match. These modifications weren't too crazy, as I had kept most of the structure as similar to the previous as I could.
-              </h5>
-            </div>
-
-            <!-- HTML (again) Picture -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_html_again@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_html_again@2x.png" alt="Hifi Wireframe Snip">
-              </picture>
-            </div>
-          </section>
+        <!-- Responsive Design Picture -->
+        <div class="light-img">
+          <picture>
+            <source srcset="img/portfolio/@1x/portfolio_responsive@1x.png" media="(max-width:767px)">
+            <img src="img/portfolio/@2x/portfolio_responsive@2x.png" alt="Portfolio Sample Wireframe Style">
+          </picture>
         </div>
-      </div>
-    </div>
-
-    <!-- 6. CSS (again) Section -->
-    <div class="section-margin">
-
-      <!-- CSS (again) Container -->
-      <div>
-
-        <!-- CSS (again) Header -->
-        <h1>The style (again) 🎨</h1>
-
-        <!-- CSS (again) Content -->
-        <div>
-
-          <!-- Usability CSS (again) -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">css (again)</h4>
-              <h5>
-                Finally, I began re-writing my CSS stylesheets to emulate the mobile wireframes I had mocked up to this point. There were some slight differences as I made minor improvements as I went.
-              </h5>
-            </div>
-
-            <!-- Mockups and Site Comparison Pictures -->
-            <div class="center two-column-layout" id="portfolio-mobile">
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_css_again-1.png" class="column-img" alt="Mobile Hifi 1">
-                <h3>mockup</h3>
-
-                <img src="img/portfolio/portfolio_css_again-3.png" class="column-img" alt="Mobile Hifi 3">
-              </div>
-
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_css_again-2.png" class="column-img column-margin" alt="Mobile Hifi 2">
-
-                <img src="img/portfolio/portfolio_css_again-4.png" class="column-img column-margin" alt="Mobile Hifi 4">
-                <h3>site</h3>
-              </div>
-            </div>
-          </section>
-
-          <!-- Responsive Design -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">responsive design</h4>
-              <h3>It's important to cater to multiple user devices.</h3>
-              <h5>
-                Although my target audience are likely viewing my portfolio on large screen sizes, it was important that my portfolio site was usable for screens large and small. After completing the css stylesheet for small screen sizes, I added adjustments for medium, large, and x-large sizes.
-              </h5>
-              <h5>
-                Not only is responsive design an important concept for me to keep in mind when designing digital experiences, it also makes my design portfolio more adaptable. You never know what device a recruiter or hiring manager might be viewing my portfolio site on. 
-              </h5>
-            </div>
-
-            <!-- Responsive Design Picture -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_responsive@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_responsive@2x.png" alt="Portfolio Sample Wireframe Style">
-              </picture>
-            </div>
-          </section>
-
-          <!-- Micro Interactions -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">micro interactions</h4>
-              <h3>A little flavor doesn't hurt.</h3>
-              <h5>
-                I've written the main content of my design portfolio. The next question was, how can I spice up it's style? One solution was through micro interactions. 
-              </h5>
-              <h5>
-                I re-visited the micro interaction ideas I noted during lo-fi sketching. It was important that these interactions <i>helped</i> not <i>hurt</i> the functionalities of my site.
-              </h5>
-            </div>
-
-            <!-- Mockups and Site Comparison Pictures -->
-            <div class="center two-column-layout" id="portfolio-mobile">
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_logo_hover.gif" class="column-img" alt="Logo Hover Gif">
-                <h5>logo and link hover</h5>
-
-                <img src="img/portfolio/portfolio_menu_icon_hover.gif" class="column-img column-margin-small" alt="Menu Icon Hover Gif">
-                <h5>menu icon (+ animation)</h5>
-              </div>
-
-              <div class="center two-column">
-                <img src="img/portfolio/portfolio_arrow_hover.gif" class="column-img column-margin-small" alt="Arrow Hover Gif">
-                <h5>pointer interaction</h5>
-
-                <img src="img/portfolio/portfolio_menu_link_hover.gif" class="column-img column-margin-small" alt="Arrow Hover Gif">
-                <h5>menu link hover</h5>
-              </div>
-            </div>
-          </section>
-
-          <!-- Animation -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">animation</h4>
-
-              <div>
-                <h3 class="inline-block">Oh, hi there </h3>
-                <div class="hand-wave">👋</div>
-              </div>
-              
-              <h5>
-                There's nothing that breaths life into digital art like animation. The sample wireframes suggested animating clip art of my home town, but I wanted something simpler. Emojis are a recurring theme in my portfolio, why not make them move? 
-              </h5>
-              <h5>
-                To avoid <i>too</i> much movement, I animated the hand in my hero section to wave on hover - just a little easter egg for wandering cursors.
-              </h5>
-            </div>
-          </section>
+      </section>
+  
+      <!-- Micro Interactions -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Micro interactions</h4>
+          <h5>
+            I've written the main content and style for my design portfolio (whoo! 🥳). To advance its style further, I re-visited the micro interaction ideas I noted during lo-fi. Its important that these interactions <i>helped</i> not <i>hurt</i> the functionalities of my site, and provided helpful feedback to users.
+          </h5>
         </div>
-      </div>
-    </div>
 
-    <!-- 7. JavaScript Section -->
-    <div class="section-margin">
+        <!-- Micro Interactin Gifs -->
+        <div class="center column-container portfolio-column-container">
+          <div class="center">
+            <img src="img/portfolio/portfolio_logo_hover.gif" class="column-img" alt="Logo Hover Gif">
+          </div>
 
-      <!-- JavaScript Container -->
-      <div>
-
-        <!-- JavaScript Header -->
-        <h1>The scripts 📃</h1>
-
-        <!-- JavaScript Content -->
-        <div>
-
-          <!-- JavaScript -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">javascript</h4>
-              <h3>Micro interactions are fun, but they don't provide any concrete functionality to the site. </h3>
-              <h5>
-                I created a JavaScript file to add some real interactivity within my site. To make life simpler, I added the library, jQuery, to my HTML pages. 
-              </h5>
-            </div>
-
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_javascript@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_javascript@2x.PNG" alt="JavaScript Snip">
-              </picture>
-            </div>
-          </section>
-
-          <!-- Side Menu -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">side menu</h4>
-              <h3>I needed a way to traverse my site's pages.</h3>
-              <h5>
-                I wrote a script for opening and closing a side menu. Of course, the script requires a connection to HTML and CSS to work properly. I edited the navigation elements in my HTML, then styled it's contents in CSS. 
-              </h5>
-              <h5>
-                However, I ran into an error when testing on small screens. The menu fills the screen and it's icon isn't fixed, so visitors couldn't close the menu without leaving the page on small devices. To fix this, I adjusted the HTML to close the menu when clicking links. Press the menu icon to check it out! 👉
-              </h5>
-            </div>
-
-            <!-- Menu Gif -->
-            <div class="light-img">
-              <img src="img/portfolio/portfolio_menu_script.gif"alt="Menu Script Gif">
-            </div>
-          </section>
-
-          <!-- Slideshows -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">slideshows</h4>
-              <h3>I needed a way to display multiple pictures.</h3>
-              <h5>
-                One of the many glories of writing in widely used development languages is the resources I can adopt from others. It was important that I implemented a slideshow function for my site so I could show off multiple, related pictures in one HTML element. 
-              </h5>
-              <h5>Scouring the web, I found a plugin called <strong>Slick</strong>. It was easy to implement, and after adjusting it's CSS stylesheet, I created beautiful slideshows that matched my site's aesthetic.</h5>
-            </div>
-
-            <!-- Sample Carousal -->
-            <div class="slider-container center">
-              <div>
-                <h1>👈 Swipe</h1>
-              </div>
-              <div>
-                <h1>Hi, I'm</h1>
-              </div>
-              <div>
-                <h1>Slide Show ✌</h1>
-              </div>
-            </div>
-
-            <!-- Slick Link -->
-            <div class="ripple-button column-margin">
-              <a href="https://kenwheeler.github.io/slick/" target="_blank">
-                <span></span>
-                Explore Slick Plugin
-              </a>
-            </div>
-          </section>
+          <div>
+            <img src="img/portfolio/portfolio_menu_icon_hover.gif" class="column-img" alt="Menu Icon Hover Gif">
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+  
+      <!-- Animation -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Animation</h4>
 
-    <!-- 8. Testing Section -->
-    <div class="section-margin">
-
-      <!-- Testing Content -->
-      <div>
-
-        <!-- Testing Header -->
-        <h1>Portfolio testing 🧩</h1>
-
-        <!-- Testing Content -->
-        <div>
-
-          <!-- Usability Test -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading" id="portfolio-test">usability test</h4>
-              <h3>Does my portfolio even work?</h3>
-              <h5>
-                I tested my portfolio site by observing how participants completed specific scenario tasks. Participants were instructed to act as a <strong>Design Team Lead</strong> looking to hire a new UX designer; a potential <strong>target audience</strong> of my portfolio. 
-              </h5>
-              <h5>
-                The goals of this usability test were to observe whether participants were able to: <strong>Learn about my projects, Learn about me, Find my resume, and Contact me</strong>. 
-              </h5>
-              <h5>I compiled the usability test data into a <strong>Rainbow Spreadsheet</strong>, which grouped partcipant feedback and prioritized site errors to be addressed.</h5>
-            </div>
-
-            <!-- Rainbow Spreadsheet Button -->
-            <div class="ripple-button">
-              <a href="https://docs.google.com/spreadsheets/d/1gNX3ITeStCpUAnKPzr4AVUng384cIkCIyJ2__p4flbQ/edit?usp=sharing" target="_blank">
-                <span></span>
-                See Rainbow Spreadsheet
-              </a>
-            </div>
-          </section>
-
-          <!-- Error Addressal -->
-          <section class="panel" data-color="white">
-            <div class="project-section">
-              <h4 class="sub-section-heading">error addressal</h4>
-              <h5>
-                I addressed each site error in order of priority based on the spreadsheet. Most errors were rated at low severity and were easy to address, as described in the <a href="#portfolio-test"><u>Rainbow SpreadSheet</u></a>.
-              </h5>
-            </div>
-
-            <div class="two-column-layout">
-              <div class="two-column">
-                <h5>
-                  <strong>Issue:</strong> Users had trouble finding where to learn more about me.
-                </h5>
-                <h5>
-                  <strong>Severity:</strong> Low
-                </h5>
-                <h5>
-                  <strong>Evidence:</strong> Two of six test participants navigated to the portfolio project when looking for where to learn more about me.
-                </h5>
-                <h5>
-                  <strong>Solution:</strong> Change the name of the portfolio project to make it more clear that it's a project of its own.
-                </h5>
-              </div>
-
-              <div class="two-column">
-                <picture>
-                  <source srcset="img/portfolio/@1x/portfolio_error@1x.png" media="(max-width:767px)">
-                  <img src="img/portfolio/@2x/portfolio_error@2x.png" class="column-img"
-                    alt="Issue #2 Change">
-                </picture>
-              </div>
-            </div> 
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!-- 9. Visual Section -->
-    <div class="section-margin">
-
-      <!-- Visual Container -->
-      <div>
-
-        <!-- Visual Header -->
-        <h1>Visual flair 🧨</h1>
+          <div>
+            <h1 class="hand-wave">👋</h1>
+          </div>
           
-        <!-- Visual Content -->
-        <div>
-
-          <!-- Background Colors -->
-          <section class="panel" data-color="portfolio">
-            <div class="project-section">
-              <h4 class="sub-section-heading">background colors</h4>
-              <h3> One recurring test feedback was that the index page was too plain.</h3>
-              <h5>
-                To address this, I wanted to apply full page scrolling in the work section to add personality but still maintain a minimalistic approach.
-                After plenty of search and experimentation, I couldn't find a plugin that worked well.
-              </h5>
-              <h5>
-                I eventually found a pure CSS method that utilized the scroll-snap property. However, the functionality was finicky. Users had to scroll to a specific spot of the page to full scroll properly.
-              </h5>
-              <h5>
-                In the end, I opted for simplicity and found a plugin that changed the site background color depending on the content of the screen. I adjusted the style to fit the work section and was happy with the result.
-              </h5>
-            </div>
-
-            <!-- Color Change Plugin Button -->
-            <div class="ripple-button">
-              <a href="https://codepen.io/daveredfern/pen/zBGBJV" target="_blank">
-                <span></span>
-                Explore Color Change Plugin
-              </a>
-            </div>
-          </section>
-
-          <!-- Tab Messages -->
-          <section class="panel" data-color="white">
-            <div class="project-section">
-              <h4 class="sub-section-heading">tab messages</h4>
-              <h3>"Please Click Me 🥺"</h3>
-              <h5>
-                While exploring sample design portfolios, I noticed one had a peculiar tab name when it wasn't in focus. It said to "remember to check out the site before closing". 
-              </h5>
-              <h5>
-                I thought it'd be a neat idea to add to my own portfolio, so I found a similar plugin in codepen. Hopefully it grabs someone's attention like it did mine.
-              </h5>
-            </div>
-
-            <!-- Tab Plugin Picture -->
-            <div class="light-img">
-              <picture>
-                <source srcset="img/portfolio/@1x/portfolio_tabs_script@1x.png" media="(max-width:767px)">
-                <img src="img/portfolio/@2x/portfolio_tabs_script@2x.png" alt="Portfolio Sample Wireframe Style">
-              </picture>
-            </div>
-
-            <!-- Tab Message Plugin Button - No longer on codepen-->
-            <!-- <div class="ripple-button">
-              <a href="#" target="_blank">
-                <span></span>
-                Explore Tab Message Plugin
-              </a>
-            </div> -->
-          </section>
-
-          <!-- Ripple Button -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">ripple button</h4>
-              <h5>
-                I was originally using simple ellipses as buttons, but I wanted to add more fluidity to my portfolio. I found an interesting direction-aware dynamic ripple button plugin. After editing its CSS to fit the style of my site, the ripple button provided the movement I was looking for. 
-              </h5>
-            </div>
-
-            <!-- Simple Parallax Button -->
-            <div class="ripple-button">
-              <a href="https://www.jqueryscript.net/animation/ripple-hover-effect.html" target="_blank">
-                <span></span>
-                Explore Ripple Button Plugin
-              </a>
-            </div>
-          </section>
-
-          <!-- Parallax -->
-          <section>
-            <div class="project-section">
-              <h4 class="sub-section-heading">parallax</h4>
-              <h5>
-                I noticed many professional sites utilized parallax to enhance images and provide movement. I found a plugin to add parallax to my images. The movement is subtle, but parallax makes images look a lot less static. 
-              </h5>
-            </div>
-
-            <!-- Parallax Image Example -->
-            <picture>
-              <source srcset="img/portfolio/@1x/portfolio_parallax_ex@1x.jpg" media="(max-width:767px)">
-              <img class="parallax-img" src="img/portfolio/@2x/portfolio_parallax_ex@2x.jpg" alt="Payd Image 2">
-            </picture>
-
-            <!-- Simple Parallax Button -->
-            <div class="ripple-button">
-              <a href="https://simpleparallax.com/" target="_blank">
-                <span></span>
-                Explore Simple Parallax Plugin
-              </a>
-            </div>
-          </section>
+          <h5>
+            I explored CSS animations to add more personality to my website. To avoid distracting movement, I animated some elements on hover throughout my web site - just a few easter eggs for wandering cursors.
+          </h5>
         </div>
-      </div>
+      </section>
     </div>
 
-    <!-- 10. Deployed Section -->
-    <div class="section-margin">
+    <!-- 4. JavaScript -->
+    <div class="project-section-container">
 
-      <!-- Deployed Container -->
-      <div>
+      <!-- JavaScript Header -->
+      <div class="project-section-title">
+        <h2>Developing the website 💻</h2>
+      </div>
+      
+      <!-- JavaScript -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">JavaScript</h4>
+  
+          <h5>
+            Micro interactions are fun, but they don't provide any concrete functionality. I created a JavaScript file to add some real interactivity within my site. To make life simpler, I added the library, jQuery, to my HTML pages. 
+          </h5>
 
-        <!-- Portfolio Deployed Header -->
-        <h1>The portfolio 🌐</h1>
+          <h5>
+            I needed to provide a simple way for users to traverses each page of my site, so I wrote a script for opening and closing a side menu. Press the menu icon to check it out! 👉
+          </h5>
+        </div>
+      </section>
+  
+      <!-- Slideshows -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading">Slideshows</h4>
+          <h5>
+            It was important that I implemented a slideshow function for my site so I could show off multiple, related images throughout my project pages. 
+          </h5>
+          <h5>One of the many glories of writing in widely used development languages is the resources I can adopt from others. Scouring the web, I found a plugin called <strong>Slick</strong>. It was easy to implement, and after adjusting it's CSS stylesheet, I created beautiful slideshows that matched my site's aesthetic.</h5>
+        </div>
 
-        <!-- Deployed -->
-        <section>
-          <div class="project-section">
-            <h4 class="sub-section-heading">github pages</h4>
-            <h3>After all this work, it was time to deploy my website.</h3>
+        <!-- Sample Carousal -->
+        <div class="slider-container center">
+          <div>
+            <h1>👈 Swipe</h1>
+          </div>
+          <div>
+            <h1>Hi, I'm</h1>
+          </div>
+          <div>
+            <h1>Slide Show ✌</h1>
+          </div>
+        </div>
+
+        <!-- Slick Link -->
+        <div class="ripple-button">
+          <a href="https://kenwheeler.github.io/slick/" target="_blank">
+            <span></span>
+            Explore Slick Plugin
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- 5. Usability Testing -->
+    <div class="project-section-container">
+
+      <!-- Testing Header -->
+      <div class="project-section-title">
+        <h2>Testing the website 🧪</h2>
+      </div>
+      
+      <!-- Usability Test -->
+      <section>
+        <div class="project-section">
+          <h4 class="sub-section-heading" id="portfolio-test">Usability testing</h4>
+          <h5>
+            So far, I was having a lot of fun developing my website, but did it even work? I tested the site by recruiting participants to complete specific scenario tasks. 
+          </h5>
+          <h5>
+            Participants were instructed to act as a <strong>Design Team Lead</strong> looking to hire a new UX designer; a potential <strong>target audience</strong> of my portfolio.
+            The goals of this usability test were to observe whether participants were able to: <strong>learn about my projects, learn about me, find my resume,</strong> and <strong>contact me</strong>. 
+          </h5>
+          <h5>I compiled the usability test data into a rainbow spreadsheet, which grouped partcipant feedback and prioritized site errors to be addressed.</h5>
+        </div>
+
+        <!-- Rainbow Spreadsheet Button -->
+        <div class="ripple-button">
+          <a href="https://docs.google.com/spreadsheets/d/1gNX3ITeStCpUAnKPzr4AVUng384cIkCIyJ2__p4flbQ/edit?usp=sharing" target="_blank">
+            <span></span>
+            See Rainbow Spreadsheet
+          </a>
+        </div>
+      </section>
+
+      <!-- Error Addressal -->
+      <section class="panel" data-color="white">
+        <div class="project-section">
+          <h4 class="sub-section-heading">Error addressal</h4>
+          <h5>
+            I addressed each site error in order of priority - most errors were rated fairly low and were easy to address as described in the <a href="#portfolio-test"><u>Rainbow SpreadSheet</u></a>.
+          </h5>
+        </div>
+
+        <div class="column-container">
+          <div class="">
             <h5>
-              After learning about the various ways to host an online website, I decided to utilize GitHub pages for now. GitHub pages allows me to provide a live link to my site, and I was already updating the site on GitHub anyway. The url isn't ideal, but for now, that doesn't affect the portfolio's purpose. 
+              <strong>Issue:</strong> Users had trouble finding where to learn more about me.
             </h5>
             <h5>
-              At some point, I'll likely host my site on a different server so I can customize the domain. I'd link my portfolio, but you're already on it!
+              <strong>Severity:</strong> Low
             </h5>
-        </section>
-      </div>
-    </div>
-
-    <!-- 11. Takeaway Section -->
-    <div class="section-margin">
-
-      <!-- Takeaway Container -->
-      <div>
-
-        <!-- Takeaway Header -->
-        <h1>The takeaways 🤔</h1>
-
-        <section>
-          <div class="project-section">
-
-            <!-- Challenges List -->
-            <h4 class="sub-section-heading">Challenges</h4>
-              <ul class="takeaways">
-              <li>
-                <h4>Wireframes</h4>
-                <p>
-                  Working with sample wireframes would have gotten my portfolio ready and out there earlier, but I already had experience with front end development and I didn't want to develop a site that I'd eventually change entirely. Next time I work on a website, I know to work on wireframes ahead of time.
-                </p>
-              </li>
-              <li>
-                <h4>Hand Coding</h4>
-                <p>
-                  Since this is my first time working on an official website, I hand coded most of it. I know this isn't actually practical most of the time - I'd likely use frameworks in the future. But still, it was great practice.
-                </p>
-              </li>
-              <li>
-                <h4>IDE</h4>
-                <p>
-                  I initially downloaded Atom to follow the sample wireframes instructions. At some point during my project, Atom froze and I could never get it to work again. I switched to vsCode since I'm familiar with it anyway - I think it's better to work on something I understand more when learning new concepts. 
-                </p>
-              </li>
-            </ul>
+            <h5>
+              <strong>Evidence:</strong> Two of six test participants navigated to the portfolio project when looking for where to learn more about me.
+            </h5>
+            <h5>
+              <strong>Solution:</strong> Change the name of the portfolio project to make it more clear that it's a project of its own.
+            </h5>
           </div>
 
-          <!-- Next Steps List -->
-          <div class="project-section">
-            <h4 class="sub-section-heading">next steps</h4>
-            <ul class="takeaways">
-              <li>
-                <h4>More case studies</h4>
-                <p>
-                  Overall, I've gotten great feedback about my site's functionalities from usability testing and my mentor. My next steps for improving my site are to add more case studies.
-                </p>
-                <p>
-                  Afterwords, I will gather feedback from my career specialist to assess whether my case study content is clear and concise enough so that they are ready for the eyes of recruiters and hiring managers.
-                </p>
-              </li>
-              <li>
-                <h4>Hero content art</h4>
-                <p>
-                  I aim to add my own personal art to the hero section of my portfolio. I've been told it was quite plain so I've been thinking about how to fill in the white space. I've been practicing sketching during free time and I think the hero section would be a great place to showcase that work to add more personality to my portfolio.
-                </p>
-              </li>
-            </ul>
+          <div class="">
+            <picture>
+              <source srcset="img/portfolio/@1x/portfolio_error@1x.png" media="(max-width:767px)">
+              <img src="img/portfolio/@2x/portfolio_error@2x.png" class="column-img"
+                alt="Issue #2 Change">
+            </picture>
           </div>
-
-          <!-- Thank you for reading -->
-          <h3 class="center">Thanks for reading!</h3>
-        </section>
-      </div>
+        </div> 
+      </section>
     </div>
 
-    <!-- Outro Picture -->
-    <div class="outro-pic">
-      <picture>
-        <source srcset="img/portfolio/@1x/portfolio_outro@1x.png" media="(max-width:767px)">
-        <img class="parallax-img" src="img/portfolio/@2x/portfolio_outro@2x.png" alt="Payd Image 2">
-      </picture>
+    <!-- 6. Visual Design -->
+    <div class="project-section-container">
+
+      <!-- Testing Header -->
+      <div class="project-section-title">
+        <h2>Adding visual flair 🎇</h2>
+      </div>
+
+      <!-- Background Colors -->
+      <section class="panel" data-color="portfolio">
+        <div class="project-section">
+          <h4 class="sub-section-heading">Background colors</h4>
+          <h5> 
+            One recurring usability test feedback was that the index page was too plain.
+          </h5>
+          <h5>
+            To address this, I wanted to apply full page scrolling in the work section to add personality but still maintain a minimalistic approach. I found a pure CSS method that utilized the scroll-snap property. However, the functionality was finicky - users had to scroll to a specific spot on the page to full scroll properly.
+          </h5>
+          <h5>
+            Eventually, I opted for simplicity and found a plugin that changed the site background color depending on the content of the screen. I adjusted the style to fit the work section and was happy with the result.
+          </h5>
+        </div>
+
+        <!-- Color Change Plugin Button -->
+        <div class="ripple-button">
+          <a href="https://codepen.io/daveredfern/pen/zBGBJV" target="_blank">
+            <span></span>
+            Explore Color Change Plugin
+          </a>
+        </div>
+      </section>
+
+      <!-- Parallax -->
+      <section class="panel" data-color="white">
+        <div class="project-section">
+          <h4 class="sub-section-heading">Parallax</h4>
+          <h5>
+            I noticed many professional sites utilized parallax to enhance images and provide movement. I found a plugin that did just that. The movement is subtle, but parallax makes images look a lot less static. 
+          </h5>
+        </div>
+
+        <!-- Parallax Image Example -->
+        <picture>
+          <source srcset="img/portfolio/@1x/portfolio_parallax_ex@1x.jpg" media="(max-width:767px)">
+          <img class="parallax-img" src="img/portfolio/@2x/portfolio_parallax_ex@2x.jpg" alt="Payd Image 2">
+        </picture>
+
+        <!-- Simple Parallax Button -->
+        <div class="ripple-button">
+          <a href="https://simpleparallax.com/" target="_blank">
+            <span></span>
+            Explore Simple Parallax Plugin
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- 7. Takeaway Section -->
+    <div class="project-section-container">
+
+      <!-- Takeaway Header -->
+      <div class="project-section-title">
+        <h2>The takeaways 🤔</h2>
+      </div>
+
+      <section>
+        <div class="project-sub-section">
+
+          <!-- Challenges List -->
+          <h4 class="sub-section-heading">Challenges</h4>
+          <ol type="1">
+            <li>
+              <p>
+                <strong>Wireframes:</strong> Working with sample wireframes would have gotten my portfolio ready and out there earlier, but I already had experience with front end development and I didn't want to develop a site that I'd eventually change entirely. Next time I work on a website, I know to work on wireframes ahead of time.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Hand coding:</strong> Since this is my first time working on an official website, I hand coded most of it. I know this isn't practical most of the time - I'd likely use frameworks in the future (but it was still great practice).
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>IDE:</strong>  I initially downloaded Atom to follow the sample wireframe instructions. At some point during my project, Atom froze and I could never get it to work again. I switched to VS Code since I'm familiar with it anyway - I think it's better to work on something I understand more when learning new concepts. 
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Next Steps List -->
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Next steps</h4>
+          <p>I'm always looking to grow and improve my portfolio. In fact, it probably already looks different now compared to the screenshots in this case study! My next steps as of today (01/12/22) are:</p>
+          <ol>
+            <li>
+              <p>
+                <strong>Adding more case studies:</strong> I'm currently working on a case study that I'll eventually add to my portfolio to showcase more work (so much to do...).
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Design critique:</strong> Usability testing was incredibly helpful in improving my site. To improve on it further, I have been doing design critiques with other designers and a career specialist. In fact, many of the new changes are based on feedback from my peers! I'm excited to meet with them again to discuss my many updates.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Feed page:</strong> I was wondering what to add to my portfolio to express my personality. I've been starting multiple personal projects to learn different skills and tools, one of them being food photography and PhotoShop. I'm planning on creating a Feed page to share my yummy food creations!
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Thank you for reading -->
+      <section>
+        <h3 class="center">Thanks for reading!</h3>
+      </section>
     </div>
   </main>
 
     <!-- Footer -->
-    <footer class="center">
+    <footer>
 
       <!-- Professional Social -->
-      <h5>
-        <span><b>Let's connect</b></span>
+      <h5 class="center">
+        <span>Let's connect</span>
         <span class="finger-point" >👇</span>
       </h5>
   
       <!-- Socials Links -->
-      <div>
+      <div class="center">
         <ul class="socials">
           <li class="socials-icon">
             <a href="mailto: tinacai1997@gmail.com" class="socials-link">
