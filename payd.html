@@ -21,62 +21,67 @@
 <!-- Body -->
 <body>
 
-   <!-- Header -->
-   <header id="header">
+  <!-- Header -->
+  <header id="header">
 
-    <!-- Logo -->
-    <a href="index.html#hero" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+  <!-- Logo -->
+  <a href="index.html#hero" class="logo-link">
+    <div class="logo">tcai</div>
+  </a>    
 
-    <!-- Menu Container -->
-    <div class="menu-container" >
+  <!-- Menu Container -->
+  <div class="menu-container">
 
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
+    <!-- Menu Content -->
+    <div class="menu">
+      <!-- Menu Links -->
+        <nav>
+          <ul>
+            <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+          </ul>
+        </nav>
     </div>
+
+    <!-- Menu Button -->
+    <div class="menu-button">
+      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+        <div class="menu-icon open">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </div>
   </header>
   
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero -->
+    <!-- 0. Project Hero Container -->
     <div class="project-hero-container">
+
+      <!-- Hero Title -->
       <div class="project-intro-container">
         <h3>Payd</h3>
         <h1>Your all inclusive e-wallet application</h1>
       </div>
 
+      <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/payd/@1x/payd_intro@1x.png" media="(max-width:767px)">
         <img class="parallax-img project-intro-img" src="img/payd/@2x/payd_intro@2x.png" alt="Payd Image 1">
       </picture>
     </div>
 
-    <!-- 1. Overview -->
+    <!-- 1. Overview Container -->
     <div class="project-section-container">
       <section>
         <div class="column-container">
+
+          <!-- Overview Description -->
           <div>
             <h4 class="sub-section-heading">Overview</h4>
             <h5>
@@ -94,6 +99,7 @@
             </h5>
           </div>
 
+          <!-- Overview Vector Image -->
           <div>
             <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">
               <img src="img/payd/payd_overview.jpg" class="test" alt="Payd Overview Image">
@@ -103,7 +109,7 @@
       </section>
     </div>
 
-    <!-- 2. Research  -->
+    <!-- 2. Research Container -->
     <div class="project-section-container">
 
       <!-- Research Header-->
@@ -140,7 +146,7 @@
           </ul>
         </div>
 
-        <!-- Competitive Analysis Button -->
+        <!-- See Competitive Analyses Button -->
         <div class="ripple-button">
           <a href="https://drive.google.com/file/d/188mBQDxS6qxc5GXeX65EZEl2BuJd3eqr/view?usp=sharing"
           target="_blank">
@@ -163,7 +169,7 @@
           </h5>
         </div>
 
-        <!-- Carousal of interview affinity maps -->
+        <!-- User Interview Affinity Map Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -195,12 +201,12 @@
         </div>
       </section>
 
-      <!-- Problem & Goal -->
+      <!-- Problems & Goal -->
       <section>
         <div class="project-sub-section">
           <h4 class="sub-section-heading">Problems & Goal</h4>
 
-          <!-- Problem -->
+          <!-- Problems -->
           <div>
             <h5>
               From my research, I determined the overarching problems users face when managing finances. 
@@ -228,7 +234,7 @@
       </section>
     </div>
 
-    <!-- 3. Empathy -->
+    <!-- 3. Empathy Container -->
     <div class="project-section-container">
 
       <!-- Empathy Header -->
@@ -245,7 +251,7 @@
           </h5>
         </div>
 
-        <!-- Carousal of personas -->
+        <!-- User Persona Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -272,7 +278,7 @@
           </h5>
         </div>
 
-        <!-- Carousal of journey maps -->
+        <!-- User Journey Map Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -291,7 +297,7 @@
       </section>
     </div>
 
-    <!-- 4. Info Arch -->
+    <!-- 4. Info Arch Container -->
     <div class="project-section-container">
 
       <!-- Info Arch Header -->
@@ -299,7 +305,6 @@
         <h2>Structuring the solution 🌱</h2>
       </div>
       
-
       <!-- Users Flows -->
       <section>
         <div class="project-sub-section">
@@ -307,13 +312,12 @@
           <h5>
             Based on my personas, I pinpointed three core functions to help users accomplish their goals: <strong>Account Creation, Payment Methods ,</strong> and <strong>Send/Recieve Payments</strong>.
           </h5>
-
           <h5>
             I then created user flows that suggested how my personas might navigate Payd to complete specific tasks using these core functions. This step was important as it influeced the app's information architecture and provided a focus on functionality.
           </h5>
         </div>
 
-        <!-- Carousal of user flows -->
+        <!-- User Flow Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -347,7 +351,7 @@
           </h5>
         </div>
 
-        <!-- Carousal of site maps -->
+        <!-- Side Map Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -373,15 +377,15 @@
       </section>
     </div>
 
-    <!-- 5. Wireframes -->
+    <!-- 5. Wireframes Container -->
     <div class="project-section-container">
 
-      <!-- Wireframing Header -->
+      <!-- Wireframes Header -->
       <div class="project-section-title">
         <h2>Wireframing the solution ✨</h1>
       </div>
       
-      <!-- Wireframe Content -->
+      <!-- Wireframes Content -->
       <section>
 
         <!-- Lofi Wireframes -->
@@ -450,7 +454,7 @@
       </section>
     </div>
 
-    <!-- 6. Testing -->
+    <!-- 6. Testing Container -->
     <div class="project-section-container">
 
       <!-- Testing Header -->
@@ -466,13 +470,12 @@
             Using my interactive prototype, I tested the app's usability by observing how e-wallet users navigated through it to complete the following tasks: <strong>creating a split payment, adding a payment method,</strong> and <strong>comparing monthly
             spending</strong>. 
           </h5>
-
           <h5>
             I grouped the test data using affinity maps, then organized a rainbow spreadsheet to create a quantitative representation of the data. The spreadsheet tracked user feedback, error, and severity, uncovering functions that needed improvement and their priority based on impact and effort.
           </h5>
         </div>
 
-        <!-- Carousal of affinity maps -->
+        <!-- Usability Testing Affinity Map Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -503,7 +506,7 @@
           </div>
         </div>
 
-        <!-- Rainbow Spreadsheet Button -->
+        <!-- See Rainbow Spreadsheet Button -->
         <div class="ripple-button">
           <a href="https://docs.google.com/spreadsheets/d/1lZyt-xeErfrW3sNHmRm8ohappcqbUUq4YS7VxAlLo80/edit?usp=sharing"
           target="_blank">
@@ -523,11 +526,12 @@
         </div>
 
         <div class="column-container">
+
+          <!-- Error Description -->
           <div>
             <h5>
               <strong>Issue:</strong> Users had trouble with test scenario #3 of comparing monthly spending.
             </h5>
-            
             <h5>
               <strong>Severity:</strong> High
             </h5>
@@ -542,6 +546,7 @@
             </h5>
           </div>
 
+          <!-- Error Comparison Image -->
           <div>
             <a href="https://drive.google.com/file/d/1mvG6PZaUbGKxE4sKm9I-TL1W_0eeCAv1/view?usp=sharing"
             class="center project-link" target="_blank">
@@ -554,7 +559,7 @@
           </div>
         </div>
 
-        <!-- Error List Button -->
+        <!-- See Error List Button -->
         <div class="ripple-button">
           <a href="https://drive.google.com/file/d/1mvG6PZaUbGKxE4sKm9I-TL1W_0eeCAv1/view?usp=sharing"
           target="_blank">
@@ -565,7 +570,7 @@
       </section>
     </div>
 
-    <!-- 7. Visual Design -->
+    <!-- 7. Visual Design Container -->
     <div class="project-section-container">
 
       <!-- Visual Design Header -->
@@ -573,7 +578,6 @@
         <h2>Adding visual design 🌈</h2>
       </div>
       
-
       <!-- Visual Design Content -->
       <section>
 
@@ -657,7 +661,7 @@
           </div>
         </div>
 
-        <!-- Style Guide Button -->
+        <!-- See Style Guide Button -->
         <div class="ripple-button">
           <a href="img/payd/payd_styleguide.png"
           target="_blank">
@@ -668,7 +672,7 @@
       </section>
     </div>
 
-    <!-- 8. Prototype -->
+    <!-- 8. Prototype Container -->
     <div class="project-section-container">
 
       <!-- Prototype Header -->
@@ -676,29 +680,28 @@
         <h2>The final prototype 🎁</h2>
       </div>
         
-      <!-- Prototype Content-->
+      <!-- Prototype-->
       <section>
-        <!-- Prototype -->
         <div class="center">
           <iframe width="300" height="648" src="https://xd.adobe.com/embed/390c94ff-a85e-4884-9409-1f786a985587-6c5f/"
             allowfullscreen></iframe>
         </div>
       </section>
-      </div>
     </div>
 
-    <!-- 9. Takeaways -->
+    <!-- 9. Reflection Container -->
     <div class="project-section-container">
 
-      <!-- Takeaway Header -->
+      <!-- Reflection Header -->
       <div class="project-section-title">
         <h2>Reflecting on my work 🤔</h2>
       </div>
 
+      <!-- Reflection Content -->
       <section>
-        <div class="project-sub-section">
 
-          <!-- Challenges List -->
+        <!-- Challenges List -->
+        <div class="project-sub-section">
           <h4 class="sub-section-heading">Challenges</h4>
           <ol type="1">
             <li>
@@ -747,7 +750,7 @@
           </ol>
         </div>
 
-        <!-- Iterations Button -->
+        <!-- See Iteration Overview Button -->
         <div class="ripple-button">
           <a href="https://drive.google.com/file/d/1XA1ZvOfUTBbqsvnlsIAyMYpgGCEDF9T3/view?usp=sharing"
           target="_blank">
@@ -757,48 +760,48 @@
         </div>
       </section>
 
-      <!-- Thank you for reading -->
+      <!-- Thank You -->
       <section>
         <h3 class="center">Thanks for reading!</h3>
       </section>
     </div>
   </main>
 
-    <!-- Footer -->
-    <footer>
+  <!-- Footer -->
+  <footer>
 
-      <!-- Professional Social -->
-      <h5 class="center">
-        <span>Let's connect</span>
-        <span class="finger-point" >👇</span>
-      </h5>
-  
-      <!-- Socials Links -->
-      <div class="center">
-        <ul class="socials">
-          <li class="socials-icon">
-            <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-              <i class="far fa-envelope"></i>
-            </a>
-          </li>
-          <li class="socials-icon">
-            <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-              <i class="fab fa-linkedin-in" id="linkedin"></i>
-            </a>
-          </li>
-          <li class="socials-icon">
-            <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
-              <i class="fab fa-behance" id="behance"></i>
-            </a>
-          </li>
-          <li class="socials-icon">
-            <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-              <i class="fab fa-github" id="github"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <!-- Footer Blurb -->
+    <h5 class="center">
+      <span>Let's connect</span>
+      <span class="finger-point" >👇</span>
+    </h5>
+
+    <!-- Footer Links -->
+    <div class="center">
+      <ul class="socials">
+        <li class="socials-icon">
+          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
+            <i class="fab fa-linkedin-in" id="linkedin"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
+            <i class="fab fa-behance" id="behance"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
+            <i class="fab fa-github" id="github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- JavaScript Files -->
   <div>

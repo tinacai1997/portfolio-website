@@ -21,62 +21,67 @@
 <!-- Body -->
 <body>
 
-   <!-- Header -->
-   <header id="header">
+  <!-- Header -->
+  <header id="header">
 
-    <!-- Logo -->
-    <a href="index.html#hero" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+  <!-- Logo -->
+  <a href="index.html#hero" class="logo-link">
+    <div class="logo">tcai</div>
+  </a>    
 
-    <!-- Menu Container -->
-    <div class="menu-container" >
+  <!-- Menu Container -->
+  <div class="menu-container">
 
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
+    <!-- Menu Content -->
+    <div class="menu">
+      <!-- Menu Links -->
+        <nav>
+          <ul>
+            <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+          </ul>
+        </nav>
     </div>
+
+    <!-- Menu Button -->
+    <div class="menu-button">
+      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+        <div class="menu-icon open">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero -->
+    <!-- 0. Project Hero Container -->
     <div class="project-hero-container">
+
+      <!-- Hero Title -->
       <div class="project-intro-container">
         <h3>Lingually</h3>
         <h1>Your immersive language learning application</h1>
       </div>
 
+      <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/lingually/@1x/lingually_intro@1x.png" media="(max-width:767px)">
         <img class="parallax-img project-intro-img" src="img/lingually/@2x/lingually_intro@2x.png" alt="Lingually Image 1">
       </picture>
     </div>
 
-    <!-- 1. Overview -->
+    <!-- 1. Overview Container -->
     <div class="project-section-container">
       <section>
         <div class="column-container">
+
+          <!-- Overview Description -->
           <div>
             <h4 class="warm-sub-section-heading">Overview</h4>
             <h5>
@@ -94,6 +99,7 @@
             </h5>
           </div>
 
+          <!-- Overview Vector Image -->
           <div>
             <a href='https://www.freepik.com/vectors/school' target="_blank">
               <img src="img/lingually/lingually_overview.jpg" alt="Lingually Overview Image">
@@ -103,7 +109,7 @@
       </section>
     </div>
 
-    <!-- 2. Research  -->
+    <!-- 2. Research Container -->
     <div class="project-section-container">
 
       <!-- Research Header-->
@@ -143,7 +149,7 @@
           </ul>
         </div>
 
-        <!-- Competitive Analysis Link -->
+        <!-- See Competitive Analyses Button -->
         <div class="ripple-button">
           <a href="https://drive.google.com/file/d/1HvqyEcdfiseFjVcaH3In3r65XxpbJwBX/view?usp=sharing"
           target="_blank">
@@ -162,7 +168,7 @@
             I interviewed vocabulary learners to gain insight on how they approached learning and the educational tools they prefered. I gathered the interview data by separating my observations into three categories: 
           </h5>
 
-          <!-- Doing, Thinking, Feeling Vectors -->
+          <!-- Doing, Thinking, Feeling Vector Images -->
           <div class="flex-row">
             <span class="center">
               <h5>
@@ -197,7 +203,7 @@
           </h5>
         </div>
 
-        <!-- User Interview Data Link -->
+        <!-- See User Interview Button -->
         <div class="ripple-button">
           <a href="https://drive.google.com/file/d/1DJc-yzquQsyq853vfVQHD1Iahugqiye6/view?usp=sharing"
           target="_blank">
@@ -238,7 +244,7 @@
       </section> -->
     </div>
 
-    <!-- 3. Empathy -->
+    <!-- 3. Empathy Container -->
     <div class="project-section-container">
 
       <!-- Empathy Header -->
@@ -257,7 +263,7 @@
           <h5>When designing Lingually, it was helpful to think back on how my solutions helped solved Tony's problems, rather than a list of problems.</h5>
         </div>
 
-        <!-- Lingually Persona -->
+        <!-- Persona Image -->
         <picture class="light-img">
           <source srcset="img/lingually/@1x/lingually_persona@1x.png" media="(max-width:767px)">
           <img src="img/lingually/@2x/lingually_persona@2x.png" alt="Lingually Persona">
@@ -271,7 +277,7 @@
           My next step was to draft user stories for Tony. These stories helped me further emphasize with him by describing his needs in his perspective. 
         </h5>
 
-        <!-- User Story Vectors -->
+        <!-- User Story Vector Images -->
         <div class="flex-row">
           <span class="center">
             <h5>
@@ -301,6 +307,7 @@
           </span>
         </div>
 
+        <!-- User Story Descriptions -->
         <ul>
           <li>
             <h5>
@@ -325,6 +332,8 @@
         <h4 class="warm-sub-section-heading">Problem & hypothesis statements</h4>
 
         <h5>Armed with a strong understanding of who I'm desiging for, I created a problem statement to focus my solution toward and a hypothesis statement that predicts Lingually's outcome assuming it is designed toward Tony's needs.</h5>
+        
+        <!-- Problem Statement -->
         <h5>
           <strong><u>Problem:</u></strong> Tony needs <strong>a fun and interactive way </strong> to improve his Japanese that can <strong>adapt to his schedule</strong> because he wants to better absorb Japanese media and be <strong> proficient in basic Japanese </strong> when he travels to Japan next year.
         </h5>
@@ -332,6 +341,7 @@
           We will know this to be true when we see him build a regular habit of <strong>studying Japanese every day</strong>, and Tony is able to <strong> hold a basic conversation</strong> in Japanese.
         </h5>
 
+        <!-- Hypothesis Statement -->
         <div class="goal-container color-lingually">
           <h5>
             We believe that by creating an <strong>interactive learning system</strong> that offers features like <strong>quiz games, pronunciation practice,</strong> and <strong>realistic example conversations</strong>, we will achieve <strong>an immersive study tool that motivates Tony to practice Japanese</strong>.
@@ -340,7 +350,7 @@
       </section>
     </div>
 
-    <!-- 4. Info Arch -->
+    <!-- 4. Info Arch Container -->
     <div class="project-section-container">
 
       <!-- Info Arch Header -->
@@ -359,7 +369,7 @@
           </h5>
         </div>
 
-        <!-- Carousal of user flows -->
+        <!-- User Flow Slideshow -->
         <div class="large-img center slider-container">
           <div>
             <picture>
@@ -386,16 +396,16 @@
       </section>
     </div>
 
-    <!-- 5. Wireframing Section -->
+    <!-- 5. Wireframes Container -->
     <div class="project-section-container">
 
-      <!-- Wireframing Header -->
+      <!-- Wireframes Header -->
       <section>
         <h2>Wireframing the solution ✨</h2>
       </section>
 
+      <!-- Lofi Wireframes -->
       <section>
-        <!-- Lofi Wireframes -->
         <div class="project-section">
           <h4 class="warm-sub-section-heading">Low Fidelity Wireframes</h4>
 
@@ -417,7 +427,7 @@
           </ul>
         </div>
 
-        <!-- Lofi Wireframes Slider -->
+        <!-- Lofi Wireframes Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
@@ -457,7 +467,7 @@
       </section>
     </div>
 
-    <!-- 6. Testing -->
+    <!-- 6. Testing Container -->
     <div class="project-section-container">
 
       <!-- Testing Header -->
@@ -478,7 +488,7 @@
            I put together a usability test report with the data from the tests. This report summarized participant errors and their severity for improving Lingually.
           </h5>
 
-          <!-- Test report pic -->
+          <!-- Usability Test Report Image -->
           <picture>
             <source srcset="img/lingually/@1x/lingually_test_report@1x.png" media="(max-width:767px)">
             <img src="img/lingually/@2x/lingually_test_report@2x.png" alt="Usability Test Report">
@@ -495,7 +505,10 @@
           </h5>
         </div>
 
+        <!-- Error #1 -->
         <div class="column-container">
+
+          <!-- Error #1 Description -->
           <div>
             <h5>
               <strong>Issue #1:</strong> Onboarding bubbles weren't obviously onboarding bubbles.
@@ -514,6 +527,7 @@
             </h5>
           </div>
 
+          <!-- Error #1 Comparison Image -->
           <div>
             <picture>
               <source srcset="img/lingually/@1x/lingually_error-1@1x.png" media="(max-width:767px)">
@@ -522,7 +536,10 @@
           </div>
         </div>
 
+        <!-- Error #2 Description -->
         <div class="column-container">
+
+          <!-- Error #2 Description -->
           <div>
             <h5>
               <strong>Issue #2:</strong> Users had trouble setting up a reminder.
@@ -538,6 +555,7 @@
             </h5>
           </div>
 
+          <!-- Error #2 Comparison Image -->
           <div>
             <picture>
               <source srcset="img/lingually/@1x/lingually_error-2@1x.png" media="(max-width:767px)">
@@ -546,7 +564,10 @@
           </div>
         </div>
 
+        <!-- Error #3 -->
         <div class="column-container">
+
+          <!-- Error #3 Description -->
           <div >
             <h5>
               <strong>Issue #3:</strong> Users were confused with how to create a new flashcard deck.
@@ -565,6 +586,7 @@
             </h5>
           </div>
 
+          <!-- Error #3 Comparison Image -->
           <div>
             <picture>
               <source srcset="img/lingually/@1x/lingually_error-3@1x.png" media="(max-width:767px)">
@@ -575,18 +597,19 @@
       </section>
     </div>
 
-    <!-- 8. Takeaways -->
+    <!-- 8. Reflection Container -->
     <div class="project-section-container">
 
-      <!-- Takeaway Header -->
+      <!-- Reflection Header -->
       <div class="project-section-title">
         <h2>Reflecting on my work 🤔</h2>
       </div>
 
+      <!-- Reflectin Content -->
       <section>
-        <div class="project-sub-section">
 
-          <!-- Challenges List -->
+        <!-- Challenges List -->
+        <div class="project-sub-section"> 
           <h4 class="warm-sub-section-heading">Challenges</h4>
           <ol type="1">
             <li>
@@ -626,7 +649,7 @@
         </div>
       </section>
 
-      <!-- Thank you for reading -->
+      <!-- Thank You -->
       <section>
         <h3 class="center">Thanks for reading!</h3>
       </section>
@@ -636,13 +659,13 @@
   <!-- Footer -->
   <footer>
 
-    <!-- Professional Social -->
+    <!-- Footer Blurb -->
     <h5 class="center">
       <span>Let's connect</span>
       <span class="finger-point" >👇</span>
     </h5>
 
-    <!-- Socials Links -->
+    <!-- Footer Links -->
     <div class="center">
       <ul class="socials">
         <li class="socials-icon">
@@ -668,7 +691,6 @@
       </ul>
     </div>
   </footer>
-
 
   <!-- JavaScript Files -->
   <div>

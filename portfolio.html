@@ -21,62 +21,67 @@
 <!-- Body -->
 <body>
 
-   <!-- Header -->
-   <header id="header">
+  <!-- Header -->
+  <header id="header">
 
-    <!-- Logo -->
-    <a href="index.html#hero" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+  <!-- Logo -->
+  <a href="index.html#hero" class="logo-link">
+    <div class="logo">tcai</div>
+  </a>    
 
-    <!-- Menu Container -->
-    <div class="menu-container" >
+  <!-- Menu Container -->
+  <div class="menu-container">
 
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
+    <!-- Menu Content -->
+    <div class="menu">
+      <!-- Menu Links -->
+        <nav>
+          <ul>
+            <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+          </ul>
+        </nav>
     </div>
+
+    <!-- Menu Button -->
+    <div class="menu-button">
+      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+        <div class="menu-icon open">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero -->
+    <!-- 0. Project Hero Container -->
     <div class="project-hero-container">
+
+      <!-- Hero Title -->
       <div class="project-intro-container">
         <h3>Design Portfolio</h3>
         <h1>Creating a home for my project work</h1>
       </div>
 
+      <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/portfolio/@1x/portfolio_intro@1x.png" media="(max-width:767px)">
         <img class="parallax-img" src="img/portfolio/@2x/portfolio_intro@2x.png" alt="Portfolio Image 1">
       </picture>
     </div>
 
-    <!-- 1. Overview -->
+    <!-- 1. Overview Container -->
     <div class="project-section-container">
       <section>
         <div class="column-container">
+
+          <!-- Overview Description -->
           <div>
             <h4 class="sub-section-heading">Overview</h4>
             <h5>
@@ -94,6 +99,7 @@
             </h5>
           </div>
 
+          <!-- Overview Vector Image -->
           <div>
             <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">
               <img src="img/portfolio/portfolio_overview.jpg" alt="Portfolio Overview Image">
@@ -103,10 +109,10 @@
       </section>
     </div>
 
-    <!-- 2. Web Structure  -->
+    <!-- 2. Web Structure Container -->
     <div class="project-section-container">
 
-      <!-- HTML Header -->
+      <!-- Web Structure Header -->
       <div class="project-section-title">
         <h2>Structuring my website 🧰</h2>
       </div>
@@ -121,7 +127,7 @@
           </h5>
         </div>
 
-        <!-- Sample Wireframe Layout Picture -->
+        <!-- HTML Sample Wireframe Image -->
         <div class="light-img large-img center">
           <picture>
             <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_layout@1x.png" media="(max-width:767px)">
@@ -142,7 +148,7 @@
           </h5>
         </div>
 
-        <!-- GitHub Button -->
+        <!-- Visit Project GitHub Button -->
         <div class="ripple-button">
           <a href="https://github.com/tinacai1997/portfolio-website" target="_blank">
             <span></span>
@@ -152,15 +158,15 @@
       </section>
     </div>
 
-    <!-- 3. Web Style  -->
+    <!-- 3. Web Style Container -->
     <div class="project-section-container">
 
-      <!-- HTML Header -->
+      <!-- Web Style Header -->
       <div class="project-section-title">
         <h2>Designing the web style 👒</h2>
       </div>
       
-      <!-- HTML -->
+      <!-- CSS -->
       <section>
         <div class="project-sub-section">
           <h4 class="sub-section-heading">CSS</h4>
@@ -170,7 +176,7 @@
           </h5>
         </div>
 
-        <!-- Sample Wireframe Style Picture -->
+        <!-- CSS Sample Wireframe Picture -->
         <div class="light-img large-img center">
           <picture>
             <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_style@1x.png" media="(max-width:767px)">
@@ -188,7 +194,7 @@
           </h5>
         </div>
 
-        <!-- Lofi Sketch -->
+        <!-- Lofi Sketch Image -->
         <div class="light-img large-img center">
           <picture>
             <source srcset="img/portfolio/@1x/portfolio_lofi_wireframe@1x.png" media="(max-width:767px)">
@@ -208,7 +214,7 @@
             Additionally, mocking up my site using a design tool was great practice for future projects. With XD, I was able to create components and save colors and character styles. <strong>Seeing my design from the development perspective</strong> shown a light on how important it is to <strong>create clear and consistent assets as a designer</strong>. 
         </div>
 
-        <!-- Mockups and Site Comparison Pictures -->
+        <!-- Mockups and Site Comparison Images -->
         <div class="center column-container portfolio-column-container">
           <div class="center light-img">
             <img src="img/portfolio/portfolio_hifi-1.png" class="" alt="Mobile Hifi 1">
@@ -226,10 +232,10 @@
       </section>
     </div>
 
-    <!-- 4. Advanced Web Style -->
+    <!-- 4. Advanced Web Style Container -->
     <div class="project-section-container">
 
-      <!-- Advanced Style Header -->
+      <!-- Advanced Web Style Header -->
       <div class="project-section-title">
         <h2>Advancing the web style 👗</h2>
       </div>
@@ -243,7 +249,7 @@
           </h5>
         </div>
 
-        <!-- Responsive Design Picture -->
+        <!-- Responsive Design Image -->
         <div class="light-img large-img center">
           <picture>
             <source srcset="img/portfolio/@1x/portfolio_responsive@1x.png" media="(max-width:767px)">
@@ -264,7 +270,7 @@
           </h5>
         </div>
 
-        <!-- Micro Interactin and Animation Gifs -->
+        <!-- Micro Interaction and Animation Gifs -->
         <div class="center column-container portfolio-column-container">
           <div class="center">
             <img src="img/portfolio/portfolio_logo_hover.gif" class="column-img" alt="Logo Hover Gif">
@@ -277,7 +283,7 @@
       </section>
     </div>
 
-    <!-- 4. JavaScript -->
+    <!-- 4. JavaScript Container -->
     <div class="project-section-container">
 
       <!-- JavaScript Header -->
@@ -310,7 +316,7 @@
           <h5><strong>One of the many glories of writing in widely used development languages is the resources I can adopt</strong> from others. Scouring the web, I found a plugin called <strong>Slick</strong>. It was easy to implement, and after adjusting it's CSS stylesheet, I created beautiful slideshows that matched my site's aesthetic.</h5>
         </div>
 
-        <!-- Sample Carousal -->
+        <!-- Example Slideshow -->
         <div class="slider-container center">
           <div>
             <h1>👈 Swipe</h1>
@@ -323,7 +329,7 @@
           </div>
         </div>
 
-        <!-- Slick Link -->
+        <!-- Explore Slick Plugin Button -->
         <div class="ripple-button">
           <a href="https://kenwheeler.github.io/slick/" target="_blank">
             <span></span>
@@ -333,15 +339,15 @@
       </section>
     </div>
 
-    <!-- 5. Usability Testing -->
+    <!-- 5. Usability Testing Container -->
     <div class="project-section-container">
 
-      <!-- Testing Header -->
+      <!-- Usability Testing Header -->
       <div class="project-section-title">
         <h2>Testing the website 🧪</h2>
       </div>
       
-      <!-- Usability Test -->
+      <!-- Usability Testing -->
       <section>
         <div class="project-section">
           <h4 class="sub-section-heading" id="portfolio-test">Usability testing</h4>
@@ -355,7 +361,7 @@
           <h5>I compiled the usability test data into a rainbow spreadsheet, which grouped partcipant feedback and prioritized site errors to be addressed.</h5>
         </div>
 
-        <!-- Rainbow Spreadsheet Button -->
+        <!-- See Rainbow Spreadsheet Button -->
         <div class="ripple-button">
           <a href="https://docs.google.com/spreadsheets/d/1gNX3ITeStCpUAnKPzr4AVUng384cIkCIyJ2__p4flbQ/edit?usp=sharing" target="_blank">
             <span></span>
@@ -400,10 +406,10 @@
       </section>
     </div>
 
-    <!-- 6. Visual Design -->
+    <!-- 6. Visual Design Container -->
     <div class="project-section-container">
 
-      <!-- Testing Header -->
+      <!-- Visual Design Header -->
       <div class="project-section-title">
         <h2>Adding visual flair 🎇</h2>
       </div>
@@ -423,7 +429,7 @@
           </h5>
         </div>
 
-        <!-- Color Change Plugin Button -->
+        <!-- Explore Color Change Plugin Button -->
         <div class="ripple-button">
           <a href="https://codepen.io/daveredfern/pen/zBGBJV" target="_blank">
             <span></span>
@@ -441,13 +447,13 @@
           </h5>
         </div>
 
-        <!-- Parallax Image Example -->
+        <!-- Example Parallax Image-->
         <picture>
           <source srcset="img/portfolio/@1x/portfolio_parallax_ex@1x.jpg" media="(max-width:767px)">
           <img class="parallax-img" src="img/portfolio/@2x/portfolio_parallax_ex@2x.jpg" alt="Payd Image 2">
         </picture>
 
-        <!-- Simple Parallax Button -->
+        <!-- Explore Simple Parallax Plugin Button -->
         <div class="ripple-button">
           <a href="https://simpleparallax.com/" target="_blank">
             <span></span>
@@ -457,18 +463,19 @@
       </section>
     </div>
 
-    <!-- 7. Takeaways -->
+    <!-- 7. Reflection Container -->
     <div class="project-section-container">
 
-      <!-- Takeaway Header -->
+      <!-- Reflection Header -->
       <div class="project-section-title">
         <h2>Reflecting on my work 🤔</h2>
       </div>
 
+      <!-- Reflection Content -->
       <section>
-        <div class="project-sub-section">
 
-          <!-- Challenges List -->
+        <!-- Challenges List -->
+        <div class="project-sub-section">
           <h4 class="sub-section-heading">Challenges</h4>
           <ol type="1">
             <li>
@@ -513,7 +520,7 @@
         </div>
       </section>
 
-      <!-- Thank you for reading -->
+      <!-- Thank You-->
       <section>
         <h3 class="center">Thanks for reading!</h3>
       </section>
@@ -523,13 +530,13 @@
   <!-- Footer -->
   <footer>
 
-    <!-- Professional Social -->
+    <!-- Footer Blurb -->
     <h5 class="center">
       <span>Let's connect</span>
       <span class="finger-point" >👇</span>
     </h5>
 
-    <!-- Socials Links -->
+    <!-- Footer Links -->
     <div class="center">
       <ul class="socials">
         <li class="socials-icon">
