@@ -626,6 +626,40 @@ iframe {
   border-radius: 0.5em;
 }
 
+
+/* ==============================================================
+                              Feed
+============================================================== */
+
+.feed-container {
+  margin: 18vh 3em;
+}
+
+.feed-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feed-photos > div {
+  margin: 12px;
+}
+
+.feed-photos > div > span  {
+  position: absolute;
+  bottom: 0;
+  transform: translate(7px, -52px);
+  color: #fff;
+  opacity: 0;
+  font-weight: 400;
+  text-align: center;
+  background-color: black;
+  transition: opacity 0.25s ease;
+}
+
+.feed-photos:hover > div > span {
+  opacity: 0.55;
+}
+
 /* ==============================================================
                Medium Devices (640px and larger)
 ============================================================== */
