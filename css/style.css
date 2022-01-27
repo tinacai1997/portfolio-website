@@ -329,7 +329,7 @@ a {
   border-radius: 50%;
   z-index: 8;
   transform: scale(0);
-  transition: 0.1s cubic-bezier(.95, .32, .37, 1.21);
+  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
 }
 
 .menu-link:hover > .menu-icon > span {
@@ -448,7 +448,7 @@ nav > ul > li > a:after {
   background: #000;
   transform: scaleX(0);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 nav > ul > li > a:hover:after {
