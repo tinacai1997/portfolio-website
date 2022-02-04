@@ -646,8 +646,6 @@ iframe {
 
 .feed-photos > div > span  {
   position: absolute;
-  bottom: 0;
-  transform: translate(7px, -52px);
   color: #fff;
   opacity: 0;
   font-weight: 400;
@@ -657,7 +655,7 @@ iframe {
 }
 
 .feed-photos:hover > div > span {
-  opacity: 0.55;
+  opacity: 0.65;
 }
 
 /* ==============================================================
