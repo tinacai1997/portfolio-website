@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Head -->
+<head>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v1">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Tina Cai • Design Portfolio</title>
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Header -->
+  <header id="header">
+
+  <!-- Logo -->
+  <a href="index.html#header" class="logo-link">
+    <div class="logo">tcai</div>
+  </a>    
+
+  <!-- Menu Container -->
+  <div class="menu-container">
+
+    <!-- Menu Content -->
+    <div class="menu">
+      <!-- Menu Links -->
+        <nav>
+          <ul>
+            <li><a href="index.html#hero" onclick="closeMenu()">Work</a></li>
+            <li><a href="about.html" onclick="closeMenu()">About</a></li>
+            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <!-- Menu Button -->
+    <div class="menu-button">
+      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+        <div class="menu-icon open">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- 0. Project Hero Container -->
+    <div class="project-hero-container">
+
+      <!-- Hero Title -->
+      <div class="project-intro-container">
+        <h3>WSDOT Wave 2 Go</h3>
+        <h1>Redesigning the ferry ticketing experience</h1>
+      </div>
+
+      <!-- Hero Banner Image -->
+      <picture>
+        <source srcset="img/lingually/@1x/lingually_intro@1x.png" media="(max-width:767px)">
+        <img class="parallax-img project-intro-img" src="img/lingually/@2x/lingually_intro@2x.png" alt="Lingually Image 1">
+      </picture>
+    </div>
+
+    <!-- 1. Overview Container -->
+    <div class="project-section-container">
+      <section>
+        <div class="column-container">
+
+          <!-- Overview Description -->
+          <div>
+            <h4 class="sub-section-heading">Overview</h4>
+            <h5>
+              The Washington State Department of Transportation (WSDOT) receives too many calls and emails requesting support for purchasing ferry tickets. Their current ticket site is difficult to navigate, therefore users cannot confidently follow through with purchasing ferry tickets without help.
+            </h5>
+            <h5>
+              The business goal for WSDOT is to <strong>increase self service success</strong> for their ferry ticketing site.
+            </h5>
+            <h5>
+              <strong>Role:</strong> UX Reseacher/Designer
+              <br>
+              <strong>Tools:</strong> Pencil and Paper
+              <br>
+              <strong>Timeframe:</strong> 3 Hours (Feb 2021)
+            </h5>
+          </div>
+
+          <!-- Overview Vector Image -->
+          <div>
+            <a href="https://www.freepik.com/vectors/school" target="_blank">
+              <img src="img/lingually/lingually_overview.jpg" alt="Lingually Overview Image">
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 2. Research Container -->
+    <div class="project-section-container">
+
+      <!-- Research Header-->
+      <div class="project-section-title">
+        <h2>Specifying the problem 🧭</h2>
+      </div>
+      
+      <!-- User Group -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Focus user group</h4>
+          <h5>
+            <strong><u>Who</u> are we designing for?</strong>
+          </h5>
+          <h5>
+            With just a few hours to complete this design challenge, I needed to pinpoint a specific user group to focus my design toward. This gave me a direction for ideation by narrowing the design scope, otherwise I could have redesigned for hours. I chose to split my user options by age group:
+          </h5>
+          <h5>
+            <ul>
+              <li>Young student</li>
+              <li>Middle aged professional</li>
+              <li><strong>Elderly and retired</strong></li>
+            </ul>
+          </h5>
+          <h5>
+            I chose to focus on elderly users because I felt they would struggle most with using a website and were more likely to contact WSDOT for inquiries. I anticipated the solutions I designed for this group would encapsulate problems younger users might face with the site as well.
+          </h5>
+        </div>
+      </section>
+
+      <!-- Problem & Goal -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Problem space</h4>
+
+          <h5>
+            <strong><u>What</u> are some struggles elderly users might face with the client's service that led to the business goal?</strong>
+          </h5>
+          <h5>Here, I attempted to put myself in my users' shoes and identify some of their painpoints relative to the business goal:</h5>
+          <h5>
+            <ul>
+              <li>Don't often plan their own trips</li>
+              <li>Not well-versed in purchasing tickets online</li>
+              <li>Unfamiliar with logistics that go along with boarding a ferry</li>
+            </ul>
+          </h5>
+          <h5>
+            The common theme here is that the elderly are missing crucial information in the steps required for buying and using ferry tickets.
+          </h5>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. Empathy Container -->
+    <div class="project-section-container">
+
+      <!-- Empathy Header -->
+      <div class="project-section-title">
+        <h2>Empathizing with users 💞</h2>
+      </div>
+      
+      <!-- Proto-Persona -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Proto-Persona</h4>
+          <h5>
+            After narrowing down the problem space, I very quickly came up with a proto-persona and scenario to figure out how to help our persona achieve his goals and as a result, identify areas to redesign the site and meet our business goal.
+          </h5>
+          <h5>
+            <strong>Alfred</strong>
+            <ul>
+              <li><strong>Age:</strong> 63</li>
+              <li><strong>Occupation:</strong> Retired</li>
+            </ul>
+          </h5>
+          <h5>
+            User Goals:
+            <ul>
+              <li>To book ferry tickets to surprise his wife for their anniversary</li>
+              <li>To understand the basic logistics of his trip ahead of time</li>
+              <li>To succecssfully book tickets without relying on others or family</li>
+            </ul>
+          </h5>
+          <h5>
+            Motivations:
+            <ul>
+              <li>Happy wife = happy life</li>
+              <li>Likes to approach tasks with a plan, wants to be confident in plan ahead of time for ease of mind</li>
+              <li>Wants to keep surprise element and doesn't want to bother busy family</li>
+            </ul>
+          </h5>
+          <h5>
+            Painpoints:
+            <ul>
+              <li>Not having a set plan for time commitments (going into the unknown)</li>
+              <li>being overwhelmed with confusing information</li>
+              <li>Feeling like he is bothering his busy family</li>
+            </ul>
+          </h5>
+        </div>
+      </section>
+
+      <!-- User Stories -->
+      <section>
+        <h4 class="sub-section-heading">User stories</h4>
+        <h5>
+          The purpose of these user stories were to clearly layout Alfred’s goals so that I can further understand the context of his situation, motivations, and his desired outcomes.
+        </h5>
+
+        <!-- User Story Vector Images -->
+        <div class="flex-row">
+          <span class="center">
+            <h5>
+              <a href="https://icons8.com/icon/16161/volunteering" target="_blank">
+                <img src="https://img.icons8.com/ios/64/e1371e/volunteering.png"/>
+              </a>
+            </h5>
+            <h5><strong>HANDS ON</strong></h5>
+          </span>
+
+          <span class="center">
+            <h5>
+              <a href="https://icons8.com/icon/3524/schedule" target="_blank">
+                <img src="https://img.icons8.com/ios/64/e1371e/overtime.png"/>
+              </a>
+            </h5>
+            <h5><strong>HABITUAL</strong></h5>
+          </span>
+        </div>
+
+        <!-- User Story Descriptions -->
+        <ul>
+          <li>
+            <h5>
+              As a <strong>thorough planner</strong>, I want to create a well-planned trip for my wifre on our anniverrsary so we can enjoy a fun day without having to worry about any hiccups during our trip.
+            </h5>
+          </li>
+          <li>
+            <h5>
+              As a <strong>novice tech user</strong>, I want to book my ferry tickets on my own so I can keep the surprise element of my trip and not rely on my grandkids for help.
+            </h5>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Storyboarding -->
+      <section>
+        <h4 class="sub-section-heading">Storyboarding</h4>
+        <h5>In this section, I cretaed a quick storyboard to further empathize with Alfred by depicting a visual representation for his journey when using our redesign solutions. This story allows me to step into his shoes and understand what he is feeling given I redesigned the site to fit his needs.</h5>
+      </section>
+    </div>
+
+    <!-- 4. Defining the problem -->
+    <div class="project-section-container">
+
+      <!-- Define Problem Header -->
+      <div class="project-section-title">
+        <h2>Defining the problem 🌟</h2>
+      </div>
+
+      <!-- Problem and Hypothesis Statement -->
+      <section>
+        <h4 class="sub-section-heading">Problem identification</h4>
+
+        <h5>Here, I re-assess my initial problem based on what I've discovered up until this point. I also discuss some assumptions, constraints, and requirements for this project to keep me focused on solving for a specific problem and ensure I finish the project in the allotted time. I also include a hypothesis statement that defines my success metric given I have designed toward the problem statement.</h5>
+        
+        <!-- Problem Statement -->
+        <h5>
+          <strong><u>Problem:</u></strong> Alfred needs an informative booking process when purchasing his online ferry tickets because he wants a clear understanding of his trip beforehand.
+        </h5>
+        <h5>
+          We will know this to be true when we see Alfred successfully purchase ferry tickets online without the help of others.
+        </h5>
+
+        <!-- Hypothesis Statement -->
+        <div class="goal-container color-lingually">
+          <h5>
+            I believe that by creating a simple booking process that keeps Alfred up to speed with the information needed for purchasing and using online ferry tickets, we will achieve a ferry ticketing website that will allow Alfred to purchase his online tickets without relying on help from others.
+          </h5>
+        </div>
+      </section>
+
+      <!-- Ideation Header -->
+      <div class="project-section-title">
+        <h2>Brainstorming ideas 🧠</h2>
+      </div>
+      
+      <!-- Site Audit -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Current site audit</h4>
+          <h5>
+            In order to meet our business goals while not straying too far from the company's brand and existing userbase, I constrained my redesign to only improving on existing content to stay focused on solving my one specific problem.
+          </h5>
+        </div>
+
+        <!-- Site Audit Image -->
+        <div class="large-img center">
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_user_flow-1@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_user_flow-1@2x.png" 
+            alt="User Flows Carousal">
+            </picture>
+          </div>
+      </section>
+
+      <!-- Impact vs Effort -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Impact vs effort</h4>
+          <h5>
+            I list some ideas on improving the existing site then graph them based on their impact vs effort. 
+          </h5>
+        </div>
+
+        <div>
+          <div>
+            <ul>
+              <li>Provide option to choose starting location</li>
+              <li>Create groupings of relevant information</li>
+              <li>Provide a "More Info" section on ticket hovers to decrease text and fill Alfred on ticket information</li>
+              <li>Privde clarity on ticket usage in the cart</li>
+              <li>Icons for increased visual understanding</li>
+              <li>Progress bar so Alfred is aware of steps he will take to complete his purchase</li>
+              <li>Animated guide buddy that guides Alfred through ticket process</li>
+            </ul>
+          </div>
+
+          <!-- Impact vs Effort Graph -->
+          <div class="large-img center">
+            <div>
+              <picture>
+                <source srcset="img/lingually/@1x/lingually_user_flow-1@1x.png" media="(max-width:767px)">
+                <img src="img/lingually/@2x/lingually_user_flow-1@2x.png" 
+              alt="User Flows Carousal">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- 5. Sketching Container -->
+    <div class="project-section-container">
+
+      <!-- Sketching Header -->
+      <section>
+        <h2>Sketching the solution ✍</h2>
+      </section>
+
+      <!-- Lofi Wireframes -->
+      <section>
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Redesign sketches</h4>
+
+          <h5>
+            Finally, I bring my prioritized ideas to life by sketching and presenting them to the client.
+          </h5>
+        </div>
+
+        <!-- Lofi Wireframes Slideshow -->
+        <div class="slider-container">
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_lofi-1@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_lofi-1@2x.png" alt="Lofi Wireframes">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_lofi-2@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_lofi-2@2x.png" alt="Lofi Wireframes">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_lofi-3@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_lofi-3@2x.png" alt="Lofi Wireframes">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_lofi-4@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_lofi-4@2x.png" alt="Lofi Wireframes">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/lingually/@1x/lingually_lofi-5@1x.png" media="(max-width:767px)">
+              <img src="img/lingually/@2x/lingually_lofi-5@2x.png" alt="Lofi Wireframes">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 8. Reflection Container -->
+    <div class="project-section-container">
+
+      <!-- Reflection Header -->
+      <div class="project-section-title">
+        <h2>Reflecting on my work 🤔</h2>
+      </div>
+
+      <!-- Reflectin Content -->
+      <section>
+
+        <!-- Trade-Offs List -->
+        <div class="project-sub-section"> 
+          <h4 class="sub-section-heading">Trade-Offs</h4>
+          <ol type="1">
+            <li>
+              <p>
+                <strong>Starting Location:</strong>
+                Having users indicate their starting information will require users to type a form field, whereas the design before only requ ire d clicking (up until entering purchasing info, which many might have auto fill options for)
+                <ul>
+                  <li>This could be a problem for those who have trouble typing</li>
+                  <li>Experienced users that might find this a hinderance</li>
+                  <li>Perhaps we could have a dropdown menu of available starting points instead</li>
+                </ul>
+              </p>
+            </li>
+            <li>
+              <p><strong>Existing Users:</strong>
+                Existing users might find new additional steps to be annoying
+                <ul>
+                  <li>I believe providing relevant information would primarily be beneficial to all user groups , but I can understand this could be an issue</li>
+                  <li>Perhaps we could design an option where existing users could save their typical purchase</li>
+                </ul> 
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Challenges -->
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Challenges</h4>
+          <ol>
+            <li>
+              <p><strong>"Clarity":</strong> Looking back at my work in the design challenge, I think I did a good job of specifying my problem space. However, I think it was important that I better articulated my definition of "clarity" and where we needed to emphasize it in my design. I feel that some of the solutions and conclusions I made appeared really obvious through the way I worded it and I want my design work to be something that my clients value and find unique.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Next Steps List -->
+        <div class="project-sub-section">
+          <h4 class="sub-section-heading">Next steps</h4>
+          <ol>
+            <li>
+              <p><strong>Other Ideas:</strong> If I had more time to expand on this project, I'd look toward some of the design ideas I didn't prioritize in this case study.</p>
+            </li>
+            <li>
+              <p><strong>High-fi wireframes:</strong>
+              The next steps for this project would be to work on bringing our lo-fi wireframes into hi-fi. Since this site already exists, and my designs were intentionally kept minimal and specific, I believe we'd be ok to skip the mid-fi step and move onto hi-fi mockups, to provide visuals for our clients so they can have a clearer idea of the solution and begin development.s
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <h3 class="center">Thanks for reading!</h3>
+        <p class="center">
+          <span>Check out my other</span>
+          <span>
+            <a href="index.html#hero"><u>work</u></a>
+          </span>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+    <!-- Footer Blurb -->
+    <h5 class="center">
+      <span>Let's connect</span>
+      <span class="finger-point" >👇</span>
+    </h5>
+
+    <!-- Footer Links -->
+    <div class="center">
+      <ul class="socials">
+        <li class="socials-icon">
+          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
+            <i class="fab fa-linkedin-in" id="linkedin"></i>
+          </a>
+        </li>
+        <!-- <li class="socials-icon">
+          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
+            <i class="fab fa-behance" id="behance"></i>
+          </a>
+        </li> -->
+        <li class="socials-icon">
+          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
+            <i class="fab fa-github" id="github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script type="text/javascript" src="ripple/ripple.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/scripts.js?v1"></script>
+  </div>
+
+</body>
+</html>
