@@ -18,8 +18,8 @@ function openMenu() {
 
   getMenuNav.style.visibility = 'visible';
 
-  getMenuContainer.style.backgroundColor = '#fff';
-  getMenuContainer.style.boxShadow = '0px 0px 12px 0px rgba(0, 0, 0, 0.12)';
+  // getMenuContainer.style.backgroundColor = '#fff';
+  // getMenuContainer.style.boxShadow = '0px 0px 12px 0px rgba(0, 0, 0, 0.12)';
   // getMenuContact.style.visibility = 'visible';
 
   // getMenuMask.style.visibility = 'visible';
@@ -39,8 +39,8 @@ function closeMenu() {
 
   getMenuNav.style.visibility = 'hidden';
 
-  getMenuContainer.style.backgroundColor = 'transparent';
-  getMenuContainer.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.12)';
+  // getMenuContainer.style.backgroundColor = 'transparent';
+  // getMenuContainer.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.12)';
 
   // getMenuContact.style.visibility = 'hidden';
 
