@@ -58,6 +58,7 @@ section {
   --portfolio-bg-color: #E4EFFC;
   --lingually-bg-color: #f9e7e5;
   --lingually-brand-color: #e1371e;
+  --wave2go-bg-color: #ebfff6;
   --ux-challenge-bg-color: #f4fff7;
 }
 
@@ -521,6 +522,10 @@ nav > ul > li > a:hover:after {
   background-color: var(--ux-challenge-bg-color);
 }
 
+.color-wave2go {
+  background-color: var(--wave2go-bg-color);
+}
+
 /* ==============================================================
                               About
 ============================================================== */
@@ -576,6 +581,7 @@ nav > ul > li > a:hover:after {
 /*----------------------- Hero ------------------------*/
 
 .project-hero-container {
+  margin-top: -20vh;
   margin-bottom: 15vh;
 }
 
@@ -675,7 +681,7 @@ iframe {
   }
 
   header {
-    position: fixed;
+    /* position: fixed; */
     padding: 5.625vw 7vw;
   }
 
@@ -693,11 +699,11 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+    z-index: 1000;
     background-color: transparent;
     padding: 8px 14px 8px 8px;
     border-radius: 64px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2); */
   }
 
   .menu {
@@ -726,9 +732,9 @@ iframe {
 
 /*--------------------------- Index ---------------------------*/
 
-.hero-container {
-  padding-top: 30vh;
-}
+/* .hero-container {
+  padding-top: 12vh;
+} */
 
 .work-container {
   margin: 30vh 0;
