@@ -479,7 +479,7 @@ nav > ul > li > a:hover:after {
 
 #top-button {
   display: inline-block;
-  background-color: #d6d6d6;
+  background-color: #aaa;
   position: fixed;
   width: 52px;
   height: 52px;
@@ -507,7 +507,7 @@ nav > ul > li > a:hover:after {
 }
 
 #top-button.show {
-  opacity: 1;
+  opacity: 0.5;
   visibility: visible;
 }
 
