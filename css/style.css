@@ -48,18 +48,27 @@ section {
   justify-content: center;
 }
 
+.space-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 :root {
   --email-icon: #e4405f;
   --linkedin-icon: #0077b5;
   --behance-icon: #1769ff;
   --github-icon: #333;
   --brand-color: #4174FF;
-  --payd-bg-color: #f4edff;
+  --payd-color: #C5B6FC;
+  --payd-bg-color: #E7E5FF;
+  --portfolio-color: #9ECAFF;
   --portfolio-bg-color: #E4EFFC;
+  --lingually-color: #FF9D92;
   --lingually-bg-color: #f9e7e5;
-  --lingually-brand-color: #e1371e;
+  --wave2go-color: #68C5A4;
   --wave2go-bg-color: #ebfff6;
-  --ux-challenge-bg-color: #f4fff7;
+  /* --ux-challenge-bg-color: #f4fff7; */
 }
 
 
@@ -127,13 +136,23 @@ strong {
   font-weight: 600;
 }
 
-.sub-section-heading {
-  border-left: 4px solid var(--brand-color);
+.payd-sub-section-heading {
+  border-left: 4px solid var(--payd-color);
   padding-left: 14px;
 }
 
-.warm-sub-section-heading {
-  border-left: 4px solid var(--lingually-brand-color);
+.portfolio-sub-section-heading {
+  border-left: 4px solid var(--portfolio-color);
+  padding-left: 14px;
+}
+
+.lingually-sub-section-heading {
+  border-left: 4px solid var(--lingually-color);
+  padding-left: 14px;
+}
+
+.wave2go-sub-section-heading {
+  border-left: 4px solid var(--wave2go-color);
   padding-left: 14px;
 }
 
@@ -575,7 +594,7 @@ nav > ul > li > a:hover:after {
 /*----------------------- Hero ------------------------*/
 
 .project-hero-container {
-  margin-top: -20vh;
+  margin-top: -15vh;
   margin-bottom: 15vh;
 }
 
