@@ -475,6 +475,43 @@ nav > ul > li > a:hover:after {
   transform: scaleX(1);
 }
 
+/*--------------------- Back to Top Button ---------------------*/
+
+#top-button {
+  display: inline-block;
+  background-color: #d6d6d6;
+  position: fixed;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  margin-right: 36px;
+  margin-bottom: 36px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#top-button > i{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+#top-button:hover {
+  background-color: #000;
+}
+
+#top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* ==============================================================
                               Index
 ============================================================== */
@@ -702,6 +739,11 @@ iframe {
     margin: 9.375vw;
   }
 
+  #top-button {
+    margin-right: 7vw;
+    margin-bottom: 5.625vw;
+  }
+
   body {
     font-size: 14px;
   }
@@ -789,6 +831,11 @@ iframe {
 
   footer {
     margin: 96px;
+  }
+
+  #top-button {
+    margin-right: 71.68px;
+    margin-bottom: 57.6px;
   }
 
   body {
