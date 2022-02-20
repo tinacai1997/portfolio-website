@@ -136,6 +136,11 @@ strong {
   font-weight: 600;
 }
 
+.sub-section-heading {
+  border-left: 4px solid var(--brand-color);
+  padding-left: 14px;
+}
+
 .payd-sub-section-heading {
   border-left: 4px solid var(--payd-color);
   padding-left: 14px;
