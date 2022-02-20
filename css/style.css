@@ -530,14 +530,8 @@ nav > ul > li > a:hover:after {
                               About
 ============================================================== */
 
-.self-portrait{
-  width: 72px;
-  height: 72px;
-  margin-top: -98px;
-}
-
 .about-container {
-  margin: 15vh 3em;
+  margin: -10vh 3em 0 3em;
 }
 
 .contact-form-section p {
@@ -745,13 +739,6 @@ iframe {
   width: 65%;
 }
 
-/*--------------------------- About ---------------------------*/
-
-.self-portrait {
-  width: 100px;
-  height: 100px;
-  margin-top: calc(5.625vw - 15px);
-}
 
 /*--------------------------- Project ---------------------------*/
 
@@ -790,10 +777,6 @@ iframe {
   }
 
 /*----------------------------- About --------------------------*/
-
-  .self-portrait {
-    margin-top: calc(57.6px - 15px);
-  }
 
   .contact-content-container {
     display: grid;
