@@ -693,7 +693,7 @@ iframe {
 ============================================================== */
 
 .feed-container {
-  margin: 18vh 3em;
+  margin: -10vh 3em 18vh 3em;
 }
 
 .feed-photos {
