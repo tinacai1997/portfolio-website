@@ -34,42 +34,42 @@
   <!-- Header -->
   <header id="header">
 
-  <!-- Logo -->
-  <a href="index.html#header" class="logo-link">
-    <div class="logo">tcai</div>
-  </a>    
+    <!-- Logo -->
+    <a href="index.html#header" class="logo-link">
+      <div class="logo">tcai</div>
+    </a>    
 
-  <!-- Back to Top Button -->
-  <a id="top-button">
-    <i class="fa fa-arrow-up"></i>
-  </a>
+    <!-- Back to Top Button -->
+    <a id="top-button">
+      <i class="fa fa-arrow-up"></i>
+    </a>
 
-  <!-- Menu Container -->
-  <div class="menu-container">
+    <!-- Menu Container -->
+    <div class="menu-container">
 
-    <!-- Menu Content -->
-    <div class="menu">
-      <!-- Menu Links -->
-        <nav>
-          <ul>
-            <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-            <li><a href="about.html" onclick="closeMenu()">About</a></li>
-            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
+      <!-- Menu Content -->
+      <div class="menu">
+        <!-- Menu Links -->
+          <nav>
+            <ul>
+              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
+              <li><a href="about.html" onclick="closeMenu()">About</a></li>
+              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
+      </div>
+
+      <!-- Menu Button -->
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+          <div class="menu-icon open">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
     </div>
-
-    <!-- Menu Button -->
-    <div class="menu-button">
-      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-        <div class="menu-icon open">
-          <span></span>
-          <span></span>
-        </div>
-      </a>
-    </div>
-  </div>
   </header>
 
   <!-- Main -->
@@ -80,50 +80,52 @@
 
       <!-- Hero Title -->
       <div class="project-intro-container">
-        <h3>WSDOT Wave 2 Go</h3>
+        <h3>WSDOT Wave2Go</h3>
         <h1>Redesigning the ferry ticketing experience</h1>
       </div>
 
       <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/wave2go/@1x/wave2go_intro@1x.png" media="(max-width:767px)">
-        <img class="parallax-img project-intro-img" src="img/wave2go/@2x/wave2go_intro@2x.png" alt="Wave2Go Intro Image">
+        <img class="parallax-img project-intro-img" src="img/wave2go/@2x/wave2go_intro@2x.png" alt="Wave2Go Banner Image">
       </picture>
     </div>
 
-    <!-- 1. Overview Container -->
-    <div class="project-section-container">
-      <section>
-        <div class="column-container">
+    <!-- 1. Problem Container -->
+    <section>
+      <div class="column-container quarter-column">
 
-          <!-- Overview Description -->
-          <div>
-            <h4 class="wave2go-sub-section-heading">Overview</h4>
-            <h5>
-              The Washington State Department of Transportation (WSDOT) receives too many calls and emails requesting support for purchasing ferry tickets. Their current ticket site is difficult to navigate, therefore users cannot confidently follow through with purchasing ferry tickets without help.
-            </h5>
-            <h5>
-              The business goal for WSDOT is to <strong>increase self service success</strong> for their ferry ticketing site.
-            </h5>
-            <h5>
-              <strong>Role:</strong> UX Reseacher/Designer
-              <br>
-              <strong>Tools:</strong> Pencil and Paper, Miro
-              <br>
-              <strong>Timeframe:</strong> 3 Hours (Feb 2021)
-            </h5>
-          </div>
+        <!-- Problem Description -->
+        <div>
+          <h4>PROBLEM</h4>
 
-          <!-- Overview Vector Image -->
-          <div>
-            <img src="img/wave2go/wave2go_overview.jpg" alt="Wave2Go Overview Image">
-          </div>
+          <h2>WSDOT receives too many inquiries about purchasing ferry tickets.</h2>
+
+          <h5>
+            The Washington State Department of Transportation (WSDOT) receives too many calls and emails requesting support for purchasing ferry tickets. For some reason, users cannot confidently follow through with purchasing ferry tickets without help.
+          </h5>
+          <h5>
+            WSDOT's business goal was to increase self-service in their Wave2Go ferry ticketing site. My question was: what in the existing site ws causing users to request help so often?
+          </h5>
+
+          <h5>
+            <strong>Role:</strong> UX Reseacher/Designer
+            <br>
+            <strong>Tools:</strong> Pencil and Paper, Miro
+            <br>
+            <strong>Timeframe:</strong> 2.5 Hours (Feb 2021)
+          </h5>
         </div>
-      </section>
-    </div>
+
+        <!-- Problem Image -->
+        <div>
+          <img src="img/wave2go/wave2go_overview.jpg" alt="Wave2Go Problem Image">
+        </div>
+      </div>
+    </section>
 
     <!-- Design Process -->
-    <div class="project-section-container">
+    <!-- <div class="project-section-container">
       <div class="goal-container color-wave2go">
         <section>
           <h2>Design Process</h2>
@@ -137,288 +139,220 @@
           </div>
         </section>
       </div>
-    </div>
+    </div> -->
 
-    <!-- 2. Research Container -->
-    <div class="project-section-container">
-
-      <!-- Research Header-->
-      <div class="project-section-title">
-        <h2>Understanding the problem 🧠</h2>
-      </div>
+    <!-- 2. Design Scope Container -->
+    <section>
       
-      <!-- User Group -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Focus user group</h4>
-          <h5>
-            <strong><u>Who</u> are we designing for?</strong>
-          </h5>
-          <h5>
-            With just a few hours to complete this design challenge, I needed to pinpoint a specific user group to focus my design toward. This gave me a direction for ideation by narrowing the design scope, otherwise I could have redesigned for hours. I chose to split my user options by age group:
-          </h5>
-          <h5>
-            <ul>
-              <li>Young student</li>
-              <li>Middle aged professional</li>
-              <li><strong>Elderly and retired</strong></li>
-            </ul>
-          </h5>
-          <h5>
-            I chose to focus on elderly users because I felt they would struggle most with using a website and were more likely to contact WSDOT for inquiries. I anticipated the solutions I designed for this group would encapsulate problems younger users might face with the site as well.
-          </h5>
-        </div>
-      </section>
+      <!-- Design Scope Description -->
+      <div class="project-sub-section">
+        <h4>DESIGN SCOPE</h4>
 
-      <!-- Problem & Goal -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Problem space</h4>
+        <h2>Elderly users are missing crucial information on ferry ticket usage in the Wave2Go site.</h2>
 
-          <h5>
-            <strong><u>What</u> are some struggles elderly users might face with buying ferry tickets online?</strong>
-          </h5>
-          <h5>Here, I identified possible painpoints that might have led to the business goal. Elderly users:</h5>
-          <h5>
-            <ul>
-              <li>Don't often plan their own trips</li>
-              <li>Are not well-versed in purchasing tickets online</li>
-              <li>Are unfamiliar with logistics that go along with boarding a ferry</li>
-            </ul>
-          </h5>
-          <h5>
-            The common theme here is that the elderly are <strong>missing crucial information</strong> in the steps required for buying and using ferry tickets.
-          </h5>
-        </div>
-      </section>
-    </div>
+        <h5>
+          With just a few hours to complete this design challenge, I needed to pinpoint specific users to focus my design toward, otherwise I could have designed for hours. I chose to split my options by age group, and ended up choosing <strong>the elderly</strong>.
+        </h5>
+        <h5>
+          I felt this group was more likely to seek help for online purchases and ticket information. I anticipated their pain points would encapsulate those of younger users as well. Next, I brainstormed pain points elder users might face that could have led to the problem.
+        </h5>
+
+        <!-- Pain Points Brainstorm Image -->
+        <picture>
+          <source srcset="img/wave2go/@1x/wave2go_painpoints@1x.png" media="(max-width:767px)">
+          <img src="img/wave2go/@2x/wave2go_painpoints@2x.png" alt="Wave2Go Pain Points Brainstorm">
+        </picture>  
+      </div>
+    </section>
 
     <!-- 3. Empathy Container -->
-    <div class="project-section-container">
-
-      <!-- Empathy Header -->
-      <div class="project-section-title">
-        <h2>Empathizing with users 💞</h2>
-      </div>
+    <section>
       
       <!-- Proto-Persona -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Proto-Persona</h4>
-          <h5>
-            After narrowing down the problem space, I very quickly came up with a proto-persona and scenario to figure out how to help our persona achieve his goals and as a result, identify areas to redesign the site and meet our business goal.
-          </h5>
-          <div>
-            <picture>
-              <source srcset="img/wave2go/@1x/wave2go_proto-persona@1x.png" media="(max-width:767px)">
-              <img src="img/wave2go/@2x/wave2go_proto-persona@2x.png" 
-            alt="User Flows Carousal">
-            </picture>
-          </div>
-        </div>
-      </section>
+      <div class="project-sub-section">
+        <h4>PROTO-PERSONA</h4>
+
+        <h2>Alfred wants to surprise his wife with a ferry trip for their anniversary.</h2>
+
+        <h5>
+          After narrowing down the problem space, I quickly developed a proto-persona. I used the persona's goals and pain points to identify areas of improvement for the current site for meeting the business goal.
+        </h5>
+
+        <!-- Proto-Persona Image -->
+        <picture>
+          <source srcset="img/wave2go/@1x/wave2go_proto-persona@1x.png" media="(max-width:767px)">
+          <img src="img/wave2go/@2x/wave2go_proto-persona@2x.png" alt="Wave2Go Proto Persona (Alfred)">
+        </picture>
+      </div>
 
       <!-- Storyboarding -->
-      <section>
-        <h4 class="wave2go-sub-section-heading">Storyboarding</h4>
-        <h5>In this section, I created a storyboard to illustrate the pain points for Alfred's specific scenario and further put myself in his shoes.</h5>
+      <div class="project-sub-section">
+        <h4>STORYBOARDING</h4>
 
-        <div>
+        <h2>Illustrating Alfred's painpoints through storytelling.</h2>
+
+        <h5>I created a storyboard to depict the pain points for Alfred's specific scenario and further put myself in his shoes.</h5>
+
+        <!-- Storyboarding Image -->
+        <div class="center large-img">
           <picture>
             <source srcset="img/wave2go/@1x/wave2go_storyboard@1x.png" media="(max-width:767px)">
             <img src="img/wave2go/@2x/wave2go_storyboard@2x.png" 
-          alt="User Flows Carousal">
+          alt="Wave2Go Storyboard (Alfred)">
           </picture>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Problem and Hypothesis Statement -->
-      <section>
-        <h4 class="wave2go-sub-section-heading">Problem & Hypothesis</h4>
-        
-        <!-- Problem Statement -->
-        <h5>
-          <strong><u>Problem:</u></strong> Alfred needs an informative booking process when purchasing his online ferry tickets because he wants a clear understanding of his trip beforehand.
-        </h5>
-        <h5>
-          We will know this to be true when we see Alfred successfully purchase ferry tickets online without the help of others.
-        </h5>
+    <!-- 4. Ideation Container -->
+    <section>
 
-        <!-- Hypothesis Statement -->
-        <div class="goal-container color-wave2go">
-          <h5>
-            I believe that by creating a simple booking process that keeps Alfred up to speed with the information needed for purchasing and using online ferry tickets, we will achieve a ferry ticketing website that will allow Alfred to purchase his online tickets without relying on help from others.
-          </h5>
+      <!-- Existing Site Audit -->
+      <div class="project-sub-section">
+        <h4>EXISTING SITE AUDIT</h4>
+
+        <h2>The existing site provided an overwhelming amount of information that was difficult for new users to absorb.</h2>
+
+        <h5>I audited the existing Wave2Go site to determine the roots of the problem. Why were elderly users missing crucial information? The main theme I noticed was there was <strong>too much information displayed on the ticket site at once</strong>. Users were likely entering the site for specific ticket types, but we presented with too much irrelevant information.</h5>
+
+        <!-- Site Audit Slideshow -->
+        <div class="large-img center slider-container">
+          <div>
+            <picture>
+              <source srcset="img/wave2go/@1x/wave2go_content-audit-1@1x.png" media="(max-width:767px)">
+              <img src="img/wave2go/@2x/wave2go_content-audit-1@2x.jpg" alt="Wave2Go Content Audit">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/wave2go/@1x/wave2go_content-audit-2@1x.jpg" media="(max-width:767px)">
+              <img src="img/wave2go/@2x/wave2go_content-audit-2@2x.jpg" alt="Wave2Go Content Audit">
+            </picture>
+          </div>
         </div>
-      </section>
-    </div>
-
-      <!-- Ideation Header -->
-      <div class="project-section-title">
-        <h2>Brainstorming ideas 💡</h2>
       </div>
 
-      <!-- Current Site -->
-      <!-- <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Content Audit</h4>
-          <h5>
-            I audited the current site to identify any issues that might have led to confusion for users like Alfred and give me a sense of what existing content I had to work with.
-          </h5>
-        </div> -->
+      <!-- Action Priority Matrix -->
+      <div class="project-sub-section">
+        <h4>Action Priority Matrix</h4>
 
-          <!-- Current Site -->
-          <!-- <div class="center">
-            <div>
-              <picture>
-                <source srcset="img/" media="(max-width:767px)">
-                <img src="img/wave2go/@2x/wave2go_content-audit-1@2x.jpg" 
-              alt="User Flows Carousal">
-              </picture>
+        <h2>Prioritizing ideas into 3 actionable improvements.</h2>
 
-              <picture>
-                <source srcset="img/" media="(max-width:767px)">
-                <img src="img/wave2go/@2x/wave2go_content-audit-2@2x.jpg" 
-              alt="User Flows Carousal">
-              </picture>
-            </div>
+        <h5>
+          Using the audit data, I listed ideas I had for addressing Alfred's pain points then prioritized them based on impact and effort. I moved forward with three ideas that improved and built upon existing content, rather than those that involved new features. Because the problem space was vague, I felt it made sense to constrain the actionable ideas to those that didn't stray too far from the company's brand and existing userbase. 
+        </h5>
+        
+        <!-- Impact vs Effort Graph Image-->
+        <div class="large-img center">
+          <div>
+            <picture>
+              <source srcset="img/wave2go/@1x/wave2go_impact-effort@1x.jpg" media="(max-width:767px)">
+              <img src="img/wave2go/@2x/wave2go_impact-effort@2x.jpg" 
+            alt="Wave2Go Impact vs Effort Graph">
+            </picture>
           </div>
         </div>
+      </div>
 
-      </section> -->
+      <!-- Re-Design Sketches -->
+      <div class="project-sub-section">
+        <h4>RE-DESIGN</h4>
 
-      <!-- Impact vs Effort -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Action Priority Matrix</h4>
-          <h5>
-            After performing an existing site audit, I list some ideas on improving the existing site then graph them based on their impact vs effort. 
-          </h5>
-          <h5>
-            A constraint that I set for myself when choosing which ideas to move forward with was to meet our business goals while not straying too far from the company's brand and existing userbase. So I moved forward with design ideas that improved on existing content rather than implement brand new features to stay focused on solving our defined problem statement.
-          </h5>
-        </div>
+        <h2>Sketching ideas for how to present ferry ticket information in a clear and disgestible format.</h2>
 
-          <!-- Impact vs Effort Graph -->
-          <div class="large-img center">
-            <div>
-              <picture>
-                <source srcset="img/wave2go/@1x/wave2go_impact-effort@1x.jpg" media="(max-width:767px)">
-                <img src="img/wave2go/@2x/wave2go_impact-effort@2x.jpg" 
-              alt="User Flows Carousal">
-              </picture>
-            </div>
-          </div>
-        </div>
+        <h5>
+          I sketched my chosen ideas and presented them to my client. My general solution was to group different ticket types for users to navigate through and provide a more info section on the site to present ticket details that were already being displayed in the current site, but in an easier to read format. This information is also shown in the cart when getting ready to purchase the tickets. 
+        </h5>
 
-      </section>
-
-      <!-- Lofi Wireframes -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Redesign sketches</h4>
-
-          <h5>
-            Finally, I bring my prioritized ideas to life by sketching and presenting them to the client.
-          </h5>
-        </div>
-
-        <!-- Lofi Wireframes Slideshow -->
+        <!-- Sketches Slideshow -->
         <div class="large-img center slider-container">
           <div>
             <picture>
               <source srcset="img/wave2go/@1x/wave2go_sketch-1@1x.png" media="(max-width:767px)">
-              <img src="img/wave2go/@2x/wave2go_sketch-1@2x.png" alt="Lofi Wireframes">
+              <img src="img/wave2go/@2x/wave2go_sketch-1@2x.png" alt="Wave2Go Sketches">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/wave2go/@1x/wave2go_sketch-2@1x.png" media="(max-width:767px)">
-              <img src="img/wave2go/@2x/wave2go_sketch-2@2x.png" alt="Lofi Wireframes">
+              <img src="img/wave2go/@2x/wave2go_sketch-2@2x.png" alt="Wave2Go Sketches">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/wave2go/@1x/wave2go_sketch-3@1x.png" media="(max-width:767px)">
-              <img src="img/wave2go/@2x/wave2go_sketch-3@2x.png" alt="Lofi Wireframes">
+              <img src="img/wave2go/@2x/wave2go_sketch-3@2x.png" alt="Wave2Go Sketches">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/wave2go/@1x/wave2go_sketch-4@1x.png" media="(max-width:767px)">
-              <img src="img/wave2go/@2x/wave2go_sketch-4@2x.png" alt="Lofi Wireframes">
+              <img src="img/wave2go/@2x/wave2go_sketch-4@2x.png" alt="Wave2Go Sketches">
             </picture>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- 8. Reflection Container -->
-    <div class="project-section-container">
-
-      <!-- Reflection Header -->
-      <div class="project-section-title">
-        <h2>Reflecting on my work 🤔</h2>
       </div>
+    </section>
 
-      <!-- Reflectin Content -->
-      <section>
+    <!-- 5. Trade-Offs and Success Metrics Container -->
+    <section>
+      <div class="project-sub-section"> 
+        <h4>TRADE-OFFS + SUCCESS METRICS</h4>
 
-        <!-- Trade-Offs List -->
-        <div class="project-sub-section"> 
-          <h4 class="wave2go-sub-section-heading">Trade-Offs</h4>
-          <ol type="1">
-            <li>
-              <p><strong>Existing Users:</strong>
-                Existing users might find new additional steps to be annoying
-                <ul>
-                  <li>I believe providing relevant information would primarily be beneficial to all user groups , but I can understand this could be an issue</li>
-                  <li>Perhaps we could design an option where existing users could save their typical purchase</li>
-                </ul> 
-              </p>
-            </li>
-          </ol>
-        </div>
+        <h2>Things to consider with this re-design and determining whether it really works.</h2>
 
-        <!-- Challenges -->
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Challenges</h4>
-          <ol>
-            <li>
-              <p><strong>"Clarity":</strong> Looking back at my work in the design challenge, I think I did a good job of specifying my problem space. However, I think it was important that I better articulated my definition of "clarity" and where we needed to emphasize it in my design. I feel that some of the solutions and conclusions I made appeared really obvious through the way I worded it and I want my design work to be something that my clients value and find unique.</p>
-            </li>
-          </ol>
-        </div>
+        <ol>
+          <li>
+            <h5><strong>Existing users</strong>
+              might find the additional steps from the new groupings to be annoying. However, I believe they could easily get used to them and the benefits outweighed the cons. Perhaps something to think about here is adding an option where returning user can save their typical purchases. 
+            </h5>
+          </li>
+          <li>
+            <h5><strong>Self-service purchases and purchase time.</strong> 
+            An obvious success metric for this re-design is to measure the amount of users that follow through with purchasing tickets without help and how quickly they do so. We could consider including an optional survey for new users to complete following their purchases to gather feedback on whether they were clear on their ferry tickets usages.</h5>
+          </li>
+          <li>
+            <h5><strong>Cart actions.</strong> 
+            The existing site auto-moves users to the cart when they click "Add to Cart". This re-design removes this,in case users want to purchase multiple ticket types. We could measure whether users are going back to purchase more tickets / re-read information when in the cart. This could provide insight on whether they're clear on ticket usage.</h5>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-        <!-- Next Steps List -->
-        <div class="project-sub-section">
-          <h4 class="wave2go-sub-section-heading">Next steps</h4>
-          <ol>
-            <li>
-              <p><strong>Other Ideas:</strong> If I had more time to expand on this project, I'd look toward some of the design ideas I didn't prioritize in this case study.</p>
-            </li>
-            <li>
-              <p><strong>Hi-fi wireframes:</strong>
-              The next steps for this project would be to work on bringing our lo-fi wireframes into hi-fi. Since this site already exists, and my designs were intentionally kept minimal and specific, I believe we'd be ok to skip the mid-fi step and move onto hi-fi mockups, to provide visuals for our clients so they can have a clearer idea of the solution and move forward with testing.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
+    <!-- 6. Conclusion Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>CONCLUSION</h4>
 
-      <!-- Thank You -->
-      <section>
-        <h3 class="center">Thanks for reading!</h3>
-        <p class="center">
-          <span>Check out my other</span>
-          <span>
-            <a href="index.html#header"><u>work</u></a>
-          </span>
-        </p>
-      </section>
+        <h2>What I could have done better in my first design challenge.</h2>
+
+        <ol>
+          <li>
+            <h5><strong>Start with assumptions and constraints.</strong> 
+            I was only given the business goal for this design challenge so the information I had to work with was quite vague. Normally, I'd ask clarifying questions to fully understand the problem. I could have benefited from creating assumptions and constraints earlier on the design process to better narrow down the problem space.</h5>
+          </li>
+          <li>
+            <h5><strong>Narrowing down the problem itself.</strong> 
+            I spent a lot of time narrowing down the problem. Afterwards, it felt like many of those processes provided the same outcome and felt redundant. For my next design sprint/challenge, I will focus on narrowing down a problem space quicker so I have more time to work on the actual solution.</h5>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. Thank You Container-->
+    <div>
+      <h3 class="center">Thanks for reading!</h3>
+
+      <p class="center">
+        <span>Check out my other</span>
+        <span>
+          <a href="index.html#header"><u>work</u></a>
+        </span>
+      </p>
     </div>
   </main>
 
