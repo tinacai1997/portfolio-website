@@ -14,9 +14,9 @@
   </script>
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -34,42 +34,42 @@
   <!-- Header -->
   <header id="header">
 
-  <!-- Logo -->
-  <a href="index.html#header" class="logo-link">
-    <div class="logo">tcai</div>
-  </a>    
+    <!-- Logo -->
+    <a href="index.html#header" class="logo-link">
+      <div class="logo">tcai</div>
+    </a>    
 
-  <!-- Back to Top Button -->
-  <a id="top-button">
-    <i class="fa fa-arrow-up"></i>
-  </a>
+    <!-- Back to Top Button -->
+    <a id="top-button">
+      <i class="fa fa-arrow-up"></i>
+    </a>
 
-  <!-- Menu Container -->
-  <div class="menu-container">
+    <!-- Menu Container -->
+    <div class="menu-container">
 
-    <!-- Menu Content -->
-    <div class="menu">
-      <!-- Menu Links -->
-        <nav>
-          <ul>
-            <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-            <li><a href="about.html" onclick="closeMenu()">About</a></li>
-            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
+      <!-- Menu Content -->
+      <div class="menu">
+        <!-- Menu Links -->
+          <nav>
+            <ul>
+              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
+              <li><a href="about.html" onclick="closeMenu()">About</a></li>
+              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
+      </div>
+
+      <!-- Menu Button -->
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+          <div class="menu-icon open">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
     </div>
-
-    <!-- Menu Button -->
-    <div class="menu-button">
-      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-        <div class="menu-icon open">
-          <span></span>
-          <span></span>
-        </div>
-      </a>
-    </div>
-  </div>
   </header>
   
   <!-- Main -->
@@ -87,729 +87,308 @@
       <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/payd/@1x/payd_intro@1x.png" media="(max-width:767px)">
-        <img class="parallax-img project-intro-img" src="img/payd/@2x/payd_intro@2x.png" alt="Payd Image 1">
+        <img class="parallax-img project-intro-img" src="img/payd/@2x/payd_intro@2x.png" alt="Payd Banner Image">
       </picture>
     </div>
 
-    <!-- 1. Overview Container -->
-    <div class="project-section-container">
-      <section>
-        <div class="column-container">
+    <!-- 1. Problem Container -->
+    <section>
+      <div class="column-container quarter-column">
 
-          <!-- Overview Description -->
-          <div>
-            <h4 class="payd-sub-section-heading">Overview</h4>
-            <h5>
-              Payd is an <strong>e-wallet app that helps its users manage their finances</strong>. Like a real wallet, users can conveniently <strong>send, receive,</strong> and <strong>store</strong> money using Payd. Users can also <strong>budget</strong> and <strong>track</strong> their spending.
-            </h5>
-            <h5>
-              Payd provides a single platform for all financial needs, making it the perfect app for big purchases or just a quick coffee on the go.
-            </h5>
-            <h5>
-              <strong>Role:</strong> UX/UI Designer (solo)
-              <br>
-              <strong>Tools:</strong> Adobe XD, Balsamiq, Google Sheets
-              <br>
-              <strong>Timeframe:</strong> Jun 2021 - Oct 2021
-            </h5>
-          </div>
-
-          <!-- Overview Vector Image -->
-          <div>
-            <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">
-              <img src="img/payd/payd_overview.jpg" class="test" alt="Payd Overview Image">
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Design Process -->
-    <div class="project-section-container">
-      <div class="goal-container color-payd">
-        <section>
-          <h2>Design Process</h2>
-        </section>
-  
-        <section>
-          <div class="space-around">
-            <div><h5><strong>Understand 🧠</strong></h5></div>
-            <div><h5><strong>Empathize 💞</strong></h5></div>
-            <div><h5><strong>Structure 🌱</strong></h5></div>
-            <div><h5><strong>Wireframe ✨</strong></h5></div>
-            <div><h5><strong>Test 🧪</strong></h5></div>
-            <div><h5><strong>Visual 🌈</strong></h5></div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- 2. Research Container -->
-    <div class="project-section-container">
-
-      <!-- Research Header-->
-      <div class="project-section-title">
-        <h2>Understanding the problem 🧠</h2>
-      </div>
-      
-      <!-- Competitive Analysis -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Competitive analysis</h4>
-
+        <!-- Problem Description -->
+        <div>
+          <h4>PROBLEM</h4>
+          <h2>Digital wallet users face an overabundance of finance apps in their mobile phones.</h2>
           <h5>
-            I began by researching two existing e-wallet apps: <strong>PayPal</strong> and <strong>Apple Pay.</strong> These analyses helped me
-            identify success points and areas of improvements that sparked ideas for Payd's design. My key takeways were that both apps:
+            Online sales and transactions have steadily increased over the last decade. The COVID pandemic had increased this rate even further, resulting in more and more apps designed to manage finances. 
           </h5>
-
-          <ul>
-            <li>
-              <h5>
-                Value creating a strong sense of <strong>trust and inclusion</strong>.
-              </h5>
-            </li>
-            <li>
-              <h5>
-                Aim to impact society by creating products that <strong>improve financial health.</strong>
-              </h5>
-            </li>
-            <li>
-              <h5>
-                Are widely used and marketed through <strong>notoriety</strong> and <strong>compatibility</strong>.
-              </h5>
-            </li>
-          </ul>
+          <h5>
+            This led to the question: why do users need to handle so many different apps in order to understand their finances?
+          </h5>
+          <h5>
+            <strong>Role:</strong> UX/UI Designer (solo)
+            <br>
+            <strong>Tools:</strong> Adobe XD, Balsamiq, Google Sheets
+            <br>
+            <strong>Timeframe:</strong> Jun 2021 - Oct 2021
+          </h5>
         </div>
 
-        <!-- See Competitive Analyses Button -->
-        <div class="ripple-button">
-          <a href="https://drive.google.com/file/d/188mBQDxS6qxc5GXeX65EZEl2BuJd3eqr/view?usp=sharing"
-          target="_blank">
-            <span></span>
-            See Competitive Analyses
+        <!-- Problem Image -->
+        <div>
+          <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">
+            <img src="img/payd/payd_overview.jpg" class="test" alt="Payd Problem Image">
           </a>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <!-- 2. Research Container -->
+    <section>
+
+      <!-- Competitive Analysis -->
+      <div class="project-sub-section">
+        <h4>COMPETITIVE ANALYSIS</h4>
+
+        <h2>
+          The competition did NOT tell the whole financial story.
+        </h2>
+
+        <h5>
+          I analyzed three popular apps that revolve around managing finances. I learned that though each app does their particular functions very well, none of them provide their users a comprehensive understanding of their finances. Just one of these apps wasn't enough for understanding the entire financial summary.
+        </h5>
+
+        <!-- Competitive Analysis Image -->
+        <picture>
+          <source srcset="img/payd/@1x/payd_competitor_apps@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_competitor_apps@2x.png" alt="Competitive Analysis Image">
+        </picture>
+      </div>
 
       <!-- User Interviews -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">User interviews</h4>
+      <div class="project-sub-section">
+        <h4>USER INTERVIEWS</h4>
 
-          <h5>
-            I conducted three user interviews that focused on the following research goals: <strong>vital features, contexts of use,</strong> and <strong>pain points</strong>.
-          </h5>
-          <h5>
-            I grouped the interview data using affinity maps, which provided a visual understanding of user thoughts and feelings around e-wallet apps. With this understanding, I determined my users' main financial problems that Payd needed to solve.
-          </h5>
-        </div>
+        <h2>My interviewees prioritized convenience and tracking for their financial transactions.</h2>
+
+        <h5>
+          I conducted user interviews with three financial management app users to understand what they valued most in the apps they use to handle their finances. My research goals were to gauge vital features, contexts of use, and pain points surrounding competitor apps. I then organized the data using affinity maps to uncover any trends.
+        </h5>
 
         <!-- User Interview Affinity Map Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_user_interview-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_interview-1@2x.png" alt="User Interview Affinity Map Carousal">
+              <img src="img/payd/@2x/payd_user_interview-1@2x.png" alt="Payd User Interview Affinity Map">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_user_interview-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_interview-2@2x.png" alt="User Interview Affinity Map Carousal">
+              <img src="img/payd/@2x/payd_user_interview-2@2x.png" alt="Payd User Interview Affinity Map">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_user_interview-3@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_interview-3@2x.png" alt="User Interview Affinity Map Carousal">
+              <img src="img/payd/@2x/payd_user_interview-3@2x.png" alt="Payd User Interview Affinity Map">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_user_interview-4@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_interview-4@2x.png" alt="User Interview Affinity Map Carousal">
+              <img src="img/payd/@2x/payd_user_interview-4@2x.png" alt="Payd User Interview Affinity Map">
             </picture>
           </div>
         </div>
-      </section>
-
-      <!-- Problems & Goal -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Problems & Goal</h4>
-
-          <!-- Problems -->
-          <div>
-            <h5>
-              From my research, I uncovered that the overarching problems users faced when managing finances were:
-            </h5>
-            <ul>
-              <li>
-                <h5>Users prefer <strong>quick, digital payments</strong> over handling cash</h5> 
-              </li>
-              <li>
-                <h5>User need a way to <strong>track their spending habits and history</strong></h5>
-              </li>
-              <li>
-                <h5>Users <strong>don't like managing multiple cards and finance apps</strong></h5>
-              </li>
-              <li>
-                <h5>User have <strong>preferred go-to finance apps</strong> for completing various tasks</h5>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-          <!-- Goal -->
-          <div class="goal-container color-payd">
-            <h5>
-              With these insights in mind, my main goal when designing Payd became <strong>providing a single</strong>, <strong>exceptionally simple platform</strong> for users to <strong>send, receive, budget</strong>, and <strong>track their money</strong>.
-            </h5>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 3. Empathy Container -->
-    <div class="project-section-container">
-
-      <!-- Empathy Header -->
-      <div class="project-section-title">
-        <h2>Empathizing with users 💞</h2>
       </div>
-      
-      <!-- User Personas -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">User personas</h4>
-          <h5>
-            I created user personas to represent users with the needs, goals, and frustrations I identified during my research. These personas gave identities to my users; <strong>I was now aiming to solve the problems of Ricky and Chelsea, rather than e-wallet users in general</strong>.
-          </h5>
-        </div>
 
-        <!-- User Persona Slideshow -->
+      <!-- Key Research Insights -->
+      <div class="project-sub-section">
+        <h4>KEY RESEARCH INSIGHTS</h4>
+
+        <h2>Interviewees wanted basic payment app functionalities, ON TOP of an overview of all their spending.</h2>
+
+        <h5>Based on the groupings from my affinity maps, I noticed interviewees used finance apps on an as-needed basis and each prefer different apps for accomplishing specific tasks. They also expressed the need to improve their spending habits, but had no way of viewing the bigger picture.</h5>
+
+        <!-- Key Insights Image -->
+        <picture>
+          <source srcset="img/payd/@1x/payd_key_insights@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_key_insights@2x.png" alt="Payd Key Insights Image">
+        </picture>
+      </div>
+    </section>
+
+    <!-- 3. Synthesis Container -->
+    <section>
+
+      <!-- Personas and Journey Maps-->
+      <div class="project-sub-section">
+        <h4>PERSONAS + JOURNEY MAPS</h4>
+
+        <h2>Synthesizing research data into personable goals and scenarios.</h2>
+
+        <h5>
+          I created personas to personify the research data and help me understand who would benefit from the solution I was working toward. I also shaped journey maps to illustrate relatable scenarios for each persona. Going through their journeys step by step helped me brainstorm pain points and opportunities for the solution.
+        </h5>
+
+        <!-- Persona and Journey Maps Slideshow -->
         <div class="slider-container">
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_persona-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_persona-1@2x.png" alt="Persona Carousal">
+              <img src="img/payd/@2x/payd_persona-1@2x.png" alt="Payd Persona and Journey Maps">
+            </picture>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="img/payd/@1x/payd_journeymap-1@1x.png" media="(max-width:767px)">
+              <img src="img/payd/@2x/payd_journeymap-1@2x.png" alt="Payd Persona and Journey Maps">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_persona-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_persona-2@2x.png" alt="Persona Carousal">
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <!-- User Journey Maps -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Journey maps</h4>
-          <h5>
-            I shaped journey maps to illustrate relatable stories for how my personas might use Payd. The goal here was that their thoughts, expectations, and feelings aligned with those in their respective journeys when using the app. 
-          </h5>
-        </div>
-
-        <!-- User Journey Map Slideshow -->
-        <div class="slider-container">
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_journeymap-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_journeymap-1@2x.png" alt="Journey Map Carousal">
+              <img src="img/payd/@2x/payd_persona-2@2x.png" alt="Payd Persona and Journey Maps">
             </picture>
           </div>
 
           <div>
             <picture>
               <source srcset="img/payd/@1x/payd_journeymap-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_journeymap-2@2x.png" alt="Journey Map Carousal">
+              <img src="img/payd/@2x/payd_journeymap-2@2x.png" alt="Payd Persona and Journey Maps">
             </picture>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- 4. Info Arch Container -->
-    <div class="project-section-container">
-
-      <!-- Info Arch Header -->
-      <div class="project-section-title">
-        <h2>Structuring the solution 🌱</h2>
       </div>
+    </section>
       
-      <!-- Users Flows -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">User flows</h4>
-          <h5>
-            Based on my personas and journey maps, I pinpointed three core functions to help users accomplish their goals: <strong>Account Creation, Payment Methods ,</strong> and <strong>Send/Recieve Payments</strong>.
-          </h5>
-          <h5>
-            I then created user flows that suggested how my personas might navigate Payd to complete specific tasks using these core functions. This step was important as it influeced the app's information architecture and provided a focus on functionality.
-          </h5>
-        </div>
+    <!-- 4. Ideation Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>IDEATION</h4>
 
-        <!-- User Flow Slideshow -->
-        <div class="slider-container">
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_user_flow-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_flow-1@2x.png" alt="User Flows Carousal">
-            </picture>
-          </div>
+        <h2>3 core user flows to address primary user goals.</h2>
 
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_user_flow-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_flow-2@2x.png" alt="User Flows Carousal">
-            </picture>
-          </div>
+        <h5>I identified three main functionalities to focus on for the solution that catered to my users' financial app needs. I used the opportunities I brainstormed during journey mapping to sketch user flows and features for the core functions.</h5>
 
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_user_flow-3@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_user_flow-3@2x.png" alt="User Flows Carousal">
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <!-- Info Arch -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Information architecture</h4>
-          <h5>
-            Utilizing my user flows, I created an initial site map. Afterwards, I assessed my map using an online card-sort then updated it to better match user expectations for an e-wallet app's structure. After usability testing and design refinement (explained later), I developed a final site map. 
-          </h5>
-        </div>
-
-        <!-- Side Map Slideshow -->
-        <div class="slider-container">
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_site_map-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_site_map-1@2x.png" alt="Site Map Carousal">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_site_map-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_site_map-2@2x.png" alt="Site Map Carousal">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_site_map-3@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_site_map-3@2x.png" alt="Final Site Map">
-            </picture>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 5. Wireframes Container -->
-    <div class="project-section-container">
-
-      <!-- Wireframes Header -->
-      <div class="project-section-title">
-        <h2>Wireframing the solution ✨</h1>
+        <!-- 3 Core Functions Image -->
+        <picture>
+          <source srcset="img/payd/@1x/payd_ideation@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_ideation@2x.png" alt="Payd 3 Core Functions Image">
+        </picture>
       </div>
-      
-      <!-- Wireframes Content -->
-      <section>
+    </section>
+  
+    <!-- 5. Design Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>DESIGN</h4>
 
-        <!-- Lofi Wireframes -->
-        <div class="column-container">
-          <div>
-            <a href="https://drive.google.com/file/d/1wDDQ8lZL5sS2osGEi3_LVP-bnQwSewcs/view?usp=sharing"
-              class="project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_lofi@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_lofi@2x.png" alt="Payd Lofi">
-              </picture>
-            </a>
-          </div>
+        <h2>Wireframing a comprehensive financial management mobile app.</h2>
 
-          <div>
-            <h4 class="payd-sub-section-heading">Low fidelity</h4>
-            <h5>
-              I sketched lo-fi wireframes for three core functions in pencil and paper. Sketching gave me the creative freedom to ideate without focusing on one solution or getting bogged down in the details. 
-            </h5>
-            <h5>
-              Note that I had <strong>swapped</strong> the <strong>account creation</strong> functionality with <strong>comparing monthly spending</strong>. You will see that sketching this function without a user flow led to an inconcise design later down the line.
-            </h5>
-          </div>
-        </div>
+        <h5>Though I was tasked with creating a web app, I felt a mobile solution was the right approach in terms of both familiarity and simplicity. Mobile financial apps were used more often by my interviewees and allowed me to focus on functionality. I fleshed out the sketches by creating mid fidelity wireframes. Once I felt the functionality was moving toward the right direction, I created a high fidelity prototype for usability testing.</h5>
 
-        <!-- Midfi Wireframes -->
-        <div class="column-container">
-          <div>
-            <h4 class="payd-sub-section-heading">Medium fidelity</h4>
-            <h5>
-              After I had sketched what I felt was a viable framework for Payd, I used Balsamiq to create mid-fi wireframes. These wireframes better articulated the solutions and structure I formed during lo-fi.
-            </h5>
-          </div>
-
-          <div>
-            <a href="https://drive.google.com/file/d/1wARoWOZ6beu75BbEt5yutnnEe9dq394y/view?usp=sharing"
-              class="project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_midfi@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_midfi@2x.png" alt="Payd Midfi">
-              </picture>
-            </a>
-          </div>
-        </div>
-
-        <!-- Hifi Wireframes -->
-        <div class="column-container">
-          <div>
-            <a href="https://drive.google.com/drive/folders/1Rh110MYamAfn0dBKCQUA3n-4GzT4vZWq?usp=sharing"
-              class="project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_hifi@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_hifi@2x.png" alt="Payd Hifi">
-              </picture>
-            </a>
-          </div>
-
-          <div>
-            <h4 class="payd-sub-section-heading">High fidelity</h4>
-            <h5>
-              With the basic functionality and structure of my app planned, it was time to add in details. I used Adobe XD to develop hi-fi
-              wireframes then pieced them together to form an interactable prototype to use during usability testing.
-            </h5>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 6. Testing Container -->
-    <div class="project-section-container">
-
-      <!-- Testing Header -->
-      <div class="project-section-title">
-        <h2>Testing the prototype 🧪</h2>
+        <!-- Payd Wireframing -->
+        <picture>
+          <source srcset="img/payd/@1x/payd_wireframing@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_wireframing@2x.png" alt="Payd Wireframing">
+        </picture>
       </div>
+    </section>
 
-      <!-- Usability Testing -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Usability testing</h4>
-          <h5>
-            Using my interactive prototype, I tested the app's usability by observing how e-wallet users navigated through it to complete the following tasks: <strong>creating a split payment, adding a payment method,</strong> and <strong>comparing monthly
-            spending</strong>. 
-          </h5>
-          <h5>
-            I grouped the test data using affinity maps, then organized a rainbow spreadsheet to create a quantitative representation of the data. The spreadsheet tracked user feedback, error, and severity, uncovering functions that needed improvement and their priority based on impact and effort.
-          </h5>
-        </div>
+    <!-- 6. Testing + Iteration Container -->
+    <section>
+      <h4>TESTING + ITERATION</h4>
 
-        <!-- See Rainbow Spreadsheet Button -->
-        <div class="ripple-button">
-          <a href="https://docs.google.com/spreadsheets/d/1lZyt-xeErfrW3sNHmRm8ohappcqbUUq4YS7VxAlLo80/edit?usp=sharing"
-          target="_blank">
-            <span></span>
-            See Rainbow Spreadsheet
-          </a>
-        </div>
+      <h2>Making 3 major improvements to the design.</h2>
 
-        <br>
+      <h5>
+        I conducted usability tests to observe how six financial management app users navigated through the prototype. I grouped the data using affinity maps and organized trends using a rainbow spreadsheet to prioritize usability errors concerning app functionality. I continuously iterated on the design based on test participant feedback and visual and accessibility guidelines to address these errors.
+      </h5>
 
-        <!-- Usability Testing Affinity Map Slideshow -->
-        <div class="slider-container">
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_usability_test-1@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_usability_test-1@2x.png" alt="Usability Test Affinity Map Carousal">
-            </picture>
-          </div>
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-1@1x.png" media="(max-width:767px)">
+        <img src="img/payd/@2x/payd_improvement-1@2x.png" alt="Payd Improvement Image">
+      </picture>   
 
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_usability_test-2@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_usability_test-2@2x.png" alt="Usability Test Affinity Map Carousal">
-            </picture>
-          </div>
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-2@1x.png" media="(max-width:767px)">
+        <img src="img/payd/@2x/payd_improvement-2@2x.png" alt="Payd Improvement Image">
+      </picture> 
 
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_usability_test-3@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_usability_test-3@2x.png" alt="Usability Test Affinity Map Carousal">
-            </picture>
-          </div>
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-3@1x.png" media="(max-width:767px)">
+        <img src="img/payd/@2x/payd_improvement-3@2x.png" alt="Payd Improvement Image">
+      </picture> 
+    </section>
 
-          <div>
-            <picture>
-              <source srcset="img/payd/@1x/payd_usability_test-4@1x.png" media="(max-width:767px)">
-              <img src="img/payd/@2x/payd_usability_test-4@2x.png" alt="Usability Test Affinity Map Carousal">
-            </picture>
-          </div>
-        </div>
-      </section>
+    <!-- 7. Style Guide Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>STYLE GUIDE</h4>
 
-      <!-- Error Addressal -->
-      <section>
-        <h4 class="payd-sub-section-heading">Error addressal</h4>
-        <h5>
-          I addressed each error in order of priority and iterated on my high fidelity wireframes. The new solutions were based on my understanding of user feedback and the data compiled so far.
-        </h5>
+        <picture>
+          <source srcset="img/payd/@1x/payd_styleguide@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_styleguide@2x.png" alt="Mini Style Guide Image">
+        </picture> 
 
-        <div class="column-container">
-
-          <!-- Error Description -->
-          <div>
-            <h5>
-              <strong>Issue:</strong> Users had trouble with test scenario #3 of comparing monthly spending.
-            </h5>
-            <h5>
-              <strong>Severity:</strong> High
-            </h5>
-            <h5>
-              <strong>Evidence:</strong> Four of six participants were confused with how the comparison and current buttons worked. The other two participants completed the task but only after much experimentation.
-            </h5>
-            <h5>
-              <strong>Solution:</strong> Remove comparison and current buttons.
-            </h5>
-            <h5>
-              <strong>Additional Updates:</strong> Update tab and pie chart UI and implement functionality to add categories.
-            </h5>
-          </div>
-
-          <!-- Error Comparison Image -->
-          <div>
-            <a href="https://drive.google.com/file/d/1mvG6PZaUbGKxE4sKm9I-TL1W_0eeCAv1/view?usp=sharing"
-            class="center project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_error@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_error@2x.png"
-                  alt="Issue #2 Change">
-              </picture>
-            </a>
-          </div>
-        </div>
-
-        <!-- See Error List Button -->
-        <div class="ripple-button">
-          <a href="https://drive.google.com/file/d/1mvG6PZaUbGKxE4sKm9I-TL1W_0eeCAv1/view?usp=sharing"
-          target="_blank">
-            <span></span>
-            See More Error Addressals
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <!-- 7. Visual Design Container -->
-    <div class="project-section-container">
-
-      <!-- Visual Design Header -->
-      <div class="project-section-title">
-        <h2>Adding visual design 🌈</h2>
-      </div>
-      
-      <!-- Visual Design Content -->
-      <section>
-
-        <!-- Visual Design Principles -->
-        <div class="column-container">
-          <div>
-            <div class="project-sub-section">
-              <h4 class="payd-sub-section-heading">Visual design principles</h4>
-              <h5>
-                Tapping into emotional design and Gestalt's laws of <strong>Similarity</strong> and <strong>Emphasis</strong>, Payd transitioned from grey scale to a
-                gradient of colors.
-              </h5>
-              <h5>
-                Following the laws of <strong>Proximity</strong> and <strong>Good Continuation</strong>, I used a "card" design to separate sections within the app.
-              </h5>
-            </div>
-          </div>
-
-          <div>
-            <a href="https://drive.google.com/file/d/1paqIGnglooLMDLu7WIYqjU_WnNxKNwcR/view?usp=sharing"
-              class="center project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_visual_design@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_visual_design@2x.png"
-                  alt="Visual Design Principle Changes">
-              </picture>
-            </a>
-          </div>
-        </div>
-
-        <!-- iOS Human Guidelines -->
-        <div class="column-container">
-          <div>
-            <div class="project-sub-section">
-              <h4 class="payd-sub-section-heading">iOS human guidelines</h4>
-              <h5>
-                Adhering to the iOS <strong>Clear Path</strong>
-                guideline, I divided the Expense tab into two. This
-                provided a clearer path for
-                users to complete tasks (ie. Scenario #3) and still aligns with the <strong>Bar</strong> guideline of 3-5 icons per navigation bar.
-              </h5>
-              <h5>
-                I also readjusted icon sizes to match those of the <strong>Icon</strong> guideline.
-              </h5>
-            </div>
-          </div>
-
-          <div>
-            <a href="https://drive.google.com/file/d/1-QbkuqYasY8I6t2QpWyxBEtr27tHUYKF/view?usp=sharing"
-              class="center project-link" target="_blank">
-              <picture>
-                <source srcset="img/payd/@1x/payd_ios_hg@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_ios_hg@2x.png" alt="iOS Human Guideline Changes">
-              </picture>
-            </a>
-          </div>
-        </div>
-
-        <!-- Accessibility -->
-        <div class="column-container">
-          <div>
-            <div class="project-sub-section">
-              <h4 class="payd-sub-section-heading">Designing for accessibility</h4>
-              <h5>
-                Guided by the Web Content Accessibility Guidelines (WCAG) of <strong>Show Location</strong>, I added a Home tab and moved the Cards tab to the Settings so users will better understand where they are within the app.
-              </h5>
-              <h5>
-                I also included more color, contrast, and shadowing for increased <strong>Visibility</strong> and <strong>Understandability</strong>.
-              </h5>
-            </div>
-          </div>
-
-          <div>
-            <a href="https://drive.google.com/file/d/166vHwtSmnj0ShbTT20kinTSEJ9zQiZrM/view?usp=sharing"
-              class="center project-link" target="_blank">
-              <picture class="center">
-                <source srcset="img/payd/@1x/payd_accessibility@1x.png" media="(max-width:767px)">
-                <img src="img/payd/@2x/payd_accessibility@2x.png" alt="Accessibility Changes">
-              </picture>
-            </a>
-          </div>
-        </div>
-
-        <!-- See Style Guide Button -->
+        <!-- Full Style Guide Button -->
         <div class="ripple-button">
           <a href="img/payd/payd_styleguide.png"
           target="_blank">
             <span></span>
-            See Style Guide
+            Full Style Guide
           </a>
         </div>
-      </section>
-    </div>
-
-    <!-- 8. Prototype Container -->
-    <div class="project-section-container">
-
-      <!-- Prototype Header -->
-      <div class="project-section-title">
-        <h2>The final prototype 🎁</h2>
       </div>
+    </section>
         
-      <!-- Prototype -->
-      <section>
-        <div class="center">
-          <iframe width="300" height="648" src="https://xd.adobe.com/embed/390c94ff-a85e-4884-9409-1f786a985587-6c5f/"
-            allowfullscreen></iframe>
-        </div>
-        <br>
+    <!-- 8. Final Prototype Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>FINAL PROTOTYPE</h4>
+        
+        <h2>Final screens and interactive prototype link.</h2>
 
-        <!-- See Iteration Overview Button -->
-        <div class="ripple-button">
-          <a href="https://drive.google.com/file/d/1XA1ZvOfUTBbqsvnlsIAyMYpgGCEDF9T3/view?usp=sharing"
-          target="_blank">
-            <span></span>
-            See Iteration Overview
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <!-- 9. Reflection Container -->
-    <div class="project-section-container">
-
-      <!-- Reflection Header -->
-      <div class="project-section-title">
-        <h2>Reflecting on my work 🤔</h2>
+        <picture>
+          <source srcset="img/payd/@1x/payd_wireframing@1x.png" media="(max-width:767px)">
+          <img src="img/payd/@2x/payd_final_prototype@2x.png" alt="Journey Map Carousal">
+        </picture> 
       </div>
 
-      <!-- Reflection Content -->
-      <section>
+      <!-- Prototype Button -->
+      <div class="ripple-button">
+        <a href="https://xd.adobe.com/view/390c94ff-a85e-4884-9409-1f786a985587-6c5f/"
+        target="_blank">
+          <span></span>
+          Interactive Prototype
+        </a>
+      </div>
+    </section>
 
-        <!-- Challenges List -->
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Challenges</h4>
-          <ol type="1">
-            <li>
-              <p>
-                <strong>User interviews:</strong> Interview question clarity is very important, both for the sake of data and the participants' time. Some questions were unclear to participants. I was able to adjust these for later interviews, but next time, I will focus on asking specific, open, and non-leading questions.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Function without flow:</strong> When creating lo-fi wireframes, I sketched the compareing monthly spending core function without having a user flow for it beforehand. This ultimately led to confusion during usability testing due to an incoherent design. In the future, I will remind myself to continuously look back at my research and analysis when designing functionality.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Done is better than perfect:</strong> I got a bit lost in the sauce while tweaking minor details. I've learned that perfecting the visual design is not a priority for early hi-fi. 
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Visual design guidelines:</strong> The steps I took during the project process followed a UX course. The course had me review iOS human and accessibility guidelines very late in the game. I believe if I was aware of these guidelines earlier, I could have structured my app more accessibly early on. In my next project, I will have a better understanding of these guidelines.
-              </p>
-            </li>
-          </ol>
-        </div>
+    <!-- 9. Conclusion Container -->
+    <section>
+      <h4>Conclusion</h4>
 
-        <!-- Next Steps List -->
-        <div class="project-sub-section">
-          <h4 class="payd-sub-section-heading">Next steps</h4>
-          <p>Overall, users were excited to follow Payd's progress and felt the changes made throughout the UX process improved the app's usability. My next step would be:</p>
-          <ol>
-            <li>
-              <p>
-                <strong>User testing:</strong> Another round of usability tests to assess the improvements I've made and identify whether I need to make more.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Engineering collaboration:</strong> Begin working with software engineers to bring Payd to life.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Launch Payd:</strong> Market the app and launch it into mobile app stores.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
+      <h2>What were my key learnings and takeaways.</h2>
 
-      <!-- Thank You -->
-      <section>
-        <h3 class="center">Thanks for reading!</h3>
-        <p class="center">
-          <span>Check out my other</span>
-          <span>
-            <a href="index.html#header"><u>work</u></a>
-          </span>
-        </p>
-      </section>
+      <h5>Payd was the first UX project that I worked on from concept to completion! It definitely isn't perfect, but was a great place for me to start. In addition to many UX methodologies, I learned many important lessons that I'll take with me to my next project 😊</h5>
+
+      <ol>
+        <li>
+          <h5><strong>Research vs. interview questions.</strong> 
+            While working on this project, I learned the difference between research and interview questions. I know now that when gathering qualitative information, it's important to keep interview questions open ended and non-leading.
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Done is better than perfect - keep on iterating.</strong> 
+          I got a bit lost in the sauce while tweaking minor details. I've learned that perfecting the visual design is not a priority for early hi-fi. I should have turned in minor iterations more frequently, rather than making bulk changes. This would have allowed me to focus on functionality and keep from being overwhelmed.
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Insight vs. process driven design.</strong> 
+          I realized while working on this case study that showing what was pertinent to the problem space was much more valuable than completing and showing off processes. Moving forward, I have a better understanding of what processes to use, when to use them, and how they deliver insights that affect the bigger picture - rather than doing them just to do them.
+          </h5>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 10. Thank You Container-->
+    <div>
+      <h3 class="center">Thanks for reading!</h3>
+      <p class="center">
+        <span>Check out my other</span>
+        <span>
+          <a href="index.html#header"><u>work</u></a>
+        </span>
+      </p>
     </div>
   </main>
 
