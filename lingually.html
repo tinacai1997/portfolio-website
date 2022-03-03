@@ -34,42 +34,42 @@
   <!-- Header -->
   <header id="header">
 
-  <!-- Logo -->
-  <a href="index.html#header" class="logo-link">
-    <div class="logo">tcai</div>
-  </a>    
+    <!-- Logo -->
+    <a href="index.html#header" class="logo-link">
+      <div class="logo">tcai</div>
+    </a>    
 
-  <!-- Back to Top Button -->
-  <a id="top-button">
-    <i class="fa fa-arrow-up"></i>
-  </a>
+    <!-- Back to Top Button -->
+    <a id="top-button">
+      <i class="fa fa-arrow-up"></i>
+    </a>
 
-  <!-- Menu Container -->
-  <div class="menu-container">
+    <!-- Menu Container -->
+    <div class="menu-container">
 
-    <!-- Menu Content -->
-    <div class="menu">
-      <!-- Menu Links -->
-        <nav>
-          <ul>
-            <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-            <li><a href="about.html" onclick="closeMenu()">About</a></li>
-            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
+      <!-- Menu Content -->
+      <div class="menu">
+        <!-- Menu Links -->
+          <nav>
+            <ul>
+              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
+              <li><a href="about.html" onclick="closeMenu()">About</a></li>
+              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
+      </div>
+
+      <!-- Menu Button -->
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+          <div class="menu-icon open">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
     </div>
-
-    <!-- Menu Button -->
-    <div class="menu-button">
-      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-        <div class="menu-icon open">
-          <span></span>
-          <span></span>
-        </div>
-      </a>
-    </div>
-  </div>
   </header>
 
   <!-- Main -->
@@ -87,45 +87,48 @@
       <!-- Hero Banner Image -->
       <picture>
         <source srcset="img/lingually/@1x/lingually_intro@1x.png" media="(max-width:767px)">
-        <img class="parallax-img project-intro-img" src="img/lingually/@2x/lingually_intro@2x.png" alt="Lingually Image 1">
+        <img class="parallax-img project-intro-img" src="img/lingually/@2x/lingually_intro@2x.png" alt="Lingually Banner Image">
       </picture>
     </div>
 
-    <!-- 1. Overview Container -->
-    <div class="project-section-container">
-      <section>
-        <div class="column-container">
+    <!-- 1. Problem Container -->
+    <section>
+      <div class="column-container quarter-column">
 
-          <!-- Overview Description -->
-          <div>
-            <h4 class="lingually-sub-section-heading">Overview</h4>
-            <h5>
-              Lingually is an <strong>educational app that encourages users to learn new languages</strong> through fun challenges, custom reminders, and adaptable paces.
-            </h5>
-            <h5>
-              Lingually was made to work for users with a <strong>variety of schedules</strong> and <strong>studying habits</strong>, making it suitable for users with busy schedules, or those that need quiet time.
-            </h5>
-            <h5>
-              <strong>Role:</strong> UX/UI Designer (solo)
-              <br>
-              <strong>Tools:</strong> Adobe XD, Marvel, Google Sheets
-              <br>
-              <strong>Timeframe:</strong> May 2021 - Jun 2021
-            </h5>
-          </div>
+        <!-- Problem Description -->
+        <div>
+          <h4>PROBLEM</h4>
 
-          <!-- Overview Vector Image -->
-          <div>
-            <a href="https://www.freepik.com/vectors/school" target="_blank">
-              <img src="img/lingually/lingually_overview.jpg" alt="Lingually Overview Image">
-            </a>
-          </div>
+          <h2>Language learners are having a hard time consistently practicing new languages.</h2>
+
+          <h5>
+            I noticed my friends and family had a hard time learning new languages. They are initially motivated to learn a new language but slowly quit over time. 
+          </h5>
+
+          <h5>
+            This had me wonder: how might we empower users to learn new languages and create a habit of doing so? 
+          </h5>
+
+          <h5>
+            <strong>Role:</strong> UX/UI Designer (solo)
+            <br>
+            <strong>Tools:</strong> Adobe XD, Marvel, Google Sheets
+            <br>
+            <strong>Timeframe:</strong> May 2021 - Jun 2021
+          </h5>
         </div>
-      </section>
-    </div>
+
+        <!-- Problem Image -->
+        <div>
+          <a href="https://www.freepik.com/vectors/school" target="_blank">
+            <img src="img/lingually/lingually_overview.jpg" alt="Lingually Problem Image">
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Design Process -->
-    <div class="project-section-container">
+    <!-- <div class="project-section-container">
       <div class="goal-container color-lingually">
         <section>
           <h2>Design Process</h2>
@@ -141,325 +144,114 @@
           </div>
         </section>
       </div>
-    </div>
+    </div> -->
 
     <!-- 2. Research Container -->
-    <div class="project-section-container">
+    <section>
 
-      <!-- Research Header-->
-      <div class="project-section-title">
-        <h2>Understanding the problem 🧠</h2>
-      </div>
-      
       <!-- Competitive Analysis -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">Competitive analysis</h4>
+      <div class="project-sub-section">
+        <h4>COMPETITIVE ANALYSIS</h4>
 
-          <h5>
-            Before Lingually became a language learning app, it began as a vocabulary app. Though the content was different, the core problem was comparable: a mobile app that motivated learners to continuously practice.
-          </h5>
-          <h5>
-            To get an idea of existing vocab apps, I evaluated <strong>Atlas, Magoosh,</strong> and <strong>Vocabulary</strong>. From these analyses, I produced lists of likes and dislikes to guide Lingually's design.
-            My key takeaways were:
-          </h5>
+        <h2>Lingually transitioned from a vocabulary to a language app.</h2>
 
-          <ul>
-            <li>
-              <h5>
-                Each app did a good job of <strong>remaining focused on their target audiences</strong> based on UI and content.
-              </h5>
-            </li>
-            <li>
-              <h5>
-                The apps with <strong>interactive challenge systems</strong> were better at <strong>retaining my attention</strong>.
-              </h5>
-            </li>
-            <li>
-              <h5>
-                I had a <strong>harder time grasping new words</strong> in the apps that didn't provide <strong>revisiting</strong> or <strong>audio features</strong>. 
-              </h5>
-            </li>
-          </ul>
-        </div>
+        <h5>
+          Before Lingually became a language learning app, it began as a vocabulary app. Though the content was different, the core problem was comparable. I evaluated three existing vocabulary apps to produce a list of likes and dislikes that guided the solution. 
+        </h5>
 
-        <!-- See Competitive Analyses Button -->
-        <div class="ripple-button">
-          <a href="https://drive.google.com/file/d/1HvqyEcdfiseFjVcaH3In3r65XxpbJwBX/view?usp=sharing"
-          target="_blank">
-            <span></span>
-            See Competitive Analyses
-          </a>
-        </div>
-      </section>
+        <!-- Lingually Competitor Apps Image -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_competitor_apps@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_competitor_apps@2x.png" alt="Lingually Competitor Apps Image">
+        </picture>
+      </div>
 
       <!-- User Interviews -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">User interviews</h4>
+      <div class="project-sub-section">
+        <h4>USER INTERVIEWS</h4>
 
-          <h5>
-            I interviewed vocabulary learners to gain insight on how they approached learning and the educational tools they prefered. I gathered the interview data by separating my observations into three categories: 
-          </h5>
+        <h2>My interviewees considered learning new vocabulary as vocabulary in new languages.</h2>
 
-          <!-- Doing, Thinking, Feeling Vector Images -->
-          <div class="flex-row">
-            <span class="center">
-              <h5>
-                <a href="https://icons8.com/icon/12581/note" target="_blank">
-                  <img src="https://img.icons8.com/ios/64/fa314a/note.png"/>
-                </a>
-              </h5>
-              <h5><strong>DOING</strong></h5>
-            </span>
+        <h5>
+          I interviewed three vocabulary learners to gain insight on how they approached learning and the educational tools they preferred. I gathered the interview data by separating my observations into a Doing-Thinking-Feeling chart. 
+        </h5>
+        <h5>
+          <strong>This is when Lingually diverged from a vocab app to a language learning app.</strong> All interview participants used language apps over strictly vocabulary apps and focused on their experience with learning new vocab in non-native languages during their interviews.
+        </h5>
 
-            <span class="center">
-              <h5>
-                <a href="https://icons8.com/icon/6914/intelligence" target="_blank">
-                  <img src="https://img.icons8.com/ios/64/fa314a/for-experienced.png"/>
-                </a>
-              </h5>
-              <h5><strong>THINKING</strong></h5>
-            </span>
-
-            <span class="center">
-              <h5>
-                <a href="https://icons8.com/icon/123768/favorite-chat-message" target="_blank">
-                  <img src="https://img.icons8.com/ios/64/fa314a/favorite-chat.png"/>
-                </a>
-              </h5>
-              <h5><strong>FEELING</strong></h5>
-            </span>
-          </div>
-
-          <h5>
-             <strong>This is when Lingually diverged from a vocab app to a language learning app</strong>. All interview participants used language apps over strictly vocabulary apps and focused on their experience with learning new vocab in non-native languages when answering questions.
-          </h5>
-        </div>
-
-        <!-- See User Interview Button -->
-        <div class="ripple-button">
-          <a href="https://drive.google.com/file/d/1DJc-yzquQsyq853vfVQHD1Iahugqiye6/view?usp=sharing"
-          target="_blank">
-            <span></span>
-            See User Interview Data
-          </a>
-        </div>
-      </section>
-
-      <!-- Problem & Goal -->
-      <!-- <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">Problems & Goal</h4>
-
-          <div>
-            <h5>
-              Based on the user interviews, I identified the main problems users faced with language learning apps.
-            </h5>
-            <ul>
-              <li>
-                <h5>Users learn better when continuously practicing their new languages and conversing with native language speakers.</h5> 
-              </li>
-              <li>
-                <h5>User have varying schedules and need to use the app based on their free time.</h5>
-              </li>
-              <li>
-                <h5>Users have trouble grasping new languages that have an entirely different style of grammar from what they're used to.</h5>
-              </li>
-            </ul>
-          </div>
-
-          <div class="goal-container color-lingually">
-            <h5>
-              Given this list of problems, my main goal when designing Lingually was to provide an <strong>immersive educational tool</strong> that <strong>reminds users to continue practicing</strong> their languages <strong>at their own pace</strong>.
-            </h5>
-          </div>
-        </div>
-      </section> -->
-    </div>
-
-    <!-- 3. Empathy Container -->
-    <div class="project-section-container">
-
-      <!-- Empathy Header -->
-      <div class="project-section-title">
-        <h2>Empathizing with users 💞</h2>
+        <!-- Doing, Thinking, Feeling Chart Image -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_interview_data@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_interview_data@2x.png" alt="Lingually Doing Thinking Feeling Chart Image">
+        </picture>
       </div>
-      
-      <!-- User Personas -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">User personas</h4>
-          <h5>
-            From the list of <strong>Doing, Thinking, and Feeling</strong> insights, I created the persona <strong>Tony Martinez</strong>, who gave a face for users with needs that Lingually aimed toward solving.
-          </h5>
 
-          <h5>When designing Lingually, it was helpful to think back on how my solutions helped solved Tony's problems, rather than a list of problems.</h5>
-        </div>
+      <!-- Key Research Insights -->
+      <div class="project-sub-section">
+        <h4>KEY RESEARCH INSIGHTS</h4>
+
+        <h2>Interviewees were more motivated to study languages for personal reasons and learned better through realistic conversations.</h2>
+
+        <h5>
+          I noticed from the doing/thinking/feeling data that users that began learning languages for personal reasons were more motivated to continue doing so. The interviees also preferred learning in-person, and had varying study habits. 
+        </h5>
+
+        <!-- Key Research Insights Image -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_key_insights@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_key_insights@2x.png" alt="Lingually Key Research Insights Image">
+        </picture>
+      </div>
+    </section>
+
+    <!-- 3. Synthesis Container -->
+    <section>
+      
+      <!-- Persona -->
+      <div class="project-sub-section">
+        <h4>PROTO-PERSONA</h4>
+
+        <h2>Personifying research data insights.</h2>
+        
+        <h5>
+          I created a persona using the research to give a face for users with needs that Lingually aimed toward solving. When designing Lingually, it was helpful to think back on how my solutions helped solved the persona's specific problem.
+        </h5>
 
         <!-- Persona Image -->
         <picture class="light-img">
           <source srcset="img/lingually/@1x/lingually_persona@1x.png" media="(max-width:767px)">
           <img src="img/lingually/@2x/lingually_persona@2x.png" alt="Lingually Persona">
         </picture>
-      </section>
+      </div>
 
       <!-- User Stories -->
-      <section>
-        <h4 class="lingually-sub-section-heading">User stories</h4>
+      <div class="project-sub-section">
+        <h4>USER STORIES</h4>
+
+        <h2>Pinpointing 3 specific problems to solve.</h2>
+
         <h5>
-          My next step was to draft user stories for Tony. These stories helped me further emphasize with him by describing his needs in his perspective. 
+          I drafted user stories to cater THE solution toward specific problems that were unique to THE persona. This put myself in the persona's perspective and helped narrow down the design scope.
         </h5>
 
-        <!-- User Story Vector Images -->
-        <div class="flex-row">
-          <span class="center">
-            <h5>
-              <a href="https://icons8.com/icon/16161/volunteering" target="_blank">
-                <img src="https://img.icons8.com/ios/64/e1371e/volunteering.png"/>
-              </a>
-            </h5>
-            <h5><strong>HANDS ON</strong></h5>
-          </span>
-
-          <span class="center">
-            <h5>
-              <a href="https://icons8.com/icon/3524/schedule" target="_blank">
-                <img src="https://img.icons8.com/ios/64/e1371e/overtime.png"/>
-              </a>
-            </h5>
-            <h5><strong>HABITUAL</strong></h5>
-          </span>
-
-          <span class="center">
-            <h5>
-              <a href="https://icons8.com/icon/25890/foreign-language-sound" target="_blank">
-                <img src="https://img.icons8.com/ios/64/e1371e/foreign-language-sound.png"/>
-              </a>
-            </h5>
-            <h5><strong>PRONUNCIATION</strong></h5>
-          </span>
-        </div>
-
-        <!-- User Story Descriptions -->
-        <ul>
-          <li>
-            <h5>
-              As a <strong>hands-on learner</strong>, I want interactive learning activities so that I can truly practice what I've learned rather than just reading.
-            </h5>
-          </li>
-          <li>
-            <h5>
-              As a <strong>habitual learner</strong>, I want tool that helps me keep up my learning progress so that I can make studying a daily habit.
-            </h5>
-          </li>
-          <li>
-            <h5>
-              As a <strong>language learner</strong>, I want to be able to hear words spoken out by native language speakers so that I can feel confident about my own grammar and pronunciation.
-            </h5>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Problem and Hypothesis Statement -->
-      <section>
-        <h4 class="lingually-sub-section-heading">Problem & hypothesis statements</h4>
-
-        <h5>Armed with a strong understanding of who I'm desiging for, I created a problem statement to focus my solution toward and a hypothesis statement that predicted Lingually's outcome given it was designed toward Tony's needs.</h5>
-        
-        <!-- Problem Statement -->
-        <h5>
-          <strong><u>Problem:</u></strong> Tony needs <strong>a fun and interactive way </strong> to improve his Japanese that can <strong>adapt to his schedule</strong> because he wants to better absorb Japanese media and be <strong> proficient in basic Japanese </strong> when he travels to Japan next year.
-        </h5>
-        <h5>
-          We will know this to be true when we see him build a regular habit of <strong>studying Japanese every day</strong>, and Tony is able to <strong> hold a basic conversation</strong> in Japanese.
-        </h5>
-
-        <!-- Hypothesis Statement -->
-        <div class="goal-container color-lingually">
-          <h5>
-            We believe that by creating an <strong>interactive learning system</strong> that offers features like <strong>quiz games, pronunciation practice,</strong> and <strong>realistic example conversations</strong>, we will achieve <strong>an immersive study tool that motivates Tony to practice Japanese</strong>.
-          </h5>
-        </div>
-      </section>
-    </div>
-
-    <!-- 4. Info Arch Container -->
-    <div class="project-section-container">
-
-      <!-- Info Arch Header -->
-      <div class="project-section-title">
-        <h2>Structuring the solution 🌱</h2>
+        <!-- User Stories Image -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_user_stories@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_user_stories@2x.png" alt="Lingually User Stories Image">
+        </picture>
       </div>
-      
-      <!-- Users Flows -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">User flows</h4>
+    </section>
 
-          <h5>
-            I created user flows to represent Lingually functions that could meet Tony's needs and fulfill the hypothesis statement.
-            Each user flow presents a solution to Tony's core needs in the form of three key-functions: <strong>create an account, set a reminder,</strong> and <strong>complete a challenge</strong>.
-          </h5>
-        </div>
+    <!-- 4. Ideation + Design Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>IDEATION + DESIGN</h4>
 
-        <!-- User Flow Slideshow -->
-        <div class="large-img center slider-container">
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_user_flow-1@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_user_flow-1@2x.png" 
-            alt="User Flows Carousal">
-            </picture>
-          </div>
+        <h2>Creating low fidelity wireframes.</h2>
 
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_user_flow-2@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_user_flow-2@2x.png" alt="User Flows Carousal">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_user_flow-3@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_user_flow-3@2x.png" alt="User Flows Carousal">
-            </picture>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 5. Wireframes Container -->
-    <div class="project-section-container">
-
-      <!-- Wireframes Header -->
-      <section>
-        <h2>Sketching the solution 💡</h2>
-      </section>
-
-      <!-- Lofi Wireframes -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">Low fidelity wireframes</h4>
-
-          <h5>
-            Using Adobe XD, I "sketched" lo-fi wireframes for Lingually that act as the UI for my user flows. In hindsight, I should have sketched these lo-fi wireframes using pencil and paper.
-          </h5>
-
-          <ul>
-            <li>
-              <h5>
-                With XD, I was <strong>too focused on pixel-perfection</strong>. The purpose of lo-fi wireframes are to represent functionality; striving for pixel-perfection defeated that purpose.
-              </h5>
-            </li>
-            <li>
-              <h5>
-                <strong>I couldn't see all my ideas</strong>. I could freely sketch with pencil and paper, but with XD, my old ideas were hidden by newer ones.
-              </h5>
-            </li>
-          </ul>
-        </div>
+        <h5>
+          I created low fidelity wireframes to address the persona's user stories needs. I opted for a mobile solution for this problem because of the interviewees' varying studying habits - mobile phones apps were easier for users to pick up and use on the go. They also provided a method for sending remindeddrs to users to motivate them to continue learning. 
+        </h5>
 
         <!-- Lofi Wireframes Slideshow -->
         <div class="slider-container">
@@ -498,199 +290,79 @@
             </picture>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- 6. Testing Container -->
-    <div class="project-section-container">
-
-      <!-- Testing Header -->
-      <div class="project-section-title">
-        <h2>Testing the prototype 🧪</h2>
       </div>
+    </section>
 
-      <!-- Usability Testing -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">Usability testing</h4>
-          <h5>
-            I used the web app, Marvel, to link my lofi wireframes together and create an interactive prototype. I then conducted usability tests using the prototype with participants like Tony.
-            The purpose of the tests were to assess whether users could complete the following tasks: <strong>create an account, complete a lesson, create a flashcard,</strong> and <strong>set a reminder</strong>.
-          </h5>
+    <!-- 5. Testing + Iteration Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>TESTING + ITERATION</h4>
 
-          <h5>
-           I put together a usability test report with the data from the tests. This report summarized participant errors and their severity for improving Lingually.
-          </h5>
+        <h2>Addressing 3 usability errors in the design.</h2>
 
-          <!-- Usability Test Report Image -->
-          <picture>
-            <source srcset="img/lingually/@1x/lingually_test_report@1x.png" media="(max-width:767px)">
-            <img src="img/lingually/@2x/lingually_test_report@2x.png" alt="Usability Test Report">
-          </picture>
-        </div>
-      </section>
-
-      <!-- Error Addressal -->
-      <section>
-        <h4 class="lingually-sub-section-heading">Error addressal</h4>
         <h5>
-          I addressed the errors in the usability test report by iterating on my lofi wireframes in order of severity (in this case, they were all level 3).
+          I conducted usability tests to assess whether language learners could complete specific scenarios related to the persona's goals using the app prototype. I organized the test data into a usability test report then continously iterated on the lofi wireframes to improve its usability in order of error severity. 
         </h5>
 
         <!-- Error #1 -->
-        <div class="column-container">
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_improvement-1@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_improvement-1@2x.png" alt="Lingualy Usability Error 1">
+        </picture>
 
-          <!-- Error #1 Description -->
-          <div>
-            <h5>
-              <strong>Issue #1:</strong> Onboarding bubbles weren't obviously onboarding bubbles.
-            </h5>
-            <h5>
-              <strong>Severity:</strong> High
-            </h5>
-            <h5>
-              <strong>Evidence:</strong> Two of three participants did not notice onboarding bubbles.
-            </h5>
-            <h5>
-              <strong>Solution:</strong> Darken background and onboarding bubble button when onboarding content is focused.
-            </h5>
-            <h5>
-              <strong>Additional Updates:</strong> Some participants mentioned that they usually skip onboarding. Added a skip button for experienced users or users that want to learn on their own.
-            </h5>
-          </div>
+        <!-- Error #2 -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_improvement-2@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_improvement-2@2x.png" alt="Lingualy Usability Error 2">
+        </picture>
 
-          <!-- Error #1 Comparison Image -->
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_error-1@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_error-1@2x.png" alt="Error 1">
-            </picture>
-          </div>
-        </div>
-
-        <!-- Error #2 Description -->
-        <div class="column-container">
-
-          <!-- Error #2 Description -->
-          <div>
-            <h5>
-              <strong>Issue #2:</strong> Users had trouble setting up a reminder.
-            </h5>
-            <h5>
-              <strong>Severity:</strong> High
-            </h5>
-            <h5>
-              <strong>Evidence:</strong> All users had trouble finding where to set up reminders and only found where to do so through deduction.
-            </h5>
-            <h5>
-              <strong>Solution:</strong> Mention reminders during onboarding and change the "Profile" tab to "Profile & Settings"
-            </h5>
-          </div>
-
-          <!-- Error #2 Comparison Image -->
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_error-2@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_error-2@2x.png" alt="Error 2">
-            </picture>
-          </div>
-        </div>
-
-        <!-- Error #3 -->
-        <div class="column-container">
-
-          <!-- Error #3 Description -->
-          <div >
-            <h5>
-              <strong>Issue #3:</strong> Users were confused with how to create a new flashcard deck.
-            </h5>
-            <h5>
-              <strong>Severity:</strong> High
-            </h5>
-            <h5>
-              <strong>Evidence:</strong> Two of three participants looked around for a while before finding the add a deck button. 
-            </h5>
-            <h5>
-              <strong>Solution:</strong> Change add a deck button from a plus sign to a bar button with text and darken its color. 
-            </h5>
-            <h5>
-              <strong>Additional Updates:</strong> Some participants found the sample decks distracting. Added a prompt to encourage new users to create decks in place of sample decks. Also added an edit button for existing decks. 
-            </h5>
-          </div>
-
-          <!-- Error #3 Comparison Image -->
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_error-3@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_error-3@2x.png" alt="Error 3">
-            </picture>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 8. Reflection Container -->
-    <div class="project-section-container">
-
-      <!-- Reflection Header -->
-      <div class="project-section-title">
-        <h2>Reflecting on my work 🤔</h2>
+        <!-- Error #3 Comparison Image -->
+        <picture>
+          <source srcset="img/lingually/@1x/lingually_improvement-3@1x.png" media="(max-width:767px)">
+          <img src="img/lingually/@2x/lingually_improvement-3@2x.png" alt="Lingualy Usability Error 3">
+        </picture>
       </div>
+    </section>
 
-      <!-- Reflectin Content -->
-      <section>
+    <!-- 6. Conclusion Container -->
+    <section>
+      <h4>CONCLUSION</h4>
 
-        <!-- Challenges List -->
-        <div class="project-sub-section"> 
-          <h4 class="lingually-sub-section-heading">Challenges</h4>
-          <ol type="1">
-            <li>
-              <p>
-                <strong>Interview participants:</strong>
-                Not a <i>challenge</i> per se, but interview participants were primarily language app users rather than vocabulary. It made sense to adjust the project scope based on this outcome, but whether I'm able to do so would depend on client goals if there were any. I anticipate I'd have a larger pool of participants to test with when working at a company, but if not, it would be a matter of communicating with the client about changes like this. 
-              </p>
-            </li>
-            <li>
-              <p><strong>Lofi wireframes:</strong>
-                As mentioned earlier, I spent too much time making pixel-perfect lofi wireframes using Adobe XD. Next time, I will put that energy into ideating with pencil and paper. 
-              </p>
-            </li>
-            <li>
-              <p><strong>Usability testing:</strong>
-                It was difficult to keep up note-taking while also facilitating the usability tests. During future tests, I will use screen recording software and create recording consent forms to track observations.
-              </p>
-            </li>
-            <li>
-              <p><strong>Testing lo-fi wireframes:</strong>
-                I noticed during usability tests that the lack of content and color and abundance of "squiggles" in my lo-fi wireframes distracted users from completing tasks. In the future, I would either decrease "lo-fi disctractions" or use higher fidelity wireframes for usability testing.
-              </p>
-            </li>
-          </ol>
-        </div>
+      <h2>Key learnings and takeaways from my first UX project.</h2>
 
-        <!-- Next Steps List -->
-        <div class="project-sub-section">
-          <h4 class="lingually-sub-section-heading">Next steps</h4>
-          <ol>
-            <li>
-              <p><strong>Mid-fi wireframes:</strong>
-                Lingually was a great first project to start on as it hit all the key UX research methodologies I would use while working on other case studies. My next steps for Lingually are to create midfi wireframes to iterate on the app's UI based on all the feedback I've gathered up to this point. 
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
+      <h5>Lingually was my first official UX project (woohoo 🥳)!  It was both fun and mind-boggling to see the actual app coming together. There are definitely things I would do differently if I started it all over again, but for now, I'll take the lessons I learned to improve my next project.</h5>
 
-      <!-- Thank You -->
-      <section>
-        <h3 class="center">Thanks for reading!</h3>
-        <p class="center">
-          <span>Check out my other</span>
-          <span>
-            <a href="index.html#header"><u>work</u></a>
-          </span>
-        </p>
-      </section>
+      <ol>
+        <li>
+          <h5><strong>Always design with the user in mind.</strong>
+            I was initially tasked with designing a vocabulary app, but my interview participants primarily used language apps. Because of this, I pivoted my design to fit toward their needs. Sometimes, assumptions and changes need to be made when lacking "sufficient" research data. It's important to remain objective to the user base</h5>
+        </li>
+        <li>
+          <h5><strong>New set of competitive analyses.</strong>
+          While working on this case study, I realized that because I pivoted the design scope, I should have performed a new set of competitive analyses focusing on language solutions. This would have helped me understand any gaps in that market and spark ideas for Lingually's design.</h5>
+        </li>
+        <li>
+          <h5><strong>No idea is perfect.</strong>
+            I spent too much time making "pixel-perfect" lofi wireframes using Adobe XD. Next time, I will focus on ideating with pencil and paper. 
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Testing lo-fi wireframes.</strong>
+            I noticed during usability tests that the lack of content and color in my lo-fi prototype distracted users from completing tasks. In the future, I wouldn't test my wireframes until they were more fleshed out so that I can gain feedback on functionality rather than small details.
+          </h5>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7. Thank You Container -->
+    <div>
+      <h3 class="center">Thanks for reading!</h3>
+      <p class="center">
+        <span>Check out my other</span>
+        <span>
+          <a href="index.html#header"><u>work</u></a>
+        </span>
+      </p>
     </div>
   </main>
 
