@@ -3,19 +3,29 @@
 
 <!-- Head -->
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y647LF4KG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0Y647LF4KG');
+  </script>
+
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v1">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Tina Cai • Design Portfolio</title>
+  <title>Zhen's Appliance Redesign — Tina Cai</title>
 </head>
 
 <!-- Body -->
@@ -28,6 +38,11 @@
     <a href="index.html#header" class="logo-link">
       <div class="logo">tcai</div>
     </a>    
+
+    <!-- Back to Top Button -->
+    <a id="top-button">
+      <i class="fa fa-arrow-up"></i>
+    </a>
 
     <!-- Menu Container -->
     <div class="menu-container">
@@ -56,7 +71,7 @@
       </div>
     </div>
   </header>
-
+  
   <!-- Main -->
   <main>
 
@@ -66,426 +81,278 @@
       <!-- Hero Title -->
       <div class="project-intro-container">
         <h3>Zhen's Appliance Service</h3>
-        <h1>Redesigning a local repairman's informational site</h1>
+        <h1>In-Home Appliance Service Information Redesigned</h1>
       </div>
 
       <!-- Hero Banner Image -->
       <picture>
-        <source srcset="img/lingually/@1x/lingually_intro@1x.png" media="(max-width:767px)">
-        <img class="parallax-img project-intro-img" src="img/lingually/@2x/lingually_intro@2x.png" alt="Lingually Image 1">
+        <source srcset="img/zas/@1x/zas_intro@1x.png" media="(max-width:640px)">
+        <img class="parallax-img project-intro-img" src="img/zas/@2x/zas_intro@2x.png" alt="ZAS Banner Image">
       </picture>
     </div>
 
-    <!-- 1. Overview Container -->
-    <div class="project-section-container">
-      <section>
-        <div class="column-container">
+    <!-- 1. Problem Container -->
+    <section>
+      <div class="column-container quarter-column">
 
-          <!-- Overview Description -->
-          <div>
-            <h4 class="sub-section-heading">Overview</h4>
-            <h5>
-              The Washington State Department of Transportation (WSDOT) receives too many calls and emails requesting support for purchasing ferry tickets. Their current ticket site is difficult to navigate, therefore users cannot confidently follow through with purchasing ferry tickets without help.
-            </h5>
-            <h5>
-              The business goal for WSDOT is to <strong>increase self service success</strong> for their ferry ticketing site.
-            </h5>
-            <h5>
-              <strong>Role:</strong> UX Reseacher/Designer
-              <br>
-              <strong>Tools:</strong> Pencil and Paper
-              <br>
-              <strong>Timeframe:</strong> 3 Hours (Feb 2021)
-            </h5>
-          </div>
-
-          <!-- Overview Vector Image -->
-          <div>
-            <a href="https://www.freepik.com/vectors/school" target="_blank">
-              <img src="img/lingually/lingually_overview.jpg" alt="Lingually Overview Image">
-            </a>
-          </div>
+        <!-- Problem Description -->
+        <div>
+          <h4>PROBLEM</h4>
+          <h2>Zhen spends too much time addressing inquiries for services he does not provide.</h2>
+          <h5>
+            Zhen is the sole proprieter of Zhen's Appliance Service. He manages appliance repair orders on a daily basis. Lately, he has been receiving too many calls, texts, and emails on questions regarding services he cannot provide. 
+          </h5>
+          <h5>
+            How do we balance providing users what they're looking for regarding appliance repair services, while also minimizing inquiries from users that Zhen cannot service?
+          </h5>
+          <h5>
+            <strong>Role:</strong> UX Researcher, UX/UI Designer, Front-End Dev
+            <br>
+            <strong>Team:</strong> Simon Thai (Research + Ideation), Jin Cai (Front-End Dev)
+            <br>
+            <strong>Tools:</strong> Google Forms, Figma
+            <br>
+            <strong>Timeframe:</strong> Jan 2022 - March 2022
+          </h5>
         </div>
-      </section>
-    </div>
+
+        <!-- Problem Image -->
+        <div>
+          <img src="img/zas/zas_overview.jpg" alt="ZAS Problem Image">
+        </div>
+      </div>
+
+      <!-- Business Goals -->
+      <div class="project-sub-section">
+        <h4>BUSINESS GOALS</h4>
+
+        <h2>
+          Zhen wants to minimize responding to inquiries from people outside his target audience.
+        </h2>
+
+        <h5>
+          I sat down with Zhen to understand his target audience and uncover his pain points regarding the overall problem. My goal here was to gauge Zhen's business goals, so I could later connect them to those of his users to provide a cohesive solution.
+        </h5>
+
+        <!-- Business Goals Image -->
+        <picture>
+          <source srcset="img/zas/@1x/zas_business_goals@1x.png" media="(max-width:640px)">
+          <img src="img/zas/@2x/zas_business_goals@2x.png" alt="Business Goals Image">
+        </picture>
+      </div>
+    </section>
 
     <!-- 2. Research Container -->
-    <div class="project-section-container">
+    <section>
 
-      <!-- Research Header-->
-      <div class="project-section-title">
-        <h2>Specifying the problem 🧭</h2>
-      </div>
-      
-      <!-- User Group -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Focus user group</h4>
-          <h5>
-            <strong><u>Who</u> are we designing for?</strong>
-          </h5>
-          <h5>
-            With just a few hours to complete this design challenge, I needed to pinpoint a specific user group to focus my design toward. This gave me a direction for ideation by narrowing the design scope, otherwise I could have redesigned for hours. I chose to split my user options by age group:
-          </h5>
-          <h5>
-            <ul>
-              <li>Young student</li>
-              <li>Middle aged professional</li>
-              <li><strong>Elderly and retired</strong></li>
-            </ul>
-          </h5>
-          <h5>
-            I chose to focus on elderly users because I felt they would struggle most with using a website and were more likely to contact WSDOT for inquiries. I anticipated the solutions I designed for this group would encapsulate problems younger users might face with the site as well.
-          </h5>
-        </div>
-      </section>
+      <!-- Competitive Analysis -->
+      <div class="project-sub-section">
+        <h4>COMPETITIVE ANALYSIS</h4>
 
-      <!-- Problem & Goal -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Problem space</h4>
+        <h2>
+          The competition lacked credibility and refinement. 
+        </h2>
 
-          <h5>
-            <strong><u>What</u> are some struggles elderly users might face with the client's service that led to the business goal?</strong>
-          </h5>
-          <h5>Here, I attempted to put myself in my users' shoes and identify some of their painpoints relative to the business goal:</h5>
-          <h5>
-            <ul>
-              <li>Don't often plan their own trips</li>
-              <li>Not well-versed in purchasing tickets online</li>
-              <li>Unfamiliar with logistics that go along with boarding a ferry</li>
-            </ul>
-          </h5>
-          <h5>
-            The common theme here is that the elderly are missing crucial information in the steps required for buying and using ferry tickets.
-          </h5>
-        </div>
-      </section>
-    </div>
-
-    <!-- 3. Empathy Container -->
-    <div class="project-section-container">
-
-      <!-- Empathy Header -->
-      <div class="project-section-title">
-        <h2>Empathizing with users 💞</h2>
-      </div>
-      
-      <!-- Proto-Persona -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Proto-Persona</h4>
-          <h5>
-            After narrowing down the problem space, I very quickly came up with a proto-persona and scenario to figure out how to help our persona achieve his goals and as a result, identify areas to redesign the site and meet our business goal.
-          </h5>
-          <h5>
-            <strong>Alfred</strong>
-            <ul>
-              <li><strong>Age:</strong> 63</li>
-              <li><strong>Occupation:</strong> Retired</li>
-            </ul>
-          </h5>
-          <h5>
-            User Goals:
-            <ul>
-              <li>To book ferry tickets to surprise his wife for their anniversary</li>
-              <li>To understand the basic logistics of his trip ahead of time</li>
-              <li>To succecssfully book tickets without relying on others or family</li>
-            </ul>
-          </h5>
-          <h5>
-            Motivations:
-            <ul>
-              <li>Happy wife = happy life</li>
-              <li>Likes to approach tasks with a plan, wants to be confident in plan ahead of time for ease of mind</li>
-              <li>Wants to keep surprise element and doesn't want to bother busy family</li>
-            </ul>
-          </h5>
-          <h5>
-            Painpoints:
-            <ul>
-              <li>Not having a set plan for time commitments (going into the unknown)</li>
-              <li>being overwhelmed with confusing information</li>
-              <li>Feeling like he is bothering his busy family</li>
-            </ul>
-          </h5>
-        </div>
-      </section>
-
-      <!-- User Stories -->
-      <section>
-        <h4 class="sub-section-heading">User stories</h4>
         <h5>
-          The purpose of these user stories were to clearly layout Alfred’s goals so that I can further understand the context of his situation, motivations, and his desired outcomes.
+          I analyzed two existing websites for appliance repair services in Seattle to determine any gaps that we could use to make ZAS stand out. Though both websites provided a wider range of services - more brands, teams, and larger service area - they lacked "local handyman" charm. Zhen provides high quality service through his product knowledge and personality as a one man team. His 5-star reviews Google and Yelp prove attest to this, while the competition claims they do but do not share testimonials.
+        </h5>
+        <h5>
+          Additionally, both sites have established brands and coloring schemes but provide an overwhelming amount of information. Their overall UI and image quality could be improved.
         </h5>
 
-        <!-- User Story Vector Images -->
-        <div class="flex-row">
-          <span class="center">
-            <h5>
-              <a href="https://icons8.com/icon/16161/volunteering" target="_blank">
-                <img src="https://img.icons8.com/ios/64/e1371e/volunteering.png"/>
-              </a>
-            </h5>
-            <h5><strong>HANDS ON</strong></h5>
-          </span>
-
-          <span class="center">
-            <h5>
-              <a href="https://icons8.com/icon/3524/schedule" target="_blank">
-                <img src="https://img.icons8.com/ios/64/e1371e/overtime.png"/>
-              </a>
-            </h5>
-            <h5><strong>HABITUAL</strong></h5>
-          </span>
-        </div>
-
-        <!-- User Story Descriptions -->
-        <ul>
-          <li>
-            <h5>
-              As a <strong>thorough planner</strong>, I want to create a well-planned trip for my wifre on our anniverrsary so we can enjoy a fun day without having to worry about any hiccups during our trip.
-            </h5>
-          </li>
-          <li>
-            <h5>
-              As a <strong>novice tech user</strong>, I want to book my ferry tickets on my own so I can keep the surprise element of my trip and not rely on my grandkids for help.
-            </h5>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Storyboarding -->
-      <section>
-        <h4 class="sub-section-heading">Storyboarding</h4>
-        <h5>In this section, I cretaed a quick storyboard to further empathize with Alfred by depicting a visual representation for his journey when using our redesign solutions. This story allows me to step into his shoes and understand what he is feeling given I redesigned the site to fit his needs.</h5>
-      </section>
-    </div>
-
-    <!-- 4. Defining the problem -->
-    <div class="project-section-container">
-
-      <!-- Define Problem Header -->
-      <div class="project-section-title">
-        <h2>Defining the problem 🌟</h2>
+        <!-- Competitive Analysis Image -->
+        <picture>
+          <source srcset="img/zas/@1x/zas_competitor_apps@1x.png" media="(max-width:640px)">
+          <img src="img/zas/@2x/zas_competitor_apps@2x.png" alt="Competitive Analysis Image">
+        </picture>
       </div>
 
-      <!-- Problem and Hypothesis Statement -->
-      <section>
-        <h4 class="sub-section-heading">Problem identification</h4>
+      <!-- User Survey -->
+      <div class="project-sub-section">
+        <h4>USER SURVEY</h4>
 
-        <h5>Here, I re-assess my initial problem based on what I've discovered up until this point. I also discuss some assumptions, constraints, and requirements for this project to keep me focused on solving for a specific problem and ensure I finish the project in the allotted time. I also include a hypothesis statement that defines my success metric given I have designed toward the problem statement.</h5>
+        <h2>Survey participants prioritized wait time and friendly service in their in-home repair experiences.</h2>
+
+        <h5>
+          Because the solution to our customers' problems and our target audience were already established, the research goals of this survey were to determine what users value when searching for in-home services.  
+        </h5>
+        <h5>
+          I conducted a user survey to identify what users value most when searching for in-home services. Appliance repair service was rather specific, so my survey participants were any that have received some sort of service that came to their homes. I compiled the survey data using affinity maps and uncovered several major insights. 
+        </h5>
+
+        <!-- User Interview Affinity Map -->
+        <picture>
+          <source srcset="img/zas/@1x/zas_affinity_map@1x.png" media="(max-width:640px)">
+          <img src="img/zas/@2x/zas_affinity_map@2x.png" alt="ZAS User Interview Affinity Map">
+        </picture>
+      </div>
+
+      <!-- Key Research Insights -->
+      <div class="project-sub-section">
+        <h4>KEY RESEARCH INSIGHTS</h4>
+
+        <h2>Adjusting information architecture to put user service priorities in the forefront.</h2>
+
+        <h5>Based on the affinity maps trends, I noticed interviewees actually prioritized prompt, friendly, and communicative service over the actual service. Their best experiences with in-home services involved repair-people that took the time to understand, assess, and explain the situation. The interviewees' first tasks were to look at reviews in search of this friendly service. These insights were all things to keep in mind when defining the new site architecture.</h5>
+
+        <!-- Key Insights Image -->
+        <picture>
+          <source srcset="img/zas/@1x/zas_key_insights@1x.png" media="(max-width:640px)">
+          <img src="img/zas/@2x/zas_key_insights@2x.png" alt="ZAS Key Insights Image">
+        </picture>
+      </div>
+    </section>
+      
+    <!-- 3. Ideation Container -->
+    <section>
+      <h4>IDEATION</h4>
+
+      <h2>Expanding on existing low fidelity wireframes.</h2>
+
+      <h5>
+        This redesign actually started with another designer who didn't have the time to complete the project. I reached out to them to understand what they had gotten done and found that they had started on lo-fi wireframes. I had them share the wireframes with me to expand and inject my research into them. 
+      </h5>
+      <h5>
+        From my research, the major changes I made to the previous designers wireframes were adding a testimonial tab, removing irrelevant information, and moving info around based on user wants. 
+      </h5>
+
+      <!-- Lofi Image -->
+      <picture class="light-img">
+        <source srcset="img/zas/@1x/zas_lofi@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_lofi@2x.png" alt="ZAS Lofi Wireframes">
+      </picture>
+    </section>
+  
+    <!-- 4. Design Container -->
+    <section>
+      <h4>DESIGN</h4>
+
+      <h2>Re-creating the responsive web application.</h2>
+
+      <h5>
+        Based on company resources and team expertise, the front-end developer of the previous site and I decided utilizing old assets and frameworks and re-creating the responsive web app was the most realistic solution for this project. At this point, I created mid fidelity wireframes for the site in varying screen sizes and added writing content. 
+      </h5>
+
+      <!-- MidFi Image -->
+      <picture>
+        <source srcset="img/zas/@1x/zas_midfi@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_midfi@2x.png" alt="ZAS Midfi Wireframes">
+      </picture>
+    </section>
+
+    <!-- 5. Mood Board and Hifi -->
+    <section>
+      <h4>MOOD BOARD + HIGH-FIDELITY</h4>
+
+      <h2>Developing Zhen's brand for style consistency.</h2>
+
+      <h5>
+        I created a mood board to depict my vision for Zhen's new website. The goal was to provide a color scheme and theme that welcomed users and accentuated friendly service. I worked with the client to adjust their new brand direction and ensure it fit their vision for the company. After establishing the right color scheme and branding, I created basic high fidelty wireframes for usability testing.
+      </h5>
+
+      <picture>
+        <source srcset="img/zas/@1x/zas_mood_board@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_mood_board@2x.png" alt="ZAS Mood Board">
+      </picture>  
+    </section>
+
+    <!-- 6. Testing + Iteration Container -->
+    <section>
+      <h4>TESTING + ITERATION</h4>
+
+      <h2>Making 3 major improvements to the design.</h2>
+
+      <h5>
+        I conducted usability tests to observe how six financial management app users navigated through the prototype. I grouped the data using affinity maps and organized trends using a rainbow spreadsheet to prioritize usability errors concerning app functionality. I continuously iterated on the design based on test participant feedback and visual and accessibility guidelines to address these errors.
+      </h5>
+
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-1@1x.png" media="(max-width:640px)">
+        <img src="img/payd/@2x/payd_improvement-1@2x.png" alt="Payd Improvement Image">
+      </picture>   
+
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-2@1x.png" media="(max-width:640px)">
+        <img src="img/payd/@2x/payd_improvement-2@2x.png" alt="Payd Improvement Image">
+      </picture> 
+
+      <picture>
+        <source srcset="img/payd/@1x/payd_improvement-3@1x.png" media="(max-width:640px)">
+        <img src="img/payd/@2x/payd_improvement-3@2x.png" alt="Payd Improvement Image">
+      </picture> 
+    </section>
+    
+    <!-- 7. Solution Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>The Solution</h4>
         
-        <!-- Problem Statement -->
-        <h5>
-          <strong><u>Problem:</u></strong> Alfred needs an informative booking process when purchasing his online ferry tickets because he wants a clear understanding of his trip beforehand.
-        </h5>
-        <h5>
-          We will know this to be true when we see Alfred successfully purchase ferry tickets online without the help of others.
-        </h5>
+        <h2>Addressing persona needs based on key insights and feedback.</h2>
 
-        <!-- Hypothesis Statement -->
-        <div class="goal-container color-lingually">
-          <h5>
-            I believe that by creating a simple booking process that keeps Alfred up to speed with the information needed for purchasing and using online ferry tickets, we will achieve a ferry ticketing website that will allow Alfred to purchase his online tickets without relying on help from others.
-          </h5>
+        <picture>
+          <source srcset="img/payd/@1x/payd_solution-1@1x.png" media="(max-width:640px)">
+          <img src="img/payd/@2x/payd_solution-1@2x.png" alt="Journey Map Carousal">
+        </picture> 
+
+        <picture>
+          <source srcset="img/payd/@1x/payd_solution-2@1x.png" media="(max-width:640px)">
+          <img src="img/payd/@2x/payd_solution-2@2x.png" alt="Journey Map Carousal">
+        </picture> 
+
+        <picture>
+          <source srcset="img/payd/@1x/payd_solution-3@1x.png" media="(max-width:640px)">
+          <img src="img/payd/@2x/payd_solution-3@2x.png" alt="Journey Map Carousal">
+        </picture> 
+
+        <br><br>
+
+        <!-- Prototype Button -->
+        <div class="ripple-button">
+          <a href="https://xd.adobe.com/view/390c94ff-a85e-4884-9409-1f786a985587-6c5f/"
+          target="_blank">
+            <span></span>
+            Interactive Prototype
+          </a>
         </div>
-      </section>
-
-      <!-- Ideation Header -->
-      <div class="project-section-title">
-        <h2>Brainstorming ideas 🧠</h2>
       </div>
-      
-      <!-- Site Audit -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Current site audit</h4>
-          <h5>
-            In order to meet our business goals while not straying too far from the company's brand and existing userbase, I constrained my redesign to only improving on existing content to stay focused on solving my one specific problem.
+    </section>
+        
+    <!-- 9. Conclusion Container -->
+    <section>
+      <h4>Conclusion</h4>
+
+      <h2>What were my key learnings and takeaways from my first client project.</h2>
+
+      <h5>Payd was the first UX project that I worked on from concept to completion! It definitely isn't perfect, but was a great place for me to start. In addition to many UX methodologies, I learned many important lessons that I'll take with me to my next project 😊</h5>
+
+      <ol>
+        <li>
+          <h5><strong>Research vs. interview questions.</strong> 
+            While working on this project, I learned the difference between research and interview questions. I know now that when gathering qualitative information, it's important to keep interview questions open ended and non-leading.
           </h5>
-        </div>
-
-        <!-- Site Audit Image -->
-        <div class="large-img center">
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_user_flow-1@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_user_flow-1@2x.png" 
-            alt="User Flows Carousal">
-            </picture>
-          </div>
-      </section>
-
-      <!-- Impact vs Effort -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Impact vs effort</h4>
-          <h5>
-            I list some ideas on improving the existing site then graph them based on their impact vs effort. 
+        </li>
+        <li>
+          <h5><strong>Done is better than perfect - keep on iterating.</strong> 
+          I got a bit lost in the sauce while tweaking minor details. I've learned that perfecting the visual design is not a priority for early hi-fi. I should have turned in minor iterations more frequently, rather than making bulk changes. This would have allowed me to focus on functionality and keep from being overwhelmed.
           </h5>
-        </div>
-
-        <div>
-          <div>
-            <ul>
-              <li>Provide option to choose starting location</li>
-              <li>Create groupings of relevant information</li>
-              <li>Provide a "More Info" section on ticket hovers to decrease text and fill Alfred on ticket information</li>
-              <li>Privde clarity on ticket usage in the cart</li>
-              <li>Icons for increased visual understanding</li>
-              <li>Progress bar so Alfred is aware of steps he will take to complete his purchase</li>
-              <li>Animated guide buddy that guides Alfred through ticket process</li>
-            </ul>
-          </div>
-
-          <!-- Impact vs Effort Graph -->
-          <div class="large-img center">
-            <div>
-              <picture>
-                <source srcset="img/lingually/@1x/lingually_user_flow-1@1x.png" media="(max-width:767px)">
-                <img src="img/lingually/@2x/lingually_user_flow-1@2x.png" 
-              alt="User Flows Carousal">
-              </picture>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </div>
-
-    <!-- 5. Sketching Container -->
-    <div class="project-section-container">
-
-      <!-- Sketching Header -->
-      <section>
-        <h2>Sketching the solution ✍</h2>
-      </section>
-
-      <!-- Lofi Wireframes -->
-      <section>
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Redesign sketches</h4>
-
-          <h5>
-            Finally, I bring my prioritized ideas to life by sketching and presenting them to the client.
+        </li>
+        <li>
+          <h5><strong>Insight vs. process driven design.</strong> 
+          I realized while working on this case study that showing what was pertinent to the problem space was much more valuable than completing and showing off processes. Moving forward, I have a better understanding of what processes to use, when to use them, and how they deliver insights that affect the bigger picture - rather than doing them just to do them.
           </h5>
-        </div>
+        </li>
+      </ol>
+    </section> -->
 
-        <!-- Lofi Wireframes Slideshow -->
-        <div class="slider-container">
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_lofi-1@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_lofi-1@2x.png" alt="Lofi Wireframes">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_lofi-2@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_lofi-2@2x.png" alt="Lofi Wireframes">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_lofi-3@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_lofi-3@2x.png" alt="Lofi Wireframes">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_lofi-4@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_lofi-4@2x.png" alt="Lofi Wireframes">
-            </picture>
-          </div>
-
-          <div>
-            <picture>
-              <source srcset="img/lingually/@1x/lingually_lofi-5@1x.png" media="(max-width:767px)">
-              <img src="img/lingually/@2x/lingually_lofi-5@2x.png" alt="Lofi Wireframes">
-            </picture>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- 8. Reflection Container -->
-    <div class="project-section-container">
-
-      <!-- Reflection Header -->
-      <div class="project-section-title">
-        <h2>Reflecting on my work 🤔</h2>
-      </div>
-
-      <!-- Reflectin Content -->
-      <section>
-
-        <!-- Trade-Offs List -->
-        <div class="project-sub-section"> 
-          <h4 class="sub-section-heading">Trade-Offs</h4>
-          <ol type="1">
-            <li>
-              <p>
-                <strong>Starting Location:</strong>
-                Having users indicate their starting information will require users to type a form field, whereas the design before only requ ire d clicking (up until entering purchasing info, which many might have auto fill options for)
-                <ul>
-                  <li>This could be a problem for those who have trouble typing</li>
-                  <li>Experienced users that might find this a hinderance</li>
-                  <li>Perhaps we could have a dropdown menu of available starting points instead</li>
-                </ul>
-              </p>
-            </li>
-            <li>
-              <p><strong>Existing Users:</strong>
-                Existing users might find new additional steps to be annoying
-                <ul>
-                  <li>I believe providing relevant information would primarily be beneficial to all user groups , but I can understand this could be an issue</li>
-                  <li>Perhaps we could design an option where existing users could save their typical purchase</li>
-                </ul> 
-              </p>
-            </li>
-          </ol>
-        </div>
-
-        <!-- Challenges -->
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Challenges</h4>
-          <ol>
-            <li>
-              <p><strong>"Clarity":</strong> Looking back at my work in the design challenge, I think I did a good job of specifying my problem space. However, I think it was important that I better articulated my definition of "clarity" and where we needed to emphasize it in my design. I feel that some of the solutions and conclusions I made appeared really obvious through the way I worded it and I want my design work to be something that my clients value and find unique.</p>
-            </li>
-          </ol>
-        </div>
-
-        <!-- Next Steps List -->
-        <div class="project-sub-section">
-          <h4 class="sub-section-heading">Next steps</h4>
-          <ol>
-            <li>
-              <p><strong>Other Ideas:</strong> If I had more time to expand on this project, I'd look toward some of the design ideas I didn't prioritize in this case study.</p>
-            </li>
-            <li>
-              <p><strong>High-fi wireframes:</strong>
-              The next steps for this project would be to work on bringing our lo-fi wireframes into hi-fi. Since this site already exists, and my designs were intentionally kept minimal and specific, I believe we'd be ok to skip the mid-fi step and move onto hi-fi mockups, to provide visuals for our clients so they can have a clearer idea of the solution and begin development.s
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- Thank You -->
-      <section>
-        <h3 class="center">Thanks for reading!</h3>
-        <p class="center">
-          <span>Check out my other</span>
-          <span>
-            <a href="index.html#hero"><u>work</u></a>
-          </span>
-        </p>
-      </section>
+    <!-- 10. Thank You Container-->
+    <div>
+      <h3 class="center">Thanks for reading!</h3>
+      <p class="center">
+        <span>Check out my other</span>
+        <span>
+          <a href="index.html#header"><u>work</u></a>
+        </span>
+      </p>
     </div>
   </main>
 
@@ -511,11 +378,6 @@
             <i class="fab fa-linkedin-in" id="linkedin"></i>
           </a>
         </li>
-        <!-- <li class="socials-icon">
-          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
-            <i class="fab fa-behance" id="behance"></i>
-          </a>
-        </li> -->
         <li class="socials-icon">
           <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
             <i class="fab fa-github" id="github"></i>
@@ -533,7 +395,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
     <script type="text/javascript" src="ripple/ripple.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/scripts.js?v1"></script>
+    <script src="js/scripts.js?v2"></script>
   </div>
 
 </body>
