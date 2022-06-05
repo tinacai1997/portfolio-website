@@ -68,10 +68,11 @@ section:after {
   --linkedin-icon: #0077b5;
   /* --behance-icon: #1769ff; */
   --github-icon: #333;
+  --mesh-bg-color: #ebf3ff;
+  --wave2go-bg-color: #daffef;
   --payd-bg-color: #E7E5FF;
   --portfolio-bg-color: #E4EFFC;
   --lingually-bg-color: #f9e7e5;
-  --wave2go-bg-color: #daffef;
   /* --ux-challenge-bg-color: #f4fff7; */
 }
 
@@ -557,6 +558,14 @@ nav > ul > li > a:hover:after {
   z-index: -1;
 }
 
+.color-mesh {
+  background-color: var(--mesh-bg-color);
+}
+
+.color-wave2go {
+  background-color: var(--wave2go-bg-color);
+}
+
 .color-payd {
   background-color: var(--payd-bg-color);
 }
@@ -571,10 +580,6 @@ nav > ul > li > a:hover:after {
 
 .color-ux-challenge {
   background-color: var(--ux-challenge-bg-color);
-}
-
-.color-wave2go {
-  background-color: var(--wave2go-bg-color);
 }
 
 /* ==============================================================
