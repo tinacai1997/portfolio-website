@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Head -->
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y647LF4KG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0Y647LF4KG');
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Mesh Tech Talent Web App — Tina Cai</title>
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Header -->
+  <header id="header">
+
+    <!-- Logo -->
+    <a href="index.html#header" class="logo-link">
+      <div class="logo">tcai</div>
+    </a>    
+
+    <!-- Back to Top Button -->
+    <a id="top-button">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!-- Menu Container -->
+    <div class="menu-container">
+
+      <!-- Menu Content -->
+      <div class="menu">
+        <!-- Menu Links -->
+          <nav>
+            <ul>
+              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
+              <li><a href="about.html" onclick="closeMenu()">About</a></li>
+              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
+              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
+            </ul>
+          </nav>
+      </div>
+
+      <!-- Menu Button -->
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+          <div class="menu-icon open">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main -->
+  <main>
+
+    <!-- 0. Project Hero Container -->
+    <div class="project-hero-container">
+
+      <!-- Hero Title -->
+      <div class="project-intro-container">
+        <h3>Mesh</h3>
+        <h1>Your early tech event networking hub</h1>
+      </div>
+
+      <!-- Hero Banner Image -->
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_intro@1x.png" media="(max-width:640px)">
+        <img class="parallax-img project-intro-img" src="img/mesh/@2x/mesh_intro@2x.png" alt="Mesh Banner Image">
+      </picture>
+    </div>
+
+    <!-- 1. Problem Container -->
+    <section>
+      <div class="column-container quarter-column">
+
+        <!-- Problem Description -->
+        <div>
+          <h4>PROBLEM</h4>
+          <h2>Early tech talent are not getting traction when applying for jobs through traditional methods.</h2>
+          <h5>
+            It is difficult for early PM, designer, and developer applicants to stand out. The roles they apply for often have 100+ applications. Eventually, most receive a templated rejection email.
+          </h5>
+          <h5>
+            This problem is close to our hearts as everyone in our team has persevered through this challenge. We created Mesh to help tech talent explore a more effective approach to launch their careers.
+          </h5>
+          <h5>
+            <strong>Role:</strong> Product Designer, Front End Dev (COLAB10 Product Team)
+            <br>
+            <strong>Team:</strong> Seb Agudelo (PM), Taylor Reichner (Dev)
+            <br>
+            <strong>Tools:</strong> Figma, VSCode, GitHub, Miro
+            <br>
+            <strong>Timeframe:</strong> Mar 2022 - May 2022
+          </h5>
+        </div>
+
+        <!-- Problem Image -->
+        <div>
+          <a>
+            <img src="img/mesh/mesh_overview.png" alt="Mesh Problem Image">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Research Container -->
+    <section>
+
+      <!-- User Interviews -->
+      <div class="project-sub-section">
+        <h4>USER INTERVIEWS</h4>
+
+        <h2>Candidates that focused on networking built relationships that helped launch their career.</h2>
+
+        <h5>
+          We developed several assumptions revolving around the job search process that may have been hindering applicants. Our main questions were:
+          <ol>
+            <li>Participants' overall experience in job searching</li>
+            <li>Opinions on resume/CV and cover letter writing</li>
+            <li>Motivation during job hunt</li>
+          </ol> 
+        </h5>
+
+        <h5>We then interviewed six participants and gathered their responses through affinity mapping. Our research showed participants weren't frustrated by resume/CV or cover letter writing. Most used tailored resumes and didn't bother submitting cover letters. Participants also had working solutions for managing their job hunt process.</h5>
+
+        <h5>However, the key takeaway we noticed was that <b><i>every participant that did receive job traction were those that networked</i></b>. Participants that took the extra effort in reaching out to recruiters, hiring managers, and existing employees were more successful in landing interviews.</h5>
+
+        <!-- Users Interview Image -->
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_affinity_map@1x.jpg" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_affinity_map@2x.jpg" alt="Mesh Affinity Map">
+        </picture>
+      </div>
+    </section>
+      
+    <!-- 3. Ideation Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>IDEATION</h4>
+
+        <h2>Helping tech talent expand their professional network through industry events.</h2>
+
+        <h5>We created an opportunity tree to brainstorm how to help applicants network beyond cold outreach. The solution we landed on was to help users explore industry events and connect with people they meet in them.</h5>
+        
+        <h5>The idea was that through events, early applicants can meet and learn from industry professionals and other like-minded attendees. They can then track and take notes on who they've met at each event to connect with them.</h5>
+        
+        <h5>We used an impact vs effort matrix to prioritize features for the MVP of our solution. Our developer assessed the effort of each feature based on their technical feasibility, while our PM and I rated their impact based on our user-base knowledge.</h5>
+
+        <!-- Impact vs Effort Image -->
+        <div class="large-img center">
+          <picture>
+            <source srcset="img/mesh/@1x/mesh_matrix@1x.jpg" media="(max-width:640px)">
+            <img src="img/mesh/@2x/mesh_matrix@2x.jpg" alt="Impact vs Effort Matrix">
+          </picture>
+        </div>
+      </div>
+    </section>
+  
+    <!-- 4. Design Container -->
+    <section>
+      <div class="project-sub-section">
+        <h4>DESIGN</h4>
+
+        <h2>Pivoting from a native app to a web app while wireframing.</h2>
+
+        <h5>After narrowing down our scope, I created user flows and low fidelity wireframes for each feature to be included in our MVP.</h5>
+        
+        <h5>Then, I went through each with the team and began working on low fidelity wireframes. Due to a change in the dev team, we quickly learned our original MVP plan wasn't feasible. Therefore, We cut some features from our early iterations and pivoted from a native iOS app to a responsive web app.</h5>
+
+        <h5>During this hiccup, I was already in the process of creating mobile hi-fi wireframes and a prototype. I made the call to continue using my mobile designs and to delay designing for larger screens so we could meet time-constraints.</h5>
+
+        <!-- Payd Wireframing -->
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_design@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_design@2x.png" alt="Payd Wireframing">
+        </picture>
+      </div>
+    </section>
+
+    <!-- 5. Testing + Iteration Container -->
+    <section>
+      <h4>TESTING + ITERATION</h4>
+
+      <h2>Improving the design through usability and preference testing.</h2>
+
+      <h5>
+        We started with a preference test to determine which visual designs to expand on. Then, we conducted usability tests to understand whether users were able to navigate through our prototype given scenarios and success criteria. Our PM and I worked together to synthesize this data and develop design solutions in a continuous cycle of iteration. 
+      </h5>
+
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_improvement-1@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_improvement-1@2x.png" alt="Payd Improvement Image">
+      </picture>   
+
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_improvement-2@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_improvement-2@2x.png" alt="Payd Improvement Image">
+      </picture> 
+    </section>
+
+    <!-- 6. Development Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>FRONT END DEVELOPMENT</h4>
+        
+        <h2>Helping out with our react files and styling.</h2>
+
+        <h5>After one of our devs unfortunately left the team, we needed additional help to complete our MVP in time. I took this opportunity to step up and offer my (limited 😅) programming skills. I wrote most of our React elements and styling based on the hi-fi wireframes that I created.</h5>
+        
+        <h5>What was a set back ended up positive for me because I had fun learning React and am proud to be able to contribute to the product beyond design.</h5>
+
+        <!-- GitHub Button -->
+        <div class="ripple-button">
+          <a href="https://github.com/taylorreichner/Team-Mesh"
+          target="_blank">
+            <span></span>
+            Mesh GitHub Repository
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. MVP Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>MVP #1</h4>
+        
+        <h2>Creating an MVP that early tech talent actually found valuable.</h2>
+
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_solution-1@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_solution-1@2x.png" alt="Mesh Improvement">
+        </picture> 
+
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_solution-2@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_solution-2@2x.png" alt="Mesh Improvement">
+        </picture> 
+
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_solution-3@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_solution-3@2x.png" alt="Mesh Improvement">
+        </picture> 
+
+        <br><br>
+
+        <!-- Prototype Button -->
+        <div class="ripple-button">
+          <a href="https://www.figma.com/proto/wselC1DFAjtNIWqwKjilNX/Mesh_HiFi?node-id=442%3A1787&viewport=504%2C-565%2C0.41&scaling=scale-down&starting-point-node-id=442%3A2721"
+          target="_blank">
+            <span></span>
+            Figma Interactive Prototype
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Design Library Container  -->
+    <section>
+      <div class="project-sub-section">
+        <h4>Design Library</h4>
+
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_library@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_library@2x.png" alt="Mesh Design Library">
+        </picture> 
+
+        <!-- Full Style Guide Button -->
+        <div class="ripple-button">
+          <a href="https://www.figma.com/file/5nOZqVXPGiAHmGp7ZYX3gD/Mesh_Library?node-id=0%3A1"
+          target="_blank">
+            <span></span>
+            Figma Design Library
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Conclusion Container -->
+    <section>
+      <h4>next steps + learnings</h4>
+
+      <h2>Our next steps are to continue growing the relationship form factor of Mesh</h2>
+
+      <h5>Our northstar for Mesh (what makes it valuable) is its focus on creating professional relationships. Our next steps are to add features that track contacts and encourage users to stay connected with them.</h5>
+
+      <h5>Mesh is the first product that I created alongside a team. I learned so much about cross-functional teamwork and there is still plenty to learn as our team is eager to continue improving Mesh!</h5>
+
+      <ol>
+        <li>
+          <h5><strong>Learning React</strong>
+            After one of our devs dropped out of the team, I stepped up to help with our front end development. I wrote most of our elements and styling and learned basic React in order to do so. I know this will come in handy when working with devs in the future.
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Design + Dev Communication</strong> 
+            The dev and I experienced a few minor mix ups due to lack of communication and clarity from both sides. I know now the importance of making sure my designs are understood and understanding dev capabilities. 
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Pivoting Design Scope</strong> 
+            I learned how to efficiently pivot designs due to impromptu changes for our product. This was largely due to the open and communicative environment the team and I had created. 
+          </h5>
+        </li>
+        <li>
+          <h5><strong>Design Library</strong> 
+            I made great use of Figma during this project and learned how to use Figma components and style libraries. This was incredibly useful with keeping our brand consistent and reusing elements.
+          </h5>
+        </li>
+      </ol>
+
+      <!-- Product Portfolio Button -->
+      <div class="ripple-button">
+        <a href="https://www.joincolab.io/projects/mesh"
+        target="_blank">
+          <span></span>
+          Mesh Project Portfolio
+        </a>
+      </div>
+    </section>
+
+    <!-- 10. Thank You Container-->
+    <div>
+      <h3 class="center">Thanks for reading!</h3>
+      <p class="center">
+        <span>Check out my other</span>
+        <span>
+          <a href="index.html#header"><u>work</u></a>
+        </span>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+    <!-- Footer Blurb -->
+    <h5 class="center">
+      <span>Let's connect</span>
+      <span class="finger-point" >👇</span>
+    </h5>
+
+    <!-- Footer Links -->
+    <div class="center">
+      <ul class="socials">
+        <li class="socials-icon">
+          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
+            <i class="fab fa-linkedin-in" id="linkedin"></i>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
+            <i class="fab fa-github" id="github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script type="text/javascript" src="ripple/ripple.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/scripts.js?v2"></script>
+  </div>
+
+</body>
+</html>
