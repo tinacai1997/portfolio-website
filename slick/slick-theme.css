@@ -156,7 +156,7 @@
 ============================================================== */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 16vh;
+    margin-bottom: 45px;
 }
 
 .slick-dots
@@ -173,6 +173,7 @@
     list-style: none;
 
     text-align: center;
+    visibility: hidden;
 }
 .slick-dots li
 {
