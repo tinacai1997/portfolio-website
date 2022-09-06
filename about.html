@@ -18,8 +18,8 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
-  <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -30,80 +30,69 @@
 <body>
 
   <!-- Header -->
+
   <header id="header">
 
     <!-- Logo -->
-    <a href="index.html#header" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>  
+    <a href="index.html" class="logo">tcai</a>
 
-    <!-- Menu Container -->
-    <div class="menu-container">
-
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
+    <!-- Navigation -->
+    <nav>
+      <div><a href="index.html" onclick="closeMenu()">Projects</a></div>
+      <div><a href="about.html" onclick="closeMenu()">About</a></div>
+      <div><a href="files/Cai_Tina_Resume.pdf" target="_blank">Resume</a></div>
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
       </div>
+    </nav>
 
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
+    <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+      <div class="menu-icon open">
+        <span></span>
+        <span></span>
       </div>
-    </div>
+    </a>
   </header>
 
   <!-- Main -->
+
   <main>
 
-    <!-- About and Contact Container -->
-    <div class="about-container">
+    <!-- About -->
 
-      <!-- About Me Section -->
-      <section>
-        <h4>ABOUT ME</h4>
+    <section>
+      <div class="about">
+        <div class="about-img">
+          <img src="img/about/about.jpg" alt="Portrait">
+        </div>
+
+        <div>
+          <h3>Hi <span class="emoji-sway">🤗</span> I'm Tina, nice to meet you!</h3>
+          <p>
+            As an ex-engineer, I loved tackling tough customer problems... But I wasn't passionate about the technicalities. When COVID hit, I took a leap of faith to explore other industries and found UX design. I've since taken every day to learn more about the field, as showcased here in my hand-coded portfolio. To my fellow career changers: stay resilient, be open-minded, make mistakes, and I believe in you!
+          </p>
+          <p>
+            <i>When not designing, you might find me baking, playing video games, or cuddling my kitty!</i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section>
+      <div class="contact color-brand">
         
-        <h5><strong>Hi, I'm Tina 🤗 Nice to meet you!</strong></h5>
-
-        <h5>
-          I'm a UX/UI designer with experience in front-end development and engineering. I combine my newly-found creative and well-practiced analytical mindset to craft human-centered experiences.
-        </h5>
-        <h5>
-          My path to design was a windy one, to say the least. As an engineer, I loved tackling tough customer problems, but was never passionate about the technicalities. When COVID hit, I explored other careers and found UX design. I've since taken every day to learn more about design, as showcased here in my portfolio (hand-coded by yours truly 😁). Perhaps my most important learnings during this journey were to remain open-minded, confident, and unafraid to make mistakes along the way.
-        </h5>
-        <h5>
-          When not designing, you might find me cooking (see my <a href="feed.html"><u>Feed</u></a>), playing video games, practicing pilates, or cuddling my kitty 💖
-        </h5>
-      </section>
-      
-
-      <!-- Contact Me Section -->
-      <section>
-        <div class="contact-content-container">
-
-          <!-- Contact Me Form -->
+          <!-- Form -->
           <form action="https://formsubmit.co/tinacai1997@gmail.com" method="POST">
-            <div class="sub-section-heading">
-              <h4>
-                Contact me
-              </h4>
-            </div>
-
-            <h5>
-              <strong>Reach out for comments, questions, feedback, or just to chat!</strong>
-            </h5>
+            <h3>✉ Contact me</h3>
+            <p>Reach out for comments, questions, feedback, or just to chat!</p>
+            <br>
 
             <div class="contact-form-section">
               <p>Name *</p>
@@ -138,56 +127,35 @@
             </div>
 
             <!-- Submit Email Button -->
-            <div class="ripple-button">
-              <button type="submit">
-                <span></span>
-                SUBMIT
-              </button>
-            </div>
+            <button type="submit">
+              <span></span>
+              SUBMIT
+            </button>
           </form>
-
-          <!-- Contact Me Image -->
-          <div class="contact-image">
-            <img src="img/about/grad_pic.jpg" alt="A picture of my niece and I durring my graduation :)">
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer>
 
-    <!-- Footer Blurb -->
-    <h5 class="center">
-      <span>Let's connect</span>
-      <span class="finger-point" >👇</span>
-    </h5>
+  <footer class="panel" data-color=white>
 
-    <!-- Footer Links -->
-    <div class="center">
-      <ul class="socials">
-        <li class="socials-icon">
-          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-            <i class="fab fa-linkedin-in" id="linkedin"></i>
-          </a>
-        </li>
-        <!-- <li class="socials-icon">
-          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
-            <i class="fab fa-behance" id="behance"></i>
-          </a>
-        </li> -->
-        <li class="socials-icon">
-          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-            <i class="fab fa-github" id="github"></i>
-          </a>
-        </li>
-      </ul>
+    <div id="footer">
+      <!-- Blurb -->
+      <p>
+        <span>Let's connect!</span>
+        <span class="footer-finger">👉</span>
+      </p>
+
+      <!-- Links -->
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97/" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
     </div>
   </footer>
 
