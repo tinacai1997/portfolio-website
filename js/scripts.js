@@ -1,29 +1,19 @@
 // --------------------- Toggle Side Menu --------------------//
+// This works under the assumption that the user won't be changing
+// their screen size. Otherwise, there are issues with menu visibility
+// when changing sizes.
 
 // Get variables
 
 let menuOpen = false;
-const getMenu = document.querySelector('.menu');
-const getMenuNav = document.querySelector('.menu nav');
-const getMenuContainer = document.querySelector('.menu-container')
-// const getMenuContact = document.querySelector('.menu-contact');
-// const getMenuMask = document.querySelector('.menu-mask');
+const getMenuNav = document.querySelector('#header nav');
+// const getMenuContainer = document.querySelector('.menu-container')
 const getMenuIcon = document.querySelector('.menu-icon');
 
 // Open Menu
 
 function openMenu() {
-  getMenu.style.visibility = 'visible';
-  getMenu.style.transform = 'scaleX(1)';
-
   getMenuNav.style.visibility = 'visible';
-
-  // getMenuContainer.style.backgroundColor = '#fff';
-  // getMenuContainer.style.boxShadow = '0px 0px 12px 0px rgba(0, 0, 0, 0.12)';
-  // getMenuContact.style.visibility = 'visible';
-
-  // getMenuMask.style.visibility = 'visible';
-  // getMenuMask.style.opacity = '0.4';
 
   menuOpen = true;
 
@@ -34,18 +24,7 @@ function openMenu() {
 // Close Menu
 
 function closeMenu() {
-  getMenu.style.visibility = 'hidden';
-  getMenu.style.transform = 'scaleX(0)';
-
   getMenuNav.style.visibility = 'hidden';
-
-  // getMenuContainer.style.backgroundColor = 'transparent';
-  // getMenuContainer.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.12)';
-
-  // getMenuContact.style.visibility = 'hidden';
-
-  // getMenuMask.style.visibility = 'hidden';
-  // getMenuMask.style.opacity = '0';
 
   menuOpen = false;
 
