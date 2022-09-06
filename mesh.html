@@ -21,187 +21,168 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Mesh Tech Talent Web App — Tina Cai</title>
+  <title>Mesh Tech Talent App — Tina Cai</title>
 </head>
 
 <!-- Body -->
 <body>
 
   <!-- Header -->
+
   <header id="header">
 
     <!-- Logo -->
-    <a href="index.html#header" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+    <a href="index.html" class="logo">tcai</a>
 
-    <!-- Back to Top Button -->
-    <a id="top-button">
-      <i class="fa fa-arrow-up"></i>
+    <!-- Navigation -->
+    <nav>
+      <div><a href="index.html" onclick="closeMenu()">Projects</a></div>
+      <div><a href="about.html" onclick="closeMenu()">About</a></div>
+      <div><a href="files/Cai_Tina_Resume.pdf" target="_blank">Resume</a></div>
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+      <div class="menu-icon open">
+        <span></span>
+        <span></span>
+      </div>
     </a>
-
-    <!-- Menu Container -->
-    <div class="menu-container">
-
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
-    </div>
   </header>
   
   <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero Container -->
-    <div class="project-hero-container">
-
-      <!-- Hero Title -->
-      <div class="project-intro-container">
-        <h3>Mesh</h3>
-        <h1>Your early tech event networking hub</h1>
+    <!-- 0. Hero -->
+    <div>
+      <div class="hero">
+        <h1>Mesh</h1>
+        <h2>Your early tech event networking hub</h2>
       </div>
+    </div>
 
-      <!-- Hero Banner Image -->
+    <!-- Hero Banner -->
+    <div class="hero-img">
       <picture>
         <source srcset="img/mesh/@1x/mesh_intro@1x.png" media="(max-width:640px)">
-        <img class="parallax-img project-intro-img" src="img/mesh/@2x/mesh_intro@2x.png" alt="Mesh Banner Image">
+        <img class="parallax-img" src="img/mesh/@2x/mesh_intro@2x.png" alt="Mesh Banner">
       </picture>
     </div>
 
-    <!-- 1. Problem Container -->
-    <section>
-      <div class="column-container quarter-column">
 
-        <!-- Problem Description -->
+    <!-- 1. Overview -->
+    <section>
+
+      <!-- Problem -->
+      <div class="project-description">
+        <h3>Problem</h3>
+
         <div>
-          <h4>PROBLEM</h4>
-          <h2>Early tech talent are not getting traction through traditional job application methods</h2>
-          <h5>
+          <h3>Early tech talent are not getting traction through traditional job application methods.</h3>
+          
+          <p>
             It is difficult for early PM, designer, and developer applicants to stand out. The roles they apply for often have 100+ applications. Eventually, most receive a templated rejection email.
-          </h5>
-          <h5>
+          <br><br>
             This problem is close to our hearts as everyone in our team has persevered through this challenge. We created Mesh to help tech talent explore a more effective approach to launch their careers.
-          </h5>
-          <h5>
-            <strong>Role:</strong> Product Designer, Front End Dev (COLAB10 Product Team)
-            <br>
-            <strong>Team:</strong> Seb Agudelo (PM), Taylor Reichner (Dev)
-            <br>
-            <strong>Tools:</strong> Figma, VSCode, GitHub, Miro
-            <br>
-            <strong>Timeframe:</strong> Mar 2022 - May 2022
-          </h5>
+          </p>
         </div>
+      </div>
 
-        <!-- Problem Image -->
+      <!-- Details -->
+      <div class="project-details color-mesh">
+        <div><p>ROLE 
+          <br>Product Designer 
+          <br>Front End Dev
+        </p></div>
+        <div><p>TEAM 
+          <br>Seb Agudelo
+          <br>Taylor Reichner 
+        </p></div>
+        <div><p>TIMELINE
+          <br>March 2022
+          <br>May 2022
+        </p></div>
+      </div>
+    </section>
+
+
+    <!-- 2. Research -->
+    <section>
+
+      <div class="project-description">
+        <h3>Research</h3>
+
         <div>
-          <a>
-            <img src="img/mesh/mesh_overview.png" alt="Mesh Problem Image">
-          </a>
+          <h3>Candidates that focused on networking built relationships that helped launch their career.</h3>
+
+          <p>
+            We interviewed six potential users under the assumptions that they were currently job searching, didn't like writing resumes, and needed motivation to continue job searching.
+          <br><br>
+            Our research showed that participants actually didn't need new solutions for our assumptions, they needed help with networking. Participants that took the extra effort in reaching out to recruiters, hiring managers, and existing employees were more successful in landing interviews.
+          </p>
         </div>
       </div>
+
+      <!-- Research Image -->
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_affinity_map@1x.jpg" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_affinity_map@2x.jpg" alt="Mesh Affinity Map">
+      </picture>
     </section>
 
-    <!-- 2. Research Container -->
-    <section>
-
-      <!-- Research -->
-      <div class="project-sub-section">
-        <h4>RESEARCH</h4>
-
-        <h2>Candidates that focused on networking built relationships that helped launch their career</h2>
-
-        <h5>
-          We developed several assumptions revolving around the job search process that may have been hindering applicants. We then interviewed six participants with questions revolving around:
-          <ol>
-            <li>Participants' overall experience in job searching</li>
-            <li>Opinions on resume/CV and cover letter writing</li>
-            <li>Motivation during job hunt</li>
-          </ol> 
-        </h5>
-
-        <h5>Our research showed that participants didn't need new solutions for our assumptions. We also noticed that participants that took the extra effort in reaching out to recruiters, hiring managers, and existing employees were more successful in landing interviews.
-
-        <!-- Research Image -->
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_affinity_map@1x.jpg" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_affinity_map@2x.jpg" alt="Mesh Affinity Map">
-        </picture>
-      </div>
-    </section>
-      
-    <!-- 3. Ideation Container -->
-    <section>
-      <div class="project-sub-section">
-        <h4>IDEATION</h4>
-
-        <h2>Helping tech talent expand their professional network through industry events</h2>
-
-        <h5>We brainstormed how to help applicants network beyond cold outreach and landed on helping them explore industry events. The idea was that through events, early applicants could more easily connect with industry professionals. They can then track who they've met and build lasting relationships.</h5>
-        
-        <h5>We used an impact vs effort matrix to prioritize features for our MVP. Our developer assessed feature effort based on technical feasibility, while our PM and I rated impact off our user-base knowledge.</h5>
-
-        <!-- Impact vs Effort Image -->
-        <div class="large-img center">
-          <picture>
-            <source srcset="img/mesh/@1x/mesh_matrix@1x.jpg" media="(max-width:640px)">
-            <img src="img/mesh/@2x/mesh_matrix@2x.jpg" alt="Impact vs Effort Matrix">
-          </picture>
-        </div>
-      </div>
-    </section>
   
-    <!-- 4. Design Container -->
-    <section>
-      <div class="project-sub-section">
-        <h4>DESIGN</h4>
+    <!-- 3. Design -->
+    <section class="project-section colored-section color-mesh">
 
-        <h2>Pivoting the MVP to meet time constraints during wireframing</h2>
+      <div class="project-description ">
+        <h3>Design</h3>
 
-        <h5>After narrowing our scope, I begain creating user flows and lo-fi wireframes for our MVP. However, shortly after a change in our dev team, we found our original MVP was not feasible. We got together as a team to discuss features to backlog and agreed to pivot from a native iOS app to a responsive web app.</h5>
-
-        <h5>Meanwhile, I had already started on mobile hi-fi wireframes. I made the call to the team to re-hash our current designs as mobile web designs and delay designing for larger screens so we could meet time-constraints.</h5>
-
-        <!-- Payd Wireframing -->
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_design@1x.png" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_design@2x.png" alt="Payd Wireframing">
-        </picture>
+        <div>
+          <h3>Pivoting our MVP to meet time constraints during wireframing.</h3>
+          
+          <p>
+            After narrowing our scope, I started on user flows and wireframes for our MVP. However, after a change in our dev team, our original MVP was no longer feasible. The team discussed our options and agreed to pivot from a native iOS app to a responsive web app.
+          <br><br>
+            Meanwhile, I had already started on mobile hi-fi wireframes. I proposed that we continued to use our existing designs and delay larger screens designs to meet time-constraints.
+          </p>
+        </div>
       </div>
+
+      <!-- Design Image -->
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_design@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_design@2x.png" alt="Payd Wireframing">
+      </picture>
     </section>
 
-    <!-- 5. Testing + Iteration Container -->
+    <!-- 4. Iteration -->
     <section>
-      <h4>TESTING + ITERATION</h4>
 
-      <h2>Improving the design through preference and usability testing</h2>
+      <div class="project-description">
+        <h3>Iteration</h3>
 
-      <h5>
-        We started with a preference test to assess our visual design. Then, we conducted usability tests to understand whether users could navigate our prototype given scenarios and success criteria. We worked together to synthesize this data as I improved our design in a continuous cycle of iteration. 
-      </h5>
+        <div>
+          <h3>Improving our design through preference and usability testing.</h3>
+
+          <p>
+            We started with a preference test to assess our visual design. Then, we conducted usability tests to understand whether users could navigate our prototype given scenarios and success criteria. We worked together to synthesize this data as I improved our design in a continuous cycle of iteration.
+          </p>
+        </div>
+      </div>
+
+      <!-- Iteration Images -->
 
       <picture>
         <source srcset="img/mesh/@1x/mesh_improvement-1@1x.png" media="(max-width:640px)">
@@ -214,165 +195,108 @@
       </picture> 
     </section>
 
-    <!-- 6. Development Container  -->
+    <!-- 5. MVP  -->
+
     <section>
-      <div class="project-sub-section">
-        <h4>DEVELOPMENT</h4>
-        
-        <h2>Helping out with the react files and styling</h2>
+      <div class="project-description colored-section color-mesh">
+        <h3>MVP</h3>
 
-        <h5>After losing one of our devs, we needed more dev effort to complete our MVP in time. I took this opportunity to offer my (limited 😅) programming skills. I wrote most of our React elements and styling based on the hi-fi wireframes that I created and as a result, we completed our MVP just in time for our final presentation.</h5>
-        
-        <h5>What was a set back ended up positive for me because I had fun learning basic React and am proud to be able to contribute to the product beyond design.</h5>
+        <div>
+          <h3>Just the start of a revolutionary early networking hub.</h3>
 
-        <!-- GitHub Button -->
-        <div class="ripple-button">
-          <a href="https://github.com/taylorreichner/Team-Mesh"
-          target="_blank">
-            <span></span>
-            Mesh GitHub Repository
-          </a>
+          <p>
+            What makes Mesh valuable is its focus on creating professional relationships. Our next steps are to add features that track event contacts and encourage users to stay connected with them. 
+            <br><br>
+            Our current MVP barely scratches the surface on helping our users network, but we've listened to what they've had to say so far and are eager to continue improving Mesh for them.
+          </p>
         </div>
       </div>
-    </section>
+      
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_solution-1@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_solution-1@2x.png" alt="Mesh Improvement">
+      </picture> 
 
-    <!-- 7. MVP Container  -->
-    <section>
-      <div class="project-sub-section">
-        <h4>MVP #1</h4>
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_solution-2@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_solution-2@2x.png" alt="Mesh Improvement">
+      </picture> 
 
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_solution-1@1x.png" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_solution-1@2x.png" alt="Mesh Improvement">
-        </picture> 
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_solution-3@1x.png" media="(max-width:640px)">
+        <img src="img/mesh/@2x/mesh_solution-3@2x.png" alt="Mesh Improvement">
+      </picture> 
 
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_solution-2@1x.png" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_solution-2@2x.png" alt="Mesh Improvement">
-        </picture> 
+      <br><br>
 
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_solution-3@1x.png" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_solution-3@2x.png" alt="Mesh Improvement">
-        </picture> 
-
-        <br><br>
-
-        <!-- Prototype Button -->
-        <div class="ripple-button">
-          <a href="https://www.figma.com/proto/wselC1DFAjtNIWqwKjilNX/Mesh_HiFi?node-id=442%3A1787&viewport=504%2C-565%2C0.41&scaling=scale-down&starting-point-node-id=442%3A2721"
-          target="_blank">
-            <span></span>
-            Figma Interactive Prototype
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. Design Library Container  -->
-    <section>
-      <div class="project-sub-section">
-        <h4>Design Library</h4>
-
-        <picture>
-          <source srcset="img/mesh/@1x/mesh_library@1x.png" media="(max-width:640px)">
-          <img src="img/mesh/@2x/mesh_library@2x.png" alt="Mesh Design Library">
-        </picture> 
-
-        <!-- Full Style Guide Button -->
-        <div class="ripple-button">
-          <a href="https://www.figma.com/file/5nOZqVXPGiAHmGp7ZYX3gD/Mesh_Library?node-id=0%3A1"
-          target="_blank">
-            <span></span>
-            Figma Design Library
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. Conclusion Container -->
-    <section>
-      <h4>Learnings + next steps</h4>
-
-      <h2>We hope to expand on the relationship form factor of Mesh</h2>
-
-      <h5>What makes Mesh valuable is its focus on creating professional relationships. Our next steps are to add features that track event contacts and encourage users to stay connected with them.</h5>
-
-      <h5>Mesh is the first product that I created alongside a team. Below are a few examples of what I learned so far -- there is still plenty to learn as our team is eager to continue improving this product!</h5>
-
-      <ol>
-        <li>
-          <h5><strong>Cross-Functional Communication</strong> 
-            <br>
-            The dev and I had a few mix ups due to confusion from both sides. I know now the importance of making sure my designs are understood while also understanding dev capabilities. 
-          </h5>
-        </li>
-        <li>
-          <h5><strong>Pivoting Design Scope</strong>
-            <br> 
-            I learned how to efficiently design pivot due to unforeseen scope changes. This was largely due to the open and communicative environment the team and I had created. 
-          </h5>
-        </li>
-        <li>
-          <h5><strong>Design Library</strong> 
-            <br>
-            Learning Figma component and library functions were key for keeping our brand consistent and saving design time.
-          </h5>
-        </li>
-      </ol>
-
-      <!-- Product Portfolio Button -->
+      <!-- Prototype Button -->
       <div class="ripple-button">
-        <a href="https://www.joincolab.io/projects/mesh"
+        <a href="https://www.figma.com/proto/wselC1DFAjtNIWqwKjilNX/Mesh_HiFi?node-id=442%3A1787&viewport=504%2C-565%2C0.41&scaling=scale-down&starting-point-node-id=442%3A2721"
         target="_blank">
           <span></span>
-          Mesh Project Portfolio
+          Interactive Prototype
         </a>
       </div>
     </section>
 
-    <!-- 10. Thank You Container-->
-    <div>
-      <h3 class="center">Thanks for reading!</h3>
-      <p class="center">
-        <span>Check out my other</span>
-        <span>
-          <a href="index.html#header"><u>work</u></a>
-        </span>
-      </p>
-    </div>
+    <!-- 6. Library -->
+    <section>
+
+      <div class="project-description">
+        <div>
+          <h3>Design Library</h3>
+          <br>
+
+          <p>To continue working on Mesh, we need a consistent design package.
+          <br><br>
+          I took advantage of Figma components to get our library sorted.
+          </p>
+        </div>
+        
+        <picture>
+          <source srcset="img/mesh/@1x/mesh_library@1x.png" media="(max-width:640px)">
+          <img src="img/mesh/@2x/mesh_library@2x.png" alt="Mesh Design Library">
+        </picture> 
+      </div>
+    </section>
+
+    <!-- 7. Lessons -->
+    <section>
+      <div class="project-description">
+        <h3>Lessons</h3>
+
+       <ol>
+          <li> The dev and I had a few mix ups due to confusion from both sides. I know now the importance of making sure my designs are understood while also understanding dev capabilities.</li>
+          <li>I learned how to efficiently design pivot due to unforeseen scope changes. This was largely due to the open and communicative environment the team and I had created.</li>
+          <li>Learning Figma component and library functions were key for keeping our brand consistent and saving design time.</li>
+        </ol>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer>
 
-    <!-- Footer Blurb -->
-    <h5 class="center">
-      <span>Let's connect</span>
-      <span class="finger-point" >👇</span>
-    </h5>
+  <footer class="panel" data-color=white>
 
-    <!-- Footer Links -->
-    <div class="center">
-      <ul class="socials">
-        <li class="socials-icon">
-          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-            <i class="fab fa-linkedin-in" id="linkedin"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-            <i class="fab fa-github" id="github"></i>
-          </a>
-        </li>
-      </ul>
+    <div id="footer">
+      <!-- Blurb -->
+      <p>
+        <span>Let's connect!</span>
+        <span class="footer-finger">👉</span>
+      </p>
+
+      <!-- Links -->
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97/" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
     </div>
   </footer>
+
 
   <!-- JavaScript Files -->
   <div>
