@@ -21,7 +21,8 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -32,318 +33,240 @@
 <body>
 
   <!-- Header -->
+
   <header id="header">
 
     <!-- Logo -->
-    <a href="index.html#header" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+    <a href="index.html" class="logo">tcai</a>
 
-    <!-- Back to Top Button -->
-    <a id="top-button">
-      <i class="fa fa-arrow-up"></i>
+    <!-- Navigation -->
+    <nav>
+      <div><a href="index.html" onclick="closeMenu()">Projects</a></div>
+      <div><a href="about.html" onclick="closeMenu()">About</a></div>
+      <div><a href="files/Cai_Tina_Resume.pdf" target="_blank">Resume</a></div>
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+      <div class="menu-icon open">
+        <span></span>
+        <span></span>
+      </div>
     </a>
-
-    <!-- Menu Container -->
-    <div class="menu-container">
-
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
-    </div>
   </header>
 
   <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero Container -->
-    <div class="project-hero-container">
-
-      <!-- Hero Title -->
-      <div class="project-intro-container">
-        <h3>Design Portfolio</h3>
-        <h1>Creating a home for my project work</h1>
+    <!-- 0. Hero -->
+    <div>
+      <div class="hero">
+        <h1>Design Portfolio</h1>
+        <h2>Creating a home for my project work</h2>
       </div>
+    </div>
 
-      <!-- Hero Banner Image -->
+    <!-- Hero Banner -->
+    <div class="hero-img">
       <picture>
         <source srcset="img/portfolio/@1x/portfolio_intro@1x.png" media="(max-width:640px)">
         <img class="parallax-img" src="img/portfolio/@2x/portfolio_intro@2x.png" alt="Portfolio Banner Image">
       </picture>
     </div>
 
-    <!-- 1. Overview Container -->
-    <div class="project-section-container">
-      <section>
-        <div class="column-container quarter-column">
 
-          <!-- Overview Description -->
-          <div>
-            <h4>Overview</h4>
-            <h2>How can I share my UX work, skills, and experiences with others?</h2>
-            <h5>
-              My design portfolio is an online platform that displays my work, design skills, and personality to other designers, potential recruiters, and hiring managers.
-            </h5>
-            <h5>
-              It's also a medium for me to practice and demonstrate front-end development and web design.
-            </h5>
-            <h5>
-              <strong>Role:</strong> Front-End Dev, Web/UX/UI Designer
-              <br>
-              <strong>Tools:</strong> Adobe XD, VS Code, Atom, GitHub, Google Sheets
-              <br>
-              <strong>Timeframe:</strong> Nov 2021 - Present
-            </h5>
-          </div>
+    <!-- 1. Overview -->
+    <section>
+      <!-- Problem -->
+      <div class="project-description">
+        <h3>Problem</h3>
 
-          <!-- Overview Image -->
-          <div>
-            <a href="https://www.vecteezy.com/free-vector/finance" target="_blank">
-              <img src="img/portfolio/portfolio_overview.jpg" alt="Portfolio Overview Image">
-            </a>
-          </div>
+        <div>
+          <h3>How can I share my UX work, skills, and experiences with others?</h3>
+          
+          <p>
+            My design portfolio is an online platform that displays my work, design skills, and personality to other designers, potential recruiters, and hiring managers.
+          <br><br>
+            It's also a medium for me to practice and demonstrate front-end development and web design.
+          </p>
         </div>
-      </section>
+      </div>
+
+      <!-- Details -->
+      <div class="project-details color-portfolio">
+        <div><p>ROLE 
+          <br>UX/UI Designer 
+          <br>Front End Dev
+        </p></div>
+        <div><p>TEAM 
+          <br>Solo
+          <br>Personal
+        </p></div>
+        <div><p>TIMELINE
+          <br>Nov 2021
+          <br>Present
+        </p></div>
+      </div>
+    </section>
+
+
+    <!-- 2. HTML -->
+    <section>
+
+      <div class="project-description">
+        <h3>HTML</h3>
+
+        <div>
+          <h3>Creating the initial structure for my portfolio website.</h3>
+          
+          <p>
+            I began my website by writing HTML documentation using the IDE, Atom. To ensure accessibility, I used a mobile-first approach. To focus on content over style, I referenced sample wireframes. 
+          </p>
+        </div>
+      </div>
+
+    <!-- HTML Sample Wireframe Image -->
+    <div class="box-shadow center">
+      <picture>
+        <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_layout@1x.png" media="(max-width:640px)">
+        <img src="img/portfolio/@2x/portfolio_sample_wireframe_layout@2x.png" alt="Portfolio Sample Wireframe Layout">
+      </picture>
+      <br><br>
+      <p><i>Sample Wireframes Structure</i></p>
     </div>
+    </section>
 
-    <!-- 2. Web Structure Container -->
-    <section>
-      
-      <!-- HTML -->
-      <div class="project-sub-section">
-        <h4>HTML</h4>
+    <!-- 2. CSS -->
+    <section class="colored-section color-portfolio">
 
-        <h2>Creating the initial structure for my portfolio website</h2>
+      <div class="project-description">
+        <h3>CSS</h3>
 
-        <h5>
-          I began my website by writing HTML documentation using the IDE, Atom. To ensure accessibility, I used a mobile-first approach. To focus on content over style, I referenced sample wireframes. 
-        </h5>
-
-        <!-- HTML Sample Wireframe Image -->
-        <div class="light-img large-img center">
-          <picture>
-            <source srcset="img/portfolio/@1x/portfolio_sample_wireframe_layout@1x.png" media="(max-width:640px)">
-            <img src="img/portfolio/@2x/portfolio_sample_wireframe_layout@2x.png" alt="Portfolio Sample Wireframe Layout">
-          </picture>
-          <p><i>Sample Wireframes Structure</i></p>
+        <div>
+          <h3>Designing wireframes to guide my website design</h3>
+          
+          <p>
+            As I was writing CSS to emulate the sample wireframes, I noticed I was constantly tweaking the style. So, I decided to create wireframes to guide my design.
+          <br><br>
+            To ensure accessibility across devices, I followed a mobile-first approach. Seeing my design from the development perspective revealed the importance of creating clear and consistent assets as a designer.
+          </p>
         </div>
+
+        
       </div>
 
-      <!-- GitHub -->
-      <div class="project-sub-section">
-        <h4>GITHUB</h4>
+      <!-- CSS Images -->
+      <div class="columns">
+        <div class="center box-shadow">
+          <img src="img/portfolio/portfolio_hifi-3.png" alt="Mobile Hifi 3">
+        </div>
 
-        <h2>Tracking development changes with a GitHub repository</h2>
-
-        <h5>
-          I used GitHub Desktop to create a repository for my website. Though this was a solo project, I wanted to learn how to use GitHub to better work with developers and practice keeping a repo updated.
-        </h5>
-
-        <!-- Visit Project GitHub Button -->
-        <div class="ripple-button">
-          <a href="https://github.com/tinacai1997/portfolio-website" target="_blank">
-            <span></span>
-            Visit Project GitHub
-          </a>
+        <div class="box-shadow">
+          <img src="img/portfolio/portfolio_hifi-2.png" class=" column-margin" alt="Mobile Hifi 2">
         </div>
       </div>
     </section>
+    
 
-    <!-- 3. Web Style Container -->
+    <!-- 3. JavaScript -->
     <section>
+      <div class="project-description panel" data-color="white">
+        <h3>JavaScript</h3>
 
-      <!-- Design -->
-      <div class="project-sub-section">
-        <h4>DESIGN</h4>
+        <div>
+          <h3>Adding logic and personality to my website for increased interactivity</h3>
+          
+          <p>
+            I created a JavaScript file and added jQuery to my HTML documents to add advanced interactivity to my site, like a menu button.
+            <br><br>
+            I also explored CSS interactions and animations to add more visual flair to my site. I kept these fairly simple, as it was important that actually conveyed meaning. Try to find the animations hidden throughout my site! 🕵
+          </p>
 
-        <h2>Designing wireframes to guide my website design</h2>
+          <!-- Interaction Gifs -->
+          <div class="columns">
+            <div>
+              <img src="img/portfolio/portfolio_logo_hover.gif" class="column-img" alt="Logo Hover Gif">
+            </div>
 
-
-        <h5>
-          With the structure finished, I began writing CSS to emulate the sample wireframes. I noticed I was constantly tweaking the style as I was writing. Therefore, I decided to create wireframes to guide my design. 
-        </h5>
-
-        <h5>
-          To ensure my site was usable across devices, I created mobile and x-large wireframes then adjusted the CSS accordingly. Seeing my design from the development perspective revealed the importance of creating clear and consistent assets as a designer.
-        </h5>
-
-        <!-- Mockups and Site Comparison Images -->
-        <div class="center column-container half-column portfolio-column-container">
-          <div class="center light-img">
-            <img src="img/portfolio/portfolio_hifi-1.png" class="" alt="Mobile Hifi 1">
-            <h3>mockup</h3>
-
-            <img src="img/portfolio/portfolio_hifi-3.png" alt="Mobile Hifi 3">
-          </div>
-
-          <div class="center light-img">
-            <img src="img/portfolio/portfolio_hifi-2.png" class=" column-margin" alt="Mobile Hifi 2">
-
-            <img src="img/portfolio/portfolio_hifi-4.png" class=" column-margin" alt="Mobile Hifi 4">
-            <h3>site</h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Micro Interactions and Animations -->
-      <div class="project-sub-section">
-        <h4>MICRO INTERACTIONS + ANIMATION</h4>
-
-        <h2>Adding movement and personality to my website</h2>
-
-        <h5>
-          I explored CSS interactions and animations to add more visual flair to my site. It was important that these iteractions conveyed meaning as well, so I kept them fairly simple (try to find the animations hidden throughout my site! 🕵)
-        </h5>
-
-        <!-- Micro Interaction and Animation Gifs -->
-        <div class="center column-container half-column portfolio-column-container">
-          <div class="center">
-            <img src="img/portfolio/portfolio_logo_hover.gif" class="column-img" alt="Logo Hover Gif">
-          </div>
-
-          <div>
-            <img src="img/portfolio/portfolio_menu_icon_hover.gif" class="column-img" alt="Menu Icon Hover Gif">
+            <div>
+              <img src="img/portfolio/portfolio_menu_icon_hover.gif" class="column-img" alt="Menu Icon Hover Gif">
+            </div>
           </div>
         </div>
       </div>
     </section>
-  
-    <!-- 4. JavaScript Container -->
+
+
+
+    <!-- 4. Iteration -->
     <section>
-      
-      <!-- JavaScript -->
-      <div class="panel project-sub-section" data-color="white">
-        <h4>JAVASCRIPT</h4>
 
-        <h2>Adding a script to the website for increased interactivity</h2>
+      <div class="project-description colored-section color-portfolio panel" data-color="portfolio">
+        <h3>Iteration</h3>
 
-        <h5>
-          I created a JavaScript file and added jQuery to my HTML documents to add advanced interactivity to my site. I wrote a script for a menu to help users traverse my portfolio. Press the menu icon to check it out! 👉👆
-        </h5>
-
-        <h5>I also used a plugin called "Slick" to create slideshows for displaying my project content.</h5>
+        <div>
+          <h3>Most test participants thought my site design was too plain.</h3>
+          
+          <p>
+            I conducted five usability tests to assess my site's usability. Participants had no issue with the test scenarios, but all commented on my site being too plain.
+          <br><br>
+            To address this, I added dynamic page colors and parallax images to add dynamics to my portfolio. These additions were well received when critiquing my site with other designers.
+          </p>
+        </div>
       </div>
+
+      <picture>
+        <source srcset="img/portfolio/@1x/portfolio_parallax_ex@1x.jpg" media="(max-width:640px)">
+        <img class="parallax-img" src="img/portfolio/@2x/portfolio_parallax_ex@2x.jpg" alt="Payd Image 2">
+      </picture>
     </section>
 
-    <!-- 5. Usability Testing Container -->
+
+    <!-- 5. Lessons -->
     <section>
-
-      <!-- Usability Testing -->
-      <div class="panel project-sub-section" data-color="portfolio">
-        <h4 id="portfolio-test">TESTING + ITERATION</h4>
-
-        <h2>Most test participants thought my site design was too plain</h2>
-
-        <h5>
-          I observed whether five usability test participants could figure out how to learn about my projects, me, my work history, and my contact info using my site. Participants had no issue with the test scenarios, but all commented on my site being too plain.</h5>
-
-        <h5>
-          To address this, I added dynamic page colors and parallax images to add dynamics to my portfolio. These additions were well received when critiquing my site with other designers.
-        </h5>
-
-        <picture>
-          <source srcset="img/portfolio/@1x/portfolio_parallax_ex@1x.jpg" media="(max-width:640px)">
-          <img class="parallax-img" src="img/portfolio/@2x/portfolio_parallax_ex@2x.jpg" alt="Payd Image 2">
-        </picture>
-      </div>
-    </section>
-
-    <!-- 7. Conclusion Container -->
-    <section>
-      <div class="panel project-sub-section" data-color="white">
-        <h4>LEARNINGS</h4>
-
-        <h5>This project is the first product I fully developed and is a constant work in progress! It has also been a fun way for me to learn and practice development and storytelling 📚</h5>
+      <div class="project-description">
+        <h3>Lessons</h3>
 
         <ol>
-          <li>
-            <h5><strong>Design 👉 Development</strong> 
-              <br>
-              I learned that efficient development starts with a solid design, even if an assignment doesn't ask you for one.
-            </h5>
-          </li>
-          <li>
-            <h5><strong>Hand Coding vs. Frameworks</strong> 
-            <br>
-            Since this project was my first attempt at developing a website, I hand coded most of it for practice. I'd likely use frameworks in the future to say the least!
-            </h5>
-          </li>
-          <li>
-            <h5><strong>Use what you're used to (unless you can't)</strong> 
-              <br>
-              I initially used Atom per assignment instructions but eventually switched to VS Code as I was more familiar with it. This helped me focus on learning one thing at a time.
-            </h5>
-          </li>
+          <li>I learned that efficient development starts with a solid design, even if an assignment doesn't ask you for one.</li>
+          <li>Since this project was my first attempt at developing a website, I hand coded most of it for practice. I'd likely use frameworks in the future to say the least.</li>
+          <li>I initially used Atom per assignment instructions but eventually switched to VS Code as I was more familiar with it. This helped me focus on learning one thing at a time.</li>
         </ol>
       </div>
     </section>
-
-    <!-- 8. Thank You Container -->
-    <div>
-      <h3 class="center">Thanks for reading!</h3>
-      <p class="center">
-        <span>Check out my other</span>
-        <span>
-          <a href="index.html#header"><u>work</u></a>
-        </span>
-      </p>
-    </div>
   </main>
 
+
   <!-- Footer -->
-  <footer>
 
-    <!-- Footer Blurb -->
-    <h5 class="center">
-      <span>Let's connect</span>
-      <span class="finger-point" >👇</span>
-    </h5>
+  <footer class="panel" data-color=white>
 
-    <!-- Footer Links -->
-    <div class="center">
-      <ul class="socials">
-        <li class="socials-icon">
-          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-            <i class="fab fa-linkedin-in" id="linkedin"></i>
-          </a>
-        </li>
-        <!-- <li class="socials-icon">
-          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
-            <i class="fab fa-behance" id="behance"></i>
-          </a>
-        </li> -->
-        <li class="socials-icon">
-          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-            <i class="fab fa-github" id="github"></i>
-          </a>
-        </li>
-      </ul>
+    <div id="footer">
+      <!-- Blurb -->
+      <p>
+        <span>Let's connect!</span>
+        <span class="footer-finger">👉</span>
+      </p>
+
+      <!-- Links -->
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97/" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
     </div>
   </footer>
+
 
   <!-- JavaScript Files -->
   <div>
