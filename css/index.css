@@ -1,0 +1,108 @@
+/* ==============================================================
+                              Layout
+============================================================== */
+
+.hero {
+  text-align: center;
+  padding: 120px 30px 12vw;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+  margin: 6vw 0 12vw;
+}
+
+
+/* ==============================================================
+                            Interactions
+============================================================== */
+
+/*------------------------- Hero Letters ----------------------*/
+
+#design:hover {
+  background-color: rgb(192, 192, 255);
+  cursor: pointer;
+}
+
+#bake:hover {
+  background-color: rgb(255, 192, 242);
+  cursor: pointer;
+}
+
+#game:hover {
+  background-color: rgb(176, 255, 191);
+  cursor: pointer;
+}
+
+#iterate:hover {
+  background-color:rgb(252, 255, 170);
+  cursor: pointer;
+}
+
+/*------------------------- Hand Wave -------------------------*/
+
+.hand-wave {
+  display: inline-block;
+  transform-origin: bottom right;
+}
+
+.hand-wave:hover {
+  animation: wave 0.8s infinite;
+  cursor: pointer;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0);
+  } 50% {
+    transform: rotate(18deg);
+  } 100% {
+    transform: rotate(0);
+  }
+}
+
+/*------------------------- Project Image ---------------------*/
+
+.project img {
+  transition: 0.2s;
+}
+
+.project:hover img {
+  transform: scale(1.01);
+
+}
+
+
+
+/* ==============================================================
+               Medium Devices (640px and larger)
+============================================================== */
+
+@media only screen and (min-width: 640px) {
+
+  /*-------------------------- Layout ---------------------------*/
+  
+  .hero {
+    padding-top: 8vw;
+  }
+
+  .hero-letter {
+    max-height: 22px;
+  }
+  }
+
+  /* ==============================================================
+               Medium Devices (1024px and larger)
+============================================================== */
+
+@media only screen and (min-width: 1024px) {
+
+  /*-------------------------- Layout ---------------------------*/
+
+
+  .hero-letter {
+    max-height: 38px;
+  }
+  }

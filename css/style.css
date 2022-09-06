@@ -1,48 +1,19 @@
 /* ==============================================================
-                     Global / General Styling
+                          General Styling
 ============================================================== */
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 img {
   width: 100%;
 }
 
-ol {
-  padding-left: 1.25em;
-}
-
-button {
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-section {
-  margin: 10vh 4em;
-}
-
-section:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #afafaf;
-  margin-top: 10vh;
-}
-
-.large-img {
-  max-width: 70vh;
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .center {
@@ -51,29 +22,26 @@ section:after {
   align-items: center;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* ==============================================================
+                            Colors
+============================================================== */
+
+.color-brand {
+  background-color: #f1f5ff;
 }
 
-.space-around {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.color-mesh,
+.color-portfolio {
+  background-color: #eef5ff;
 }
 
-:root {
-  --email-icon: #e4405f;
-  --linkedin-icon: #0077b5;
-  /* --behance-icon: #1769ff; */
-  --github-icon: #333;
-  --mesh-bg-color: #ebf3ff;
-  --wave2go-bg-color: #daffef;
-  --payd-bg-color: #E7E5FF;
-  --portfolio-bg-color: #E4EFFC;
-  --lingually-bg-color: #f9e7e5;
-  /* --ux-challenge-bg-color: #f4fff7; */
+.color-payd {
+  background-color: #f8f7ff;
+}
+
+.box-shadow img {
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
 }
 
 
@@ -82,282 +50,128 @@ section:after {
 ============================================================== */
 
 body {
-  display: inline-block;
+  display: block;
   width: 100vw;
   background-color: #fff;
   color: #000;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   transition: background-color 1s ease-in-out;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
-/* Title */
 h1 {
-  font-size: 36px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.3333em;
   font-weight: 500;
   margin: 0;
 }
 
-/* Section Heading */
-h2 {  
-  font-family: 'Poppins', serif;
-  font-size: 2em;
-  font-weight: 600;
-  margin: 1.5em 0;
-}
-
-/* Sub Title */
-h3 {
-  font-size: 2em;
-  font-weight: 500;
-  margin: 0 0 1em 0;
-  letter-spacing: 1px;
-}
-
-/* Sub-Section Heading */
-h4 {
-  font-size: 1.1em;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin: 0 0 1.25em 0;
-}
-
-h4:before {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 1px;
-  background: #000;
-  vertical-align: top;
-  margin-top: 0.55em;
-  margin-right: 10px;
-}
-
-/* Project Body */
-h5 {
-  font-size: 1.1em;
-  font-weight: 300;
-  margin: 1.25em 0;
-}
-
-/* General Body */
 p {
   font-size: 1em;
   font-weight: 400;
-  margin: 1.5em 0;
+  line-height: 1.25;
 }
 
-strong {
-  font-weight: 600;
+button {
+  font-size: 1em;
+  padding: 0.3333em 1em;
+  margin: none;
 }
 
 
 /* ==============================================================
-                        Header / Footer
+                              Header
 ============================================================== */
 
-header {
+#header {
+  position: fixed;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 36px;
-  align-items: center;
   justify-content: space-between;
-}
-
-footer {
-  margin: 60px;
-}
-
-.finger-point {
-  display: inline-block;
-  transform-origin: top center;
-}
-
-.finger-point:hover {
-  animation: point 1s infinite;
-}
-
-@keyframes point {
-  0% {
-    transform: translateY(0);
-  } 50% {
-    transform: translateY(-5px);
-  } 100% {
-    transform: translateY(0);
-  }
+  align-items: center;
+  width: 100vw;
+  margin-left: -30px;
+  padding: 30px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 
-/* ==============================================================
-                              Links
-============================================================== */
-
-a {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-}
-
-/*---------------------------- Logo ---------------------------*/
-
-.logo-link {
-  position: relative;
-  display: block;
-  z-index: 10;
-  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
-}
+/*----------------------------- Logo --------------------------*/
 
 .logo {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.logo-link:hover {
-  transform: scale(1.15);
-}
-
-/*-------------------------- Socials -------------------------*/
-
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  margin: 0 auto;
-}
-
-.socials-icon {
-  list-style: none;
-  margin: 0 12px;
-}
-
-.socials-link,
-.socials-link:active,
-.socials-link:visited {
-  display: inline-flex;
-  font-size: 30px;
-  text-decoration: none;  
-  color: #000;
-  transition: .3s linear;
-  position: relative;
-  z-index: 1;
-  margin: auto
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  color: #fff;
-}
-
-.socials-link:before {
-  content: '';
-  position: absolute;
-  top: -11px;
-  left: -11px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  z-index: -1;
-  transform: scale(0);
-  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
-}
-
-.socials-link:hover:before {
-  transform: scale(1);
-}
-
-.socials-icon:nth-child(1) a:hover:before {
-  background: var(--email-icon);
-}
-
-.socials-icon:nth-child(2) a:hover:before {
-  background: var(--linkedin-icon);
-}
-
-.socials-icon:nth-child(3) a:hover:before {
-  background: var(--github-icon);
-}
-
-#linkedin {
   font-size: 28px;
-  margin-top: -1px;
-  margin-left: 3px;
-  padding-right: 2px;
+  font-weight: 600;
+  transition: 0.1s;
 }
 
-/* #behance {
-  margin-left: -1px;
-} */
-
-#github {
-  margin-left: 1px;
+.logo:hover {
+  transform: scale(1.05);
 }
 
-/* ==============================================================
-                            Navigation
-============================================================== */
 
-/*------------------------ Menu Button ------------------------*/
+/*------------------------ Navigation -------------------------*/
 
-.menu-button {
-  width: 52px;
-  height: 52px;
-  z-index: 7;
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 92px;
+  width: 100vw;
+  margin-left: -30px;
+  padding: 30px;
+  gap: 18px;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #efefef;
+  visibility: hidden;
 }
 
-.menu-link {
-  width: 52px;
-  height: 52px;
+nav > div > a {
+  font-size: 1.1111em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
+
+nav > div > a:hover,
+nav > div > div >a:hover {
+  opacity: 0.5;
+}
+
+
+/*--------------------- Navigation Icon -----------------------*/
 
 .menu-icon {
-  position: absolute;
-  z-index: 9;
-  transition: .3s linear;
-  transform-origin: top;
-  transform: translate(12px, 19px);
+  display: block;
+  cursor: pointer;
 }
 
 .menu-icon > span {
-  content: "";
   display: block;
   width: 28px;
   height: 2px;
-  z-index: 10;
-  background: #000;
-  border-radius: 100px;
+  margin: 10px auto;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu-icon > span + span {
-  margin-top: 10px;
-}
 
-.menu-link:after {
-  content: '';
-  position: absolute;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  z-index: 8;
-  transform: scale(0);
-  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
-}
-
-.menu-link:hover > .menu-icon > span {
-  background: #fff;
-}
-
-.menu-link:hover:after {
-  background: black;
-  transform: scale(1);
-}
-
-/*------------------ Menu Button Animations -------------------*/
+/*----------------- Navigation Icon Animation -----------------*/
 
 .close span:nth-child(1) {
   animation: ease top-menu-bar-close 0.5s forwards;
@@ -415,490 +229,149 @@ a {
   }
 }
 
-/*---------------------------- Menu ---------------------------*/
 
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-  background-color: #fff;
-  visibility: hidden;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: all 0.3s;
+/* ==============================================================
+                              Footer
+============================================================== */
+
+/*--------------------------- Footer --------------------------*/
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
 }
 
-nav {
+footer:before {
+  content: "";
   display: block;
-  position: absolute;
-  top: 50%;
-  margin-left: 36px;
-  transform-origin: right;
-  transform: translateY(-50%);
+  height: 1px;
+  background: #afafaf;
 }
 
-nav > ul {
-  margin: 0;
-  padding: 0;
+
+/*-------------------------- Socials --------------------------*/
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.3333em;
 }
 
-nav > ul > li {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 2em;
-}
-
-nav > ul > li:last-child {
-  margin: 0;
-}
-
-nav > ul > li > a {
-  color: black;
-  font-weight: 400;
-}
-
-nav > ul > li > a:hover {
-  color: #999999;
-  transition: 0.3s;
-}
-
-/*--------------------- Back to Top Button ---------------------*/
-
-#top-button {
-  display: inline-block;
-  background-color: #aaa;
-  position: fixed;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  margin-right: 36px;
-  margin-bottom: 36px;
-  transition: background-color .3s, opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-#top-button > i{
-  font-size: 30px;
-  color: white;
-  position: absolute;
-  top: 11px;
-  left: 12px;
-}
-
-#top-button:hover {
-  background-color: #000;
-}
-
-#top-button.show {
+.socials > div > a:hover {
   opacity: 0.5;
-  visibility: visible;
 }
 
 
 /* ==============================================================
-                              Index
+                          Interactions
 ============================================================== */
 
-/*---------------------------- Hero ----------------------------*/
+/*-------------------------Footer Finger ----------------------*/
 
-.hero-container {
-  padding-top: 12vh;
-  margin: 0 3em;
-}
-
-.hand-wave {
+.footer-finger {
   display: inline-block;
-  transform-origin: bottom right;
+  transform-origin: top center;
 }
 
-.hand-wave:hover {
-  animation: wave 0.8s infinite;
+.footer-finger:hover {
+  animation: point 0.75s infinite;
+  cursor: pointer;
 }
 
-@keyframes wave {
+@keyframes point {
   0% {
-    transform: rotate(0);
+    transform: translateX(0);
   } 50% {
-    transform: rotate(18deg);
+    transform: translateX(5px);
   } 100% {
-    transform: rotate(0);
+    transform: translateX(0);
   }
 }
 
-/*---------------------------- Work ----------------------------*/
-
-.work-container {
-  margin: 15vh 3em;
-}
-
-.project-container {
-  margin: 4em auto;
-}
-
-.project-picture img {
-  transition: 0.2s;
-}
-
-.project-picture:hover img {
-  transform: scale(1.015);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
-  z-index: -1;
-}
-
-.color-mesh {
-  background-color: var(--mesh-bg-color);
-}
-
-.color-wave2go {
-  background-color: var(--wave2go-bg-color);
-}
-
-.color-payd {
-  background-color: var(--payd-bg-color);
-}
-
-.color-portfolio {
-  background-color: var(--portfolio-bg-color);
-}
-
-.color-lingually {
-  background-color: var(--lingually-bg-color);
-}
-
-.color-ux-challenge {
-  background-color: var(--ux-challenge-bg-color);
-}
 
 /* ==============================================================
-                              About
-============================================================== */
-
-.about-container {
-  margin: -10vh 3em 0 3em;
-}
-
-.contact-form-section p {
-  margin-bottom: 0.5em;
-}
-
-.contact-field {
-  border: none;
-  padding: 0;
-  margin: 0 0 24px 0;
-}
-
-.contact-field input,
-.contact-field textarea {
-  width: 100%;
-  height: 42px;
-  border: 1px solid #808080 ;
-  border-radius: 4px;
-  background: #fcfcfc;
-  padding: 10px 18px 10px 10px;
-}
-
-#message-field textarea {
-  min-height: 128px;
-  max-height: 256px;
-  resize: vertical;
-}
-
-.contact-image {
-  text-align: center;
-}
-
-.contact-image img {
-  max-width: 488px;
-}
-
-/* ==============================================================
-                       Project Page
-============================================================== */
-
-/*----------------------- Hero ------------------------*/
-
-.project-hero-container {
-  margin-top: -15vh;
-  margin-bottom: 15vh;
-}
-
-.project-intro-container {
-  padding: 30vh 0 20vh 0;
-  margin: 0 3em;
-}
-
-.project-intro-img {
-  max-height: 40vw;
-  max-width: 100vw;
-}
-
-/*---------------------- Project Content ----------------------*/
-
-.project-sub-section {
-  margin: 6em 0;
-}
-
-.portfolio-column-container > div > img {
-  border-radius: 30px;
-}
-
-.project-link {
-  transform-origin: center;
-  transition: 0.2s;
-}
-
-.project-link:hover {
-  transform: scale(1.05);
-}
-
-.light-img img {
-  border-radius: 0.5em;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
-}
-
-iframe {
-  border: 0;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
-}
-
-.goal-container {
-  padding: 1em 2.5em;
-  border-radius: 0.5em;
-}
-
-
-/* ==============================================================
-                              Feed
-============================================================== */
-
-.feed-container {
-  margin: -10vh 3em 18vh 3em;
-}
-
-.feed-photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.feed-photos > div {
-  margin: 12px;
-}
-
-.feed-photos > div > span  {
-  position: absolute;
-  color: #fff;
-  opacity: 0;
-  font-weight: 400;
-  text-align: center;
-  background-color: black;
-  transition: opacity 0.25s ease;
-}
-
-.feed-photos:hover > div > span {
-  opacity: 0.65;
-}
-
-/* ==============================================================
-               Medium Devices (640px and larger)
+                Medium Devices (640px and larger)
 ============================================================== */
 
 @media only screen and (min-width: 640px) {
 
-  section {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/*-------------------------- Layout ---------------------------*/
 
-  h1 {
-    font-size: 5.625vw;
-  }
+body {
+  font-size: 16px;
+  padding: 0 80px;
+}
 
-  header {
-    /* position: fixed; */
-    padding: 5.625vw 7vw;
-  }
+#header {
+  width: auto;
+  position: relative;
+  margin: 0;
+  background-color: transparent;
+}
 
-  footer {
-    margin: 9.375vw;
-  }
+#header,
+#footer {
+  padding: 80px 0;
+}
 
-  #top-button {
-    margin-right: 7vw;
-    margin-bottom: 5.625vw;
-  }
+/*------------------------ Text Style -------------------------*/
 
-  body {
-    font-size: 14px;
-  }
+h1,
+h2 {
+  font-size: 2em;
+}
+
 
 /*-------------------------- Navigation -----------------------*/
-
-  .menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    background-color: transparent;
-    padding: 8px 14px 8px 8px;
-    border-radius: 64px;
-    /* box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2); */
-  }
-
-  .menu {
-    position: static;
-    background-color: transparent;
-  }
   
-  nav {
-    position: static;
-    margin: 8px;
-    transform: translateY(0);
-  }
-  
-  nav > ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav > ul > li,
-  nav > ul > li:last-child {
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0 10px;
-  }
-
-/*--------------------------- Index ---------------------------*/
-
-/* .hero-container {
-  padding-top: 12vh;
-} */
-
-.work-container {
-  margin: 30vh 0;
+nav {
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  gap: 1.3333em;
+  transform: none;
+  visibility: visible;
 }
 
-.intro-container,
-.project-container {
-  width: 65%;
+.menu-icon  {
+  display: none;
+}
 }
 
-
-/*--------------------------- Project ---------------------------*/
-
-.project-intro-container {
-  width: 50%;
-  padding: 30vh 0;
-  margin: 0 auto;
-}
-
-.project-section-title {
-  width: 65%;
-  margin: 0 auto;
-}
 
 /* ==============================================================
                Large Devices (1024px and larger)
 ============================================================== */
 
-
 @media only screen and (min-width: 1024px) {
 
-  h1 {
-    font-size: 57.6px;
-  }
+/*-------------------------- Layout ---------------------------*/
 
-  header {
-    padding: 57.6px 71.68px;
-  }
-
-  footer {
-    margin: 96px;
-  }
-
-  #top-button {
-    margin-right: 71.68px;
-    margin-bottom: 57.6px;
-  }
-
-  body {
-    font-size: 16px;
-  }
-
-/*----------------------------- About --------------------------*/
-
-  .contact-content-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-  }  
-
-  .contact-image {
-    padding-left: 3em;
-    margin: 0 0 0 auto;
-  }
-
-/*---------------------------- Project -------------------------*/
-
-  .column-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em 0;
-  }
-
-  .quarter-column > div:nth-of-type(1) {
-    flex: 3;
-    margin: 1em;
-  }
-
-  .quarter-column > div:nth-of-type(2) {
-    flex: 1.5;
-    margin: 1em;
-  }
-
-  .half-column > div {
-    flex: 1;
-    margin: 1em;
-  }
-
-  .portfolio-column-container {
-    align-items: flex-start;
-    max-width: 900px;
-  }
-
-  .portfolio-column-container > div > img {
-    max-width: 500px;
-    max-height: 872px;
-  }
-
-  .column-margin {
-    margin-top: 9em;
-  }
+body {
+  font-size: 18px;
+  max-width: 1440px;
 }
 
-/* ==============================================================
-               X-Large Devices (1440px and larger)
-============================================================== */
-
-
-@media only screen and (min-width: 1440px) {
-
-  body {
-    font-size: 18px;
-  }
-
-  section {
-    width: 50%;
-  }
-
+#footer {
+  flex-direction: row;
 }
+
+/*------------------------ Text Style -------------------------*/
+
+h1,
+h2 {
+  font-size: 3em;
+}
+
 }

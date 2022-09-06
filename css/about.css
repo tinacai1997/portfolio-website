@@ -1,0 +1,110 @@
+/* ==============================================================
+                              Layout
+============================================================== */
+
+/*--------------------------- About ---------------------------*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  gap: 4vw;
+}
+
+.about-img {
+  max-width: 600px;
+}
+
+/*-------------------------- Contact -------------------------*/
+
+.contact {
+  padding: 3em;
+  margin: 4vw 0 8vw;
+}
+
+.contact-form-section p {
+  margin-bottom: 0.5em;
+}
+
+.contact-field {
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #bbb ;
+  border-radius: 4px;
+  background: #fefefe;
+  padding: 10px 18px 10px 10px;
+}
+
+#message-field textarea {
+  min-height: 128px;
+  max-height: 256px;
+  resize: vertical;
+}
+
+
+/* ==============================================================
+                            Interactions
+============================================================== */
+
+/*------------------------- Emoji Sway -------------------------*/
+
+.emoji-sway {
+  display: inline-block;
+  transform-origin: bottom;
+}
+
+.emoji-sway:hover {
+  animation: sway 0.8s infinite;
+  cursor: pointer;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0);
+  } 20% {
+    transform: rotate(-6deg);
+  } 60% {
+    transform: rotate(6deg);
+  } 100% {
+    transform: rotate(0);
+  }
+}
+
+/* ==============================================================
+               Medium Devices (640px and larger)
+============================================================== */
+
+@media only screen and (min-width: 640px) {
+
+/*-------------------------- Layout ---------------------------*/
+
+.about {
+  padding-top: 0;
+}
+}
+
+/* ==============================================================
+               Large Devices (1024px and larger)
+============================================================== */
+
+@media only screen and (min-width: 1024px) {
+
+/*--------------------------- About -------------------------*/
+.about {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.about-img {
+  max-width: 200px;
+}
+}

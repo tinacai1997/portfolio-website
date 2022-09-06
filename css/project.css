@@ -1,0 +1,108 @@
+/* ==============================================================
+                             Layout
+============================================================== */
+
+/*------------------------- General ---------------------------*/
+
+ol {
+  margin: 0;
+}
+
+ol > li {
+  font-size: 1em;
+  margin-bottom: 1.111em;
+}
+
+section {
+  margin: 10vw auto;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/*--------------------------- Hero ----------------------------*/
+
+.hero {
+  text-align: center;
+  padding: 92px 0 16vw 0;
+  margin: 0 auto;
+}
+
+.hero-img {
+  position: relative;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+/*---------------------- Project Content ----------------------*/
+
+.colored-section {
+  padding: 30px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3vw 6vw;
+}
+
+.project-details > div > p {
+  line-height: 2;
+}
+
+/* ==============================================================
+               Medium Devices (640px and larger)
+============================================================== */
+
+@media only screen and (min-width: 640px) {
+
+/*-------------------------- Layout ---------------------------*/
+
+section {
+  width: 95%;
+}
+
+.colored-section {
+  padding: 60px;
+}
+
+}
+
+
+/* ==============================================================
+               Large Devices (1024px and larger)
+============================================================== */
+
+@media only screen and (min-width: 1024px) {
+
+/*-------------------------- Layout ---------------------------*/
+
+section {
+  width: 80%;
+}
+
+.colored-section {
+  padding: 80px;
+}
+
+.project-description {
+  flex-direction: row;
+  gap: 5em;
+}
+
+}
