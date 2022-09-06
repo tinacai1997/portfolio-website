@@ -2,205 +2,160 @@
 <html lang="en" dir="ltr">
 
 <!-- Head -->
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y647LF4KG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-0Y647LF4KG');
   </script>
-  
+
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <link href="img/icons/favicon.ico?v1" rel="shortcut icon">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v2">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Tina Cai</title>
+  <title>Tina Cai — Design Portfolio</title>
 </head>
 
 <!-- Body -->
+
 <body>
 
   <!-- Header -->
+
   <header id="header">
 
-  <!-- Logo -->
-  <a href="index.html#header" class="logo-link">
-    <div class="logo">tcai</div>
-  </a>  
+    <!-- Logo -->
+    <a href="index.html" class="logo">tcai</a>
 
-  <!-- Menu Container -->
-  <div class="menu-container">
+    <!-- Navigation -->
+    <nav>
+      <div><a href="index.html" onclick="closeMenu()">Projects</a></div>
+      <div><a href="about.html" onclick="closeMenu()">About</a></div>
+      <div><a href="files/Cai_Tina_Resume.pdf" target="_blank">Resume</a></div>
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
+    </nav>
 
-    <!-- Menu Content -->
-    <div class="menu">
-      <!-- Menu Links -->
-        <nav>
-          <ul>
-            <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-            <li><a href="about.html" onclick="closeMenu()">About</a></li>
-            <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-            <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
-    </div>
-
-    <!-- Menu Button -->
-    <div class="menu-button">
-      <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-        <div class="menu-icon open">
-          <span></span>
-          <span></span>
-        </div>
-      </a>
-    </div>
-  </div>
+    <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+      <div class="menu-icon open">
+        <span></span>
+        <span></span>
+      </div>
+    </a>
   </header>
 
   <!-- Main -->
+
   <main>
 
-    <!-- Hero Container-->
-    <div class="hero-container" id="hero">
+    <!-- Hero -->
 
-      <!-- Hero Blurb -->
-      <div class="intro-container center">
+    <section>
+      <div class="hero color-brand panel" data-color=white>
         <h1>
           <span class="hand-wave">👋</span>
-          <span>Hi, I'm Tina. I design, bake, game, then iterate.</span>
+          <span>Hi, I'm Tina.</span>
         </h1>
+        <h2>I 
+          <span id="design">design</span>, 
+          <span id="bake">bake</span>, 
+          <span id="game">game</span> & 
+          <span id="iterate">iterate</span>.</h2>
       </div>
-    </div>
+    </section>
 
-    <!-- Work Container -->
-    <div class="work-container">
+    <!-- Projects -->
 
-      <!-- Mesh Project Container -->
-      <div class="project-container panel" data-color="mesh">
+    <section>
+      <div class="projects">
 
-        <!-- Mesh Image -->
-        <div class="project-picture">
+        <!-- ZAS -->
+        <!-- <div class="project panel" data-color="zas"> -->
+
+          <!-- Portfolio Image -->
+          <!-- <a href="zas.html">
+            <picture>
+              <source srcset="img/index/@1x/index_zas_banner@1x.png" media="(max-width:767px)">
+              <img src="img/index/@2x/index_zas_banner@2x.png" alt="ZAS">
+            </picture>
+          </a>
+        </div> -->
+
+        <!-- Mesh -->
+        <div class="project panel" data-color="mesh">
           <a href="mesh.html">
             <picture>
               <source srcset="img/index/@1x/index_mesh_banner@1x.png" media="(max-width:640px)">
-              <img src="img/index/@2x/index_mesh_banner@2x.png" alt="Mesh Image">
+              <img src="img/index/@2x/index_mesh_banner@2x.png" alt="Mesh">
             </picture>
           </a>
         </div>
-      </div>
-      
-      <!-- Wave2Go Project Container -->
-      <!-- <div class="project-container panel" data-color="wave2go"> -->
 
-        <!-- Wave2Go Image -->
-<!--         <div class="project-picture">
-          <a href="wave2go.html">
+        <!-- Payd -->
+        <div class="project panel" data-color="payd">
+          <a href="payd.html">
             <picture>
-              <source srcset="img/index/@1x/index_wave2go_banner@1x.png" media="(max-width:640px)">
-              <img src="img/index/@2x/index_wave2go_banner@2x.png" alt="Wave2Go Image">
+              <source srcset="img/index/@1x/index_payd_banner@1x.png" media="(max-width:640px)">
+              <img src="img/index/@2x/index_payd_banner@2x.png" alt="Payd">
             </picture>
           </a>
         </div>
-      </div> -->
 
-      <!-- Payd Project Container -->
-      <div class="project-container panel" data-color="payd">
+        <!-- Portfolio -->
+        <div class="project panel" data-color="portfolio">
 
-          <!-- Payd Image -->
-          <div class="project-picture">
-            <a href="payd.html">
-              <picture>
-                <source srcset="img/index/@1x/index_payd_banner@1x.png" media="(max-width:640px)">
-                <img src="img/index/@2x/index_payd_banner@2x.png" alt="Payd Image">
-              </picture>
-            </a>
-          </div>
-      </div>
-
-      <!-- Portfolio Project Container-->
-      <div class="project-container panel" data-color="portfolio">
-
-        <!-- Portfolio Image -->
-        <div class="project-picture">
+          <!-- Portfolio Image -->
           <a href="portfolio.html">
             <picture>
               <source srcset="img/index/@1x/index_portfolio_banner@1x.png" media="(max-width:767px)">
-              <img src="img/index/@2x/index_portfolio_banner@2x.png" alt="Portfolio Image">
+              <img src="img/index/@2x/index_portfolio_banner@2x.png" alt="Portfolio">
             </picture>
           </a>
         </div>
       </div>
-
-      <!-- Lingually Project Container -->
-      <div class="project-container panel" data-color="lingually">
-
-        <!-- Lingually Image -->
-        <div class="project-picture">
-          <a href="lingually.html">
-            <picture>
-              <source srcset="img/index/@1x/index_lingually_banner@1x.png" media="(max-width:767px)">
-              <img src="img/index/@2x/index_lingually_banner@2x.png" alt="Lingually Image">
-            </picture>
-          </a>
-        </div>
-      </div>
-
-      <!-- UX Challenges -->
-      <!-- <div class="project-container panel" data-color="ux-challenge">
-
-        
-        <div class="project-picture">
-          <a href="ux-challenge.html">
-            <picture>
-              <source srcset="img/index/@1x/index_ux_challenge_banner@1x.png" media="(max-width:767px)">
-              <img src="img/index/@2x/index_ux_challenge_banner@2x.png" alt="UX Challenges Image">
-            </picture>
-          </a>
-        </div>
-      </div> -->
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer>
 
-    <!-- Footer Blurb -->
-    <h5 class="center">
-      <span>Let's connect</span>
-      <span class="finger-point" >👇</span>
-    </h5>
+  <footer class="panel" data-color=white>
 
-    <!-- Footer Links -->
-    <div class="center">
-      <ul class="socials">
-        <li class="socials-icon">
-          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-            <i class="fab fa-linkedin-in" id="linkedin"></i>
-          </a>
-        </li>
-        <!-- <li class="socials-icon">
-          <a href="https://www.behance.net/tinacai" target="_blank" class="socials-link">
-            <i class="fab fa-behance" id="behance"></i>
-          </a>
-        </li> -->
-        <li class="socials-icon">
-          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-            <i class="fab fa-github" id="github"></i>
-          </a>
-        </li>
-      </ul>
+    <div id="footer">
+      <!-- Blurb -->
+      <p>
+        <span>Let's connect!</span>
+        <span class="footer-finger">👉</span>
+      </p>
+
+      <!-- Links -->
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97/" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
     </div>
   </footer>
 
@@ -213,4 +168,5 @@
   </div>
 
 </body>
+
 </html>
