@@ -21,371 +21,289 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="ripple/ripple.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v3">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Zhen's Appliance Redesign — Tina Cai</title>
+  <title>Zhen's Website Redesign — Tina Cai</title>
 </head>
 
 <!-- Body -->
 <body>
 
   <!-- Header -->
+
   <header id="header">
 
     <!-- Logo -->
-    <a href="index.html#header" class="logo-link">
-      <div class="logo">tcai</div>
-    </a>    
+    <a href="index.html" class="logo">tcai</a>
 
-    <!-- Back to Top Button -->
-    <a id="top-button">
-      <i class="fa fa-arrow-up"></i>
+    <!-- Navigation -->
+    <nav>
+      <div><a href="index.html" onclick="closeMenu()">Projects</a></div>
+      <div><a href="about.html" onclick="closeMenu()">About</a></div>
+      <div><a href="files/Cai_Tina_Resume.pdf" target="_blank">Resume</a></div>
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
+    </nav>
+
+    <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
+      <div class="menu-icon open">
+        <span></span>
+        <span></span>
+      </div>
     </a>
-
-    <!-- Menu Container -->
-    <div class="menu-container">
-
-      <!-- Menu Content -->
-      <div class="menu">
-        <!-- Menu Links -->
-          <nav>
-            <ul>
-              <li><a href="index.html#header" onclick="closeMenu()">Work</a></li>
-              <li><a href="about.html" onclick="closeMenu()">About</a></li>
-              <li><a href="feed.html" onclick="closeMenu()">Feed</a></li>
-              <li><a href="files/Cai_Tina_Resume.pdf" onclick="closeMenu()" target="_blank">Resume</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <!-- Menu Button -->
-      <div class="menu-button">
-        <a href="javascript:void(0);" class="menu-link" onclick="menuToggle()">
-          <div class="menu-icon open">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
-    </div>
   </header>
   
   <!-- Main -->
   <main>
 
-    <!-- 0. Project Hero Container -->
-    <div class="project-hero-container">
-
-      <!-- Hero Title -->
-      <div class="project-intro-container">
-        <h3>Zhen's Appliance Service</h3>
-        <h1>In-Home Appliance Service Information Redesigned</h1>
-      </div>
-
-      <!-- Hero Banner Image -->
-      <picture>
-        <source srcset="img/zas/@1x/zas_intro@1x.png" media="(max-width:640px)">
-        <img class="parallax-img project-intro-img" src="img/zas/@2x/zas_intro@2x.png" alt="ZAS Banner Image">
-      </picture>
-    </div>
-
-    <!-- 1. Problem Container -->
-    <section>
-      <div class="column-container quarter-column">
-
-        <!-- Problem Description -->
-        <div>
-          <h4>PROBLEM</h4>
-          <h2>Zhen spends too much time addressing inquiries for services he does not provide.</h2>
-          <h5>
-            Zhen is the sole proprieter of Zhen's Appliance Service. He manages appliance repair orders on a daily basis. Lately, he has been receiving too many calls, texts, and emails on questions regarding services he cannot provide. 
-          </h5>
-          <h5>
-            How do we balance providing users what they're looking for regarding appliance repair services, while also minimizing inquiries from users that Zhen cannot service?
-          </h5>
-          <h5>
-            <strong>Role:</strong> UX Researcher, UX/UI Designer, Front-End Dev
-            <br>
-            <strong>Team:</strong> Simon Thai (Research + Ideation), Jin Cai (Front-End Dev)
-            <br>
-            <strong>Tools:</strong> Google Forms, Figma
-            <br>
-            <strong>Timeframe:</strong> Jan 2022 - March 2022
-          </h5>
-        </div>
-
-        <!-- Problem Image -->
-        <div>
-          <img src="img/zas/zas_overview.jpg" alt="ZAS Problem Image">
-        </div>
-      </div>
-
-      <!-- Business Goals -->
-      <div class="project-sub-section">
-        <h4>BUSINESS GOALS</h4>
-
-        <h2>
-          Zhen wants to minimize responding to inquiries from people outside his target audience.
-        </h2>
-
-        <h5>
-          I sat down with Zhen to understand his target audience and uncover his pain points regarding the overall problem. My goal here was to gauge Zhen's business goals, so I could later connect them to those of his users to provide a cohesive solution.
-        </h5>
-
-        <!-- Business Goals Image -->
-        <picture>
-          <source srcset="img/zas/@1x/zas_business_goals@1x.png" media="(max-width:640px)">
-          <img src="img/zas/@2x/zas_business_goals@2x.png" alt="Business Goals Image">
-        </picture>
-      </div>
-    </section>
-
-    <!-- 2. Research Container -->
-    <section>
-
-      <!-- Competitive Analysis -->
-      <div class="project-sub-section">
-        <h4>COMPETITIVE ANALYSIS</h4>
-
-        <h2>
-          The competition lacked credibility and refinement. 
-        </h2>
-
-        <h5>
-          I analyzed two existing websites for appliance repair services in Seattle to determine any gaps that we could use to make ZAS stand out. Though both websites provided a wider range of services - more brands, teams, and larger service area - they lacked "local handyman" charm. Zhen provides high quality service through his product knowledge and personality as a one man team. His 5-star reviews Google and Yelp prove attest to this, while the competition claims they do but do not share testimonials.
-        </h5>
-        <h5>
-          Additionally, both sites have established brands and coloring schemes but provide an overwhelming amount of information. Their overall UI and image quality could be improved.
-        </h5>
-
-        <!-- Competitive Analysis Image -->
-        <picture>
-          <source srcset="img/zas/@1x/zas_competitor_apps@1x.png" media="(max-width:640px)">
-          <img src="img/zas/@2x/zas_competitor_apps@2x.png" alt="Competitive Analysis Image">
-        </picture>
-      </div>
-
-      <!-- User Survey -->
-      <div class="project-sub-section">
-        <h4>USER SURVEY</h4>
-
-        <h2>Survey participants prioritized wait time and friendly service in their in-home repair experiences.</h2>
-
-        <h5>
-          Because the solution to our customers' problems and our target audience were already established, the research goals of this survey were to determine what users value when searching for in-home services.  
-        </h5>
-        <h5>
-          I conducted a user survey to identify what users value most when searching for in-home services. Appliance repair service was rather specific, so my survey participants were any that have received some sort of service that came to their homes. I compiled the survey data using affinity maps and uncovered several major insights. 
-        </h5>
-
-        <!-- User Interview Affinity Map -->
-        <picture>
-          <source srcset="img/zas/@1x/zas_affinity_map@1x.png" media="(max-width:640px)">
-          <img src="img/zas/@2x/zas_affinity_map@2x.png" alt="ZAS User Interview Affinity Map">
-        </picture>
-      </div>
-
-      <!-- Key Research Insights -->
-      <div class="project-sub-section">
-        <h4>KEY RESEARCH INSIGHTS</h4>
-
-        <h2>Adjusting information architecture to put user service priorities in the forefront.</h2>
-
-        <h5>Based on the affinity maps trends, I noticed interviewees actually prioritized prompt, friendly, and communicative service over the actual service. Their best experiences with in-home services involved repair-people that took the time to understand, assess, and explain the situation. The interviewees' first tasks were to look at reviews in search of this friendly service. These insights were all things to keep in mind when defining the new site architecture.</h5>
-
-        <!-- Key Insights Image -->
-        <picture>
-          <source srcset="img/zas/@1x/zas_key_insights@1x.png" media="(max-width:640px)">
-          <img src="img/zas/@2x/zas_key_insights@2x.png" alt="ZAS Key Insights Image">
-        </picture>
-      </div>
-    </section>
-      
-    <!-- 3. Ideation Container -->
-    <section>
-      <h4>IDEATION</h4>
-
-      <h2>Expanding on existing low fidelity wireframes.</h2>
-
-      <h5>
-        This redesign actually started with another designer who didn't have the time to complete the project. I reached out to them to understand what they had gotten done and found that they had started on lo-fi wireframes. I had them share the wireframes with me to expand and inject my research into them. 
-      </h5>
-      <h5>
-        From my research, the major changes I made to the previous designers wireframes were adding a testimonial tab, removing irrelevant information, and moving info around based on user wants. 
-      </h5>
-
-      <!-- Lofi Image -->
-      <picture class="light-img">
-        <source srcset="img/zas/@1x/zas_lofi@1x.png" media="(max-width:640px)">
-        <img src="img/zas/@2x/zas_lofi@2x.png" alt="ZAS Lofi Wireframes">
-      </picture>
-    </section>
-  
-    <!-- 4. Design Container -->
-    <section>
-      <h4>DESIGN</h4>
-
-      <h2>Re-creating the responsive web application.</h2>
-
-      <h5>
-        Based on company resources and team expertise, the front-end developer of the previous site and I decided utilizing old assets and frameworks and re-creating the responsive web app was the most realistic solution for this project. At this point, I created mid fidelity wireframes for the site in varying screen sizes and added writing content. 
-      </h5>
-
-      <!-- MidFi Image -->
-      <picture>
-        <source srcset="img/zas/@1x/zas_midfi@1x.png" media="(max-width:640px)">
-        <img src="img/zas/@2x/zas_midfi@2x.png" alt="ZAS Midfi Wireframes">
-      </picture>
-    </section>
-
-    <!-- 5. Mood Board and Hifi -->
-    <section>
-      <h4>MOOD BOARD + HIGH-FIDELITY</h4>
-
-      <h2>Developing Zhen's brand for style consistency.</h2>
-
-      <h5>
-        I created a mood board to depict my vision for Zhen's new website. The goal was to provide a color scheme and theme that welcomed users and accentuated friendly service. I worked with the client to adjust their new brand direction and ensure it fit their vision for the company. After establishing the right color scheme and branding, I created basic high fidelty wireframes for usability testing.
-      </h5>
-
-      <picture>
-        <source srcset="img/zas/@1x/zas_mood_board@1x.png" media="(max-width:640px)">
-        <img src="img/zas/@2x/zas_mood_board@2x.png" alt="ZAS Mood Board">
-      </picture>  
-    </section>
-
-    <!-- 6. Testing + Iteration Container -->
-    <section>
-      <h4>TESTING + ITERATION</h4>
-
-      <h2>Making 3 major improvements to the design.</h2>
-
-      <h5>
-        I conducted usability tests to observe how six financial management app users navigated through the prototype. I grouped the data using affinity maps and organized trends using a rainbow spreadsheet to prioritize usability errors concerning app functionality. I continuously iterated on the design based on test participant feedback and visual and accessibility guidelines to address these errors.
-      </h5>
-
-      <picture>
-        <source srcset="img/payd/@1x/payd_improvement-1@1x.png" media="(max-width:640px)">
-        <img src="img/payd/@2x/payd_improvement-1@2x.png" alt="Payd Improvement Image">
-      </picture>   
-
-      <picture>
-        <source srcset="img/payd/@1x/payd_improvement-2@1x.png" media="(max-width:640px)">
-        <img src="img/payd/@2x/payd_improvement-2@2x.png" alt="Payd Improvement Image">
-      </picture> 
-
-      <picture>
-        <source srcset="img/payd/@1x/payd_improvement-3@1x.png" media="(max-width:640px)">
-        <img src="img/payd/@2x/payd_improvement-3@2x.png" alt="Payd Improvement Image">
-      </picture> 
-    </section>
-    
-    <!-- 7. Solution Container  -->
-    <section>
-      <div class="project-sub-section">
-        <h4>The Solution</h4>
-        
-        <h2>Addressing persona needs based on key insights and feedback.</h2>
-
-        <picture>
-          <source srcset="img/payd/@1x/payd_solution-1@1x.png" media="(max-width:640px)">
-          <img src="img/payd/@2x/payd_solution-1@2x.png" alt="Journey Map Carousal">
-        </picture> 
-
-        <picture>
-          <source srcset="img/payd/@1x/payd_solution-2@1x.png" media="(max-width:640px)">
-          <img src="img/payd/@2x/payd_solution-2@2x.png" alt="Journey Map Carousal">
-        </picture> 
-
-        <picture>
-          <source srcset="img/payd/@1x/payd_solution-3@1x.png" media="(max-width:640px)">
-          <img src="img/payd/@2x/payd_solution-3@2x.png" alt="Journey Map Carousal">
-        </picture> 
-
-        <br><br>
-
-        <!-- Prototype Button -->
-        <div class="ripple-button">
-          <a href="https://xd.adobe.com/view/390c94ff-a85e-4884-9409-1f786a985587-6c5f/"
-          target="_blank">
-            <span></span>
-            Interactive Prototype
-          </a>
-        </div>
-      </div>
-    </section>
-        
-    <!-- 9. Conclusion Container -->
-    <section>
-      <h4>Conclusion</h4>
-
-      <h2>What were my key learnings and takeaways from my first client project.</h2>
-
-      <h5>Payd was the first UX project that I worked on from concept to completion! It definitely isn't perfect, but was a great place for me to start. In addition to many UX methodologies, I learned many important lessons that I'll take with me to my next project 😊</h5>
-
-      <ol>
-        <li>
-          <h5><strong>Research vs. interview questions.</strong> 
-            While working on this project, I learned the difference between research and interview questions. I know now that when gathering qualitative information, it's important to keep interview questions open ended and non-leading.
-          </h5>
-        </li>
-        <li>
-          <h5><strong>Done is better than perfect - keep on iterating.</strong> 
-          I got a bit lost in the sauce while tweaking minor details. I've learned that perfecting the visual design is not a priority for early hi-fi. I should have turned in minor iterations more frequently, rather than making bulk changes. This would have allowed me to focus on functionality and keep from being overwhelmed.
-          </h5>
-        </li>
-        <li>
-          <h5><strong>Insight vs. process driven design.</strong> 
-          I realized while working on this case study that showing what was pertinent to the problem space was much more valuable than completing and showing off processes. Moving forward, I have a better understanding of what processes to use, when to use them, and how they deliver insights that affect the bigger picture - rather than doing them just to do them.
-          </h5>
-        </li>
-      </ol>
-    </section> -->
-
-    <!-- 10. Thank You Container-->
+    <!-- 0. Hero -->
     <div>
-      <h3 class="center">Thanks for reading!</h3>
-      <p class="center">
-        <span>Check out my other</span>
-        <span>
-          <a href="index.html#header"><u>work</u></a>
-        </span>
-      </p>
+      <div class="hero">
+        <h1>Zhen's Appliance Service</h1>
+        <h2>Your local repairman information re-designed</h2>
+      </div>
     </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-img">
+      <picture>
+        <source srcset="img/mesh/@1x/mesh_intro@1x.png" media="(max-width:640px)">
+        <img class="parallax-img" src="img/mesh/@2x/mesh_intro@2x.png" alt="ZAS Banner">
+      </picture>
+    </div>
+
+
+    <!-- 1. Overview -->
+    <section>
+
+      <!-- Problem -->
+      <div class="project-description">
+        <h3>Problem</h3>
+
+        <div>
+          <p>
+            Zhen is the sole proprieter of Zhen's Appliance Service and manages appliance repair orders on a daily basis. Lately, he has been receiving too many customer inquiries for orders he cannot service.
+          <br><br>
+            How do we balance providing customers what they're looking for while also optimizing the client's time?
+          </p>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="project-details color-zas">
+        <div><p>ROLE 
+          <br>UX Researcher
+          <br>UX/UI Designer
+        </p></div>
+        <div><p>TEAM 
+          <br>Jin Cai
+          <br>Zhen (Client)
+        </p></div>
+        <div><p>TIMELINE
+          <br>February 2022
+          <br>December 2022
+        </p></div>
+      </div>
+    </section>
+
+
+    <!-- 2. Business Goals -->
+    <section>
+
+      <div class="project-description">
+        <h3>Business Goals</h3>
+
+        <div>
+          <p>I interviewed Zhen to understand his target customers and pain points regarding the overarching problem. My goal was to gauge Zhen's business goals so I could later connect them to those of his potential customers and provide a cohesive solution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Business Goals Image -->
+      <picture>
+        <source srcset="img/zas/@1x/zas_business_goals@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_business_goals@2x.png" alt="ZAS Business Goals">
+      </picture>
+    </section>
+
+
+    <!-- 3. Research -->
+    <section class="colored-section color-zas">
+
+      <div class="project-description">
+        <h3>Research</h3>
+
+        <div>
+          <p>I conducted a survey to uncover what customers value most when searching for in-home services. Appliance repair was quite specific, so I made the survey available to anyone who had received an in-home service of any kind. 
+            <br><br>
+            I compiled the survey data using affinity maps and uncovered several major insights. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Research Image -->
+      <picture>
+        <source srcset="img/zas/@1x/zas_affinity_map@1x.jpg" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_affinity_map@2x.jpg" alt="ZAS Affinity Map">
+      </picture>
+    </section>
+
+
+    <!-- 4. Insights -->
+    <section>
+
+      <div class="project-description">
+        <h3>Insights</h3>
+
+        <div>
+          <p>Customers feel a sense of urgency when in-home services are needed. They usually don't plan ahead of time, and when searching for services, look to whoever has the highest ratings and can help the quickest.
+            <br><br>
+            Survey participants had a lot more to add when they had an exceptional in-home service in mind. Being a present and friendly service person was especially memorable.
+          </p>
+        </div>
+      </div>
+
+      <!-- Insights Image -->
+      <picture>
+        <source srcset="img/zas/@2x/zas_key_insights@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_key_insights@2x.png" alt="ZAS Insights">
+      </picture>
+    </section>
+
+  
+    <!-- 5. Design -->
+    <section class="project-section colored-section color-zas">
+
+      <div class="project-description ">
+        <h3>Design</h3>
+          
+        <p>
+          Zhen doesn't have a product to sell his services other than Google and Yelp and wasn't particular about the design solution. So, I jumped straight into hifi wireframing to better present my ideas. 
+          <br><br>
+          We settled on creating a responsive website, as it was the most feasible for our team to complete and accessible on multiple customer devices. I focused on a simple site architecture that displays all important customer values upfront. 
+        </p>
+      </div>
+
+      <!-- Design Image -->
+      <picture>
+        <source srcset="img/zas/@1x/zas_design@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_design@2x.png" alt="ZAS Design">
+      </picture>
+    </section>
+
+    <!-- 6. Iteration -->
+    <section>
+
+      <div class="project-description">
+        <h3>Iteration</h3>
+
+        <div>
+          <h3>Improving the new site design through usability testing.</h3>
+
+          <p>
+            I conducted several usability tests to ensure users were able to meet their goals when visiting the new site. The client had many requirements, but it's also important that those were met with the user in mind as well.
+          </p>
+        </div>
+      </div>
+
+      <!-- Iteration Images -->
+
+      <picture>
+        <source srcset="img/zas/@1x/zas_improvement@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_improvement@2x.png" alt="ZAS Improvement">
+      </picture>   
+    </section>
+
+    <!-- 7. Solution  -->
+
+    <section>
+      <div class="project-description colored-section color-zas">
+        <h3>Solution</h3>
+
+        <div>
+          <h3>Delivering exactly what the client needs while increasing customer value and usability.</h3>
+
+          <p>
+            It was important that we kept our client's typical customer workflow unchanged while mitigating pain points. For the customer, we needed to quickly deliver the information they were looking for so they can get their appliances fixed fast.
+            <br><br>
+            We believe we succeeded in accumulating insights from both perspectives to create a solution that works for all.
+          </p>
+        </div>
+      </div>
+      
+      <picture>
+        <source srcset="img/zas/@1x/zas_solution-1@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_solution-1@2x.png" alt="ZAS Improvement">
+      </picture> 
+
+      <picture>
+        <source srcset="img/zas/@1x/zas_solution-2@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_solution-2@2x.png" alt="ZAS Improvement">
+      </picture> 
+
+      <picture>
+        <source srcset="img/zas/@1x/zas_solution-3@1x.png" media="(max-width:640px)">
+        <img src="img/zas/@2x/zas_solution-3@2x.png" alt="ZAS Improvement">
+      </picture> 
+
+      <br><br>
+
+      <!-- Prototype Button -->
+      <div class="ripple-button">
+        <a href=""
+        target="_blank">
+          <span></span>
+          Zhen's Appliance Service Site
+        </a>
+      </div>
+    </section>
+
+
+    <!-- 8. Lessons -->
+    <section>
+      <div class="project-description">
+        <h3>Lessons</h3>
+
+       <ol>
+          <li>As this was a volunteer project, it took much longer to finish than originally planned. I learned the importance of communication and setting deadlines in keeping the team accountable.</li>
+          <li>This being my first client project, I gained many new insights on balancing both business and user goals.</li>
+        </ol>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer>
 
-    <!-- Footer Blurb -->
-    <h5 class="center">
-      <span>Let's connect</span>
-      <span class="finger-point" >👇</span>
-    </h5>
+  <footer class="panel" data-color=white>
 
-    <!-- Footer Links -->
-    <div class="center">
-      <ul class="socials">
-        <li class="socials-icon">
-          <a href="mailto: tinacai1997@gmail.com" class="socials-link">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://www.linkedin.com/in/tinacai97/" target="_blank"  class="socials-link" id="linkedin">
-            <i class="fab fa-linkedin-in" id="linkedin"></i>
-          </a>
-        </li>
-        <li class="socials-icon">
-          <a href="https://github.com/tinacai97" target="_blank" class="socials-link">
-            <i class="fab fa-github" id="github"></i>
-          </a>
-        </li>
-      </ul>
+    <div id="footer">
+      <!-- Blurb -->
+      <p>
+        <span>Let's connect!</span>
+        <span class="footer-finger">👉</span>
+      </p>
+
+      <!-- Links -->
+      <div class="socials">
+        <div><a href="mailto: tinacai1997@gmail.com">
+            <img src="img/icons/email.png" alt="Email"></a></div>
+        <div><a href="https://www.linkedin.com/in/tinacai97/" target="_blank">
+            <img src="img/icons/linkedin.png" alt="LinkedIn"></a></div>
+        <div><a href="https://github.com/tinacai97" target="_blank">
+            <img src="img/icons/github.png" alt="GitHub"></a></div>
+      </div>
     </div>
   </footer>
+
 
   <!-- JavaScript Files -->
   <div>

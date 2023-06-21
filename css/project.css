@@ -65,6 +65,25 @@ section {
   line-height: 2;
 }
 
+
+/*----------------------- More Projects -----------------------*/
+
+.more-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.more-projects a img {
+  transition: 0.2s;
+}
+
+.more-projects a:hover img {
+  transform: scale(1.02);
+}
+
 /* ==============================================================
                Medium Devices (640px and larger)
 ============================================================== */
@@ -103,6 +122,10 @@ section {
 .project-description {
   flex-direction: row;
   gap: 5em;
+}
+
+.more-projects {
+  flex-direction: row;
 }
 
 }

@@ -35,8 +35,12 @@ a {
   background-color: #eef5ff;
 }
 
+.color-zas {
+  background-color: #f2f6ff;
+}
+
 .color-payd {
-  background-color: #f8f7ff;
+  background-color: #f4f2ff;
 }
 
 .box-shadow img {
@@ -83,6 +87,7 @@ p {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.25;
+  margin: 0;
 }
 
 button {
