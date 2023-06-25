@@ -46,6 +46,7 @@
 .hand-wave {
   display: inline-block;
   transform-origin: bottom right;
+  animation: wave 0.8s 1;
 }
 
 .hand-wave:hover {
@@ -56,7 +57,11 @@
 @keyframes wave {
   0% {
     transform: rotate(0);
+  } 25% {
+    transform: rotate(18deg);
   } 50% {
+    transform: rotate(0);
+  } 75% {
     transform: rotate(18deg);
   } 100% {
     transform: rotate(0);

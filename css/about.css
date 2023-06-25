@@ -60,20 +60,21 @@
 .emoji-sway {
   display: inline-block;
   transform-origin: bottom;
+  animation: sway 0.5s 1;
 }
 
 .emoji-sway:hover {
-  animation: sway 0.8s infinite;
+  animation: sway 0.5s infinite;
   cursor: pointer;
 }
 
 @keyframes sway {
   0% {
     transform: rotate(0);
-  } 20% {
-    transform: rotate(-6deg);
-  } 60% {
-    transform: rotate(6deg);
+  } 25% {
+    transform: rotate(-10deg);
+  } 75% {
+    transform: rotate(10deg);
   } 100% {
     transform: rotate(0);
   }

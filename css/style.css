@@ -284,7 +284,7 @@ footer:before {
 }
 
 .footer-finger:hover {
-  animation: point 0.75s infinite;
+  animation: point 0.25s infinite;
   cursor: pointer;
 }
 
@@ -292,7 +292,7 @@ footer:before {
   0% {
     transform: translateX(0);
   } 50% {
-    transform: translateX(5px);
+    transform: translateX(6px);
   } 100% {
     transform: translateX(0);
   }
